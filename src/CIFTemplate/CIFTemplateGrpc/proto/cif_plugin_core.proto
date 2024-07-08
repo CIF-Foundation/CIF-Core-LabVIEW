@@ -1,0 +1,122 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+syntax = "proto3";
+
+package cif.plugincore;
+
+service PluginCore {
+  rpc Start (FutureTimeEvent) returns (Status) {}
+  rpc Pause (Empty) returns (Status) {}
+  rpc Stop (Empty) returns (Status) {}
+  rpc RefreshStatistics (Empty) returns (Status) {}
+  rpc UpdateConfig (Configuration) returns (Status) {}
+  rpc GetStatusData (Empty) returns (StatusData) {}
+  rpc GetVersion (Empty) returns (Version) {}
+  rpc GetConfig (Empty) returns (Configuration) {}
+  rpc GetOverrides (Empty) returns (PluginOverrides) {}
+}
+
+message FutureTimeEvent {
+  uint64 fte_ns = 1;
+}
+
+message Error {
+  bool status = 1;
+  int32 code = 2;
+}
+
+message Configuration {
+  string json_config = 1;
+}
+
+message TimingStatsBasic {
+  int32 max = 1;
+  int32 min = 2;
+}
+
+message TimingStatistics {
+  TimingStatsBasic period = 1;
+  TimingStatsBasic wake_error = 2;
+  TimingStatsBasic execute = 3;
+  TimingStatsBasic housekeep = 4;
+  TimingStatsBasic idle = 5;
+}
+
+message FifoStatistics {
+  TimingStatsBasic from_t0 = 1;
+  TimingStatsBasic from_previous_plugin = 2;
+  TimingStatsBasic output_error = 3;
+}
+
+message MonitorDoubles {
+  double double_1 = 1;
+  double double_2 = 2;
+  double double_3 = 3;
+  double double_4 = 4;
+}
+
+message MonitorU64 {
+  uint64 u64_1 = 1;
+  uint64 u64_2 = 2;
+  uint64 u64_3 = 3;
+  uint64 u64_4 = 4;
+}
+
+message MonitorI64 {
+  int64 i64_1 = 1;
+  int64 i64_2 = 2;
+  int64 i64_3 = 3;
+  int64 i64_4 = 4;
+}
+
+message StatusData {
+  enum State {
+    NULL = 0;
+    CREATING = 1;
+    LISTENING = 2;
+    RUNNING = 3;
+    CLEANINGUP = 4;
+    DESTROYING = 5;
+  }
+  State state = 1;
+  TimingStatistics timing_statistics = 2;
+  FifoStatistics fifo_statistics = 3;
+  Error error = 4;
+  MonitorDoubles monitor_doubles = 5;
+  MonitorU64 monitor_u64s = 6;
+  MonitorI64 monitor_i64s = 7;
+}
+
+message Version {
+  uint32 major = 1;
+  uint32 minor = 2;
+  uint32 fix = 3;
+  uint32 build = 4;
+}
+
+message TimingOverrides {
+   bool override_timing = 1;
+   double period = 2;
+}
+
+message PluginOverrides {
+   TimingOverrides timing_overrides = 1;
+}
+
+message Status {
+   int32 code = 1;
+   string message = 2;
+}
+
+message Empty {}

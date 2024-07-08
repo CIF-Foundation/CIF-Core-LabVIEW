@@ -12,6 +12,12 @@
 		<Item Name="Plugin State.ctl" Type="VI" URL="../Typedef/Plugin State.ctl"/>
 		<Item Name="Plugin Overrides.ctl" Type="VI" URL="../Typedef/Plugin Overrides.ctl"/>
 		<Item Name="Timing Overrides.ctl" Type="VI" URL="../Typedef/Timing Overrides.ctl"/>
+		<Item Name="FIFO Statistics.ctl" Type="VI" URL="../Typedef/FIFO Statistics.ctl"/>
+		<Item Name="Monitor Doubles.ctl" Type="VI" URL="../Typedef/Monitor Doubles.ctl"/>
+		<Item Name="Monitor U64.ctl" Type="VI" URL="../Typedef/Monitor U64.ctl"/>
+		<Item Name="Timing Statistics.ctl" Type="VI" URL="../Typedef/Timing Statistics.ctl"/>
+		<Item Name="Timing Stats Base.ctl" Type="VI" URL="../Typedef/Timing Stats Base.ctl"/>
+		<Item Name="Monitor I64.ctl" Type="VI" URL="../Typedef/Monitor I64.ctl"/>
 		<Item Name="Plugin Status.ctl" Type="VI" URL="../Typedef/Plugin Status.ctl"/>
 		<Item Name="Simple Error.ctl" Type="VI" URL="../Typedef/Simple Error.ctl"/>
 		<Item Name="Common Plugin Configuration.ctl" Type="VI" URL="../Typedef/Common Plugin Configuration.ctl"/>
@@ -20,4 +26,5 @@
 		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>
 		<Item Name="gRPC Status to Node Status.vi" Type="VI" URL="../Utilities/gRPC Status to Node Status.vi"/>
 	</Item>
+	<Item Name="Version.ctl" Type="VI" URL="../Typedef/Version.ctl"/>
 </Library>

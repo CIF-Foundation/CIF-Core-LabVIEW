@@ -11,35 +11,46 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="dependencies" Type="Folder"/>
-		<Item Name="JSON Config Performance Test.vi" Type="VI" URL="../JSON Config Performance Test.vi"/>
-		<Item Name="JSON Config Update Test Cases.vi" Type="VI" URL="../JSON Config Update Test Cases.vi"/>
+		<Item Name="dependencies" Type="Folder">
+			<Item Name="CIFTemplateCommon.lvlib" Type="Library" URL="../../CIFTemplateCommon/CIFTemplateCommon.lvlib"/>
+			<Item Name="CIFTemplateCoreOOB_Rx.lvclass" Type="LVClass" URL="../../CIFTemplateCoreOOB/OOB_Rx/CIFTemplateCoreOOB_Rx.lvclass"/>
+			<Item Name="CIFTemplateCoreOOB_Tx.lvclass" Type="LVClass" URL="../../CIFTemplateCoreOOB/OOB_Tx/CIFTemplateCoreOOB_Tx.lvclass"/>
+			<Item Name="CIFUtilities.lvlib" Type="Library" URL="../../../CIFUtilities/CIFUtilities/CIFUtilities.lvlib"/>
+			<Item Name="CoreGrpcClientWrapper.lvlib" Type="Library" URL="../../CIFTemplateGrpc/CIF_Plugin_Core_Wrapper/CoreGrpcClientWrapper.lvlib"/>
+		</Item>
+		<Item Name="CIFTemplateNode.lvclass" Type="LVClass" URL="../../CIFTemplateNode/CIFTemplateNode.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
+				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
+				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="grpc-lvsupport-release.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Library/grpc-lvsupport-release.lvlib"/>
-				<Item Name="gRPC-servicer-release.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Servicer/gRPC-servicer-release.lvlib"/>
-				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="JKI JSON Serialization.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI.lib/Serialization/JSON/JKI JSON Serialization.lvlib"/>
 				<Item Name="JKI Serialization.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI.lib/Serialization/Core/JKI Serialization.lvlib"/>
 				<Item Name="JKI Unicode.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI.lib/Unicode/JKI Unicode.lvlib"/>
 				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="CifNodeCoreGrpc_server.lvlib" Type="Library" URL="../../../CIFNodeCoreGrpc/CIFNodeCoreGrpc_server/CifNodeCoreGrpc_server.lvlib"/>
+			<Item Name="CIF_Plugin_Core_client.lvlib" Type="Library" URL="../../CIFTemplateGrpc/CIF_Plugin_Core_client/CIF_Plugin_Core_client.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
-			<Item Name="CIFTemplateCommon.lvlib" Type="Library" URL="../../CIFTemplateCommon/CIFTemplateCommon.lvlib"/>
-			<Item Name="CIFTemplateCoreOOB_Rx.lvclass" Type="LVClass" URL="../../CIFTemplateCoreOOB/OOB_Rx/CIFTemplateCoreOOB_Rx.lvclass"/>
-			<Item Name="openg_variant.lvlib" Type="Library" URL="/C/Program Files/National Instruments/LabVIEW 2023/user.lib/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
