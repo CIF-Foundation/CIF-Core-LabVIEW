@@ -20,6 +20,7 @@
 			<Item Name="CIFUtilities.lvlib" Type="Library" URL="../../../CIFUtilities/CIFUtilities/CIFUtilities.lvlib"/>
 		</Item>
 		<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../CIFCorePlugin/CIFCorePlugin.lvclass"/>
+		<Item Name="gRPC Client Test.vi" Type="VI" URL="../gRPC Client Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
