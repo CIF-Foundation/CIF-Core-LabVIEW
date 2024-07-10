@@ -14,6 +14,8 @@
 		<Item Name="dependencies" Type="Folder"/>
 		<Item Name="JSON Config Performance Test.vi" Type="VI" URL="../JSON Config Performance Test.vi"/>
 		<Item Name="JSON Config Update Test Cases.vi" Type="VI" URL="../JSON Config Update Test Cases.vi"/>
+		<Item Name="RX OOB Test Cases.vi" Type="VI" URL="../RX OOB Test Cases.vi"/>
+		<Item Name="TX OOB Test Cases.vi" Type="VI" URL="../TX OOB Test Cases.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
@@ -45,9 +47,10 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="CIF_Plugin_Core_client.lvlib" Type="Library" URL="../../../CIFCoreGrpc/CIF_Plugin_Core_client/CIF_Plugin_Core_client.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../CIFCoreCommon/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
+			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
+			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../../CIFCoreGrpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
