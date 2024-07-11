@@ -12,12 +12,12 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="dependencies" Type="Folder">
+			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../CIFCoreOOB/OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
 			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../CIFCoreOOB/OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
 			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../CIFCoreGrpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFCorePlugin_server.lvlib" Type="Library" URL="../../CIFCoreGrpc/CIFCorePlugin_server/CIFCorePlugin_server.lvlib"/>
 			<Item Name="CIFCorePluginWrapper.lvlib" Type="Library" URL="../../CIFCoreGrpc/CIFCorePluginWrapper/CIFCorePluginWrapper.lvlib"/>
-			<Item Name="CIFUtilities.lvlib" Type="Library" URL="../../../CIFUtilities/CIFUtilities/CIFUtilities.lvlib"/>
 		</Item>
 		<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../CIFCorePlugin/CIFCorePlugin.lvclass"/>
 		<Item Name="gRPC Client Test.vi" Type="VI" URL="../gRPC Client Test.vi"/>

@@ -9,6 +9,7 @@
 
 </Property>
 	<Item Name="Typedef" Type="Folder">
+		<Item Name="Errors.ctl" Type="VI" URL="../../../CIFUtilities/CIFClocks/Typedef/Errors.ctl"/>
 		<Item Name="Plugin State.ctl" Type="VI" URL="../Typedef/Plugin State.ctl"/>
 		<Item Name="Plugin Overrides.ctl" Type="VI" URL="../Typedef/Plugin Overrides.ctl"/>
 		<Item Name="Timing Overrides.ctl" Type="VI" URL="../Typedef/Timing Overrides.ctl"/>
@@ -21,10 +22,17 @@
 		<Item Name="Plugin Status.ctl" Type="VI" URL="../Typedef/Plugin Status.ctl"/>
 		<Item Name="Simple Error.ctl" Type="VI" URL="../Typedef/Simple Error.ctl"/>
 		<Item Name="Common Plugin Configuration.ctl" Type="VI" URL="../Typedef/Common Plugin Configuration.ctl"/>
+		<Item Name="Version.ctl" Type="VI" URL="../Typedef/Version.ctl"/>
+		<Item Name="TimeStamps.ctl" Type="VI" URL="../Typedef/TimeStamps.ctl"/>
+		<Item Name="Plugin Timestamp Enum.ctl" Type="VI" URL="../Typedef/Plugin Timestamp Enum.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
+		<Item Name="Add Error.vi" Type="VI" URL="../../../CIFUtilities/CIFClocks/SubVIs/Add Error.vi"/>
 		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>
 		<Item Name="gRPC Status to Node Status.vi" Type="VI" URL="../Utilities/gRPC Status to Node Status.vi"/>
+		<Item Name="Update Cycle Time.vi" Type="VI" URL="../Utilities/Update Cycle Time.vi"/>
+		<Item Name="Update Delta Time.vi" Type="VI" URL="../Utilities/Update Delta Time.vi"/>
 	</Item>
-	<Item Name="Version.ctl" Type="VI" URL="../Typedef/Version.ctl"/>
+	<Item Name="Timing Statistics Full.ctl" Type="VI" URL="../Typedef/Timing Statistics Full.ctl"/>
+	<Item Name="gRPC Reported Plugin Status.ctl" Type="VI" URL="../Typedef/gRPC Reported Plugin Status.ctl"/>
 </Library>
