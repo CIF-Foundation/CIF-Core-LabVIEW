@@ -23,8 +23,9 @@
 		<Item Name="Simple Error.ctl" Type="VI" URL="../Typedef/Simple Error.ctl"/>
 		<Item Name="Common Plugin Configuration.ctl" Type="VI" URL="../Typedef/Common Plugin Configuration.ctl"/>
 		<Item Name="Version.ctl" Type="VI" URL="../Typedef/Version.ctl"/>
+		<Item Name="gRPC Reported Plugin Status.ctl" Type="VI" URL="../Typedef/gRPC Reported Plugin Status.ctl"/>
 		<Item Name="TimeStamps.ctl" Type="VI" URL="../Typedef/TimeStamps.ctl"/>
-		<Item Name="Plugin Timestamp Enum.ctl" Type="VI" URL="../Typedef/Plugin Timestamp Enum.ctl"/>
+		<Item Name="Timing Statistics Full.ctl" Type="VI" URL="../Typedef/Timing Statistics Full.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Add Error.vi" Type="VI" URL="../../../CIFUtilities/CIFClocks/SubVIs/Add Error.vi"/>
@@ -33,6 +34,4 @@
 		<Item Name="Update Cycle Time.vi" Type="VI" URL="../Utilities/Update Cycle Time.vi"/>
 		<Item Name="Update Delta Time.vi" Type="VI" URL="../Utilities/Update Delta Time.vi"/>
 	</Item>
-	<Item Name="Timing Statistics Full.ctl" Type="VI" URL="../Typedef/Timing Statistics Full.ctl"/>
-	<Item Name="gRPC Reported Plugin Status.ctl" Type="VI" URL="../Typedef/gRPC Reported Plugin Status.ctl"/>
 </Library>
