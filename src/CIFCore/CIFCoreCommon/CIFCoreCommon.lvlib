@@ -31,6 +31,7 @@
 		<Item Name="Add Error.vi" Type="VI" URL="../../../CIFUtilities/CIFClocks/SubVIs/Add Error.vi"/>
 		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>
 		<Item Name="gRPC Status to Node Status.vi" Type="VI" URL="../Utilities/gRPC Status to Node Status.vi"/>
+		<Item Name="Get Version.vi" Type="VI" URL="../Utilities/Get Version.vi"/>
 		<Item Name="Update Cycle Time.vi" Type="VI" URL="../Utilities/Update Cycle Time.vi"/>
 		<Item Name="Update Delta Time.vi" Type="VI" URL="../Utilities/Update Delta Time.vi"/>
 	</Item>
