@@ -2,6 +2,7 @@
 <Project Type="Project" LVVersion="21008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -22,6 +23,7 @@
 		</Item>
 		<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../CIFCorePlugin/CIFCorePlugin.lvclass"/>
 		<Item Name="gRPC Client Test.vi" Type="VI" URL="../gRPC Client Test.vi"/>
+		<Item Name="CIFCorePluginBuild.lvlib" Type="Library" URL="../../CIFCorePlugin/Build Library/CIFCorePluginBuild.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
@@ -84,6 +86,7 @@
 			</Item>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../CIFCoreCommon/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
+			<Item Name="Plugin State Commands.ctl" Type="VI" URL="../../../CIFUtilities/CIFLogs/Typedef/Plugin State Commands.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
