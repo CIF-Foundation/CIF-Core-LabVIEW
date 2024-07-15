@@ -18,6 +18,7 @@
 	</Item>
 	<Item Name="typedef" Type="Folder">
 		<Item Name="Message Type.ctl" Type="VI" URL="../Typedef/Message Type.ctl"/>
+		<Item Name="Plugin State Commands.ctl" Type="VI" URL="../Typedef/Plugin State Commands.ctl"/>
 		<Item Name="syslog facility.ctl" Type="VI" URL="../Typedef/syslog facility.ctl"/>
 		<Item Name="syslog priority.ctl" Type="VI" URL="../Typedef/syslog priority.ctl"/>
 	</Item>
