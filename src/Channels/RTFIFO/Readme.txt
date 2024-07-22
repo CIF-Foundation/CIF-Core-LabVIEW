@@ -1,0 +1,1 @@
+While this class using RTFIFOs was technically functional, the performance benchmarks showed unacceptably high worst case execution time.  This limitation was validated to be caused by RTFIFO core logic.  Based on this testing I decided not to further develop RTFIFO based channels at this time.  The code is retained for future investigations.  
