@@ -140,6 +140,7 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../../CIFCore/Class/CIFCorePlugin.lvclass"/>
 			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFCorePlugin_server.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_server/CIFCorePlugin_server.lvlib"/>
+			<Item Name="CIFCorePluginWrapper.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePluginWrapper/CIFCorePluginWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFTag/CIFTag.lvclass"/>
