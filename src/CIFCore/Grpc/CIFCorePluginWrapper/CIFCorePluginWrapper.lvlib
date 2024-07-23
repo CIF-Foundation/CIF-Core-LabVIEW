@@ -23,4 +23,8 @@
 		<Item Name="Refresh Statistics.vi" Type="VI" URL="../Commands/Refresh Statistics.vi"/>
 		<Item Name="Update Configuration.vi" Type="VI" URL="../Commands/Update Configuration.vi"/>
 	</Item>
+	<Item Name="Utilities" Type="Folder">
+		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>
+		<Item Name="gRPC Status to Node Status.vi" Type="VI" URL="../Utilities/gRPC Status to Node Status.vi"/>
+	</Item>
 </Library>

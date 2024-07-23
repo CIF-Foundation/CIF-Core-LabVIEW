@@ -28,9 +28,7 @@
 		<Item Name="Timing Statistics Full.ctl" Type="VI" URL="../Typedef/Timing Statistics Full.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
-		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>
 		<Item Name="Add Error.vi" Type="VI" URL="../../../CIFUtilities/CIFClocks/SubVIs/Add Error.vi"/>
-		<Item Name="gRPC Status to Node Status.vi" Type="VI" URL="../Utilities/gRPC Status to Node Status.vi"/>
 		<Item Name="Get Version.vi" Type="VI" URL="../Utilities/Get Version.vi"/>
 		<Item Name="Append Error Location.vi" Type="VI" URL="../Utilities/Append Error Location.vi"/>
 		<Item Name="Update Cycle Time.vi" Type="VI" URL="../Utilities/Update Cycle Time.vi"/>
