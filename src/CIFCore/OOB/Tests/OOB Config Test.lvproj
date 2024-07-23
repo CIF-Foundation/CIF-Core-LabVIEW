@@ -50,6 +50,7 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../../CIFUtilities/CIFChannels/CIFChannels.lvclass"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
 			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
