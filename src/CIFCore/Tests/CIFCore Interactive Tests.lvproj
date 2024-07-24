@@ -11,6 +11,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../Channels/ChannelRegistrar/ChannelRegistrar.lvlib"/>
 		<Item Name="CIFCore gRPC Test Client.vi" Type="VI" URL="../CIFCore gRPC Test Client.vi"/>
 		<Item Name="CIFCorePlugin.lvlib" Type="Library" URL="../../Callable Library/CIFCorePlugin.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">

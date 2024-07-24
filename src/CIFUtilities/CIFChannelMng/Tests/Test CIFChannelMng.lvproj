@@ -19,7 +19,6 @@
 			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
 			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
 		</Item>
-		<Item Name="Basic double map example.vi" Type="VI" URL="../Basic double map example.vi"/>
 		<Item Name="Channel Mng Performance Test.vi" Type="VI" URL="../Channel Mng Performance Test.vi"/>
 		<Item Name="Channel Mng Update Test Cases.vi" Type="VI" URL="../Channel Mng Update Test Cases.vi"/>
 		<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../CIFChannelMng.lvclass"/>
@@ -39,7 +38,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Test Channel.lvclass" Type="LVClass" URL="../../../../Channels/Test Channel/Test Channel.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
