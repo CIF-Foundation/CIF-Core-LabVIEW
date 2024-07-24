@@ -11,17 +11,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="deps" Type="Folder">
-			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../CIFChannels/CIFChannels.lvclass"/>
-			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
-			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/CIFTag/CIFTag.lvclass"/>
-			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
-			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
-			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
-		</Item>
 		<Item Name="Channel Mng Performance Test.vi" Type="VI" URL="../Channel Mng Performance Test.vi"/>
 		<Item Name="Channel Mng Update Test Cases.vi" Type="VI" URL="../Channel Mng Update Test Cases.vi"/>
-		<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../CIFChannelMng.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Assert Error Cluster Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Error Cluster Type.vim"/>
@@ -38,6 +29,11 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../CIFChannelMng.lvclass"/>
+			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../CIFChannels/CIFChannels.lvclass"/>
+			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
+			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/CIFTag/CIFTag.lvclass"/>
+			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -11,14 +11,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="dependencies" Type="Folder">
-			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../../CIFCore/OOB/OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
-			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../../CIFCore/OOB/OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
-			<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../../CIFCore/Class/CIFCorePlugin.lvclass"/>
-			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
-			<Item Name="CIFCorePlugin_server.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_server/CIFCorePlugin_server.lvlib"/>
-			<Item Name="CIFCorePluginWrapper.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePluginWrapper/CIFCorePluginWrapper.lvlib"/>
-		</Item>
+		<Item Name="dependencies" Type="Folder"/>
 		<Item Name="CIFTemplatePlugin.lvclass" Type="LVClass" URL="../../Class/CIFTemplatePlugin.lvclass"/>
 		<Item Name="CIFTemplatePlugin.lvlib" Type="Library" URL="../../Callable Library/CIFTemplatePlugin.lvlib"/>
 		<Item Name="CIFTemplatePluginCommon.lvlib" Type="Library" URL="../../Common/CIFTemplatePluginCommon.lvlib"/>
@@ -66,13 +59,24 @@
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFChannelMng/CIFChannelMng.lvclass"/>
 			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFChannels/CIFChannels.lvclass"/>
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
+			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
+			<Item Name="CIFCoreChannel_server.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCoreChannel_server/CIFCoreChannel_server.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
+			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../../CIFCore/OOB/OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
+			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../../CIFCore/OOB/OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
+			<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../../CIFCore/Class/CIFCorePlugin.lvclass"/>
+			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
+			<Item Name="CIFCorePlugin_server.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_server/CIFCorePlugin_server.lvlib"/>
+			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFTag/CIFTag.lvclass"/>
 			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
 			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
 			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
+			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/Double/Core/trash_Create Subscriber.vi"/>
+			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/I64/Core/trash_Create Subscriber.vi"/>
+			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/U64/Core/trash_Create Subscriber.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

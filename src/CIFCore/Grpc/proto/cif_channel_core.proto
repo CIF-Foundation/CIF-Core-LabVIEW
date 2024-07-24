@@ -1,0 +1,52 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+syntax = "proto3";
+
+package cif.channelcore;
+
+service ChannelCore {
+  rpc GetChannels (Empty) returns (Channels) {}
+  rpc SetConnection (ConnectSubscriber) returns (Status) {}
+}
+
+enum Direction {
+  PUBLISHER = 0;
+  SUBSCRIBER = 1;
+}
+
+message Channel {
+  string name = 1;
+  Direction direction = 2;
+  string type = 3;  //This field describes the channel type.  From LabVIEW it is typically the name of the channel class.
+  bytes custom_config = 4;  //This field allows passing free form custom data needed to describe the channel and to support operations such as creating connections.  It's implementation will be type specific. 
+  bool connected = 5;
+  string connected_name = 6;  //This is only valid for subscribers.  Publishers typically have no knowledge of connections.  
+}
+
+message Channels {
+  repeated Channel channels = 1;
+}
+
+message ConnectSubscriber {
+  string subscriber_name = 1;
+  string publisher_name = 2;
+  bytes custom_connect = 3;  //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific.  
+}
+
+message Status {
+   int32 code = 1;
+   string message = 2;
+}
+
+message Empty {}

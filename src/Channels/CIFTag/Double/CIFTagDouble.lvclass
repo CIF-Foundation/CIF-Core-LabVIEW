@@ -28,23 +28,14 @@
 	<Item Name="CIFTagDouble.ctl" Type="Class Private Data" URL="CIFTagDouble.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
-	<Item Name="Create Publisher.vi" Type="VI" URL="../Core/Create Publisher.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;"!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#R!=!!?!!!7&amp;%.*2F2B:U2P&gt;7*M:3ZM&gt;G.M98.T!!!+1UF'6'&amp;H)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!41!I!$52F:G&amp;V&lt;(1A6G&amp;M&gt;75!$E!Q`````Q2/97VF!!!K1(!!(A!!&amp;B2$35:597&gt;%&lt;X6C&lt;'5O&lt;(:D&lt;'&amp;T=Q!!#5.*2F2B:S"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!(!!A!#1-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!I!!!!1!!!!#A!!$1!!!!Q!!!!!!!!!!!!!!1!+!!!!!!</Property>
+	<Item Name="Create.vi" Type="VI" URL="../Core/Create.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;W!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#R!=!!?!!!7&amp;%.*2F2B:U2P&gt;7*M:3ZM&gt;G.M98.T!!!+1UF'6'&amp;H)'^V&gt;!!!61$R!!!!!!!!!!)41UF'1WBB&lt;GZF&lt;(-O&lt;(:D&lt;'&amp;T=QV%;8*F9X2J&lt;WYO9X2M!#N!&amp;A!##6"V9GRJ=WBF=AJ4&gt;7*T9X*J9G6S!!!*2'FS:7.U;7^O!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!$E!Q`````Q2/97VF!!!K1(!!(A!!&amp;B2$35:597&gt;%&lt;X6C&lt;'5O&lt;(:D&lt;'&amp;T=Q!!#5.*2F2B:S"J&lt;A"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!9!"Q!%!!A!#1-!!(A!!!U)!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!1!!!!#A!!!!!!!!!1!!!!EA!!!!!"!!I!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">50331776</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
-	</Item>
-	<Item Name="Create Subscriber.vi" Type="VI" URL="../Core/Create Subscriber.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;"!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#R!=!!?!!!7&amp;%.*2F2B:U2P&gt;7*M:3ZM&gt;G.M98.T!!!+1UF'6'&amp;H)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!41!I!$52F:G&amp;V&lt;(1A6G&amp;M&gt;75!$E!Q`````Q2/97VF!!!K1(!!(A!!&amp;B2$35:597&gt;%&lt;X6C&lt;'5O&lt;(:D&lt;'&amp;T=Q!!#5.*2F2B:S"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!(!!A!#1-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!I!!!!1!!!!#A!!$1!!!!Q!!!!!!!!!!!!!!1!+!!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342709776</Property>
 	</Item>
 	<Item Name="Read Double.vi" Type="VI" URL="../Core/Read Double.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%O!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!%%!B#H2J&lt;76E)'^V&gt;$]!!!N!#A!%2'&amp;U91!!,%"Q!"Y!!"951UF'6'&amp;H2'^V9GRF,GRW9WRB=X-!!!J$35:597=A&lt;X6U!!!%!!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!K1(!!(A!!&amp;B2$35:597&gt;%&lt;X6C&lt;'5O&lt;(:D&lt;'&amp;T=Q!!#5.*2F2B:S"J&lt;A"5!0!!$!!$!!1!"1!'!!=!"Q!(!!=!#!!(!!=!#1-!!(A!!!U)!!!*!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!EA!!!!!"!!I!!!!!</Property>

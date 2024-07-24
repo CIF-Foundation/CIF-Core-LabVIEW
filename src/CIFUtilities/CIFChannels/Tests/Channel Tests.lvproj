@@ -12,27 +12,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Basic double map example.vi" Type="VI" URL="../../../CIFChannelMng/Tests/Basic double map example.vi"/>
-		<Item Name="RW Test.vi" Type="VI" URL="../../../../Channels/RTFIFO/Double/Tests/RW Test.vi"/>
-		<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../CIFChannelMng/CIFChannelMng.lvclass"/>
-		<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../CIFChannels.lvclass"/>
-		<Item Name="RTFIFOChannel.lvclass" Type="LVClass" URL="../../../../Channels/RTFIFO/RTFIFOChannel.lvclass"/>
-		<Item Name="RTFIFODouble.lvclass" Type="LVClass" URL="../../../../Channels/RTFIFO/Double/RTFIFODouble.lvclass"/>
-		<Item Name="Test Channel.lvclass" Type="LVClass" URL="../../../../Channels/Test Channel/Test Channel.lvclass"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
-				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
-			</Item>
-			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">

@@ -135,19 +135,24 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFChannelMng/CIFChannelMng.lvclass"/>
 			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFChannels/CIFChannels.lvclass"/>
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
+			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
+			<Item Name="CIFCoreChannel_server.lvlib" Type="Library" URL="../../Grpc/CIFCoreChannel_server/CIFCoreChannel_server.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../OOB/OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
 			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../OOB/OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
 			<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../Class/CIFCorePlugin.lvclass"/>
 			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFCorePlugin_server.lvlib" Type="Library" URL="../../Grpc/CIFCorePlugin_server/CIFCorePlugin_server.lvlib"/>
-			<Item Name="CIFCorePluginWrapper.lvlib" Type="Library" URL="../../Grpc/CIFCorePluginWrapper/CIFCorePluginWrapper.lvlib"/>
+			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFTag/CIFTag.lvclass"/>
 			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
 			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
 			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
+			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/Double/Core/trash_Create Subscriber.vi"/>
+			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/I64/Core/trash_Create Subscriber.vi"/>
+			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/U64/Core/trash_Create Subscriber.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="CIFCorePluginRT" Type="Packed Library">
