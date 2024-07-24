@@ -150,9 +150,6 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
 			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
 			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/Double/Core/trash_Create Subscriber.vi"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/I64/Core/trash_Create Subscriber.vi"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/U64/Core/trash_Create Subscriber.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="CIFCorePluginRT" Type="Packed Library">
@@ -165,7 +162,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E1B1FFA6-FD1A-43A9-B4CA-878D53F65E7D}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/a</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CIFCorePlugin.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/a/CIFCorePlugin.lvlibp</Property>

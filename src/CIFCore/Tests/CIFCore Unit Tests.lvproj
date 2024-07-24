@@ -73,9 +73,6 @@
 			<Item Name="CIFCoreChannel_server.lvlib" Type="Library" URL="../../Grpc/CIFCoreChannel_server/CIFCoreChannel_server.lvlib"/>
 			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/Double/Core/trash_Create Subscriber.vi"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/U64/Core/trash_Create Subscriber.vi"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/I64/Core/trash_Create Subscriber.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
