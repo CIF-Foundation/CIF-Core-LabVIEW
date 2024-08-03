@@ -2,6 +2,7 @@
 <Project Type="Project" LVVersion="21008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -12,10 +13,14 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="dependencies" Type="Folder"/>
-		<Item Name="CIFTemplatePlugin.lvclass" Type="LVClass" URL="../../Class/CIFTemplatePlugin.lvclass"/>
+		<Item Name="Tests" Type="Folder">
+			<Item Name="CIFCore gRPC Test Client.vi" Type="VI" URL="../../../CIFCore/Tests/CIFCore gRPC Test Client.vi"/>
+			<Item Name="gRPC Client Test.vi" Type="VI" URL="../../Common/gRPC Client Test.vi"/>
+			<Item Name="Test R_W.vi" Type="VI" URL="../Test R_W.vi"/>
+		</Item>
 		<Item Name="CIFTemplatePlugin.lvlib" Type="Library" URL="../../Callable Library/CIFTemplatePlugin.lvlib"/>
+		<Item Name="CIFTemplatePlugin.lvclass" Type="LVClass" URL="../../Class/CIFTemplatePlugin.lvclass"/>
 		<Item Name="CIFTemplatePluginCommon.lvlib" Type="Library" URL="../../Common/CIFTemplatePluginCommon.lvlib"/>
-		<Item Name="gRPC Client Test.vi" Type="VI" URL="../../Common/gRPC Client Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
@@ -74,9 +79,6 @@
 			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
 			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
 			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/Double/Core/trash_Create Subscriber.vi"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/I64/Core/trash_Create Subscriber.vi"/>
-			<Item Name="trash_Create Subscriber.vi" Type="VI" URL="../../../Channels/CIFTag/U64/Core/trash_Create Subscriber.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
