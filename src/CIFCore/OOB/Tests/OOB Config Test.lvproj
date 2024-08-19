@@ -22,7 +22,11 @@
 				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Assert Error Cluster Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Error Cluster Type.vim"/>
+				<Item Name="Assert Integer Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Integer Type.vim"/>
+				<Item Name="Assert Signed Integer Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Signed Integer Type.vim"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="CIFChannelCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIFChannels/CIFChannelCore.lvlib"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
@@ -33,7 +37,6 @@
 				<Item Name="JKI Unicode.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI.lib/Unicode/JKI Unicode.lvlib"/>
 				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
-				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
@@ -41,12 +44,23 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../../CIFUtilities/CIFChannelMng/CIFChannelMng.lvclass"/>
-			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../../CIFUtilities/CIFChannels/CIFChannels.lvclass"/>
+			<Item Name="ChannelCommon.lvlib" Type="Library" URL="../../../../Channels/ChannelCommon/ChannelCommon.lvlib"/>
+			<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../../Channels/ChannelRegistrar/ChannelRegistrar.lvlib"/>
+			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
+			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../../Channels/CIFChannels/CIFChannels.lvclass"/>
+			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
 			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
+			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/CIFFIFO/CIFFIFO/CIFfifo.lvclass"/>
+			<Item Name="CIFFifoCAN.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/CIFFIFO/CAN/CIFFifoCAN.lvclass"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
+			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/CIFTag/CIFTag.lvclass"/>
+			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
+			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
+			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
+			<Item Name="Get Control From Type Descriptor.vi" Type="VI" URL="../../../../CIFUtilities/Scripting/Update Enum/Get Control From Type Descriptor.vi"/>
+			<Item Name="Update Enum.lvlib" Type="Library" URL="../../../../CIFUtilities/Scripting/Update Enum/Update Enum.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

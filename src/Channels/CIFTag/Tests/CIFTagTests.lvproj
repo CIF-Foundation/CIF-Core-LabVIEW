@@ -19,6 +19,7 @@
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Assert Error Cluster Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Error Cluster Type.vim"/>
+				<Item Name="Assert Integer Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Integer Type.vim"/>
 				<Item Name="Assert Signed Integer Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Signed Integer Type.vim"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="CIFChannelCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIFChannels/CIFChannelCore.lvlib"/>
@@ -31,8 +32,15 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../../CIFUtilities/CIFChannels/CIFChannels.lvclass"/>
+			<Item Name="ChannelCommon.lvlib" Type="Library" URL="../../../ChannelCommon/ChannelCommon.lvlib"/>
+			<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../ChannelRegistrar/ChannelRegistrar.lvlib"/>
+			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../CIFChannels/CIFChannels.lvclass"/>
+			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
+			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../CIFFIFO/CIFFIFO/CIFfifo.lvclass"/>
+			<Item Name="CIFFifoCAN.lvclass" Type="LVClass" URL="../../CIFFIFO/CAN/CIFFifoCAN.lvclass"/>
+			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../I64/CIFTagI64.lvclass"/>
+			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../U64/CIFTagU64.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
