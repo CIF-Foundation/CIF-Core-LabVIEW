@@ -28,5 +28,6 @@
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>
 		<Item Name="gRPC Status to Node Status.vi" Type="VI" URL="../Utilities/gRPC Status to Node Status.vi"/>
+		<Item Name="Resolve Name.vi" Type="VI" URL="../Utilities/Resolve Name.vi"/>
 	</Item>
 </Library>
