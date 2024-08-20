@@ -24,6 +24,7 @@
 		<Item Name="Refresh Statistics.vi" Type="VI" URL="../Commands/Refresh Statistics.vi"/>
 		<Item Name="Update Configuration.vi" Type="VI" URL="../Commands/Update Configuration.vi"/>
 		<Item Name="Connect.vi" Type="VI" URL="../Commands/Connect.vi"/>
+		<Item Name="Force Channel.vi" Type="VI" URL="../Commands/Force Channel.vi"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>
