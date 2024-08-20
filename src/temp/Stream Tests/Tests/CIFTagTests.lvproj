@@ -32,7 +32,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="_Client obtain occurance.vi" Type="VI" URL="../grpc perf attempts/_Client obtain occurance.vi"/>
-			<Item Name="_Client Read From Stream.vim" Type="VI" URL="../grpc perf attempts/_Client Read From Stream.vim"/>
 			<Item Name="Call ID.ctl" Type="VI" URL="../../Optimized Streaming/typedef/Call ID.ctl"/>
 			<Item Name="Optimized Client Read.vim" Type="VI" URL="../../Optimized Streaming/Optimized Client Read.vim"/>
 			<Item Name="streamtest_client.lvlib" Type="Library" URL="../../streamtest_client/streamtest_client.lvlib"/>

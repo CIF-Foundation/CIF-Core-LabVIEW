@@ -18,6 +18,7 @@ package cif.channelcore;
 service ChannelCore {
   rpc GetChannels (Empty) returns (Channels) {}
   rpc SetConnection (ConnectSubscriber) returns (Status) {}
+  rpc SetForce (ForceChannel) returns (Status) {}
 }
 
 enum Direction {
@@ -32,6 +33,7 @@ message Channel {
   bytes custom_config = 4;  //This field allows passing free form custom data needed to describe the channel and to support operations such as creating connections.  It's implementation will be type specific. 
   bool connected = 5;
   string connected_name = 6;  //This is only valid for subscribers.  Publishers typically have no knowledge of connections.  
+  bool forced = 7; //This is only valid for subscribers.  Indicates if the value is being "forced" to always return a specific ovverride value instead of the reading from the publisher.  
 }
 
 message Channels {
@@ -42,6 +44,12 @@ message ConnectSubscriber {
   string subscriber_name = 1;
   string publisher_name = 2;
   bytes custom_connect = 3;  //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific.  
+}
+
+message ForceChannel {
+  string channel_name = 1;
+  bool force = 2;
+  bytes force_data = 3;  //Flattened data for the forced value.  Values are big endian.  
 }
 
 message Status {

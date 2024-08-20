@@ -30,6 +30,13 @@
 			<Item Name="Set cif_channelcore_ConnectSubscriber.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ConnectSubscriber.vi"/>
 			<Item Name="Get cif_channelcore_ConnectSubscriber.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ConnectSubscriber.vi"/>
 		</Item>
+		<Item Name="cif_channelcore_ForceChannel" Type="Folder">
+			<Item Name="cif_channelcore_ForceChannel.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ForceChannel.ctl"/>
+			<Item Name="FlatToRichcif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_ForceChannel.vi"/>
+			<Item Name="RichToFlatcif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_ForceChannel.vi"/>
+			<Item Name="Set cif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ForceChannel.vi"/>
+			<Item Name="Get cif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ForceChannel.vi"/>
+		</Item>
 		<Item Name="cif_channelcore_Status" Type="Folder">
 			<Item Name="cif_channelcore_Status.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Status.ctl"/>
 			<Item Name="FlatToRichcif_channelcore_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_Status.vi"/>
@@ -59,6 +66,9 @@
 		</Item>
 		<Item Name="cif_channelcore_ConnectSubscriber_Flat" Type="Folder">
 			<Item Name="cif_channelcore_ConnectSubscriber_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ConnectSubscriber_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_channelcore_ForceChannel_Flat" Type="Folder">
+			<Item Name="cif_channelcore_ForceChannel_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ForceChannel_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_channelcore_Status_Flat" Type="Folder">
 			<Item Name="cif_channelcore_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Status_Flat.ctl"/>

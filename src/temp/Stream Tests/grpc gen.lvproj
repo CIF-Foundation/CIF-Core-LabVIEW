@@ -34,6 +34,8 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="_Client obtain occurance.vi" Type="VI" URL="../Tests/grpc perf attempts/_Client obtain occurance.vi"/>
+			<Item Name="Call ID.ctl" Type="VI" URL="../Optimized Streaming/typedef/Call ID.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
