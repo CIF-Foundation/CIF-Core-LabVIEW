@@ -156,6 +156,7 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFTemplatePlugin.lvclass" Type="LVClass" URL="../../Class/CIFTemplatePlugin.lvclass"/>
 			<Item Name="CIFTemplatePluginCommon.lvlib" Type="Library" URL="../../Common/CIFTemplatePluginCommon.lvlib"/>
 			<Item Name="Get Control From Type Descriptor.vi" Type="VI" URL="../../../CIFUtilities/Scripting/Update Enum/Get Control From Type Descriptor.vi"/>
+			<Item Name="trash_Read Double.vi" Type="VI" URL="../../../Channels/CIFTag/Double/Core/trash_Read Double.vi"/>
 			<Item Name="Update Enum.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Update Enum/Update Enum.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -169,7 +170,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E1B1FFA6-FD1A-43A9-B4CA-878D53F65E7D}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/a</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CIFTemplatePlugin.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/a/CIFTemplatePlugin.lvlibp</Property>
