@@ -30,5 +30,6 @@
 		<Item Name="Create Version String.vi" Type="VI" URL="../Utilities/Create Version String.vi"/>
 		<Item Name="Get Paths.vi" Type="VI" URL="../Utilities/Get Paths.vi"/>
 		<Item Name="Parse Error Log.vi" Type="VI" URL="../Utilities/Parse Error Log.vi"/>
+		<Item Name="Parse Log.vi" Type="VI" URL="../Utilities/Parse Log.vi"/>
 	</Item>
 </Library>
