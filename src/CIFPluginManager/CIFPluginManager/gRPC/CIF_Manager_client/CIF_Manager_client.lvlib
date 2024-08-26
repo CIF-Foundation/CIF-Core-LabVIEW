@@ -29,6 +29,11 @@
 			<Item Name="FlatToRichcif_manager_PluginTypeReply.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginTypeReply.vi"/>
 			<Item Name="RichToFlatcif_manager_PluginTypeReply.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_PluginTypeReply.vi"/>
 		</Item>
+		<Item Name="cif_manager_PluginType" Type="Folder">
+			<Item Name="cif_manager_PluginType.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginType.ctl"/>
+			<Item Name="FlatToRichcif_manager_PluginType.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginType.vi"/>
+			<Item Name="RichToFlatcif_manager_PluginType.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_PluginType.vi"/>
+		</Item>
 		<Item Name="cif_manager_PluginName" Type="Folder">
 			<Item Name="cif_manager_PluginName.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginName.ctl"/>
 			<Item Name="FlatToRichcif_manager_PluginName.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginName.vi"/>
@@ -54,10 +59,20 @@
 			<Item Name="FlatToRichcif_manager_FileData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_FileData.vi"/>
 			<Item Name="RichToFlatcif_manager_FileData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_FileData.vi"/>
 		</Item>
+		<Item Name="cif_manager_PluginVersion" Type="Folder">
+			<Item Name="cif_manager_PluginVersion.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginVersion.ctl"/>
+			<Item Name="FlatToRichcif_manager_PluginVersion.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginVersion.vi"/>
+			<Item Name="RichToFlatcif_manager_PluginVersion.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_PluginVersion.vi"/>
+		</Item>
 		<Item Name="cif_manager_PluginInfo" Type="Folder">
 			<Item Name="cif_manager_PluginInfo.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfo.ctl"/>
 			<Item Name="FlatToRichcif_manager_PluginInfo.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginInfo.vi"/>
 			<Item Name="RichToFlatcif_manager_PluginInfo.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_PluginInfo.vi"/>
+		</Item>
+		<Item Name="cif_manager_PluginInfoResponse" Type="Folder">
+			<Item Name="cif_manager_PluginInfoResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfoResponse.ctl"/>
+			<Item Name="FlatToRichcif_manager_PluginInfoResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginInfoResponse.vi"/>
+			<Item Name="RichToFlatcif_manager_PluginInfoResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_PluginInfoResponse.vi"/>
 		</Item>
 		<Item Name="cif_manager_PluginInfoArray" Type="Folder">
 			<Item Name="cif_manager_PluginInfoArray.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfoArray.ctl"/>
@@ -81,6 +96,9 @@
 		<Item Name="cif_manager_PluginTypeReply_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginTypeReply_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginTypeReply_Flat.ctl"/>
 		</Item>
+		<Item Name="cif_manager_PluginType_Flat" Type="Folder">
+			<Item Name="cif_manager_PluginType_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginType_Flat.ctl"/>
+		</Item>
 		<Item Name="cif_manager_PluginName_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginName_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginName_Flat.ctl"/>
 		</Item>
@@ -96,8 +114,14 @@
 		<Item Name="cif_manager_FileData_Flat" Type="Folder">
 			<Item Name="cif_manager_FileData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_FileData_Flat.ctl"/>
 		</Item>
+		<Item Name="cif_manager_PluginVersion_Flat" Type="Folder">
+			<Item Name="cif_manager_PluginVersion_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginVersion_Flat.ctl"/>
+		</Item>
 		<Item Name="cif_manager_PluginInfo_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginInfo_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfo_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_manager_PluginInfoResponse_Flat" Type="Folder">
+			<Item Name="cif_manager_PluginInfoResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfoResponse_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_manager_PluginInfoArray_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginInfoArray_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfoArray_Flat.ctl"/>

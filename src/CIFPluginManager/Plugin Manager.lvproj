@@ -99,6 +99,7 @@ AddOutputFilter chunkFilter
 				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -128,13 +129,16 @@ AddOutputFilter chunkFilter
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_server.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_server/CIF_Manager_server.lvlib"/>
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
+			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../CIFCore/OOB/OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
+			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
+			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
-			<Item Name="gRPC Configuration File.lvlib" Type="Library" URL="../../CIFUtilities/gRPC Configuration File/gRPC Configuration File.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="launchme" Type="Packed Library">

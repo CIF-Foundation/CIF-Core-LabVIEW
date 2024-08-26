@@ -54,6 +54,7 @@
 			</Item>
 			<Item Name="ChannelCommon.lvlib" Type="Library" URL="../../../Channels/ChannelCommon/ChannelCommon.lvlib"/>
 			<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../Channels/ChannelRegistrar/ChannelRegistrar.lvlib"/>
+			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
 			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../Channels/CIFChannels/CIFChannels.lvclass"/>
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>

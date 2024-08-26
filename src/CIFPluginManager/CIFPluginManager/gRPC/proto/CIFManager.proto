@@ -62,7 +62,7 @@ service Manager {
   rpc QueryPluginInfo (Empty) returns (PluginInfoArray) {}
 
   // Gets the name, type and gRPC port of loaded plugin by name.
-  rpc QueryPlugin (PluginName) returns (PluginInfo) {}
+  rpc QueryPlugin (PluginName) returns (PluginInfoResponse) {}
 }
 
 
@@ -75,10 +75,7 @@ message PluginConfig {
 message	RegisterData {
   string plugin_name = 1;
   int32 grpc_port = 2;
-  int32 major_version = 3;
-  int32 minor_version = 4;
-  int32 fix_version = 5;
-  int32 build_version = 6;
+  PluginVersion plugin_version = 3;
 }
 
 message Error {
@@ -87,8 +84,12 @@ message Error {
 }
 
 message	PluginTypeReply {
-  repeated string plugin_type = 1;
-  Error error = 2;
+  repeated PluginType plugin_types = 1;
+}
+
+message	PluginType {
+  string plugin_type = 1;
+  PluginVersion plugin_version = 2;
 }
 
 message	PluginName {
@@ -116,10 +117,23 @@ message FileData {
     string data = 1;
 }
 
+message PluginVersion {
+  int32 major_version = 1;
+  int32 minor_version = 2;
+  int32 fix_version = 3;
+  int32 build_version = 4;
+}
+
 message PluginInfo {
   string plugin_name = 1;
   string plugin_type = 2;
   int32 grpc_port = 3;
+  PluginVersion plugin_version = 4;
+}
+
+message PluginInfoResponse {
+  PluginInfo plugin_info = 1;
+  Error error = 2;
 }
 
 message PluginInfoArray {
