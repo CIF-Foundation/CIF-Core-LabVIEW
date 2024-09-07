@@ -9,17 +9,27 @@
 </Property>
 	<Item Name="Logs" Type="Folder">
 		<Item Name="Write Error.vi" Type="VI" URL="../Logs/Write Error.vi"/>
-		<Item Name="Write JSON to Config.vi" Type="VI" URL="../Logs/Write JSON to Config.vi"/>
-		<Item Name="Write State to Config.vi" Type="VI" URL="../Logs/Write State to Config.vi"/>
-		<Item Name="Write State to Info.vi" Type="VI" URL="../Logs/Write State to Info.vi"/>
+		<Item Name="Write to Config.vi" Type="VI" URL="../Logs/Write to Config.vi"/>
+		<Item Name="Write to Info.vi" Type="VI" URL="../Logs/Write to Info.vi"/>
 	</Item>
 	<Item Name="Syslog" Type="Folder">
 		<Item Name="Write to Syslog.vi" Type="VI" URL="../Syslog/Write to Syslog.vi"/>
 	</Item>
 	<Item Name="typedef" Type="Folder">
+		<Item Name="Error Message.ctl" Type="VI" URL="../Typedef/Error Message.ctl"/>
 		<Item Name="Message Type.ctl" Type="VI" URL="../Typedef/Message Type.ctl"/>
 		<Item Name="Plugin State Commands.ctl" Type="VI" URL="../Typedef/Plugin State Commands.ctl"/>
 		<Item Name="syslog facility.ctl" Type="VI" URL="../Typedef/syslog facility.ctl"/>
 		<Item Name="syslog priority.ctl" Type="VI" URL="../Typedef/syslog priority.ctl"/>
+	</Item>
+	<Item Name="Utilities" Type="Folder">
+		<Item Name="Compare Timestamp Index.vi" Type="VI" URL="../Utilities/Compare Timestamp Index.vi"/>
+		<Item Name="Create Connect String.vi" Type="VI" URL="../Utilities/Create Connect String.vi"/>
+		<Item Name="Create Force String.vi" Type="VI" URL="../Utilities/Create Force String.vi"/>
+		<Item Name="Create JSON Config String.vi" Type="VI" URL="../Utilities/Create JSON Config String.vi"/>
+		<Item Name="Create Version String.vi" Type="VI" URL="../Utilities/Create Version String.vi"/>
+		<Item Name="Get Paths.vi" Type="VI" URL="../Utilities/Get Paths.vi"/>
+		<Item Name="Parse Error Log.vi" Type="VI" URL="../Utilities/Parse Error Log.vi"/>
+		<Item Name="Parse Log.vi" Type="VI" URL="../Utilities/Parse Log.vi"/>
 	</Item>
 </Library>

@@ -10,7 +10,7 @@
 </Property>
 	<Item Name="Typedef" Type="Folder">
 		<Item Name="Plugin State.ctl" Type="VI" URL="../Typedef/Plugin State.ctl"/>
-		<Item Name="Errors.ctl" Type="VI" URL="../../../CIFUtilities/CIFClocks/Typedef/Errors.ctl"/>
+		<Item Name="Errors.ctl" Type="VI" URL="../Typedef/Errors.ctl"/>
 		<Item Name="Plugin Overrides.ctl" Type="VI" URL="../Typedef/Plugin Overrides.ctl"/>
 		<Item Name="Timing Overrides.ctl" Type="VI" URL="../Typedef/Timing Overrides.ctl"/>
 		<Item Name="FIFO Statistics.ctl" Type="VI" URL="../Typedef/FIFO Statistics.ctl"/>
@@ -28,7 +28,7 @@
 		<Item Name="Timing Statistics Full.ctl" Type="VI" URL="../Typedef/Timing Statistics Full.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
-		<Item Name="Add Error.vi" Type="VI" URL="../../../CIFUtilities/CIFClocks/SubVIs/Add Error.vi"/>
+		<Item Name="Add Error.vi" Type="VI" URL="../Utilities/Add Error.vi"/>
 		<Item Name="Get Version.vi" Type="VI" URL="../Utilities/Get Version.vi"/>
 		<Item Name="Append Error Location.vi" Type="VI" URL="../Utilities/Append Error Location.vi"/>
 		<Item Name="Update Cycle Time.vi" Type="VI" URL="../Utilities/Update Cycle Time.vi"/>
