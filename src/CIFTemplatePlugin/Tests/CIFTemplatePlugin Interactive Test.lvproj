@@ -25,6 +25,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">9</Property>
 		<Property Name="host.TargetOSID" Type="UInt">19</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
@@ -97,6 +98,13 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFCore gRPC Test Client.vi" Type="VI" URL="../../../CIFCore/Tests/CIFCore gRPC Test Client.vi"/>
 			<Item Name="gRPC Client Test.vi" Type="VI" URL="../../Common/gRPC Client Test.vi"/>
 			<Item Name="Test R_W.vi" Type="VI" URL="../Test R_W.vi"/>
+		</Item>
+		<Item Name="gRPC Dependencies" Type="Folder">
+			<Item Name="CIFCustomOOB_Tx.lvclass" Type="LVClass" URL="../../OOB/OOB_Tx/CIFCustomOOB_Tx.lvclass"/>
+			<Item Name="CIFTCustomOOB_Rx.lvclass" Type="LVClass" URL="../../OOB/OOB_Rx/CIFTCustomOOB_Rx.lvclass"/>
+			<Item Name="CIFTemplatePlugin_server.lvlib" Type="Library" URL="../../Grpc/CIFTemplatePlugin_server/CIFTemplatePlugin_server.lvlib"/>
+			<Item Name="CIFTemplateWrapper.lvlib" Type="Library" URL="../../Grpc/CIFTemplateWrapper/CIFTemplateWrapper.lvlib"/>
+			<Item Name="CIFTemplatePlugin_client.lvlib" Type="Library" URL="../../Grpc/CIFTemplatePlugin_client/CIFTemplatePlugin_client.lvlib"/>
 		</Item>
 		<Item Name="CIFTemplatePlugin.lvclass" Type="LVClass" URL="../../Class/CIFTemplatePlugin.lvclass"/>
 		<Item Name="CIFTemplatePlugin.lvlib" Type="Library" URL="../../Callable Library/CIFTemplatePlugin.lvlib"/>
