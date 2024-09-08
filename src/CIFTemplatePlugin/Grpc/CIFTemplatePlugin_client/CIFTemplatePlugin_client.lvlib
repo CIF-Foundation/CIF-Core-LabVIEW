@@ -14,6 +14,11 @@
 			<Item Name="FlatToRichcif_templateplugin_Numeric.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_templateplugin_Numeric.vi"/>
 			<Item Name="RichToFlatcif_templateplugin_Numeric.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_templateplugin_Numeric.vi"/>
 		</Item>
+		<Item Name="cif_templateplugin_Result" Type="Folder">
+			<Item Name="cif_templateplugin_Result.ctl" Type="VI" URL="../RPC Messages/cif_templateplugin_Result.ctl"/>
+			<Item Name="FlatToRichcif_templateplugin_Result.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_templateplugin_Result.vi"/>
+			<Item Name="RichToFlatcif_templateplugin_Result.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_templateplugin_Result.vi"/>
+		</Item>
 		<Item Name="cif_templateplugin_Status" Type="Folder">
 			<Item Name="cif_templateplugin_Status.ctl" Type="VI" URL="../RPC Messages/cif_templateplugin_Status.ctl"/>
 			<Item Name="FlatToRichcif_templateplugin_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_templateplugin_Status.vi"/>
@@ -26,6 +31,9 @@
 		</Item>
 		<Item Name="cif_templateplugin_Numeric_Flat" Type="Folder">
 			<Item Name="cif_templateplugin_Numeric_Flat.ctl" Type="VI" URL="../RPC Messages/cif_templateplugin_Numeric_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_templateplugin_Result_Flat" Type="Folder">
+			<Item Name="cif_templateplugin_Result_Flat.ctl" Type="VI" URL="../RPC Messages/cif_templateplugin_Result_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_templateplugin_Status_Flat" Type="Folder">
 			<Item Name="cif_templateplugin_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_templateplugin_Status_Flat.ctl"/>
@@ -40,8 +48,8 @@
 			<Item Name="TemplatePlugin SetNumeric" Type="Folder">
 				<Item Name="TemplatePlugin SetNumeric.vi" Type="VI" URL="../RPC Service/TemplatePlugin/TemplatePlugin SetNumeric.vi"/>
 			</Item>
-			<Item Name="TemplatePlugin GetNumeric" Type="Folder">
-				<Item Name="TemplatePlugin GetNumeric.vi" Type="VI" URL="../RPC Service/TemplatePlugin/TemplatePlugin GetNumeric.vi"/>
+			<Item Name="TemplatePlugin GetResult" Type="Folder">
+				<Item Name="TemplatePlugin GetResult.vi" Type="VI" URL="../RPC Service/TemplatePlugin/TemplatePlugin GetResult.vi"/>
 			</Item>
 		</Item>
 	</Item>

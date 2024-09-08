@@ -19,11 +19,15 @@ package cif.templateplugin;
 
 service TemplatePlugin {
   rpc SetNumeric (Numeric) returns (Status) {}
-  rpc GetNumeric (Empty) returns (Numeric) {}
+  rpc GetResult (Empty) returns (Result) {}
 }
 
 message Numeric {
    int32 numeric = 1;
+}
+
+message Result {
+   int32 result = 1;
 }
 
 //The Status and Ermpty messages are useful for passing errors from the gRPC calls and for passing empty data in a call.  
