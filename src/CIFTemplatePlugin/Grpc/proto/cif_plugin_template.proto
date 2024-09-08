@@ -1,0 +1,36 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+syntax = "proto3";
+
+package cif.templateplugin;
+
+// This demonstrates a simple gRPC service.  This service will allow setting a numeric value in the plugin and reading that value back.  
+
+service TemplatePlugin {
+  rpc SetNumeric (Numeric) returns (Status) {}
+  rpc GetNumeric (Empty) returns (Numeric) {}
+}
+
+message Numeric {
+   int32 numeric = 1;
+}
+
+//The Status and Ermpty messages are useful for passing errors from the gRPC calls and for passing empty data in a call.  
+
+message Status {
+   int32 code = 1;
+   string message = 2;
+}
+
+message Empty {}
