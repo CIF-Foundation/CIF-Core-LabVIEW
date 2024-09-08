@@ -147,6 +147,7 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFCorePlugin_server.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_server/CIFCorePlugin_server.lvlib"/>
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
+			<Item Name="CIFCustomOOB_Tx.lvclass" Type="LVClass" URL="../../OOB/OOB_Tx/CIFCustomOOB_Tx.lvclass"/>
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFFIFO/CIFFIFO/CIFfifo.lvclass"/>
 			<Item Name="CIFFifoCAN.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFFIFO/CAN/CIFFifoCAN.lvclass"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
@@ -156,8 +157,11 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
 			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
 			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
+			<Item Name="CIFTCustomOOB_Rx.lvclass" Type="LVClass" URL="../../OOB/OOB_Rx/CIFTCustomOOB_Rx.lvclass"/>
 			<Item Name="CIFTemplatePlugin.lvclass" Type="LVClass" URL="../../Class/CIFTemplatePlugin.lvclass"/>
+			<Item Name="CIFTemplatePlugin_server.lvlib" Type="Library" URL="../../Grpc/CIFTemplatePlugin_server/CIFTemplatePlugin_server.lvlib"/>
 			<Item Name="CIFTemplatePluginCommon.lvlib" Type="Library" URL="../../Common/CIFTemplatePluginCommon.lvlib"/>
+			<Item Name="Execute_no_dd.vi" Type="VI" URL="../../Class/Dynamic/Execute_no_dd.vi"/>
 			<Item Name="Get Control From Type Descriptor.vi" Type="VI" URL="../../../CIFUtilities/Scripting/Update Enum/Get Control From Type Descriptor.vi"/>
 			<Item Name="Update Enum.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Update Enum/Update Enum.lvlib"/>
 		</Item>
