@@ -112,15 +112,15 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="ChannelCommon.lvlib" Type="Library" URL="../../../ChannelCommon/ChannelCommon.lvlib"/>
 			<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../ChannelRegistrar/ChannelRegistrar.lvlib"/>
+			<Item Name="CIF_NIChn.lvclass" Type="LVClass" URL="../../../CIF_NIChn/NIChn/CIF_NIChn.lvclass"/>
+			<Item Name="CIF_NIChn_Double.lvclass" Type="LVClass" URL="../../../CIF_NIChn/Double/CIF_NIChn_Double.lvclass"/>
+			<Item Name="CIF_NIChn_FifoCAN.lvclass" Type="LVClass" URL="../../../CIF_NIChn/FIFO_CAN/CIF_NIChn_FifoCAN.lvclass"/>
+			<Item Name="CIF_NIChn_I64.lvclass" Type="LVClass" URL="../../../CIF_NIChn/I64/CIF_NIChn_I64.lvclass"/>
+			<Item Name="CIF_NIChn_U64.lvclass" Type="LVClass" URL="../../../CIF_NIChn/U64/CIF_NIChn_U64.lvclass"/>
 			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../CIFChannels/CIFChannels.lvclass"/>
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
-			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../CIFTag/CIFFIFO/CIFFIFO/CIFfifo.lvclass"/>
-			<Item Name="CIFFifoCAN.lvclass" Type="LVClass" URL="../../../CIFTag/CIFFIFO/CAN/CIFFifoCAN.lvclass"/>
-			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../CIFTag/CIFTag/CIFTag.lvclass"/>
-			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../CIFTag/Double/CIFTagDouble.lvclass"/>
-			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../CIFTag/I64/CIFTagI64.lvclass"/>
-			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../CIFTag/U64/CIFTagU64.lvclass"/>
+			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
 			<Item Name="RTFIFOChannel.lvclass" Type="LVClass" URL="../../RTFIFOChannel.lvclass"/>
 			<Item Name="RTFIFODouble.lvclass" Type="LVClass" URL="../../Double/RTFIFODouble.lvclass"/>
 		</Item>
