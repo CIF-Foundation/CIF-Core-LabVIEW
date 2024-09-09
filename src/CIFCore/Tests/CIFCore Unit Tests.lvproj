@@ -63,30 +63,24 @@
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="CIFCorePlugin.lvclass" Type="LVClass" URL="../../Class/CIFCorePlugin.lvclass"/>
 			<Item Name="CIFCorePlugin_server.lvlib" Type="Library" URL="../../Grpc/CIFCorePlugin_server/CIFCorePlugin_server.lvlib"/>
-			<Item Name="CIFTagDouble.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/Double/CIFTagDouble.lvclass"/>
-			<Item Name="CIFTag.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFTag/CIFTag.lvclass"/>
-			<Item Name="CIFTagU64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/U64/CIFTagU64.lvclass"/>
-			<Item Name="CIFTagI64.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/I64/CIFTagI64.lvclass"/>
 			<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../Channels/ChannelRegistrar/ChannelRegistrar.lvlib"/>
 			<Item Name="CIFCoreChannel_server.lvlib" Type="Library" URL="../../Grpc/CIFCoreChannel_server/CIFCoreChannel_server.lvlib"/>
 			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
 			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../Channels/CIFChannels/CIFChannels.lvclass"/>
-			<Item Name="CIFFifoCAN.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFFIFO/CAN/CIFFifoCAN.lvclass"/>
-			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../Channels/CIFTag/CIFFIFO/CIFFIFO/CIFfifo.lvclass"/>
 			<Item Name="ChannelCommon.lvlib" Type="Library" URL="../../../Channels/ChannelCommon/ChannelCommon.lvlib"/>
 			<Item Name="Update Enum.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Update Enum/Update Enum.lvlib"/>
 			<Item Name="Get Control From Type Descriptor.vi" Type="VI" URL="../../../CIFUtilities/Scripting/Update Enum/Get Control From Type Descriptor.vi"/>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
 			<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
-			<Item Name="Execute_no_dd.vi" Type="VI" URL="../../../CIFTemplatePlugin/Class/Dynamic/Execute_no_dd.vi"/>
-			<Item Name="CIFTemplatePlugin.lvclass" Type="LVClass" URL="../../../CIFTemplatePlugin/Class/CIFTemplatePlugin.lvclass"/>
-			<Item Name="CIFTCustomOOB_Rx.lvclass" Type="LVClass" URL="../../../CIFTemplatePlugin/OOB/OOB_Rx/CIFTCustomOOB_Rx.lvclass"/>
-			<Item Name="CIFCustomOOB_Tx.lvclass" Type="LVClass" URL="../../../CIFTemplatePlugin/OOB/OOB_Tx/CIFCustomOOB_Tx.lvclass"/>
-			<Item Name="CIFTemplatePluginCommon.lvlib" Type="Library" URL="../../../CIFTemplatePlugin/Common/CIFTemplatePluginCommon.lvlib"/>
-			<Item Name="CIFTemplatePlugin_server.lvlib" Type="Library" URL="../../../CIFTemplatePlugin/Grpc/CIFTemplatePlugin_server/CIFTemplatePlugin_server.lvlib"/>
+			<Item Name="CIF_NIChn_Double.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/Double/CIF_NIChn_Double.lvclass"/>
+			<Item Name="CIF_NIChn.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/NIChn/CIF_NIChn.lvclass"/>
+			<Item Name="CIF_NIChn_U64.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/U64/CIF_NIChn_U64.lvclass"/>
+			<Item Name="CIF_NIChn_I64.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/I64/CIF_NIChn_I64.lvclass"/>
+			<Item Name="CIF_NIChn_FifoCAN.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/FIFO_CAN/CIF_NIChn_FifoCAN.lvclass"/>
+			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../Channels/ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
