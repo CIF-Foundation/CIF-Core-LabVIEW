@@ -11,7 +11,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Test 2 port TX RX.vi" Type="VI" URL="../../Utilities/Test 2 port TX RX.vi"/>
+		<Item Name="Test 2 port TX RX.vi" Type="VI" URL="../Test 2 port TX RX.vi"/>
 		<Item Name="Test Filter.vi" Type="VI" URL="../Test Filter.vi"/>
 		<Item Name="Test tag Encode.vi" Type="VI" URL="../Test tag Encode.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -127,7 +127,6 @@
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../../Channels/ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
-			<Item Name="Decode Frame ID.vi" Type="VI" URL="../../Utilities/Decode Frame ID.vi"/>
 			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
