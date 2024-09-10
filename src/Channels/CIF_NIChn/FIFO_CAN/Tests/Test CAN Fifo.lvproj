@@ -91,6 +91,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="CIF_NIChn_FifoCAN.lvclass" Type="LVClass" URL="../../CIF_NIChn_FifoCAN.lvclass"/>
 		<Item Name="Performance Test.vi" Type="VI" URL="../Performance Test.vi"/>
 		<Item Name="Test Comm.vi" Type="VI" URL="../Test Comm.vi"/>
 		<Item Name="Test Flatten.vi" Type="VI" URL="../Test Flatten.vi"/>
@@ -116,7 +117,6 @@ AddOutputFilter chunkFilter
 			<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../../ChannelRegistrar/ChannelRegistrar.lvlib"/>
 			<Item Name="CIF_NIChn.lvclass" Type="LVClass" URL="../../../NIChn/CIF_NIChn.lvclass"/>
 			<Item Name="CIF_NIChn_Double.lvclass" Type="LVClass" URL="../../../Double/CIF_NIChn_Double.lvclass"/>
-			<Item Name="CIF_NIChn_FifoCAN.lvclass" Type="LVClass" URL="../../CIF_NIChn_FifoCAN.lvclass"/>
 			<Item Name="CIF_NIChn_I64.lvclass" Type="LVClass" URL="../../../I64/CIF_NIChn_I64.lvclass"/>
 			<Item Name="CIF_NIChn_U64.lvclass" Type="LVClass" URL="../../../U64/CIF_NIChn_U64.lvclass"/>
 			<Item Name="CIFChannels.lvclass" Type="LVClass" URL="../../../../CIFChannels/CIFChannels.lvclass"/>
