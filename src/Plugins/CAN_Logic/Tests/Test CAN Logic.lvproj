@@ -19,31 +19,19 @@
 				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
 				<Item Name="_XNET Create Session.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Create Session.vi"/>
 				<Item Name="_XNET Split Database Cluster.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Split Database Cluster.vi"/>
-				<Item Name="Add Error.vi" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/SubVIs/Add Error.vi"/>
-				<Item Name="Append Error Location.vi" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/SubVIs/Append Error Location.vi"/>
 				<Item Name="Assert Error Cluster Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Error Cluster Type.vim"/>
 				<Item Name="Assert Integer Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Integer Type.vim"/>
 				<Item Name="Assert Signed Integer Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Signed Integer Type.vim"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="CIFServices Fill In Error Info Ex.vi" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/SubVIs/CIFServices Fill In Error Info Ex.vi"/>
+				<Item Name="CIFChannelCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIFChannels/CIFChannelCore.lvlib"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="Errors.ctl" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/typedef/Errors.ctl"/>
-				<Item Name="Get dll Path.vi" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/SubVIs/Get dll Path.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
-				<Item Name="Open Fifo Publisher.vim" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Open Fifo Publisher.vim"/>
-				<Item Name="Open Subscriber.vim" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Open Subscriber.vim"/>
-				<Item Name="Open Tag Publisher.vim" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Open Tag Publisher.vim"/>
-				<Item Name="Read Channel.vim" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Read Channel.vim"/>
-				<Item Name="Read Variable Length U8 Array.vi" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Read Variable Length U8 Array.vi"/>
-				<Item Name="Set Default Value.vim" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Set Default Value.vim"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write Channel.vim" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Write Channel.vim"/>
-				<Item Name="Write Variable Length U8 Array.vi" Type="VI" URL="/&lt;vilib&gt;/CIFChannels/Top Level/Write Variable Length U8 Array.vi"/>
 				<Item Name="XNET CAN Comm State.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET CAN Comm State.ctl"/>
 				<Item Name="XNET CAN Comm.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET CAN Comm.ctl"/>
 				<Item Name="XNET CAN Last Err.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET CAN Last Err.ctl"/>
