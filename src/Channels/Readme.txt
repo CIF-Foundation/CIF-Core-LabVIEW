@@ -2,7 +2,8 @@ Steps when creating a new channel using existing supported parent channel class 
 
 If datatype does not already exist (double, U64, I64, ...):
 	If type is not a base LV type: 
-		Then create a typedef in the "ChannelRegistrar" library.  Name format should be "Dataype xxx.ctl".
+		Then create a typedef in the "ChannelCommon" library.  Name format should be "Dataype xxx.ctl".
+		Create flatten and unflatten libraries in the "ChannelCommon" library.
 	Update CIFChannels with new dynamic dispatch if new datatype.  (This is needed since PPLs with classes can't support VIMs).
 	Update CIFCore class (Channel RW) with new wrappers if new datatype.  (This is needed since PPLs with classes can't support VIMs).
 
