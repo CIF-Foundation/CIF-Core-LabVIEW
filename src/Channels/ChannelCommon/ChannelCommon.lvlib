@@ -8,6 +8,8 @@
 
 </Property>
 	<Item Name="typedef" Type="Folder">
+		<Item Name="Datatype CAN.ctl" Type="VI" URL="../typedef/Datatype CAN.ctl"/>
+		<Item Name="Datatype Waveform.ctl" Type="VI" URL="../typedef/Datatype Waveform.ctl"/>
 		<Item Name="FIFO Config.ctl" Type="VI" URL="../typedef/FIFO Config.ctl"/>
 		<Item Name="FIFO Flags.ctl" Type="VI" URL="../typedef/FIFO Flags.ctl"/>
 		<Item Name="FIFO Header.ctl" Type="VI" URL="../typedef/FIFO Header.ctl"/>
