@@ -118,9 +118,6 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../../ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
-			<Item Name="trash_Waveform Flatten.vi" Type="VI" URL="../../../../ChannelCommon/Flatten/trash_Waveform Flatten.vi"/>
-			<Item Name="Waveform Flatten.vi" Type="VI" URL="../../../../ChannelCommon/Flatten/Waveform Flatten.vi"/>
-			<Item Name="Waveform Unflatten.vi" Type="VI" URL="../../../../ChannelCommon/Flatten/Waveform Unflatten.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

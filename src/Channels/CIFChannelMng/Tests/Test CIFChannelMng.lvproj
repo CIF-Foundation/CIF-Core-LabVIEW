@@ -49,6 +49,7 @@
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 			<Item Name="Get Control From Type Descriptor.vi" Type="VI" URL="../../../../CIFUtilities/Scripting/Update Enum/Get Control From Type Descriptor.vi"/>
 			<Item Name="Update Enum.lvlib" Type="Library" URL="../../../../CIFUtilities/Scripting/Update Enum/Update Enum.lvlib"/>
+			<Item Name="Write ClockID.vi" Type="VI" URL="../../../CIFChannels/Accessors/Write ClockID.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

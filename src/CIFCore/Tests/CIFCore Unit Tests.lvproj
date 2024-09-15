@@ -81,6 +81,8 @@
 			<Item Name="CIF_NIChn_I64.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/I64/CIF_NIChn_I64.lvclass"/>
 			<Item Name="CIF_NIChn_FifoCAN.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/FIFO_CAN/CIF_NIChn_FifoCAN.lvclass"/>
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../Channels/ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
+			<Item Name="Write ClockID.vi" Type="VI" URL="../../../Channels/CIFChannels/Accessors/Write ClockID.vi"/>
+			<Item Name="Read ClockID.vi" Type="VI" URL="../../../Channels/CIFChannels/Accessors/Read ClockID.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

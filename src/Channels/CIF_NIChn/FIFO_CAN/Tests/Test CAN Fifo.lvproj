@@ -118,6 +118,7 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../../ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
+			<Item Name="Read ClockID.vi" Type="VI" URL="../../../../CIFChannels/Accessors/Read ClockID.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
