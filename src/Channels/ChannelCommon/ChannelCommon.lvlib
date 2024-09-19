@@ -25,4 +25,5 @@
 		<Item Name="Unflatten Structure from U8.vim" Type="VI" URL="../Utilities/Unflatten Structure from U8.vim"/>
 		<Item Name="Update Time.vi" Type="VI" URL="../Utilities/Update Time.vi"/>
 	</Item>
+	<Item Name="TimeStamps.ctl" Type="VI" URL="../typedef/TimeStamps.ctl"/>
 </Library>

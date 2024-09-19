@@ -9,6 +9,11 @@
 
 </Property>
 	<Item Name="Typedef" Type="Folder">
+		<Item Name="Clock History Map.ctl" Type="VI" URL="../Typedef/Clock History Map.ctl"/>
+		<Item Name="Clock Conversion Map.ctl" Type="VI" URL="../Typedef/Clock Conversion Map.ctl"/>
+		<Item Name="Clock Conversion.ctl" Type="VI" URL="../Typedef/Clock Conversion.ctl"/>
+		<Item Name="Clock History.ctl" Type="VI" URL="../Typedef/Clock History.ctl"/>
+		<Item Name="Timestamp Pair.ctl" Type="VI" URL="../Typedef/Timestamp Pair.ctl"/>
 		<Item Name="Future Time Event Limits.ctl" Type="VI" URL="../Typedef/Future Time Event Limits.ctl"/>
 	</Item>
 	<Item Name="Core" Type="Folder">
@@ -18,5 +23,12 @@
 	<Item Name="Time Conversion" Type="Folder">
 		<Item Name="LabVIEW Time to UTC Time.vi" Type="VI" URL="../Time Conversion/LabVIEW Time to UTC Time.vi"/>
 		<Item Name="UTC Time to LabVIEW Time.vi" Type="VI" URL="../Time Conversion/UTC Time to LabVIEW Time.vi"/>
+	</Item>
+	<Item Name="Clock Management" Type="Folder">
+		<Item Name="System Time to External Time.vi" Type="VI" URL="../Time Management/System Time to External Time.vi"/>
+		<Item Name="External Time to System Time.vi" Type="VI" URL="../Time Management/External Time to System Time.vi"/>
+		<Item Name="Clock Map to Clock Array.vi" Type="VI" URL="../Time Management/Clock Map to Clock Array.vi"/>
+		<Item Name="Clock Array to Clock Map.vi" Type="VI" URL="../Time Management/Clock Array to Clock Map.vi"/>
+		<Item Name="Update Clock Map.vi" Type="VI" URL="../Time Management/Update Clock Map.vi"/>
 	</Item>
 </Library>
