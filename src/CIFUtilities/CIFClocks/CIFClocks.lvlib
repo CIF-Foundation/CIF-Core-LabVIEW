@@ -10,6 +10,7 @@
 </Property>
 	<Item Name="Typedef" Type="Folder">
 		<Item Name="Clock History Map.ctl" Type="VI" URL="../Typedef/Clock History Map.ctl"/>
+		<Item Name="Clock Update.ctl" Type="VI" URL="../Typedef/Clock Update.ctl"/>
 		<Item Name="Clock Conversion Map.ctl" Type="VI" URL="../Typedef/Clock Conversion Map.ctl"/>
 		<Item Name="Clock Conversion.ctl" Type="VI" URL="../Typedef/Clock Conversion.ctl"/>
 		<Item Name="Clock History.ctl" Type="VI" URL="../Typedef/Clock History.ctl"/>
