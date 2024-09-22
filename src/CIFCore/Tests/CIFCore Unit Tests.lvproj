@@ -82,8 +82,6 @@
 			<Item Name="CIF_NIChn_I64.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/I64/CIF_NIChn_I64.lvclass"/>
 			<Item Name="CIF_NIChn_FifoCAN.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/FIFO_CAN/CIF_NIChn_FifoCAN.lvclass"/>
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../Channels/ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
-			<Item Name="trash_Update ClockID.vi" Type="VI" URL="../../../Channels/CIFChannelMng/SubVIs/trash_Update ClockID.vi"/>
-			<Item Name="Update ClockID.vi" Type="VI" URL="../../../Channels/CIFChannelMng/SubVIs/Update ClockID.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

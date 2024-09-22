@@ -163,7 +163,6 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFTemplatePlugin_server.lvlib" Type="Library" URL="../../Grpc/CIFTemplatePlugin_server/CIFTemplatePlugin_server.lvlib"/>
 			<Item Name="CIFTemplatePluginCommon.lvlib" Type="Library" URL="../../Common/CIFTemplatePluginCommon.lvlib"/>
 			<Item Name="Get Control From Type Descriptor.vi" Type="VI" URL="../../../CIFUtilities/Scripting/Update Enum/Get Control From Type Descriptor.vi"/>
-			<Item Name="trash_Update ClockID.vi" Type="VI" URL="../../../Channels/CIFChannelMng/SubVIs/trash_Update ClockID.vi"/>
 			<Item Name="Update Enum.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Update Enum/Update Enum.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
