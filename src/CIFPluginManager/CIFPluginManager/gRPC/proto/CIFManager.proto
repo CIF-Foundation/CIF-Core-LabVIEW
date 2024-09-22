@@ -13,6 +13,8 @@
 // limitations under the License.
 syntax = "proto3";
 
+import "cif_plugin_core.proto";
+
 package cif.manager;
 
 service Manager {
@@ -58,11 +60,17 @@ service Manager {
   // Reset the filter time for returned information. 
   rpc ResetInfoIndex (Empty) returns (Error) {}
 
-  // Gets the name, type, and gRPC port of all loaded plugins.
+  // Gets the name, type, status, and gRPC port of all loaded plugins.
   rpc QueryPluginInfo (Empty) returns (PluginInfoArray) {}
 
-  // Gets the name, type and gRPC port of loaded plugin by name.
+  // Gets the name, type, status, and gRPC port of loaded plugin by name.
   rpc QueryPlugin (PluginName) returns (PluginInfoResponse) {}
+
+  // Provides the plugin status and requests system status.
+  rpc QuerySystemStatus (PluginStatus) returns (SystemStatus) {}
+
+  // Updates a tracked clock with a new timestamp pair or a reset.
+  rpc UpdateClock (ClockUpdate) returns (Error) {}
 }
 
 
@@ -129,6 +137,7 @@ message PluginInfo {
   string plugin_type = 2;
   int32 grpc_port = 3;
   PluginVersion plugin_version = 4;
+  cif.plugincore.StatusData status = 5;
 }
 
 message PluginInfoResponse {
@@ -138,6 +147,39 @@ message PluginInfoResponse {
 
 message PluginInfoArray {
   repeated PluginInfo plugin_info = 1;
+}
+
+message PluginStatus {
+  PluginName pluginname = 1;
+  cif.plugincore.StatusData status = 2;
+}
+
+message TimePair {
+  int64 system_time = 1;
+  int64 external_time = 2;
+}
+
+message ClockConversion {
+  uint32 clock_id = 1;
+  uint64 last_reset = 2;
+  double slope = 3;
+  TimePair offset_pair = 4; 
+  string clock_name = 5;
+}
+
+message ClockConversionArray {
+  repeated ClockConversion clock_conversions = 1;
+}
+
+message SystemStatus {
+  ClockConversionArray clock_conversion_array = 1;
+}
+
+message ClockUpdate {
+  uint32 clock_id = 1;
+  TimePair timestamp_pair = 2; 
+  bool reinit = 3;
+  string clock_name = 4;
 }
 
 message Empty {}
