@@ -9,10 +9,12 @@
 </Property>
 	<Item Name="typedef" Type="Folder">
 		<Item Name="Datatype CAN.ctl" Type="VI" URL="../typedef/Datatype CAN.ctl"/>
+		<Item Name="Datatype Power Waveform.ctl" Type="VI" URL="../typedef/Datatype Power Waveform.ctl"/>
 		<Item Name="Datatype Waveform.ctl" Type="VI" URL="../typedef/Datatype Waveform.ctl"/>
 		<Item Name="FIFO Config.ctl" Type="VI" URL="../typedef/FIFO Config.ctl"/>
 		<Item Name="FIFO Flags.ctl" Type="VI" URL="../typedef/FIFO Flags.ctl"/>
 		<Item Name="FIFO Header.ctl" Type="VI" URL="../typedef/FIFO Header.ctl"/>
+		<Item Name="TimeStamps.ctl" Type="VI" URL="../typedef/TimeStamps.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
@@ -24,6 +26,6 @@
 		<Item Name="Flatten Structure to U8.vim" Type="VI" URL="../Utilities/Flatten Structure to U8.vim"/>
 		<Item Name="Unflatten Structure from U8.vim" Type="VI" URL="../Utilities/Unflatten Structure from U8.vim"/>
 		<Item Name="Update Time.vi" Type="VI" URL="../Utilities/Update Time.vi"/>
+		<Item Name="Get Waveform DVRs.vi" Type="VI" URL="../Utilities/Get Waveform DVRs.vi"/>
 	</Item>
-	<Item Name="TimeStamps.ctl" Type="VI" URL="../typedef/TimeStamps.ctl"/>
 </Library>

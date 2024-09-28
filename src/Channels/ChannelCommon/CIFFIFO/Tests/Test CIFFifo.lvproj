@@ -12,6 +12,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Test CAN Flatten.vi" Type="VI" URL="../Test CAN Flatten.vi"/>
+		<Item Name="Test DVR Flatten.vi" Type="VI" URL="../Test DVR Flatten.vi"/>
 		<Item Name="Test Waveform Flatten.vi" Type="VI" URL="../Test Waveform Flatten.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
