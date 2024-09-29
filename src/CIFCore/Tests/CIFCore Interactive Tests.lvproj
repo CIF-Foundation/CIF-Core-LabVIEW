@@ -59,6 +59,7 @@
 			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
 			<Item Name="CIF_NIChn.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/NIChn/CIF_NIChn.lvclass"/>
 			<Item Name="CIF_NIChn_Double.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/Double/CIF_NIChn_Double.lvclass"/>
+			<Item Name="CIF_NIChn_Fifo_DAQ.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/FIFO_DAQ/CIF_NIChn_Fifo_DAQ.lvclass"/>
 			<Item Name="CIF_NIChn_FifoCAN.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/FIFO_CAN/CIF_NIChn_FifoCAN.lvclass"/>
 			<Item Name="CIF_NIChn_I64.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/I64/CIF_NIChn_I64.lvclass"/>
 			<Item Name="CIF_NIChn_U64.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/U64/CIF_NIChn_U64.lvclass"/>
