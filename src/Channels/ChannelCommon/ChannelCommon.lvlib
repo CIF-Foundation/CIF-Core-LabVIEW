@@ -21,6 +21,7 @@
 		<Item Name="Flatten FIFO Config.vi" Type="VI" URL="../Utilities/Flatten FIFO Config.vi"/>
 		<Item Name="Unflatten FIFO Config.vi" Type="VI" URL="../Utilities/Unflatten FIFO Config.vi"/>
 		<Item Name="Expand FIFO Flags.vi" Type="VI" URL="../Utilities/Expand FIFO Flags.vi"/>
+		<Item Name="Reset Waveform DVRs.vi" Type="VI" URL="../Utilities/Reset Waveform DVRs.vi"/>
 		<Item Name="Flatten Header.vi" Type="VI" URL="../Utilities/Flatten Header.vi"/>
 		<Item Name="Unflatten Header.vi" Type="VI" URL="../Utilities/Unflatten Header.vi"/>
 		<Item Name="Flatten Structure to U8.vim" Type="VI" URL="../Utilities/Flatten Structure to U8.vim"/>
