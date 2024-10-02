@@ -94,6 +94,8 @@ AddOutputFilter chunkFilter
 		<Item Name="Performance Test.vi" Type="VI" URL="../Performance Test.vi"/>
 		<Item Name="Test Comm.vi" Type="VI" URL="../Test Comm.vi"/>
 		<Item Name="Test Flatten.vi" Type="VI" URL="../Test Flatten.vi"/>
+		<Item Name="Test Publisher.vi" Type="VI" URL="../Test Publisher.vi"/>
+		<Item Name="Test Subscriber.vi" Type="VI" URL="../Test Subscriber.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Assert Error Cluster Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Error Cluster Type.vim"/>
@@ -119,6 +121,7 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFClocks.lvlib" Type="Library" URL="../../../../../CIFUtilities/CIFClocks/CIFClocks.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../../ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
+			<Item Name="trash_Add Error.vi" Type="VI" URL="../../SubVIs/trash_Add Error.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
