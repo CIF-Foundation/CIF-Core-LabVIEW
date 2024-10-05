@@ -148,6 +148,11 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Assert Integer Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Integer Type.vim"/>
 				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
+				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
+				<Item Name="Less Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Functor/Less Functor.lvclass"/>
+				<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
+				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
+				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
 			</Item>
 			<Item Name="ChannelRegistrar.lvlib" Type="Library" URL="../../../Channels/ChannelRegistrar/ChannelRegistrar.lvlib"/>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
@@ -177,7 +182,7 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../Channels/ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
 			<Item Name="ChannelCommon.lvlib" Type="Library" URL="../../../Channels/ChannelCommon/ChannelCommon.lvlib"/>
 			<Item Name="CIF_NIChn_Fifo_DAQ.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/FIFO_DAQ/CIF_NIChn_Fifo_DAQ.lvclass"/>
-			<Item Name="trash_Update ClockID.vi" Type="VI" URL="../../../Channels/CIFChannelMng/SubVIs/trash_Update ClockID.vi"/>
+			<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../../CIFUI/CIF_UI.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
