@@ -59,4 +59,9 @@
 	<Item Name="TW Call gRPC Scripting.vi" Type="VI" URL="../scripting/SubVIs/TW Call gRPC Scripting.vi"/>
 	<Item Name="TW Post-Project-Copying Process - Stage 2.vi" Type="VI" URL="../scripting/SubVIs/TW Post-Project-Copying Process - Stage 2.vi"/>
 	<Item Name="TW Delete Previous gRPC _server and _client Folder.vi" Type="VI" URL="../scripting/SubVIs/TW Delete Previous gRPC _server and _client Folder.vi"/>
+	<Item Name="TW Post-Project-Copying Process - Stage 3.vi" Type="VI" URL="../scripting/SubVIs/TW Post-Project-Copying Process - Stage 3.vi"/>
+	<Item Name="TW Convert Top Level.vi" Type="VI" URL="../scripting/TW Convert Top Level.vi"/>
+	<Item Name="TW Resolve Missing Dependency - Custom gRPC Service Core.vi" Type="VI" URL="../scripting/SubVIs/TW Resolve Missing Dependency - Custom gRPC Service Core.vi"/>
+	<Item Name="TW Replace Missing Denpendency VIs - Custom gRPC Service Core.vi" Type="VI" URL="../scripting/SubVIs/TW Replace Missing Denpendency VIs - Custom gRPC Service Core.vi"/>
+	<Item Name="TW Fix Register gRPC.vi" Type="VI" URL="../scripting/SubVIs/TW Fix Register gRPC.vi"/>
 </Library>
