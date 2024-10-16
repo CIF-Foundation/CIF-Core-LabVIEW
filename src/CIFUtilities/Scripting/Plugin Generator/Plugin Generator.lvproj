@@ -14,6 +14,10 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Plugin Generator.lvlib" Type="Library" URL="../Plugin Generator.lvlib"/>
 		<Item Name="TW Basic Generate LV Icon Text Layer.vi" Type="VI" URL="../scripting/SubVIs/TW Basic Generate LV Icon Text Layer.vi"/>
+		<Item Name="TW Fix VI Missing Paths by Directory.vi" Type="VI" URL="../scripting/SubVIs/TW Fix VI Missing Paths by Directory.vi"/>
+		<Item Name="TW Recursive SubVIs.vi" Type="VI" URL="../scripting/SubVIs/TW Recursive SubVIs.vi"/>
+		<Item Name="TW Update Missing Paths.vi" Type="VI" URL="../scripting/SubVIs/TW Update Missing Paths.vi"/>
+		<Item Name="TW Fix VI Missing Paths.vi" Type="VI" URL="../scripting/SubVIs/TW Fix VI Missing Paths.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Icon.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Icon/Icon.lvclass"/>

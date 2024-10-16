@@ -50,8 +50,8 @@
 	<Item Name="Post-Project-Copying Process.vi" Type="VI" URL="../scripting/Post-Project-Copying Process.vi"/>
 	<Item Name="TW Edit - Stage 1.vi" Type="VI" URL="../scripting/SubVIs/TW Edit - Stage 1.vi"/>
 	<Item Name="trash_TW Adjust lib ICON.vi" Type="VI" URL="../scripting/SubVIs/Icon/trash_TW Adjust lib ICON.vi"/>
-	<Item Name="TW Adjust lib ICON.vi" Type="VI" URL="../scripting/SubVIs/Icon/TW Adjust lib ICON.vi"/>
-	<Item Name="TW Substitute the assigned name for lib and lvclass.vi" Type="VI" URL="../scripting/SubVIs/TW Substitute the assigned name for lib and lvclass.vi"/>
+	<Item Name="TW Adjust Library Icons.vi" Type="VI" URL="../scripting/SubVIs/Icon/TW Adjust Library Icons.vi"/>
+	<Item Name="TW Update Library Names.vi" Type="VI" URL="../scripting/SubVIs/TW Update Library Names.vi"/>
 	<Item Name="TW Updated Default Value for Launch.vi" Type="VI" URL="../scripting/SubVIs/TW Updated Default Value for Launch.vi"/>
 	<Item Name="TW Update VI name.vi" Type="VI" URL="../scripting/SubVIs/TW Update VI name.vi"/>
 	<Item Name="TW Generate proto file.vi" Type="VI" URL="../scripting/SubVIs/TW Generate proto file.vi"/>
@@ -61,7 +61,9 @@
 	<Item Name="TW Delete Previous gRPC _server and _client Folder.vi" Type="VI" URL="../scripting/SubVIs/TW Delete Previous gRPC _server and _client Folder.vi"/>
 	<Item Name="TW Post-Project-Copying Process - Stage 3.vi" Type="VI" URL="../scripting/SubVIs/TW Post-Project-Copying Process - Stage 3.vi"/>
 	<Item Name="TW Convert Top Level.vi" Type="VI" URL="../scripting/TW Convert Top Level.vi"/>
-	<Item Name="TW Resolve Missing Dependency - Custom gRPC Service Core.vi" Type="VI" URL="../scripting/SubVIs/TW Resolve Missing Dependency - Custom gRPC Service Core.vi"/>
-	<Item Name="TW Replace Missing Denpendency VIs - Custom gRPC Service Core.vi" Type="VI" URL="../scripting/SubVIs/TW Replace Missing Denpendency VIs - Custom gRPC Service Core.vi"/>
-	<Item Name="TW Fix Register gRPC.vi" Type="VI" URL="../scripting/SubVIs/TW Fix Register gRPC.vi"/>
+	<Item Name="TW Resolve gRPC Server Dependencies.vi" Type="VI" URL="../scripting/SubVIs/TW Resolve gRPC Server Dependencies.vi"/>
+	<Item Name="TW Fix gRPC Server Dependencies.vi" Type="VI" URL="../scripting/SubVIs/TW Fix gRPC Server Dependencies.vi"/>
+	<Item Name="TW Fix gRPC Register Dependencies.vi" Type="VI" URL="../scripting/SubVIs/TW Fix gRPC Register Dependencies.vi"/>
+	<Item Name="TW Update Library Name.vi" Type="VI" URL="../scripting/SubVIs/TW Update Library Name.vi"/>
+	<Item Name="TW Update Project Internal Paths.vi" Type="VI" URL="../scripting/SubVIs/TW Update Project Internal Paths.vi"/>
 </Library>
