@@ -11,13 +11,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="dependencies" Type="Folder"/>
 		<Item Name="RX OOB Test Cases.vi" Type="VI" URL="../RX OOB Test Cases.vi"/>
 		<Item Name="TX OOB Test Cases.vi" Type="VI" URL="../TX OOB Test Cases.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="CIFCustomOOB_Tx.lvclass" Type="LVClass" URL="../../OOB_Tx/CIFCustomOOB_Tx.lvclass"/>
-			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
-			<Item Name="CIFTCustomOOB_Rx.lvclass" Type="LVClass" URL="../../OOB_Rx/CIFTCustomOOB_Rx.lvclass"/>
+			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../../../CIF-LVCore/src/CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
+			<Item Name="TemplateOOB_Rx.lvclass" Type="LVClass" URL="../../OOB_Rx/TemplateOOB_Rx.lvclass"/>
+			<Item Name="TemplateOOB_Tx.lvclass" Type="LVClass" URL="../../OOB_Tx/TemplateOOB_Tx.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
