@@ -10,8 +10,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="CIF Core UI.lvlib" Type="Library" URL="../Plugin/CIF Core UI.lvlib"/>
-		<Item Name="Post-Build Action.vi" Type="VI" URL="../Post-Build Action.vi"/>
+		<Item Name="CIF Core UI.lvlib" Type="Library" URL="../../UI/Plugin/CIF Core UI.lvlib"/>
+		<Item Name="IS Post-Build Action.vi" Type="VI" URL="../IS Post-Build Action.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
@@ -49,6 +49,8 @@
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
+			<Item Name="Template_client.lvlib" Type="Library" URL="../../../../../Plugins/Template/Grpc/Template_client/Template_client.lvlib"/>
+			<Item Name="TemplateWrapper.lvlib" Type="Library" URL="../../../../../Plugins/Template/Grpc/Template_wrapper/TemplateWrapper.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="UI Plugin" Type="Packed Library">
@@ -59,11 +61,11 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/D/dev/builds/CIF_UI</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Post-Build Action.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/IS Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{05547330-7608-4C70-A459-D72560977C4B}</Property>
-				<Property Name="Bld_version.build" Type="Int">18</Property>
+				<Property Name="Bld_version.build" Type="Int">19</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">CIF_Core.lvlibp</Property>
+				<Property Name="Destination[0].destName" Type="Str">CIF_Core_UI.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/CIF_UI/NI_AB_PROJECTNAME.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -73,7 +75,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E1D5788C-04C9-40AA-B0E3-953C16BBC5BB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A376A988-A27A-4DD5-B046-46310BADB9CD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIF Core UI.lvlib</Property>
@@ -91,7 +93,7 @@
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 National Instruments</Property>
 				<Property Name="TgtF_productName" Type="Str">UI Plugin</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{F7659C57-F4CE-491C-8E27-3332458AFB6A}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">CIF_Core.lvlibp</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">CIF_Core_UI.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>

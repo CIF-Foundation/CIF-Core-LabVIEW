@@ -69,6 +69,11 @@
 			<Item Name="FlatToRichcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginOverrides.vi"/>
 			<Item Name="RichToFlatcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginOverrides.vi"/>
 		</Item>
+		<Item Name="cif_plugincore_PluginNames" Type="Folder">
+			<Item Name="cif_plugincore_PluginNames.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginNames.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_PluginNames.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginNames.vi"/>
+			<Item Name="RichToFlatcif_plugincore_PluginNames.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginNames.vi"/>
+		</Item>
 		<Item Name="cif_plugincore_Status" Type="Folder">
 			<Item Name="cif_plugincore_Status.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Status.ctl"/>
 			<Item Name="FlatToRichcif_plugincore_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Status.vi"/>
@@ -120,6 +125,9 @@
 		<Item Name="cif_plugincore_PluginOverrides_Flat" Type="Folder">
 			<Item Name="cif_plugincore_PluginOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides_Flat.ctl"/>
 		</Item>
+		<Item Name="cif_plugincore_PluginNames_Flat" Type="Folder">
+			<Item Name="cif_plugincore_PluginNames_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginNames_Flat.ctl"/>
+		</Item>
 		<Item Name="cif_plugincore_Status_Flat" Type="Folder">
 			<Item Name="cif_plugincore_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Status_Flat.ctl"/>
 		</Item>
@@ -161,6 +169,9 @@
 			</Item>
 			<Item Name="PluginCore GetOverrides" Type="Folder">
 				<Item Name="PluginCore GetOverrides.vi" Type="VI" URL="../RPC Service/PluginCore/PluginCore GetOverrides.vi"/>
+			</Item>
+			<Item Name="PluginCore GetNames" Type="Folder">
+				<Item Name="PluginCore GetNames.vi" Type="VI" URL="../RPC Service/PluginCore/PluginCore GetNames.vi"/>
 			</Item>
 		</Item>
 	</Item>

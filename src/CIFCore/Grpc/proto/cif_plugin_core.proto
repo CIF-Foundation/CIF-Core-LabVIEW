@@ -25,6 +25,7 @@ service PluginCore {
   rpc GetVersion (Empty) returns (Version) {}
   rpc GetConfig (Empty) returns (Configuration) {}
   rpc GetOverrides (Empty) returns (PluginOverrides) {}
+  rpc GetNames (Empty) returns (PluginNames) {}
 }
 
 message Error {
@@ -109,6 +110,11 @@ message TimingOverrides {
 
 message PluginOverrides {
    TimingOverrides timing_overrides = 1;
+}
+
+message PluginNames {
+  string plugin_name = 1; //Assigned name for the plugin instance.  Unique in the system. 
+  string plugin_type = 2; //Name of the plugin type
 }
 
 message Status {
