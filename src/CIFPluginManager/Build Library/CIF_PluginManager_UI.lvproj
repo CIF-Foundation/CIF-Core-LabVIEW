@@ -49,6 +49,8 @@
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../../CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
+			<Item Name="Template_client.lvlib" Type="Library" URL="../../../../../Plugins/Template/Grpc/Template_client/Template_client.lvlib"/>
+			<Item Name="TemplateWrapper.lvlib" Type="Library" URL="../../../../../Plugins/Template/Grpc/Template_wrapper/TemplateWrapper.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Plugin Manager UI" Type="Packed Library">
