@@ -11,9 +11,16 @@
 	<Item Name="Core" Type="Folder">
 		<Item Name="UI Pre-Build Action.vi" Type="VI" URL="../Core/UI Pre-Build Action.vi"/>
 		<Item Name="UI Post-Build Action.vi" Type="VI" URL="../Core/UI Post-Build Action.vi"/>
+		<Item Name="Plugin Pre-Build Action.vi" Type="VI" URL="../Core/Plugin Pre-Build Action.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Update Version.vi" Type="VI" URL="../SubVIs/Update Version.vi"/>
 		<Item Name="Update lvlibp Name.vi" Type="VI" URL="../SubVIs/Update lvlibp Name.vi"/>
+		<Item Name="Get Project and Target references.vi" Type="VI" URL="../SubVIs/Get Project and Target references.vi"/>
+		<Item Name="Get library version.vi" Type="VI" URL="../SubVIs/Get library version.vi"/>
+		<Item Name="Get Library Names.vi" Type="VI" URL="../SubVIs/Get Library Names.vi"/>
+		<Item Name="Create gplugindata payload.vi" Type="VI" URL="../SubVIs/Create gplugindata payload.vi"/>
+		<Item Name="Get Display Name and Relative Path.vi" Type="VI" URL="../SubVIs/Get Display Name and Relative Path.vi"/>
+		<Item Name="Create gplugindata file.vi" Type="VI" URL="../SubVIs/Create gplugindata file.vi"/>
 	</Item>
 </Library>

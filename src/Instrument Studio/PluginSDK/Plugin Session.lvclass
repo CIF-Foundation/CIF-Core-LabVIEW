@@ -225,7 +225,6 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 	</Item>
 	<Item Name="InstrumentStudioPluginSDK.mnu" Type="Document" URL="../InstrumentStudioPluginSDK.mnu"/>
-	<Item Name="Versioning.md" Type="Document" URL="../Versioning.md"/>
 	<Item Name="Send Generic Message.vi" Type="VI" URL="../Send Generic Message.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'E!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;B!=!!?!!![)5FO=X2S&gt;7VF&lt;H24&gt;(6E;7]A5'RV:WFO)&amp;.%3SZM&gt;GRJ9B:1&lt;(6H;7YA5W6T=WFP&lt;CZM&gt;G.M98.T!!!35'RV:WFO)&amp;.F=X.J&lt;WYA&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!":!-0````]-476T=W&amp;H:3"%982B!!!71$$`````$%VF=X.B:W5A4G&amp;N:1!!6E"Q!"Y!!$IB37ZT&gt;(*V&lt;76O&gt;&amp;.U&gt;72J&lt;S"1&lt;(6H;7YA5U2,,GRW&lt;'FC&amp;F"M&gt;7&gt;J&lt;C"4:8.T;7^O,GRW9WRB=X-!!"&amp;1&lt;(6H;7YA5W6T=WFP&lt;C"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!(!!A!#1-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!A!!!!1!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!+!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>

@@ -77,7 +77,7 @@ service Manager {
 message PluginConfig {
   string plugin_type = 1; //Name of the plugin type
   string plugin_name = 2; //Assigned name for the plugin instance.  Must be unique in the system.  
-  string version = 3; //Optional string for version.  Format should be x.x.x.x (major, minor, fix, build).  Any missing entries will default to latest available on target.  For example 1.2 would default to the latest fix/build on the target of major 1, minor 2.
+  string version = 3; //Optional string for version.  Format should be x.x.x (major, minor, fix).  Any missing entries will default to latest available on target.  For example 1.2 would default to the latest fix on the target of major 1, minor 2.
 }
 
 message	RegisterData {
@@ -129,7 +129,6 @@ message PluginVersion {
   int32 major_version = 1;
   int32 minor_version = 2;
   int32 fix_version = 3;
-  int32 build_version = 4;
 }
 
 message PluginInfo {

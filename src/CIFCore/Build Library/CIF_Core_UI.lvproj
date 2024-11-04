@@ -318,6 +318,106 @@
 				<Item Name="AB_API Resolve References.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Resolve References.vi"/>
 				<Item Name="AB_API Generate Error Cluster.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Generate Error Cluster.vi"/>
 				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
+				<Item Name="AB_API Destination Type.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Destination Type.ctl"/>
+				<Item Name="NI_AB_API_Targetfile.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_API/Targetfile/NI_AB_API_Targetfile.lvclass"/>
+				<Item Name="AB_Targetfile.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_Classes/TargetFile/AB_Targetfile.lvclass"/>
+				<Item Name="AB_Targetfile.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Classes/TargetFile/AB_Targetfile.ctl"/>
+				<Item Name="AB_Set_TargetFile_Name.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_TargetFile_Name.vi"/>
+				<Item Name="AB_Update_Version_Info.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Update_Version_Info.vi"/>
+				<Item Name="AB_IsItemOwnedByXctl.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_IsItemOwnedByXctl.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
+				<Item Name="AB_Engine_Close_LEIF_Cookie.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Close_LEIF_Cookie.vi"/>
+				<Item Name="AB_Engine_Delete_Internal_Files.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Delete_Internal_Files.vi"/>
+				<Item Name="AB_RW_Project_TargetFile_Info.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/RW_Project/AB_RW_Project_TargetFile_Info.vi"/>
+				<Item Name="AB_RW_Project_TargetFile_Data.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/RW_Project/AB_RW_Project_TargetFile_Data.ctl"/>
+				<Item Name="AB_Compile_Before_Reading_VI_Exec.State.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Compile_Before_Reading_VI_Exec.State.vi"/>
+				<Item Name="AB_Get_Detailed_BrokenVI_Message.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Get_Detailed_BrokenVI_Message.vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
+				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
+				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
+				<Item Name="AB_TargetFileType.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_TargetFileType.ctl"/>
+				<Item Name="AB_ChangeTargetFileName.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_ChangeTargetFileName.vi"/>
+				<Item Name="AB_ChangeSharedLibExtension.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_ChangeSharedLibExtension.vi"/>
+				<Item Name="AB_Engine_Update_Palette_Files.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Update_Palette_Files.vi"/>
+				<Item Name="AB_Engine_Update_Paths_In_Palette_File.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Update_Paths_In_Palette_File.vi"/>
+				<Item Name="Palette Menu.lvlib" Type="Library" URL="/&lt;vilib&gt;/Palette API/Palette Menu/Palette Menu.lvlib"/>
+				<Item Name="Read Palette.vi" Type="VI" URL="/&lt;vilib&gt;/Palette API/Read Palette.vi"/>
+				<Item Name="Empty Picture" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Empty Picture"/>
+				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
+				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
+				<Item Name="AB_Engine_Update_Paths_In_Palette_Data.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Update_Paths_In_Palette_Data.vi"/>
+				<Item Name="AB_Engine_Update_Path.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Update_Path.vi"/>
+				<Item Name="Write Palette.vi" Type="VI" URL="/&lt;vilib&gt;/Palette API/Write Palette.vi"/>
+				<Item Name="Picture to Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Picture to Pixmap.vi"/>
+				<Item Name="AB_Consolidated_Save.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Consolidated_Save.vi"/>
+				<Item Name="AB_API Add Destination.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Add Destination.vi"/>
+				<Item Name="AB_Destination_Type.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Destination_Type.ctl"/>
+				<Item Name="AB_Is_Destination_Present.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Is_Destination_Present.vi"/>
+				<Item Name="AB_Add_Destination_CORE.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Add_Destination_CORE.vi"/>
+				<Item Name="AB_Set_Destination_Type.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Destination_Type.vi"/>
+				<Item Name="AB_Set_Preserve_Hierarchy.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Preserve_Hierarchy.vi"/>
+				<Item Name="AB_API Build.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Build.vi"/>
+				<Item Name="AB_API Prepare Two Step Build.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Prepare Two Step Build.vi"/>
+				<Item Name="AB_Log_Open.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/logging/AB_Log_Open.vi"/>
+				<Item Name="AB_Log_NewBuild.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/logging/AB_Log_NewBuild.vi"/>
+				<Item Name="AB_API Do Two Step Build.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Do Two Step Build.vi"/>
+				<Item Name="AB_Log_Close.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/logging/AB_Log_Close.vi"/>
+				<Item Name="AB_API Create Library For Destination.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Create Library For Destination.vi"/>
+				<Item Name="AB_Set_Library_Name_For_Destination.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Library_Name_For_Destination.vi"/>
+				<Item Name="AB_API Create Build Object.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Create Build Object.vi"/>
+				<Item Name="AB_API ProgressBar_Events.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API ProgressBar_Events.ctl"/>
+				<Item Name="AB_API ProgressBar_BuildError.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API ProgressBar_BuildError.ctl"/>
+				<Item Name="AB_API Create ProgressBar Events.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Create ProgressBar Events.vi"/>
+				<Item Name="AB_API Enable VI Checksums.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Enable VI Checksums.vi"/>
+				<Item Name="AB_API Destination Data.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Destination Data.ctl"/>
+				<Item Name="AB_API Get Destinations.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Get Destinations.vi"/>
+				<Item Name="AB_API Default Destinations.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Default Destinations.ctl"/>
+				<Item Name="AB_API Get Destination Name.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Get Destination Name.vi"/>
+				<Item Name="AB_API Primary Exclusions.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Primary Exclusions.ctl"/>
+				<Item Name="AB_API Get Primary Destination Path.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Get Primary Destination Path.vi"/>
+				<Item Name="AB_API Version Number.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Version Number.ctl"/>
+				<Item Name="AB_API Rename Source.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Rename Source.vi"/>
+				<Item Name="AB_API Apply Setting Type.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Apply Setting Type.ctl"/>
+				<Item Name="AB_API Is Source Item Present.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Is Source Item Present.vi"/>
+				<Item Name="AB_API Add Source Item To Array.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Add Source Item To Array.vi"/>
+				<Item Name="AB_Rename_Source_CORE.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Rename_Source_CORE.vi"/>
+				<Item Name="AB_API Apply Setting.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Apply Setting.vi"/>
+				<Item Name="AB_API Set Check For Broken VIs.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Check For Broken VIs.vi"/>
+				<Item Name="AB_API Set Destination Path.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Destination Path.vi"/>
+				<Item Name="AB Update Dest Dir.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB Update Dest Dir.vi"/>
+				<Item Name="AB_API Set Destination Preserve Hierarchy.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Destination Preserve Hierarchy.vi"/>
+				<Item Name="AB_API Set Destination.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Destination.vi"/>
+				<Item Name="AB_Set_Destination_CORE.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Destination_CORE.vi"/>
+				<Item Name="AB_API Path Exclusions.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Path Exclusions.ctl"/>
+				<Item Name="AB_Set_Path_Exclusions.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Path_Exclusions.vi"/>
+				<Item Name="AB_Set_Exclusions.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Exclusions.vi"/>
+				<Item Name="AB_API Set Password.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Password.vi"/>
+				<Item Name="AB_Password_Setting.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Password_Setting.ctl"/>
+				<Item Name="AB_Set_Password_CORE.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Password_CORE.vi"/>
+				<Item Name="AB_API Build Action Type.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Build Action Type.ctl"/>
+				<Item Name="AB_API Add Pre or Post Build Action VI.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Add Pre or Post Build Action VI.vi"/>
+				<Item Name="AB_API Set Save Settings.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Save Settings.vi"/>
+				<Item Name="AB_Set_Source_Property.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Set_Source_Property.vi"/>
+				<Item Name="AB_API Set Verbose Linker Errors.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Verbose Linker Errors.vi"/>
+				<Item Name="AB_API Version Information.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Version Information.ctl"/>
+				<Item Name="AB_PackedLibrary.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/AppBuilder/AB_Classes/PackedLib/AB_PackedLibrary.lvclass"/>
+				<Item Name="AB_PackedLibrary.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Classes/PackedLib/AB_PackedLibrary.ctl"/>
+				<Item Name="AB_Engine_Package_PackedLib.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Package_PackedLib.vi"/>
+				<Item Name="New Zip File.vi" Type="VI" URL="/&lt;vilib&gt;/zip/New Zip File.vi"/>
+				<Item Name="AB_Engine_Add_File_to_Zip.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Add_File_to_Zip.vi"/>
+				<Item Name="Relative Path To Platform Independent String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Relative Path To Platform Independent String.vi"/>
+				<Item Name="Close Zip File.vi" Type="VI" URL="/&lt;vilib&gt;/zip/Close Zip File.vi"/>
+				<Item Name="AB_Engine_Get_PackedLibShell.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Get_PackedLibShell.vi"/>
+				<Item Name="ABAPI Dist Delay with Error.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/ABAPI Dist Delay with Error.vi"/>
+				<Item Name="AB_Engine_Update_Exe_Timestamp.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Engine/AB_Engine_Update_Exe_Timestamp.vi"/>
+				<Item Name="AB_GetNextLabel.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_GetNextLabel.vi"/>
+				<Item Name="AB_LabelType.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_LabelType.ctl"/>
+				<Item Name="AB_RW_Project_Packed_Lib_Info.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/RW_Project/AB_RW_Project_Packed_Lib_Info.vi"/>
+				<Item Name="AB_RW_Project_Packed_Lib_Data.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/RW_Project/AB_RW_Project_Packed_Lib_Data.ctl"/>
+				<Item Name="AB_API Can Add.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Can Add.vi"/>
+				<Item Name="AB_API Add Source Item.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Add Source Item.vi"/>
+				<Item Name="AB_API Set Inclusion.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Set Inclusion.vi"/>
+				<Item Name="AB_API Link And Expand.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_API/common/AB_API Link And Expand.vi"/>
 			</Item>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
@@ -430,6 +530,27 @@
 			<Item Name="mxLvDeleteAllProperties.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvDeleteAllProperties.vi"/>
 			<Item Name="AB_Is_Linux_ARM_Target.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/AppBuilder/AB_Is_Linux_ARM_Target.vi"/>
 			<Item Name="mxLvGetItem.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvGetItem.vi"/>
+			<Item Name="mxLvUpdateUI.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvUpdateUI.ctl"/>
+			<Item Name="mxLvSetName.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvSetName.vi"/>
+			<Item Name="mxLvUpdateUI.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvUpdateUI.vi"/>
+			<Item Name="PLBUIP_CheckForValidExtension.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/PackedLib/PLBUIP_CheckForValidExtension.vi"/>
+			<Item Name="AB_UI_Obtain_Source_Item.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/AppBuilder/AB_UI_Obtain_Source_Item.vi"/>
+			<Item Name="UpdateVersionResource.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/UpdateVersionResource.vi"/>
+			<Item Name="UpdateVersionInfo.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/UpdateVersionInfo.vi"/>
+			<Item Name="VersionNumToString.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/VersionNumToString.vi"/>
+			<Item Name="res_FlattenVS_VERSIONINFO.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_FlattenVS_VERSIONINFO.vi"/>
+			<Item Name="res_FlattenVarFileInfo.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_FlattenVarFileInfo.vi"/>
+			<Item Name="res_FlattenVar.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_FlattenVar.vi"/>
+			<Item Name="res_FlattenData.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_FlattenData.vi"/>
+			<Item Name="win32_MBCSToUnicode.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/win32_MBCSToUnicode.vi"/>
+			<Item Name="res_PadData32.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_PadData32.vi"/>
+			<Item Name="res_FlattenStringFileInfo.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_FlattenStringFileInfo.vi"/>
+			<Item Name="res_FlattenStringTable.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_FlattenStringTable.vi"/>
+			<Item Name="res_FlattenStringTableChildren.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Common/SetLVAppVersion/res_FlattenStringTableChildren.vi"/>
+			<Item Name="AB_Is_Desktop_Target.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/AppBuilder/AB_Is_Desktop_Target.vi"/>
+			<Item Name="provcom_IsDesktopTargetBehavior.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_IsDesktopTargetBehavior.vi"/>
+			<Item Name="provcom_GetObjectItemFromProjectItem.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_GetObjectItemFromProjectItem.vi"/>
+			<Item Name="provcom_CheckChannelControlConPane.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_CheckChannelControlConPane.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="UI Plugin" Type="Packed Library">
@@ -438,25 +559,25 @@
 				<Property Name="Bld_buildSpecName" Type="Str">UI Plugin</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/D/dev/builds/CIF_UI</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/dev/builds/CIFCorePlugin/UI</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/UI Post-Build Action.vi</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/UI Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{05547330-7608-4C70-A459-D72560977C4B}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">CIF_Core_UI.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/CIF_UI/NI_AB_PROJECTNAME.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/CIFCorePlugin/UI/NI_AB_PROJECTNAME.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/D/dev/builds/CIF_UI</Property>
+				<Property Name="Destination[1].path" Type="Path">/D/dev/builds/CIFCorePlugin/UI</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{31B03146-33B1-4270-9A91-4E5D6680C733}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A3DE623D-AF9E-4205-B5CA-BC9D6BBC7CF4}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIF Core UI.lvlib</Property>

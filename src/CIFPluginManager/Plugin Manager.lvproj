@@ -14,8 +14,6 @@
 		<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../CIFUI/CIF_UI.lvclass"/>
 		<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 		<Item Name="CIFPluginManager.lvclass" Type="LVClass" URL="../CIFPluginManager/CIFPluginManager.lvclass"/>
-		<Item Name="Core UI References.ctl" Type="VI" URL="../../CIFUI/Typedef/Core UI References.ctl"/>
-		<Item Name="Interactive Manager UI.vi" Type="VI" URL="../Tests/Interactive Manager UI.vi"/>
 		<Item Name="Test UDP launcher.vi" Type="VI" URL="../Test UDP launcher.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -69,16 +67,9 @@
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
-			<Item Name="Discover Plugin Types.vi" Type="VI" URL="../../CIFUI/Core/Discover Plugin Types.vi"/>
 			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
-			<Item Name="Link Channel.vi" Type="VI" URL="../../CIFUI/Core/Link Channel.vi"/>
-			<Item Name="Read gRPC ID.vi" Type="VI" URL="../../CIFUI/Accessors/Read gRPC ID.vi"/>
-			<Item Name="UI References.ctl" Type="VI" URL="../../CIFUI/Typedef/UI References.ctl"/>
-			<Item Name="Update Connection Control.vi" Type="VI" URL="../../CIFUI/UI Element Update/Update Connection Control.vi"/>
-			<Item Name="Update Errors.vi" Type="VI" URL="../../CIFUI/UI Element Update/Update Errors.vi"/>
-			<Item Name="Update New Plugin Control.vi" Type="VI" URL="../../CIFUI/UI Element Update/Update New Plugin Control.vi"/>
-			<Item Name="Update Plugin Address Control.vi" Type="VI" URL="../../CIFUI/UI Element Update/Update Plugin Address Control.vi"/>
-			<Item Name="Write UI References.vi" Type="VI" URL="../../CIFUI/Accessors/Write UI References.vi"/>
+			<Item Name="Template_client.lvlib" Type="Library" URL="../../../../Plugins/Template/Grpc/Template_client/Template_client.lvlib"/>
+			<Item Name="TemplateWrapper.lvlib" Type="Library" URL="../../../../Plugins/Template/Grpc/Template_wrapper/TemplateWrapper.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
