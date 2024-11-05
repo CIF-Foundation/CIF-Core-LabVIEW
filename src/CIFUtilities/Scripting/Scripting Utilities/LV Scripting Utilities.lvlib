@@ -25,7 +25,6 @@
 		<Item Name="TW Basic Generate LV Icon Text Layer.vi" Type="VI" URL="../scripting/SubVIs/TW Basic Generate LV Icon Text Layer.vi"/>
 		<Item Name="TW Update Project Internal Paths.vi" Type="VI" URL="../scripting/SubVIs/TW Update Project Internal Paths.vi"/>
 		<Item Name="TW Update Library Name.vi" Type="VI" URL="../scripting/SubVIs/TW Update Library Name.vi"/>
-		<Item Name="TW Fix gRPC Register Dependencies.vi" Type="VI" URL="../scripting/SubVIs/TW Fix gRPC Register Dependencies.vi"/>
 		<Item Name="TW Fix VI Missing Paths.vi" Type="VI" URL="../scripting/SubVIs/TW Fix VI Missing Paths.vi"/>
 		<Item Name="TW Adjust Library Icons.vi" Type="VI" URL="../scripting/SubVIs/Icon/TW Adjust Library Icons.vi"/>
 		<Item Name="TW Update Library Names.vi" Type="VI" URL="../scripting/SubVIs/TW Update Library Names.vi"/>

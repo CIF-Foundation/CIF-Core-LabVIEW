@@ -9,9 +9,11 @@
 		<Item Name="Post-Project-Copying Process.vi" Type="VI" URL="../Future Work/Post-Project-Copying Process.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Resolve UI Dependencies.vi" Type="VI" URL="../SubVIs/Resolve UI Dependencies.vi"/>
 		<Item Name="TW Call gRPC Scripting.vi" Type="VI" URL="../SubVIs/TW Call gRPC Scripting.vi"/>
 		<Item Name="TW Delete Previous gRPC _server and _client Folder.vi" Type="VI" URL="../SubVIs/TW Delete Previous gRPC _server and _client Folder.vi"/>
 		<Item Name="TW Edit - Stage 1.vi" Type="VI" URL="../SubVIs/TW Edit - Stage 1.vi"/>
+		<Item Name="TW Fix gRPC Register Dependencies.vi" Type="VI" URL="../SubVIs/TW Fix gRPC Register Dependencies.vi"/>
 		<Item Name="TW Fix gRPC Server Dependencies.vi" Type="VI" URL="../SubVIs/TW Fix gRPC Server Dependencies.vi"/>
 		<Item Name="TW Generate proto file.vi" Type="VI" URL="../SubVIs/TW Generate proto file.vi"/>
 		<Item Name="TW Post-Project-Copying Process - Stage 2.vi" Type="VI" URL="../../Scripting Utilities/scripting/SubVIs/TW Post-Project-Copying Process - Stage 2.vi"/>
@@ -20,6 +22,8 @@
 		<Item Name="TW Resolve gRPC Server Dependencies.vi" Type="VI" URL="../SubVIs/TW Resolve gRPC Server Dependencies.vi"/>
 		<Item Name="TW Update Supporting Projects.vi" Type="VI" URL="../SubVIs/TW Update Supporting Projects.vi"/>
 		<Item Name="TW Updated Default Value for Launch.vi" Type="VI" URL="../SubVIs/TW Updated Default Value for Launch.vi"/>
+		<Item Name="Update Casing Style.vi" Type="VI" URL="../SubVIs/Update Casing Style.vi"/>
+		<Item Name="Update proto text.vi" Type="VI" URL="../SubVIs/Update proto text.vi"/>
 		<Item Name="Update UI Project.vi" Type="VI" URL="../SubVIs/Update UI Project.vi"/>
 	</Item>
 	<Item Name="TW Convert Top Level.vi" Type="VI" URL="../TW Convert Top Level.vi"/>
