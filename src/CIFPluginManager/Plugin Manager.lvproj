@@ -14,7 +14,6 @@
 		<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../CIFUI/CIF_UI.lvclass"/>
 		<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 		<Item Name="CIFPluginManager.lvclass" Type="LVClass" URL="../CIFPluginManager/CIFPluginManager.lvclass"/>
-		<Item Name="Test UDP launcher.vi" Type="VI" URL="../Test UDP launcher.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
@@ -68,8 +67,6 @@
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
-			<Item Name="Template_client.lvlib" Type="Library" URL="../../../../Plugins/Template/Grpc/Template_client/Template_client.lvlib"/>
-			<Item Name="TemplateWrapper.lvlib" Type="Library" URL="../../../../Plugins/Template/Grpc/Template_wrapper/TemplateWrapper.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
