@@ -1,3 +1,4 @@
+from enum import Enum
 import grpc
 import time
 import re
@@ -20,7 +21,14 @@ class cif_manager():
         res = check_error(result_info)
         if res == 0:
             plugin.address = self.address
+            plugin.connection = plugin_connection.NOT_CONNECTED
+            plugin.cif_manager = self
             return plugin
+
+class plugin_connection(Enum):
+    UNLOADED = 1
+    NOT_CONNECTED = 2
+    CONNECTED = 3
 
 class plugin():
     def __init__(self, name, type, version):
@@ -30,43 +38,51 @@ class plugin():
         self.port = "unset"
         self.address = "unset"
         self.plugin_address = "unset"
+        self.connection = plugin_connection.UNLOADED
 
-    def check_loaded(self, cif_manager):
-        i = 0
-        while i < 20:
-          result_info = cif_manager.stub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=self.name))
-          res = check_error(result_info.error)
-          if res != 0:
+    def check_loaded(self):
+        if self.connection == plugin_connection.UNLOADED:
+            print(f"{bcolors.WARNING}Plugin {self.name} has not been loaded. {bcolors.ENDC}")
             return self
-          if result_info.plugin_info.grpc_port != -1:
-            self.pluginaddress = self.address + ":" + str(result_info.plugin_info.grpc_port)
-            self.stub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(self.pluginaddress))
-            return self
-          time.sleep (0.25)
-          i += 1
-          if i == 20:
-            print(f"{bcolors.WARNING}Plugin {plugin.name} did not load before timeout. {bcolors.ENDC}")
-            return self
+        if self.connection == plugin_connection.NOT_CONNECTED:
+            i = 0
+            while i < 20:
+              result_info = self.cif_manager.stub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=self.name))
+              res = check_error(result_info.error)
+              if res != 0:
+                return self
+              if result_info.plugin_info.grpc_port != -1:
+                self.pluginaddress = self.address + ":" + str(result_info.plugin_info.grpc_port)
+                self.stub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(self.pluginaddress))
+                self.stub_channel = cif_channel_core_pb2_grpc.ChannelCoreStub(grpc.insecure_channel(self.pluginaddress))
+                self.connection = plugin_connection.CONNECTED
+                return self
+              time.sleep (0.25)
+              i += 1
+              if i == 20:
+                print(f"{bcolors.WARNING}Plugin {plugin.name} did not load before timeout. {bcolors.ENDC}")
+                return self
+        return self  
 
-    def check_and_run(self, cif_manager):
-        self = self.check_loaded(cif_manager)
-        self.run()
+    def run(self):
+        self = self.check_loaded()
+        result_info = self.stub.Start(cif_plugin_core_pb2.Empty())
+        check_error(result_info)
         return self
     
-    def run(self):
-        result_info = self.stub.Start(cif_plugin_core_pb2.Empty())
-        res = check_error(result_info)
-
-#     def set_stub(self, port):
-#         self.port = port
-#         self.pluginaddress = self.address + ":" + self.port
-#         self.pluginstub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(self.pluginaddress))
-#         return self
+    def connect_channel(self, channel_link):
+        self = self.check_loaded()
+        result_info = self.stub_channel.SetConnection(cif_channel_core_pb2.ConnectSubscriber(subscriber_name=channel_link.subscriber, publisher_name=channel_link.publisher, custom_connect=channel_link.custom_data))
+        check_error(result_info)
+        return self
+    
 
 class channel_link():
-        name:str
-        type:str
-        version:str
+    def __init__(self, publisher, subscriber, custom_data):
+        self.subscriber = subscriber
+        self.publisher = publisher
+        # self.custom_data = bytes()
+        self.custom_data = bytes(custom_data, 'utf-8')
 
 class bcolors:
     HEADER = '\033[95m'
@@ -89,98 +105,3 @@ def check_error(result_error):
         return 1
       else:
         return 0
-
-# query_settings = cif_manager_pb2.QuerySettings(query_all=False)
-
-# def get_manager_stub(manageraddress):
-#         managerstub = cif_manager_pb2_grpc.ManagerStub(grpc.insecure_channel(manageraddress))
-#         return managerstub
-
-# def load(plugin, managerstub):
-#         result_info = managerstub.LoadPlugin(cif_manager_pb2.PluginConfig(plugin_type=plugin.type, plugin_name=plugin.name, version=plugin.version))
-#         res = check_error(result_info)
-#         if res == 0:
-#           plugin_address = manager_address.split(":")[0]
-#           plugin = plugin.set_address(plugin_address)
-#           return plugin  
-
-# def load2(plugin, managerstub):
-#         result_info = managerstub.LoadPlugin(cif_manager_pb2.PluginConfig(plugin_type=plugin.type, plugin_name=plugin.name, version=plugin.version))
-#         res = check_error(result_info)
-#         if res == 0:
-#           plugin_address = manager_address.split(":")[0]
-#           plugin = plugin.set_address(plugin_address)
-#           return plugin  
-
-# def load(plugin, cif_manager):
-#     result_info = cif_manager.stub.LoadPlugin(cif_manager_pb2.PluginConfig(plugin_type=plugin.type, plugin_name=plugin.name, version=plugin.version))
-#     res = check_error(result_info)
-#     if res == 0:
-#         plugin = plugin.set_address(cif_manager.address)
-#         print (f"Returning the plugin {plugin}")
-# #         return plugin
-
-# def run(plugin_name, manager_address):
-#         check_loaded(plugin_name, manager_address)
-#         managerstub = cif_manager_pb2_grpc.ManagerStub(grpc.insecure_channel(manager_address))
-#         result_info = managerstub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=plugin_name))
-#         res = check_error(result_info.error)
-#         if res == 0:
-#           pluginaddress = manager_address.split(":")[0] + ":" + str(result_info.plugin_info.grpc_port)
-#           pluginstub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(pluginaddress))
-#           result_info = pluginstub.Start(cif_plugin_core_pb2.Empty())
-#           res = check_error(result_info)    
-
-# # def link(chanlink):
-# #         managerstub.LoadPlugin(cif_manager_pb2.PluginConfig(plugin_type=plugin.type, plugin_name=plugin.name, version=plugin.version))
-# #         # add code to check returned error and print to terminal if error
-
-# # def check_loaded2(plugin, manager_address):
-# #         managerstub = cif_manager_pb2_grpc.ManagerStub(grpc.insecure_channel(manager_address))
-# #         i = 0
-# #         while i < 20:
-# #           result_info = managerstub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=plugin.name))
-# #           res = check_error(result_info.error)
-# #           if res != 0:
-# #             break
-# #           if result_info.plugin_info.grpc_port != -1:
-# #                 pluginaddress = manager_address.split(":")[0] + ":" + str(result_info.plugin_info.grpc_port)
-# #                 pluginstub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(pluginaddress))
-# #                 return pluginstub
-# #           time.sleep (0.25)
-# #           i += 1
-# #           if i == 20:
-# #             print(f"{bcolors.WARNING}Plugin {plugin.name} did not load before timeout. {bcolors.ENDC}")
-
-# def check_loaded(plugin, cif_manager):
-#         i = 0
-#         while i < 20:
-#           result_info = cif_manager.stub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=plugin.name))
-#           res = check_error(result_info.error)
-#           if res != 0:
-#             break
-#           if result_info.plugin_info.grpc_port != -1:
-#                 plugin = plugin.set_stub(str(result_info.plugin_info.grpc_port))
-#                 # pluginstub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(pluginaddress))
-#                 return plugin
-#           time.sleep (0.25)
-#           i += 1
-#           if i == 20:
-#             print(f"{bcolors.WARNING}Plugin {plugin.name} did not load before timeout. {bcolors.ENDC}")
-
-# def check_loaded(plugin_name, manager_address):
-#         managerstub = cif_manager_pb2_grpc.ManagerStub(grpc.insecure_channel(manager_address))
-#         i = 0
-#         while i < 20:
-#           result_info = managerstub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=plugin_name))
-#           res = check_error(result_info.error)
-#           if res != 0:
-#             break
-#           if result_info.plugin_info.grpc_port != -1:
-#                 pluginaddress = manager_address.split(":")[0] + ":" + str(result_info.plugin_info.grpc_port)
-#                 pluginstub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(pluginaddress))
-#                 return pluginstub
-#           time.sleep (0.25)
-#           i += 1
-#           if i == 20:
-#             print(f"{bcolors.WARNING}Plugin {plugin_name} did not load before timeout. {bcolors.ENDC}")
