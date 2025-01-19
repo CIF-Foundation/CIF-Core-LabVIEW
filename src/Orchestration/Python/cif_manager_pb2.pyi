@@ -1,0 +1,185 @@
+import cif_plugin_core_pb2 as _cif_plugin_core_pb2
+from google.protobuf.internal import containers as _containers
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Mapping, Optional as _Optional, Union as _Union
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class PluginConfig(_message.Message):
+    __slots__ = ("plugin_type", "plugin_name", "version")
+    PLUGIN_TYPE_FIELD_NUMBER: _ClassVar[int]
+    PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
+    VERSION_FIELD_NUMBER: _ClassVar[int]
+    plugin_type: str
+    plugin_name: str
+    version: str
+    def __init__(self, plugin_type: _Optional[str] = ..., plugin_name: _Optional[str] = ..., version: _Optional[str] = ...) -> None: ...
+
+class RegisterData(_message.Message):
+    __slots__ = ("plugin_name", "grpc_port", "plugin_version")
+    PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
+    GRPC_PORT_FIELD_NUMBER: _ClassVar[int]
+    PLUGIN_VERSION_FIELD_NUMBER: _ClassVar[int]
+    plugin_name: str
+    grpc_port: int
+    plugin_version: PluginVersion
+    def __init__(self, plugin_name: _Optional[str] = ..., grpc_port: _Optional[int] = ..., plugin_version: _Optional[_Union[PluginVersion, _Mapping]] = ...) -> None: ...
+
+class Error(_message.Message):
+    __slots__ = ("message", "code")
+    MESSAGE_FIELD_NUMBER: _ClassVar[int]
+    CODE_FIELD_NUMBER: _ClassVar[int]
+    message: str
+    code: int
+    def __init__(self, message: _Optional[str] = ..., code: _Optional[int] = ...) -> None: ...
+
+class PluginTypeReply(_message.Message):
+    __slots__ = ("plugin_types",)
+    PLUGIN_TYPES_FIELD_NUMBER: _ClassVar[int]
+    plugin_types: _containers.RepeatedCompositeFieldContainer[PluginType]
+    def __init__(self, plugin_types: _Optional[_Iterable[_Union[PluginType, _Mapping]]] = ...) -> None: ...
+
+class PluginType(_message.Message):
+    __slots__ = ("plugin_type", "plugin_version")
+    PLUGIN_TYPE_FIELD_NUMBER: _ClassVar[int]
+    PLUGIN_VERSION_FIELD_NUMBER: _ClassVar[int]
+    plugin_type: str
+    plugin_version: PluginVersion
+    def __init__(self, plugin_type: _Optional[str] = ..., plugin_version: _Optional[_Union[PluginVersion, _Mapping]] = ...) -> None: ...
+
+class PluginName(_message.Message):
+    __slots__ = ("plugin_name",)
+    PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
+    plugin_name: str
+    def __init__(self, plugin_name: _Optional[str] = ...) -> None: ...
+
+class ErrorInfoList(_message.Message):
+    __slots__ = ("error_info",)
+    ERROR_INFO_FIELD_NUMBER: _ClassVar[int]
+    error_info: _containers.RepeatedCompositeFieldContainer[ErrorInfo]
+    def __init__(self, error_info: _Optional[_Iterable[_Union[ErrorInfo, _Mapping]]] = ...) -> None: ...
+
+class ErrorInfo(_message.Message):
+    __slots__ = ("error_status", "error_code", "plugin", "time", "message", "location")
+    ERROR_STATUS_FIELD_NUMBER: _ClassVar[int]
+    ERROR_CODE_FIELD_NUMBER: _ClassVar[int]
+    PLUGIN_FIELD_NUMBER: _ClassVar[int]
+    TIME_FIELD_NUMBER: _ClassVar[int]
+    MESSAGE_FIELD_NUMBER: _ClassVar[int]
+    LOCATION_FIELD_NUMBER: _ClassVar[int]
+    error_status: bool
+    error_code: int
+    plugin: str
+    time: str
+    message: str
+    location: str
+    def __init__(self, error_status: bool = ..., error_code: _Optional[int] = ..., plugin: _Optional[str] = ..., time: _Optional[str] = ..., message: _Optional[str] = ..., location: _Optional[str] = ...) -> None: ...
+
+class QuerySettings(_message.Message):
+    __slots__ = ("query_all",)
+    QUERY_ALL_FIELD_NUMBER: _ClassVar[int]
+    query_all: bool
+    def __init__(self, query_all: bool = ...) -> None: ...
+
+class FileData(_message.Message):
+    __slots__ = ("data",)
+    DATA_FIELD_NUMBER: _ClassVar[int]
+    data: str
+    def __init__(self, data: _Optional[str] = ...) -> None: ...
+
+class PluginVersion(_message.Message):
+    __slots__ = ("major_version", "minor_version", "fix_version")
+    MAJOR_VERSION_FIELD_NUMBER: _ClassVar[int]
+    MINOR_VERSION_FIELD_NUMBER: _ClassVar[int]
+    FIX_VERSION_FIELD_NUMBER: _ClassVar[int]
+    major_version: int
+    minor_version: int
+    fix_version: int
+    def __init__(self, major_version: _Optional[int] = ..., minor_version: _Optional[int] = ..., fix_version: _Optional[int] = ...) -> None: ...
+
+class PluginInfo(_message.Message):
+    __slots__ = ("plugin_name", "plugin_type", "grpc_port", "plugin_version", "status")
+    PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
+    PLUGIN_TYPE_FIELD_NUMBER: _ClassVar[int]
+    GRPC_PORT_FIELD_NUMBER: _ClassVar[int]
+    PLUGIN_VERSION_FIELD_NUMBER: _ClassVar[int]
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    plugin_name: str
+    plugin_type: str
+    grpc_port: int
+    plugin_version: PluginVersion
+    status: _cif_plugin_core_pb2.StatusData
+    def __init__(self, plugin_name: _Optional[str] = ..., plugin_type: _Optional[str] = ..., grpc_port: _Optional[int] = ..., plugin_version: _Optional[_Union[PluginVersion, _Mapping]] = ..., status: _Optional[_Union[_cif_plugin_core_pb2.StatusData, _Mapping]] = ...) -> None: ...
+
+class PluginInfoResponse(_message.Message):
+    __slots__ = ("plugin_info", "error")
+    PLUGIN_INFO_FIELD_NUMBER: _ClassVar[int]
+    ERROR_FIELD_NUMBER: _ClassVar[int]
+    plugin_info: PluginInfo
+    error: Error
+    def __init__(self, plugin_info: _Optional[_Union[PluginInfo, _Mapping]] = ..., error: _Optional[_Union[Error, _Mapping]] = ...) -> None: ...
+
+class PluginInfoArray(_message.Message):
+    __slots__ = ("plugin_info",)
+    PLUGIN_INFO_FIELD_NUMBER: _ClassVar[int]
+    plugin_info: _containers.RepeatedCompositeFieldContainer[PluginInfo]
+    def __init__(self, plugin_info: _Optional[_Iterable[_Union[PluginInfo, _Mapping]]] = ...) -> None: ...
+
+class PluginStatus(_message.Message):
+    __slots__ = ("pluginname", "status")
+    PLUGINNAME_FIELD_NUMBER: _ClassVar[int]
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    pluginname: PluginName
+    status: _cif_plugin_core_pb2.StatusData
+    def __init__(self, pluginname: _Optional[_Union[PluginName, _Mapping]] = ..., status: _Optional[_Union[_cif_plugin_core_pb2.StatusData, _Mapping]] = ...) -> None: ...
+
+class TimePair(_message.Message):
+    __slots__ = ("system_time", "external_time")
+    SYSTEM_TIME_FIELD_NUMBER: _ClassVar[int]
+    EXTERNAL_TIME_FIELD_NUMBER: _ClassVar[int]
+    system_time: int
+    external_time: int
+    def __init__(self, system_time: _Optional[int] = ..., external_time: _Optional[int] = ...) -> None: ...
+
+class ClockConversion(_message.Message):
+    __slots__ = ("clock_id", "last_reset", "slope", "offset_pair", "clock_name")
+    CLOCK_ID_FIELD_NUMBER: _ClassVar[int]
+    LAST_RESET_FIELD_NUMBER: _ClassVar[int]
+    SLOPE_FIELD_NUMBER: _ClassVar[int]
+    OFFSET_PAIR_FIELD_NUMBER: _ClassVar[int]
+    CLOCK_NAME_FIELD_NUMBER: _ClassVar[int]
+    clock_id: int
+    last_reset: int
+    slope: float
+    offset_pair: TimePair
+    clock_name: str
+    def __init__(self, clock_id: _Optional[int] = ..., last_reset: _Optional[int] = ..., slope: _Optional[float] = ..., offset_pair: _Optional[_Union[TimePair, _Mapping]] = ..., clock_name: _Optional[str] = ...) -> None: ...
+
+class ClockConversionArray(_message.Message):
+    __slots__ = ("clock_conversions",)
+    CLOCK_CONVERSIONS_FIELD_NUMBER: _ClassVar[int]
+    clock_conversions: _containers.RepeatedCompositeFieldContainer[ClockConversion]
+    def __init__(self, clock_conversions: _Optional[_Iterable[_Union[ClockConversion, _Mapping]]] = ...) -> None: ...
+
+class SystemStatus(_message.Message):
+    __slots__ = ("clock_conversion_array",)
+    CLOCK_CONVERSION_ARRAY_FIELD_NUMBER: _ClassVar[int]
+    clock_conversion_array: ClockConversionArray
+    def __init__(self, clock_conversion_array: _Optional[_Union[ClockConversionArray, _Mapping]] = ...) -> None: ...
+
+class ClockUpdate(_message.Message):
+    __slots__ = ("clock_id", "timestamp_pair", "reinit", "clock_name")
+    CLOCK_ID_FIELD_NUMBER: _ClassVar[int]
+    TIMESTAMP_PAIR_FIELD_NUMBER: _ClassVar[int]
+    REINIT_FIELD_NUMBER: _ClassVar[int]
+    CLOCK_NAME_FIELD_NUMBER: _ClassVar[int]
+    clock_id: int
+    timestamp_pair: TimePair
+    reinit: bool
+    clock_name: str
+    def __init__(self, clock_id: _Optional[int] = ..., timestamp_pair: _Optional[_Union[TimePair, _Mapping]] = ..., reinit: bool = ..., clock_name: _Optional[str] = ...) -> None: ...
+
+class Empty(_message.Message):
+    __slots__ = ()
+    def __init__(self) -> None: ...
