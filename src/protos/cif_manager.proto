@@ -71,6 +71,9 @@ service Manager {
 
   // Updates a tracked clock with a new timestamp pair or a reset.
   rpc UpdateClock (ClockUpdate) returns (Error) {}
+
+  // Create orchestration file from logged configuration.
+  rpc CreateOrch (OrchConfig) returns (OrchReturn) {}
 }
 
 
@@ -179,6 +182,24 @@ message ClockUpdate {
   TimePair timestamp_pair = 2; 
   bool reinit = 3;
   string clock_name = 4;
+}
+
+enum OrchestrationLanguage {
+  NULL = 0;
+  PYTHON = 1;
+  }
+
+message OrchConfig {
+  uint64 start_timestamp = 1; // If non-zero will get all config and filter from this timestamp.  If zero will build since latest config reset
+  bool create_file = 2; // Determine if file we be created on target
+  OrchestrationLanguage orchestration_language = 3; // Only Python supported currently
+  string filename = 4; // File name.  Should be format "name.py"
+  string default_ip = 5; // If not empty will set as the IP address for the python script.  If empty will set as first IPv4 address from target
+}
+
+message OrchReturn {
+  string orchestration_script = 1;
+  Error error = 2;
 }
 
 message Empty {}

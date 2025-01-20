@@ -1,10 +1,18 @@
 import cif_plugin_core_pb2 as _cif_plugin_core_pb2
 from google.protobuf.internal import containers as _containers
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Mapping, Optional as _Optional, Union as _Union
 
 DESCRIPTOR: _descriptor.FileDescriptor
+
+class OrchestrationLanguage(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    NULL: _ClassVar[OrchestrationLanguage]
+    PYTHON: _ClassVar[OrchestrationLanguage]
+NULL: OrchestrationLanguage
+PYTHON: OrchestrationLanguage
 
 class PluginConfig(_message.Message):
     __slots__ = ("plugin_type", "plugin_name", "version")
@@ -179,6 +187,28 @@ class ClockUpdate(_message.Message):
     reinit: bool
     clock_name: str
     def __init__(self, clock_id: _Optional[int] = ..., timestamp_pair: _Optional[_Union[TimePair, _Mapping]] = ..., reinit: bool = ..., clock_name: _Optional[str] = ...) -> None: ...
+
+class OrchConfig(_message.Message):
+    __slots__ = ("start_timestamp", "create_file", "orchestration_language", "filename", "default_ip")
+    START_TIMESTAMP_FIELD_NUMBER: _ClassVar[int]
+    CREATE_FILE_FIELD_NUMBER: _ClassVar[int]
+    ORCHESTRATION_LANGUAGE_FIELD_NUMBER: _ClassVar[int]
+    FILENAME_FIELD_NUMBER: _ClassVar[int]
+    DEFAULT_IP_FIELD_NUMBER: _ClassVar[int]
+    start_timestamp: int
+    create_file: bool
+    orchestration_language: OrchestrationLanguage
+    filename: str
+    default_ip: str
+    def __init__(self, start_timestamp: _Optional[int] = ..., create_file: bool = ..., orchestration_language: _Optional[_Union[OrchestrationLanguage, str]] = ..., filename: _Optional[str] = ..., default_ip: _Optional[str] = ...) -> None: ...
+
+class OrchReturn(_message.Message):
+    __slots__ = ("orchestration_script", "error")
+    ORCHESTRATION_SCRIPT_FIELD_NUMBER: _ClassVar[int]
+    ERROR_FIELD_NUMBER: _ClassVar[int]
+    orchestration_script: str
+    error: Error
+    def __init__(self, orchestration_script: _Optional[str] = ..., error: _Optional[_Union[Error, _Mapping]] = ...) -> None: ...
 
 class Empty(_message.Message):
     __slots__ = ()

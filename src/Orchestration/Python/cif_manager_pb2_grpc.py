@@ -124,6 +124,11 @@ class ManagerStub(object):
                 request_serializer=cif__manager__pb2.ClockUpdate.SerializeToString,
                 response_deserializer=cif__manager__pb2.Error.FromString,
                 _registered_method=True)
+        self.CreateOrch = channel.unary_unary(
+                '/cif.manager.Manager/CreateOrch',
+                request_serializer=cif__manager__pb2.OrchConfig.SerializeToString,
+                response_deserializer=cif__manager__pb2.OrchReturn.FromString,
+                _registered_method=True)
 
 
 class ManagerServicer(object):
@@ -255,6 +260,13 @@ class ManagerServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def CreateOrch(self, request, context):
+        """Create orchestration file from logged configuration.
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_ManagerServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -347,6 +359,11 @@ def add_ManagerServicer_to_server(servicer, server):
                     servicer.UpdateClock,
                     request_deserializer=cif__manager__pb2.ClockUpdate.FromString,
                     response_serializer=cif__manager__pb2.Error.SerializeToString,
+            ),
+            'CreateOrch': grpc.unary_unary_rpc_method_handler(
+                    servicer.CreateOrch,
+                    request_deserializer=cif__manager__pb2.OrchConfig.FromString,
+                    response_serializer=cif__manager__pb2.OrchReturn.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -835,6 +852,33 @@ class Manager(object):
             '/cif.manager.Manager/UpdateClock',
             cif__manager__pb2.ClockUpdate.SerializeToString,
             cif__manager__pb2.Error.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def CreateOrch(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/cif.manager.Manager/CreateOrch',
+            cif__manager__pb2.OrchConfig.SerializeToString,
+            cif__manager__pb2.OrchReturn.FromString,
             options,
             channel_credentials,
             insecure,
