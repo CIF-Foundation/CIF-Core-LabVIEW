@@ -70,6 +70,12 @@ class plugin():
         check_error(result_info)
         return self
     
+    def update_config(self, json):
+        self = self.check_loaded()
+        result_info = self.stub.UpdateConfig(cif_plugin_core_pb2.Configuration(json_config=json))
+        check_error(result_info)
+        return self
+    
     def connect_channel(self, channel_link):
         self = self.check_loaded()
         result_info = self.stub_channel.SetConnection(cif_channel_core_pb2.ConnectSubscriber(subscriber_name=channel_link.subscriber, publisher_name=channel_link.publisher, custom_connect=channel_link.custom_data))
