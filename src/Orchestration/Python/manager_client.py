@@ -1,4 +1,5 @@
 import cif_orchestration_base
+import time
 
 #Set the IP address and port of the CIF manager on the target
 server_ip = "192.168.1.160"
@@ -18,6 +19,7 @@ plugin1 = cif_manager.load(plugin1)
 plugin2 = cif_manager.load(plugin2)
 plugin2 = plugin2.connect_channel(link1)
 plugin2 = plugin2.update_config(plugin2_config1)
-plugin1 = plugin1.run()
+plugin2.status()
+plugin1 = plugin1.run(wait_running=True)
 plugin2 = plugin2.run()
 print("-------------- Mischief Managed --------------")

@@ -30,6 +30,14 @@ class plugin_connection(Enum):
     NOT_CONNECTED = 2
     CONNECTED = 3
 
+class plugin_state(Enum):
+    NULL = 0
+    CREATING = 1
+    LISTENING = 2
+    RUNNING = 3
+    CLEANINGUP = 4
+    DESTROYING = 5
+
 class plugin():
     def __init__(self, name, type, version):
         self.name = name
@@ -39,6 +47,7 @@ class plugin():
         self.address = "unset"
         self.plugin_address = "unset"
         self.connection = plugin_connection.UNLOADED
+        self.state = plugin_state.NULL
 
     def check_loaded(self):
         if self.connection == plugin_connection.UNLOADED:
@@ -64,10 +73,12 @@ class plugin():
                 return self
         return self  
 
-    def run(self):
+    def run(self, wait_running=False):
         self = self.check_loaded()
         result_info = self.stub.Start(cif_plugin_core_pb2.Empty())
         check_error(result_info)
+        if wait_running == True:
+            self = self.wait_on_running()
         return self
     
     def update_config(self, json):
@@ -82,13 +93,37 @@ class plugin():
         check_error(result_info)
         return self
     
+    def status(self):
+        self = self.check_loaded()
+        result_info = self.stub.GetStatusData(cif_plugin_core_pb2.Empty())
+        self.state = plugin_state(result_info.state)
+        return self
+    
+    def wait_on_running(self, timeout_ms=2000):
+        self = self.check_loaded()
+        if self.connection == plugin_connection.NOT_CONNECTED:
+            return self
+        if self.connection == plugin_connection.CONNECTED:
+            max_iteration = timeout_ms / 250
+            i = 0
+            while i < max_iteration:
+              self = self.status()
+              if self.state==plugin_state.RUNNING:
+                return self
+              time.sleep (0.25)
+              i += 1
+              if i == max_iteration:
+                print(f"{bcolors.WARNING}Plugin {plugin.name} did not change to running state before timeout. {bcolors.ENDC}")
+                return self
+        
+    
 
 class channel_link():
     def __init__(self, publisher, subscriber, custom_data):
         self.subscriber = subscriber
         self.publisher = publisher
         # self.custom_data = bytes()
-        self.custom_data = bytes(custom_data, 'utf-8')
+        self.custom_data = bytes.fromhex(custom_data)
 
 class bcolors:
     HEADER = '\033[95m'
