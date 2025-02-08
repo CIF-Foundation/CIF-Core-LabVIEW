@@ -89,6 +89,7 @@
 			<Item Name="CIFfifo.lvclass" Type="LVClass" URL="../../../Channels/ChannelCommon/CIFFIFO/CIFfifo.lvclass"/>
 			<Item Name="CIF_NIChn_Fifo_DAQ.lvclass" Type="LVClass" URL="../../../Channels/CIF_NIChn/FIFO_DAQ/CIF_NIChn_Fifo_DAQ.lvclass"/>
 			<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../../CIFUI/CIF_UI.lvclass"/>
+			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

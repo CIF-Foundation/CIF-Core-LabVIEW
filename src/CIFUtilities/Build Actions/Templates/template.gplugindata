@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<GPluginMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/InstrumentStudio/GPluginMetadata">
+	<Plugins>
+		<PluginData 
+			UniqueName="CIF_Core_UI_0.1"
+			DisplayName="CIF Core UI"
+			PanelType="Composable Instrument"
+			GroupName="Composable Instrumentation Framework"
+			VIPath="CIF_Core_UI.lvlibp\CIF-LVCore\src\CIFCore\UI\Plugin\CIF Core UI.vi"
+			SupportedPanelSizes="LargeAndSmall"
+			ApplicationContext="Unique" />
+	</Plugins>
+</GPluginMetadata>

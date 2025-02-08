@@ -9,6 +9,7 @@
 </Property>
 	<Item Name="Commands" Type="Folder">
 		<Item Name="Abort Plugin.vi" Type="VI" URL="../Commands/Abort Plugin.vi"/>
+		<Item Name="Create Orchestration.vi" Type="VI" URL="../Commands/Create Orchestration.vi"/>
 		<Item Name="Destroy Manager.vi" Type="VI" URL="../Commands/Destroy Manager.vi"/>
 		<Item Name="Load Plugin.vi" Type="VI" URL="../Commands/Load Plugin.vi"/>
 		<Item Name="Ping.vi" Type="VI" URL="../Commands/Ping.vi"/>

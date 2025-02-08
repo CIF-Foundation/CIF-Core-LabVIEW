@@ -18,6 +18,7 @@
 		<Item Name="Get Version.vi" Type="VI" URL="../Commands/Get Version.vi"/>
 		<Item Name="Get Overrides.vi" Type="VI" URL="../Commands/Get Overrides.vi"/>
 		<Item Name="Get Channels.vi" Type="VI" URL="../Commands/Get Channels.vi"/>
+		<Item Name="Get Names.vi" Type="VI" URL="../Commands/Get Names.vi"/>
 		<Item Name="Start.vi" Type="VI" URL="../Commands/Start.vi"/>
 		<Item Name="Pause.vi" Type="VI" URL="../Commands/Pause.vi"/>
 		<Item Name="Stop.vi" Type="VI" URL="../Commands/Stop.vi"/>

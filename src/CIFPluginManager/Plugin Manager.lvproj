@@ -14,8 +14,6 @@
 		<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../CIFUI/CIF_UI.lvclass"/>
 		<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 		<Item Name="CIFPluginManager.lvclass" Type="LVClass" URL="../CIFPluginManager/CIFPluginManager.lvclass"/>
-		<Item Name="Interactive Manager UI.vi" Type="VI" URL="../Tests/Interactive Manager UI.vi"/>
-		<Item Name="Test UDP launcher.vi" Type="VI" URL="../Test UDP launcher.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
@@ -47,6 +45,7 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Normalize End Of Line.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Normalize End Of Line.vi"/>
 				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
 				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
@@ -68,6 +67,8 @@
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
+			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
+			<Item Name="Python Orchestration.lvlib" Type="Library" URL="../../CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

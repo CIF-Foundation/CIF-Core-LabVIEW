@@ -109,6 +109,16 @@
 			<Item Name="FlatToRichcif_manager_ClockUpdate.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_ClockUpdate.vi"/>
 			<Item Name="RichToFlatcif_manager_ClockUpdate.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_ClockUpdate.vi"/>
 		</Item>
+		<Item Name="cif_manager_OrchConfig" Type="Folder">
+			<Item Name="cif_manager_OrchConfig.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchConfig.ctl"/>
+			<Item Name="FlatToRichcif_manager_OrchConfig.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_OrchConfig.vi"/>
+			<Item Name="RichToFlatcif_manager_OrchConfig.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_OrchConfig.vi"/>
+		</Item>
+		<Item Name="cif_manager_OrchReturn" Type="Folder">
+			<Item Name="cif_manager_OrchReturn.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchReturn.ctl"/>
+			<Item Name="FlatToRichcif_manager_OrchReturn.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_OrchReturn.vi"/>
+			<Item Name="RichToFlatcif_manager_OrchReturn.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_OrchReturn.vi"/>
+		</Item>
 		<Item Name="cif_manager_Empty" Type="Folder">
 			<Item Name="cif_manager_Empty.ctl" Type="VI" URL="../RPC Messages/cif_manager_Empty.ctl"/>
 			<Item Name="FlatToRichcif_manager_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_Empty.vi"/>
@@ -174,6 +184,11 @@
 			<Item Name="FlatToRichcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginOverrides.vi"/>
 			<Item Name="RichToFlatcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginOverrides.vi"/>
 		</Item>
+		<Item Name="cif_plugincore_PluginNames" Type="Folder">
+			<Item Name="cif_plugincore_PluginNames.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginNames.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_PluginNames.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginNames.vi"/>
+			<Item Name="RichToFlatcif_plugincore_PluginNames.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginNames.vi"/>
+		</Item>
 		<Item Name="cif_plugincore_Status" Type="Folder">
 			<Item Name="cif_plugincore_Status.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Status.ctl"/>
 			<Item Name="FlatToRichcif_plugincore_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Status.vi"/>
@@ -188,6 +203,11 @@
 			<Item Name="cif_plugincore_StatusData_State.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State.ctl"/>
 			<Item Name="Get Value for cif_plugincore_StatusData_State.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_State.vi"/>
 			<Item Name="Get cif_plugincore_StatusData_State for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_State for Value.vi"/>
+		</Item>
+		<Item Name="cif_manager_OrchestrationLanguage" Type="Folder">
+			<Item Name="cif_manager_OrchestrationLanguage.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchestrationLanguage.ctl"/>
+			<Item Name="Get Value for cif_manager_OrchestrationLanguage.vi" Type="VI" URL="../RPC Messages/Get Value for cif_manager_OrchestrationLanguage.vi"/>
+			<Item Name="Get cif_manager_OrchestrationLanguage for Value.vi" Type="VI" URL="../RPC Messages/Get cif_manager_OrchestrationLanguage for Value.vi"/>
 		</Item>
 		<Item Name="cif_manager_PluginConfig_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginConfig_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginConfig_Flat.ctl"/>
@@ -249,6 +269,12 @@
 		<Item Name="cif_manager_ClockUpdate_Flat" Type="Folder">
 			<Item Name="cif_manager_ClockUpdate_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_ClockUpdate_Flat.ctl"/>
 		</Item>
+		<Item Name="cif_manager_OrchConfig_Flat" Type="Folder">
+			<Item Name="cif_manager_OrchConfig_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchConfig_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_manager_OrchReturn_Flat" Type="Folder">
+			<Item Name="cif_manager_OrchReturn_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchReturn_Flat.ctl"/>
+		</Item>
 		<Item Name="cif_manager_Empty_Flat" Type="Folder">
 			<Item Name="cif_manager_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_Empty_Flat.ctl"/>
 		</Item>
@@ -288,6 +314,9 @@
 		<Item Name="cif_plugincore_PluginOverrides_Flat" Type="Folder">
 			<Item Name="cif_plugincore_PluginOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides_Flat.ctl"/>
 		</Item>
+		<Item Name="cif_plugincore_PluginNames_Flat" Type="Folder">
+			<Item Name="cif_plugincore_PluginNames_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginNames_Flat.ctl"/>
+		</Item>
 		<Item Name="cif_plugincore_Status_Flat" Type="Folder">
 			<Item Name="cif_plugincore_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Status_Flat.ctl"/>
 		</Item>
@@ -298,6 +327,11 @@
 			<Item Name="cif_plugincore_StatusData_State_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State_Flat.ctl"/>
 			<Item Name="Get Value for cif_plugincore_StatusData_State_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_State_Flat.vi"/>
 			<Item Name="Get cif_plugincore_StatusData_State_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_State_Flat for Value.vi"/>
+		</Item>
+		<Item Name="cif_manager_OrchestrationLanguage_Flat" Type="Folder">
+			<Item Name="cif_manager_OrchestrationLanguage_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchestrationLanguage_Flat.ctl"/>
+			<Item Name="Get Value for cif_manager_OrchestrationLanguage_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_manager_OrchestrationLanguage_Flat.vi"/>
+			<Item Name="Get cif_manager_OrchestrationLanguage_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_manager_OrchestrationLanguage_Flat for Value.vi"/>
 		</Item>
 		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi"/>
 	</Item>
@@ -356,6 +390,9 @@
 			</Item>
 			<Item Name="Manager UpdateClock" Type="Folder">
 				<Item Name="Manager UpdateClock.vi" Type="VI" URL="../RPC Service/Manager/Manager UpdateClock.vi"/>
+			</Item>
+			<Item Name="Manager CreateOrch" Type="Folder">
+				<Item Name="Manager CreateOrch.vi" Type="VI" URL="../RPC Service/Manager/Manager CreateOrch.vi"/>
 			</Item>
 		</Item>
 	</Item>

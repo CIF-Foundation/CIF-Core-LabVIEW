@@ -86,6 +86,7 @@
 			<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="Get Control From Type Descriptor.vi" Type="VI" URL="../../../CIFUtilities/Scripting/Update Enum/Get Control From Type Descriptor.vi"/>
+			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
 			<Item Name="Update Enum.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Update Enum/Update Enum.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
