@@ -45,6 +45,7 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Normalize End Of Line.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Normalize End Of Line.vi"/>
 				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
 				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
@@ -67,6 +68,7 @@
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
+			<Item Name="Python Orchestration.lvlib" Type="Library" URL="../../CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
