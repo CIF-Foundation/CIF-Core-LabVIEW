@@ -38,8 +38,9 @@ message Configuration {
 }
 
 message TimingStatsBasic {
-  int32 max = 1;
-  int32 min = 2;
+  int64 max = 1;
+  int64 min = 2;
+  double avg = 3;
 }
 
 message TimingStatistics {
@@ -48,6 +49,9 @@ message TimingStatistics {
   TimingStatsBasic execute = 3;
   TimingStatsBasic housekeep = 4;
   TimingStatsBasic idle = 5;
+  TimingStatsBasic cleanup = 6;
+  TimingStatsBasic custom_1 = 7;
+  TimingStatsBasic custom_2 = 8;
 }
 
 message FifoStatistics {

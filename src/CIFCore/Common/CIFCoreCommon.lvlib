@@ -30,10 +30,6 @@
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Add Error.vi" Type="VI" URL="../Utilities/Add Error.vi"/>
 		<Item Name="Get Version.vi" Type="VI" URL="../Utilities/Get Version.vi"/>
-		<Item Name="Append Error Location.vi" Type="VI" URL="../Utilities/Append Error Location.vi"/>
-		<Item Name="Update Cycle Time.vi" Type="VI" URL="../Utilities/Update Cycle Time.vi"/>
-		<Item Name="Update Delta Time.vi" Type="VI" URL="../Utilities/Update Delta Time.vi"/>
-		<Item Name="Human Readable Error Message.vi" Type="VI" URL="../Utilities/Human Readable Error Message.vi"/>
 		<Item Name="Get IP Address.vi" Type="VI" URL="../Utilities/Get IP Address.vi"/>
 	</Item>
 </Library>

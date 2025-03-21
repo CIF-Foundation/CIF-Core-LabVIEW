@@ -167,8 +167,8 @@
 			<Item Name="cif_manager_Empty.ctl" Type="VI" URL="../RPC Messages/cif_manager_Empty.ctl"/>
 			<Item Name="FlatToRichcif_manager_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_Empty.vi"/>
 			<Item Name="RichToFlatcif_manager_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_Empty.vi"/>
-			<Item Name="Set cif_manager_Empty.vi" Type="VI" URL="../RPC Messages/Set cif_manager_Empty.vi"/>
 			<Item Name="Get cif_manager_Empty.vi" Type="VI" URL="../RPC Messages/Get cif_manager_Empty.vi"/>
+			<Item Name="Set cif_manager_Empty.vi" Type="VI" URL="../RPC Messages/Set cif_manager_Empty.vi"/>
 		</Item>
 		<Item Name="cif_plugincore_Error" Type="Folder">
 			<Item Name="cif_plugincore_Error.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error.ctl"/>
