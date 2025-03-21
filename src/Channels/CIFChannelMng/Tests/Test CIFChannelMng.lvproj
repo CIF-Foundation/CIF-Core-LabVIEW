@@ -40,7 +40,6 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Append Error Location.vi" Type="VI" URL="../../../../CIFCore/Common/Utilities/Append Error Location.vi"/>
 			<Item Name="ChannelCommon.lvlib" Type="Library" URL="../../../ChannelCommon/ChannelCommon.lvlib"/>
 			<Item Name="CIF_NIChn.lvclass" Type="LVClass" URL="../../../CIF_NIChn/NIChn/CIF_NIChn.lvclass"/>
 			<Item Name="CIF_NIChn_Double.lvclass" Type="LVClass" URL="../../../CIF_NIChn/Double/CIF_NIChn_Double.lvclass"/>
