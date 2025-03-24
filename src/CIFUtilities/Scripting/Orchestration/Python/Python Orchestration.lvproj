@@ -28,7 +28,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Append Error Location.vi" Type="VI" URL="../../../../../CIFCore/Common/Utilities/Append Error Location.vi"/>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../../CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../../../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 		</Item>

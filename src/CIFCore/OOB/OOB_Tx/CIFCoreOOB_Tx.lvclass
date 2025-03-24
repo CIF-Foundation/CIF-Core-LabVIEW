@@ -23,7 +23,7 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="CIFOutOfBand.lvclass" Type="Parent" URL="../../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
+		<Item Name="CIFOutOfBand.lvclass" Type="Parent" URL="/&lt;vilib&gt;/CIF Foundation/CIF Out of Band Commands/CIFOutOfBand.lvclass"/>
 	</Item>
 	<Item Name="CIFCoreOOB_Tx.ctl" Type="Class Private Data" URL="CIFCoreOOB_Tx.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -59,13 +59,13 @@
 	</Item>
 	<Item Name="Send" Type="Folder">
 		<Item Name="Update Channel List Command.vi" Type="VI" URL="../Send/Update Channel List Command.vi">
-			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*H!!!!%Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$"!=!!?!!!8&amp;5.*2E.P=G604U*@6(AO&lt;(:D&lt;'&amp;T=Q!/1W^S:5^01F^5?#"P&gt;81!!":!5!!$!!!!!1!##'6S=G^S)'FO!!!/1$$`````"%ZB&lt;75!!&amp;5!]1!!!!!!!!!#%U.*2E.I97ZO:7RT,GRW9WRB=X-.2'FS:7.U;7^O,G.U&lt;!!L1"9!!AF1&gt;7*M;8.I:8)+5X6C=W.S;7*F=A!!#52J=G6D&gt;'FP&lt;A!/1$$`````"&amp;2Z='5!!""!)1J$&lt;WZO:7.U:71`!!!91$$`````$E.P&lt;GZF9X2F:#"/97VF!!!.1!5!"UZV&lt;76S;7-!)%"!!!(`````!!Q31X6T&gt;'^N)%.P&lt;G:J:S"%982B!!!-1#%(2G^S9W6E0Q"&gt;!0(C[M20!!!!!B6$35:$;'&amp;O&lt;G6M47ZH,GRW9WRB=X-91WBB&lt;GZF&lt;#"-;8.U)':P=C"04U)O9X2M!#:!5!!(!!=!#!!*!!I!#Q!.!!Y-1WBB&lt;GZF&lt;#"-;8.U!!!;1%!!!@````]!$QR$;'&amp;O&lt;G6M)%RJ=X1!!#Z!=!!?!!!8&amp;5.*2E.P=G604U*@6(AO&lt;(:D&lt;'&amp;T=Q!.1W^S:5^01F^5?#"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!"!!%1-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!))!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!3!!!!!!</Property>
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*H!!!!%Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$"!=!!?!!!8&amp;5.*2E.P=G604U*@6(AO&lt;(:D&lt;'&amp;T=Q!/1W^S:5^01F^5?#"P&gt;81!!":!5!!$!!!!!1!##'6S=G^S)'FO!!!/1$$`````"%ZB&lt;75!!&amp;5!]1!!!!!!!!!#%U.*2E.I97ZO:7RT,GRW9WRB=X-.2'FS:7.U;7^O,G.U&lt;!!L1"9!!AF1&gt;7*M;8.I:8)+5X6C=W.S;7*F=A!!#52J=G6D&gt;'FP&lt;A!/1$$`````"&amp;2Z='5!!""!)1J$&lt;WZO:7.U:71`!!!91$$`````$E.P&lt;GZF9X2F:#"/97VF!!!.1!5!"UZV&lt;76S;7-!)%"!!!(`````!!Q31X6T&gt;'^N)%.P&lt;G:J:S"%982B!!!-1#%(2G^S9W6E0Q"&gt;!0(C[M20!!!!!B6$35:$;'&amp;O&lt;G6M47ZH,GRW9WRB=X-91WBB&lt;GZF&lt;#"-;8.U)':P=C"04U)O9X2M!#:!5!!(!!=!#!!*!!I!#Q!.!!Y-1WBB&lt;GZF&lt;#"-;8.U!!!;1%!!!@````]!$QR$;'&amp;O&lt;G6M)%RJ=X1!!#Z!=!!?!!!8&amp;5.*2E.P=G604U*@6(AO&lt;(:D&lt;'&amp;T=Q!.1W^S:5^01F^5?#"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!"!!%1)!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!))!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!3!!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 			<Property Name="NI.ClassItem.Flags" Type="Int">16777216</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">278929424</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">44040192</Property>
 		</Item>
 	</Item>
 	<Item Name="Private" Type="Folder">
