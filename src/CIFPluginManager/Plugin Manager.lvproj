@@ -25,6 +25,7 @@
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/CIF Foundation/CIF Out of Band Commands/CIFOutOfBand.lvclass"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
@@ -67,7 +68,6 @@
 			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
-			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../Instrument Studio/PluginSDK/InstrumentStudio Plugin SDK.lvlib"/>
 			<Item Name="Python Orchestration.lvlib" Type="Library" URL="../../CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
 		</Item>

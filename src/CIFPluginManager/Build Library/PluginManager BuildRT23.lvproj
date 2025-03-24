@@ -657,6 +657,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Time_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Time/Time_CIF_U.lvlib"/>
 				<Item Name="Errors_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Errors/Errors_CIF_U.lvlib"/>
 				<Item Name="Normalize End Of Line.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Normalize End Of Line.vi"/>
+				<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/CIF Foundation/CIF Out of Band Commands/CIFOutOfBand.lvclass"/>
 			</Item>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_server.lvlib" Type="Library" URL="../../CIFPluginManager/gRPC/CIF_Manager_server/CIF_Manager_server.lvlib"/>
@@ -666,10 +667,8 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
-			<Item Name="CIFOutOfBand.lvclass" Type="LVClass" URL="../../../CIFUtilities/CIFOutOfBand/CIFOutOfBand.lvclass"/>
 			<Item Name="CIFPluginManager.lvclass" Type="LVClass" URL="../../CIFPluginManager/CIFPluginManager.lvclass"/>
 			<Item Name="Python Orchestration.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
-			<Item Name="Append Error Location.vi" Type="VI" URL="../../../CIFCore/Common/Utilities/Append Error Location.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="PluginManagerPluginRT" Type="Packed Library">
