@@ -16,7 +16,8 @@
 		<Item Name="TW Fix gRPC Register Dependencies.vi" Type="VI" URL="../SubVIs/TW Fix gRPC Register Dependencies.vi"/>
 		<Item Name="TW Fix gRPC Server Dependencies.vi" Type="VI" URL="../SubVIs/TW Fix gRPC Server Dependencies.vi"/>
 		<Item Name="TW Generate proto file.vi" Type="VI" URL="../SubVIs/TW Generate proto file.vi"/>
-		<Item Name="TW Post-Project-Copying Process - Stage 2.vi" Type="VI" URL="../../Scripting Utilities/scripting/SubVIs/TW Post-Project-Copying Process - Stage 2.vi"/>
+		<Item Name="TW Post-Project-Copying Process - Error Handling.vi" Type="VI" URL="../SubVIs/TW Post-Project-Copying Process - Error Handling.vi"/>
+		<Item Name="TW Post-Project-Copying Process - Stage 2.vi" Type="VI" URL="../SubVIs/TW Post-Project-Copying Process - Stage 2.vi"/>
 		<Item Name="TW Post-Project-Copying Process - Stage 3.vi" Type="VI" URL="../SubVIs/TW Post-Project-Copying Process - Stage 3.vi"/>
 		<Item Name="TW Replace Missing Dependency VIs - Client Wrapper.vi" Type="VI" URL="../SubVIs/TW Replace Missing Dependency VIs - Client Wrapper.vi"/>
 		<Item Name="TW Resolve gRPC Server Dependencies.vi" Type="VI" URL="../SubVIs/TW Resolve gRPC Server Dependencies.vi"/>
