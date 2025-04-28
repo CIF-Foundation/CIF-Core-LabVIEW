@@ -13,19 +13,21 @@
 		<Item Name="Destroy Client.vi" Type="VI" URL="../Common/Destroy Client.vi"/>
 	</Item>
 	<Item Name="Commands" Type="Folder">
-		<Item Name="Get Status.vi" Type="VI" URL="../Commands/Get Status.vi"/>
-		<Item Name="Get Configuration.vi" Type="VI" URL="../Commands/Get Configuration.vi"/>
-		<Item Name="Get Version.vi" Type="VI" URL="../Commands/Get Version.vi"/>
-		<Item Name="Get Overrides.vi" Type="VI" URL="../Commands/Get Overrides.vi"/>
-		<Item Name="Get Channels.vi" Type="VI" URL="../Commands/Get Channels.vi"/>
-		<Item Name="Get Names.vi" Type="VI" URL="../Commands/Get Names.vi"/>
 		<Item Name="Start.vi" Type="VI" URL="../Commands/Start.vi"/>
 		<Item Name="Pause.vi" Type="VI" URL="../Commands/Pause.vi"/>
 		<Item Name="Stop.vi" Type="VI" URL="../Commands/Stop.vi"/>
 		<Item Name="Refresh Statistics.vi" Type="VI" URL="../Commands/Refresh Statistics.vi"/>
 		<Item Name="Update Configuration.vi" Type="VI" URL="../Commands/Update Configuration.vi"/>
+		<Item Name="Get Status.vi" Type="VI" URL="../Commands/Get Status.vi"/>
+		<Item Name="Get Version.vi" Type="VI" URL="../Commands/Get Version.vi"/>
+		<Item Name="Get Configuration.vi" Type="VI" URL="../Commands/Get Configuration.vi"/>
+		<Item Name="Get Overrides.vi" Type="VI" URL="../Commands/Get Overrides.vi"/>
+		<Item Name="Get Names.vi" Type="VI" URL="../Commands/Get Names.vi"/>
+		<Item Name="Get Channels.vi" Type="VI" URL="../Commands/Get Channels.vi"/>
 		<Item Name="Connect.vi" Type="VI" URL="../Commands/Connect.vi"/>
 		<Item Name="Force Channel.vi" Type="VI" URL="../Commands/Force Channel.vi"/>
+		<Item Name="Create FIFO Instance.vi" Type="VI" URL="../Commands/Create FIFO Instance.vi"/>
+		<Item Name="Destroy FIFO Instance.vi" Type="VI" URL="../Commands/Destroy FIFO Instance.vi"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Node Status to gRPC Status.vi" Type="VI" URL="../Utilities/Node Status to gRPC Status.vi"/>

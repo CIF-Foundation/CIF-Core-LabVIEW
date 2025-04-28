@@ -93,6 +93,8 @@
 			<Item Name="CIFCoreOOB_Rx.lvclass" Type="LVClass" URL="../../OOB/OOB_Rx/CIFCoreOOB_Rx.lvclass"/>
 			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../OOB/OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
+			<Item Name="ChnMngOOB_Tx.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/OOB/OOB_Tx/ChnMngOOB_Tx.lvclass"/>
+			<Item Name="ChanMngOOB_Rx.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/OOB/OOB_Rx/ChanMngOOB_Rx.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

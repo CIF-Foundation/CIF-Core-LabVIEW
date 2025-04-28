@@ -1,81 +1,49 @@
-// Copyright 2015 gRPC authors.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 syntax = "proto3";
 
-import "cif_plugin_core.proto";
+import "cif_common.proto";
 
 package cif.manager;
 
 service Manager {
   // Load a specific plugin instance.
-  rpc LoadPlugin (PluginConfig) returns (Error) {}
-
+  rpc LoadPlugin (PluginConfig) returns (cif.common.Status) {}
   // Plugin calls this to register itself with the manager.
-  rpc RegisterPlugin (RegisterData) returns (Empty) {}
-
+  rpc RegisterPlugin (RegisterData) returns (cif.common.Empty) {}
   // Plugin calls this to unregister itself with the manager.
-  rpc UnregisterPlugin (PluginName) returns (Empty) {}
-
+  rpc UnregisterPlugin (PluginName) returns (cif.common.Empty) {}
   // Gets the names of all Plugin Types on the system.
-  rpc QueryPluginTypes (Empty) returns (PluginTypeReply) {}
-
+  rpc QueryPluginTypes (cif.common.Empty) returns (PluginTypeReply) {}
    // Aborts a plugin.  This should only be used if a plug-in is not responding to normal commands.
-  rpc AbortPlugin (PluginName) returns (Error) {}
-
+  rpc AbortPlugin (PluginName) returns (cif.common.Status) {}
   // Unload all the instantiated plugins. If the plugins are running it will attempt to stop them.
-  rpc UnloadAllPlugins (Empty) returns (Error) {}
-
+  rpc UnloadAllPlugins (cif.common.Empty) returns (cif.common.Status) {}
   // Destroy the manager.  If plugins are running it will attempt to stop them.  
-  rpc Destroy (Empty) returns (Empty) {}
-
+  rpc Destroy (cif.common.Empty) returns (cif.common.Empty) {}
   // Ping the manager.  
-  rpc Ping (Empty) returns (Error) {}
-
+  rpc Ping (cif.common.Empty) returns (cif.common.Status) {}
   // Query the errors occurred.
   rpc QueryErrors (QuerySettings) returns (ErrorInfoList) {}
-
   // Query the errors occurred.
   rpc QueryConfig (QuerySettings) returns (FileData) {}
-
   // Query the errors occurred.
   rpc QueryInfo (QuerySettings) returns (FileData) {}
-
   // Reset the filter time for returned errors. 
-  rpc ResetErrorIndex (Empty) returns (Error) {}
-
+  rpc ResetErrorIndex (cif.common.Empty) returns (cif.common.Status) {}
   // Reset the filter time for returned configuration. 
-  rpc ResetConfigIndex (Empty) returns (Error) {}
-
+  rpc ResetConfigIndex (cif.common.Empty) returns (cif.common.Status) {}
   // Reset the filter time for returned information. 
-  rpc ResetInfoIndex (Empty) returns (Error) {}
-
+  rpc ResetInfoIndex (cif.common.Empty) returns (cif.common.Status) {}
   // Gets the name, type, status, and gRPC port of all loaded plugins.
-  rpc QueryPluginInfo (Empty) returns (PluginInfoArray) {}
-
+  rpc QueryPluginInfo (cif.common.Empty) returns (PluginInfoArray) {}
   // Gets the name, type, status, and gRPC port of loaded plugin by name.
   rpc QueryPlugin (PluginName) returns (PluginInfoResponse) {}
-
   // Provides the plugin status and requests system status.
   rpc QuerySystemStatus (PluginStatus) returns (SystemStatus) {}
-
   // Updates a tracked clock with a new timestamp pair or a reset.
-  rpc UpdateClock (ClockUpdate) returns (Error) {}
-
+  rpc UpdateClock (ClockUpdate) returns (cif.common.Status) {}
   // Create orchestration file from logged configuration.
   rpc CreateOrch (OrchConfig) returns (OrchReturn) {}
 }
-
 
 message PluginConfig {
   string plugin_type = 1; //Name of the plugin type
@@ -86,12 +54,7 @@ message PluginConfig {
 message	RegisterData {
   string plugin_name = 1;
   int32 grpc_port = 2;
-  PluginVersion plugin_version = 3;
-}
-
-message Error {
-  string message = 1;
-  int32 code = 2;
+  cif.common.ShortVersion plugin_version = 3;
 }
 
 message	PluginTypeReply {
@@ -100,7 +63,7 @@ message	PluginTypeReply {
 
 message	PluginType {
   string plugin_type = 1;
-  PluginVersion plugin_version = 2;
+  cif.common.ShortVersion plugin_version = 2;
 }
 
 message	PluginName {
@@ -128,23 +91,17 @@ message FileData {
     string data = 1;
 }
 
-message PluginVersion {
-  int32 major_version = 1;
-  int32 minor_version = 2;
-  int32 fix_version = 3;
-}
-
 message PluginInfo {
   string plugin_name = 1;
   string plugin_type = 2;
   int32 grpc_port = 3;
-  PluginVersion plugin_version = 4;
+  cif.common.ShortVersion plugin_version = 4;
   cif.plugincore.StatusData status = 5;
 }
 
 message PluginInfoResponse {
   PluginInfo plugin_info = 1;
-  Error error = 2;
+  cif.common.Status status = 2;
 }
 
 message PluginInfoArray {
@@ -153,7 +110,7 @@ message PluginInfoArray {
 
 message PluginStatus {
   PluginName pluginname = 1;
-  cif.plugincore.StatusData status = 2;
+  cif.common.Status status = 2;
 }
 
 message TimePair {
@@ -199,7 +156,5 @@ message OrchConfig {
 
 message OrchReturn {
   string orchestration_script = 1;
-  Error error = 2;
+  Status status = 2;
 }
-
-message Empty {}
