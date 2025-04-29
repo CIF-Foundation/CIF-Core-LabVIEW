@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "cif_common.proto";
+import "cif_plugin_core.proto";
 
 package cif.manager;
 
@@ -110,7 +111,7 @@ message PluginInfoArray {
 
 message PluginStatus {
   PluginName pluginname = 1;
-  cif.common.Status status = 2;
+  cif.plugincore.StatusData status = 2;
 }
 
 message TimePair {
@@ -156,5 +157,5 @@ message OrchConfig {
 
 message OrchReturn {
   string orchestration_script = 1;
-  Status status = 2;
+  cif.common.Status status = 2;
 }
