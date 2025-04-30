@@ -36,9 +36,15 @@
 				<Item Name="Stats_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Statistics/Stats_CIF_U.lvlib"/>
 				<Item Name="Time_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Time/Time_CIF_U.lvlib"/>
 			</Item>
-			<Item Name="ChanMngOOB_Rx.lvclass" Type="LVClass" URL="../../OOB/OOB_Rx/ChanMngOOB_Rx.lvclass"/>
-			<Item Name="ChnMngOOB_Tx.lvclass" Type="LVClass" URL="../../OOB/OOB_Tx/ChnMngOOB_Tx.lvclass"/>
-			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../CIFChannelMng.lvclass"/>
+			<Item Name="Add FIFO Publisher Command.vi" Type="VI" URL="../../../Channels/CIFChannelMng/Core/Add FIFO Publisher Command.vi"/>
+			<Item Name="Channel Connection Data.ctl" Type="VI" URL="../../../Channels/CIFChannelMng/OOB/OOB_Rx/Typedef/Channel Connection Data.ctl"/>
+			<Item Name="Channel Fault Data.ctl" Type="VI" URL="../../../Channels/CIFChannelMng/OOB/OOB_Rx/Typedef/Channel Fault Data.ctl"/>
+			<Item Name="ChnMngOOB_Tx.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/OOB/OOB_Tx/ChnMngOOB_Tx.lvclass"/>
+			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
+			<Item Name="Connect Channel Command.vi" Type="VI" URL="../../../Channels/CIFChannelMng/Core/Connect Channel Command.vi"/>
+			<Item Name="FIFO Publisher.ctl" Type="VI" URL="../../../Channels/CIFChannelMng/OOB/OOB_Rx/Typedef/FIFO Publisher.ctl"/>
+			<Item Name="Force Channel Command.vi" Type="VI" URL="../../../Channels/CIFChannelMng/Core/Force Channel Command.vi"/>
+			<Item Name="Housekeeping.vi" Type="VI" URL="../../../Channels/CIFChannelMng/Core/Housekeeping.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

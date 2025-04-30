@@ -11,7 +11,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="RX OOB Test Cases.vi" Type="VI" URL="../RX OOB Test Cases.vi"/>
 		<Item Name="TX OOB Test Cases.vi" Type="VI" URL="../TX OOB Test Cases.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -26,7 +25,6 @@
 				<Item Name="Stats_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Statistics/Stats_CIF_U.lvlib"/>
 				<Item Name="Time_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Time/Time_CIF_U.lvlib"/>
 			</Item>
-			<Item Name="ChanMngOOB_Rx.lvclass" Type="LVClass" URL="../../OOB_Rx/ChanMngOOB_Rx.lvclass"/>
 			<Item Name="ChnMngOOB_Tx.lvclass" Type="LVClass" URL="../../OOB_Tx/ChnMngOOB_Tx.lvclass"/>
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../CIFChannelMng.lvclass"/>
 		</Item>
