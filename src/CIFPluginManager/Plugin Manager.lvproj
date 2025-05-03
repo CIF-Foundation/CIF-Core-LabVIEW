@@ -67,9 +67,7 @@
 			<Item Name="ChnMngOOB_Tx.lvclass" Type="LVClass" URL="../../Channels/CIFChannelMng/OOB/OOB_Tx/ChnMngOOB_Tx.lvclass"/>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
-			<Item Name="cif_manager_PluginVersion.ctl" Type="VI" URL="../CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_manager_PluginVersion.ctl"/>
 			<Item Name="CIF_Manager_server.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_server/CIF_Manager_server.lvlib"/>
-			<Item Name="cif_plugincore_TimingStatsBasic.ctl" Type="VI" URL="../CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_plugincore_TimingStatsBasic.ctl"/>
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
 			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../CIFCore/Common/CIFCoreCommon.lvlib"/>
@@ -84,7 +82,7 @@
 	</Item>
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
-		<Property Name="alias.value" Type="Str">192.168.1.149</Property>
+		<Property Name="alias.value" Type="Str">192.168.1.160</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,x64;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>

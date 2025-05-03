@@ -707,9 +707,9 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_previewCacheID" Type="Str">{E1B1FFA6-FD1A-43A9-B4CA-878D53F65E7D}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/rt</Property>
 				<Property Name="Bld_version.build" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">2</Property>
-				<Property Name="Destination[0].destName" Type="Str">CIFCorePlugin.0.2.0.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/rt/CIFCorePlugin.0.2.0.lvlibp</Property>
+				<Property Name="Bld_version.minor" Type="Int">3</Property>
+				<Property Name="Destination[0].destName" Type="Str">CIFCorePlugin.0.3.0.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/rt/CIFCorePlugin.0.3.0.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -717,7 +717,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/rt</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B6DD8048-B0C0-48CA-B609-A73588ED986A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{60B16CFE-7D26-4F40-A1D3-C97F2B636BD2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/CIFCorePlugin.lvlib</Property>
@@ -733,7 +733,7 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 </Property>
 				<Property Name="TgtF_productName" Type="Str">CIFCorePluginRT</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{6DA0406C-9AB0-4143-8ABB-FB8A9909FCC3}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">CIFCorePlugin.0.2.0.lvlibp</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">CIFCorePlugin.0.3.0.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
