@@ -550,6 +550,8 @@
 			<Item Name="provcom_IsDesktopTargetBehavior.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_IsDesktopTargetBehavior.vi"/>
 			<Item Name="provcom_GetObjectItemFromProjectItem.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_GetObjectItemFromProjectItem.vi"/>
 			<Item Name="provcom_CheckChannelControlConPane.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_CheckChannelControlConPane.vi"/>
+			<Item Name="cif_manager_PluginVersion.ctl" Type="VI" URL="../../CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_manager_PluginVersion.ctl"/>
+			<Item Name="cif_plugincore_TimingStatsBasic.ctl" Type="VI" URL="../../CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_plugincore_TimingStatsBasic.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Plugin Manager UI" Type="Packed Library">

@@ -26,7 +26,14 @@ message Channel {
   bool connected = 5;
   string connected_name = 6;  //This is only valid for subscribers.  Publishers typically have no knowledge of connections.  
   bool forced = 7; //Indicates if the value is being "forced" to always return a specific override value.  This only applies to tags
-  bool multi_writer = 8; //Indicates if a FIFO publisher supports writing to multiple subscribers.  This only applies to FIFO publishers.
+  PATTERN channel_pattern = 8; //Indicates the pattern of the channel and is used for channel management and linking.
+}
+
+enum PATTERN {
+  UNKNOWN = 0;
+  TAG = 1;
+  FIFO = 2;
+  MULTIFIFO = 3;
 }
 
 message Channels {

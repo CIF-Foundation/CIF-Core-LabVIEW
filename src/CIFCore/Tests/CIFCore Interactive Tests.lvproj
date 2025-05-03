@@ -80,6 +80,8 @@
 			<Item Name="ChnMngOOB_Tx.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/OOB/OOB_Tx/ChnMngOOB_Tx.lvclass"/>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
+			<Item Name="cif_manager_PluginVersion.ctl" Type="VI" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_manager_PluginVersion.ctl"/>
+			<Item Name="cif_plugincore_TimingStatsBasic.ctl" Type="VI" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_plugincore_TimingStatsBasic.ctl"/>
 			<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../../CIFUI/CIF_UI.lvclass"/>
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
 			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>

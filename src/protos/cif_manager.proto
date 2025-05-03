@@ -11,7 +11,7 @@ service Manager {
   // Plugin calls this to register itself with the manager.
   rpc RegisterPlugin (RegisterData) returns (cif.common.Empty) {}
   // Plugin calls this to unregister itself with the manager.
-  rpc UnregisterPlugin (PluginName) returns (cif.common.Empty) {}
+  rpc UnregisterPlugin (UnregisterData) returns (cif.common.Empty) {}
   // Gets the names of all Plugin Types on the system.
   rpc QueryPluginTypes (cif.common.Empty) returns (PluginTypeReply) {}
    // Aborts a plugin.  This should only be used if a plug-in is not responding to normal commands.
@@ -56,6 +56,11 @@ message	RegisterData {
   string plugin_name = 1;
   int32 grpc_port = 2;
   cif.common.ShortVersion plugin_version = 3;
+}
+
+message	UnregisterData {
+  string plugin_name = 1;
+  repeated string unregister_channels = 2;
 }
 
 message	PluginTypeReply {

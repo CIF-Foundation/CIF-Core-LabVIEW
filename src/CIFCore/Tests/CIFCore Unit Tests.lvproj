@@ -94,6 +94,8 @@
 			<Item Name="CIFCoreOOB_Tx.lvclass" Type="LVClass" URL="../../OOB/OOB_Tx/CIFCoreOOB_Tx.lvclass"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="ChnMngOOB_Tx.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/OOB/OOB_Tx/ChnMngOOB_Tx.lvclass"/>
+			<Item Name="cif_manager_PluginVersion.ctl" Type="VI" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_manager_PluginVersion.ctl"/>
+			<Item Name="cif_plugincore_TimingStatsBasic.ctl" Type="VI" URL="../../../CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/RPC Messages/cif_plugincore_TimingStatsBasic.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
