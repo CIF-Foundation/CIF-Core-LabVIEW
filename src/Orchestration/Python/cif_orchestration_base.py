@@ -8,6 +8,8 @@ import cif_plugin_core_pb2
 import cif_plugin_core_pb2_grpc
 import cif_channel_core_pb2
 import cif_channel_core_pb2_grpc
+import cif_common_pb2
+import cif_common_pb2_grpc
 
 class cif_manager():
     def __init__(self, address, port):
@@ -57,7 +59,7 @@ class plugin():
             i = 0
             while i < 20:
               result_info = self.cif_manager.stub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=self.name))
-              res = check_error(result_info.error)
+              res = check_error(result_info.status)
               if res != 0:
                 return self
               if result_info.plugin_info.grpc_port != -1:
@@ -75,7 +77,7 @@ class plugin():
 
     def run(self, wait_running=False):
         self = self.check_loaded()
-        result_info = self.stub.Start(cif_plugin_core_pb2.Empty())
+        result_info = self.stub.Start(cif_common_pb2.Status())
         check_error(result_info)
         if wait_running == True:
             self = self.wait_on_running()
@@ -95,7 +97,7 @@ class plugin():
     
     def status(self):
         self = self.check_loaded()
-        result_info = self.stub.GetStatusData(cif_plugin_core_pb2.Empty())
+        result_info = self.stub.GetStatusData(cif_common_pb2.Empty())
         self.state = plugin_state(result_info.state)
         return self
     

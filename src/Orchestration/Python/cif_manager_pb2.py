@@ -22,64 +22,61 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
+import cif_common_pb2 as cif__common__pb2
 import cif_plugin_core_pb2 as cif__plugin__core__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x63if_manager.proto\x12\x0b\x63if.manager\x1a\x15\x63if_plugin_core.proto\"I\n\x0cPluginConfig\x12\x13\n\x0bplugin_type\x18\x01 \x01(\t\x12\x13\n\x0bplugin_name\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\"j\n\x0cRegisterData\x12\x13\n\x0bplugin_name\x18\x01 \x01(\t\x12\x11\n\tgrpc_port\x18\x02 \x01(\x05\x12\x32\n\x0eplugin_version\x18\x03 \x01(\x0b\x32\x1a.cif.manager.PluginVersion\"&\n\x05\x45rror\x12\x0f\n\x07message\x18\x01 \x01(\t\x12\x0c\n\x04\x63ode\x18\x02 \x01(\x05\"@\n\x0fPluginTypeReply\x12-\n\x0cplugin_types\x18\x01 \x03(\x0b\x32\x17.cif.manager.PluginType\"U\n\nPluginType\x12\x13\n\x0bplugin_type\x18\x01 \x01(\t\x12\x32\n\x0eplugin_version\x18\x02 \x01(\x0b\x32\x1a.cif.manager.PluginVersion\"!\n\nPluginName\x12\x13\n\x0bplugin_name\x18\x01 \x01(\t\";\n\rErrorInfoList\x12*\n\nerror_info\x18\x01 \x03(\x0b\x32\x16.cif.manager.ErrorInfo\"v\n\tErrorInfo\x12\x14\n\x0c\x65rror_status\x18\x01 \x01(\x08\x12\x12\n\nerror_code\x18\x02 \x01(\x05\x12\x0e\n\x06plugin\x18\x03 \x01(\t\x12\x0c\n\x04time\x18\x04 \x01(\t\x12\x0f\n\x07message\x18\x05 \x01(\t\x12\x10\n\x08location\x18\x06 \x01(\t\"\"\n\rQuerySettings\x12\x11\n\tquery_all\x18\x01 \x01(\x08\"\x18\n\x08\x46ileData\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\t\"R\n\rPluginVersion\x12\x15\n\rmajor_version\x18\x01 \x01(\x05\x12\x15\n\rminor_version\x18\x02 \x01(\x05\x12\x13\n\x0b\x66ix_version\x18\x03 \x01(\x05\"\xa9\x01\n\nPluginInfo\x12\x13\n\x0bplugin_name\x18\x01 \x01(\t\x12\x13\n\x0bplugin_type\x18\x02 \x01(\t\x12\x11\n\tgrpc_port\x18\x03 \x01(\x05\x12\x32\n\x0eplugin_version\x18\x04 \x01(\x0b\x32\x1a.cif.manager.PluginVersion\x12*\n\x06status\x18\x05 \x01(\x0b\x32\x1a.cif.plugincore.StatusData\"e\n\x12PluginInfoResponse\x12,\n\x0bplugin_info\x18\x01 \x01(\x0b\x32\x17.cif.manager.PluginInfo\x12!\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x12.cif.manager.Error\"?\n\x0fPluginInfoArray\x12,\n\x0bplugin_info\x18\x01 \x03(\x0b\x32\x17.cif.manager.PluginInfo\"g\n\x0cPluginStatus\x12+\n\npluginname\x18\x01 \x01(\x0b\x32\x17.cif.manager.PluginName\x12*\n\x06status\x18\x02 \x01(\x0b\x32\x1a.cif.plugincore.StatusData\"6\n\x08TimePair\x12\x13\n\x0bsystem_time\x18\x01 \x01(\x03\x12\x15\n\rexternal_time\x18\x02 \x01(\x03\"\x86\x01\n\x0f\x43lockConversion\x12\x10\n\x08\x63lock_id\x18\x01 \x01(\r\x12\x12\n\nlast_reset\x18\x02 \x01(\x04\x12\r\n\x05slope\x18\x03 \x01(\x01\x12*\n\x0boffset_pair\x18\x04 \x01(\x0b\x32\x15.cif.manager.TimePair\x12\x12\n\nclock_name\x18\x05 \x01(\t\"O\n\x14\x43lockConversionArray\x12\x37\n\x11\x63lock_conversions\x18\x01 \x03(\x0b\x32\x1c.cif.manager.ClockConversion\"Q\n\x0cSystemStatus\x12\x41\n\x16\x63lock_conversion_array\x18\x01 \x01(\x0b\x32!.cif.manager.ClockConversionArray\"r\n\x0b\x43lockUpdate\x12\x10\n\x08\x63lock_id\x18\x01 \x01(\r\x12-\n\x0etimestamp_pair\x18\x02 \x01(\x0b\x32\x15.cif.manager.TimePair\x12\x0e\n\x06reinit\x18\x03 \x01(\x08\x12\x12\n\nclock_name\x18\x04 \x01(\t\"\xa4\x01\n\nOrchConfig\x12\x17\n\x0fstart_timestamp\x18\x01 \x01(\x04\x12\x13\n\x0b\x63reate_file\x18\x02 \x01(\x08\x12\x42\n\x16orchestration_language\x18\x03 \x01(\x0e\x32\".cif.manager.OrchestrationLanguage\x12\x10\n\x08\x66ilename\x18\x04 \x01(\t\x12\x12\n\ndefault_ip\x18\x05 \x01(\t\"M\n\nOrchReturn\x12\x1c\n\x14orchestration_script\x18\x01 \x01(\t\x12!\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x12.cif.manager.Error\"\x07\n\x05\x45mpty*-\n\x15OrchestrationLanguage\x12\x08\n\x04NULL\x10\x00\x12\n\n\x06PYTHON\x10\x01\x32\xdf\t\n\x07Manager\x12=\n\nLoadPlugin\x12\x19.cif.manager.PluginConfig\x1a\x12.cif.manager.Error\"\x00\x12\x41\n\x0eRegisterPlugin\x12\x19.cif.manager.RegisterData\x1a\x12.cif.manager.Empty\"\x00\x12\x41\n\x10UnregisterPlugin\x12\x17.cif.manager.PluginName\x1a\x12.cif.manager.Empty\"\x00\x12\x46\n\x10QueryPluginTypes\x12\x12.cif.manager.Empty\x1a\x1c.cif.manager.PluginTypeReply\"\x00\x12<\n\x0b\x41\x62ortPlugin\x12\x17.cif.manager.PluginName\x1a\x12.cif.manager.Error\"\x00\x12<\n\x10UnloadAllPlugins\x12\x12.cif.manager.Empty\x1a\x12.cif.manager.Error\"\x00\x12\x33\n\x07\x44\x65stroy\x12\x12.cif.manager.Empty\x1a\x12.cif.manager.Empty\"\x00\x12\x30\n\x04Ping\x12\x12.cif.manager.Empty\x1a\x12.cif.manager.Error\"\x00\x12G\n\x0bQueryErrors\x12\x1a.cif.manager.QuerySettings\x1a\x1a.cif.manager.ErrorInfoList\"\x00\x12\x42\n\x0bQueryConfig\x12\x1a.cif.manager.QuerySettings\x1a\x15.cif.manager.FileData\"\x00\x12@\n\tQueryInfo\x12\x1a.cif.manager.QuerySettings\x1a\x15.cif.manager.FileData\"\x00\x12;\n\x0fResetErrorIndex\x12\x12.cif.manager.Empty\x1a\x12.cif.manager.Error\"\x00\x12<\n\x10ResetConfigIndex\x12\x12.cif.manager.Empty\x1a\x12.cif.manager.Error\"\x00\x12:\n\x0eResetInfoIndex\x12\x12.cif.manager.Empty\x1a\x12.cif.manager.Error\"\x00\x12\x45\n\x0fQueryPluginInfo\x12\x12.cif.manager.Empty\x1a\x1c.cif.manager.PluginInfoArray\"\x00\x12I\n\x0bQueryPlugin\x12\x17.cif.manager.PluginName\x1a\x1f.cif.manager.PluginInfoResponse\"\x00\x12K\n\x11QuerySystemStatus\x12\x19.cif.manager.PluginStatus\x1a\x19.cif.manager.SystemStatus\"\x00\x12=\n\x0bUpdateClock\x12\x18.cif.manager.ClockUpdate\x1a\x12.cif.manager.Error\"\x00\x12@\n\nCreateOrch\x12\x17.cif.manager.OrchConfig\x1a\x17.cif.manager.OrchReturn\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x63if_manager.proto\x12\x0b\x63if.manager\x1a\x10\x63if_common.proto\x1a\x15\x63if_plugin_core.proto\"I\n\x0cPluginConfig\x12\x13\n\x0bplugin_type\x18\x01 \x01(\t\x12\x13\n\x0bplugin_name\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\"h\n\x0cRegisterData\x12\x13\n\x0bplugin_name\x18\x01 \x01(\t\x12\x11\n\tgrpc_port\x18\x02 \x01(\x05\x12\x30\n\x0eplugin_version\x18\x03 \x01(\x0b\x32\x18.cif.common.ShortVersion\"B\n\x0eUnregisterData\x12\x13\n\x0bplugin_name\x18\x01 \x01(\t\x12\x1b\n\x13unregister_channels\x18\x02 \x03(\t\"@\n\x0fPluginTypeReply\x12-\n\x0cplugin_types\x18\x01 \x03(\x0b\x32\x17.cif.manager.PluginType\"S\n\nPluginType\x12\x13\n\x0bplugin_type\x18\x01 \x01(\t\x12\x30\n\x0eplugin_version\x18\x02 \x01(\x0b\x32\x18.cif.common.ShortVersion\"!\n\nPluginName\x12\x13\n\x0bplugin_name\x18\x01 \x01(\t\";\n\rErrorInfoList\x12*\n\nerror_info\x18\x01 \x03(\x0b\x32\x16.cif.manager.ErrorInfo\"v\n\tErrorInfo\x12\x14\n\x0c\x65rror_status\x18\x01 \x01(\x08\x12\x12\n\nerror_code\x18\x02 \x01(\x05\x12\x0e\n\x06plugin\x18\x03 \x01(\t\x12\x0c\n\x04time\x18\x04 \x01(\t\x12\x0f\n\x07message\x18\x05 \x01(\t\x12\x10\n\x08location\x18\x06 \x01(\t\"\"\n\rQuerySettings\x12\x11\n\tquery_all\x18\x01 \x01(\x08\"\x18\n\x08\x46ileData\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\t\"\xa7\x01\n\nPluginInfo\x12\x13\n\x0bplugin_name\x18\x01 \x01(\t\x12\x13\n\x0bplugin_type\x18\x02 \x01(\t\x12\x11\n\tgrpc_port\x18\x03 \x01(\x05\x12\x30\n\x0eplugin_version\x18\x04 \x01(\x0b\x32\x18.cif.common.ShortVersion\x12*\n\x06status\x18\x05 \x01(\x0b\x32\x1a.cif.plugincore.StatusData\"f\n\x12PluginInfoResponse\x12,\n\x0bplugin_info\x18\x01 \x01(\x0b\x32\x17.cif.manager.PluginInfo\x12\"\n\x06status\x18\x02 \x01(\x0b\x32\x12.cif.common.Status\"?\n\x0fPluginInfoArray\x12,\n\x0bplugin_info\x18\x01 \x03(\x0b\x32\x17.cif.manager.PluginInfo\"g\n\x0cPluginStatus\x12+\n\npluginname\x18\x01 \x01(\x0b\x32\x17.cif.manager.PluginName\x12*\n\x06status\x18\x02 \x01(\x0b\x32\x1a.cif.plugincore.StatusData\"6\n\x08TimePair\x12\x13\n\x0bsystem_time\x18\x01 \x01(\x03\x12\x15\n\rexternal_time\x18\x02 \x01(\x03\"\x86\x01\n\x0f\x43lockConversion\x12\x10\n\x08\x63lock_id\x18\x01 \x01(\r\x12\x12\n\nlast_reset\x18\x02 \x01(\x04\x12\r\n\x05slope\x18\x03 \x01(\x01\x12*\n\x0boffset_pair\x18\x04 \x01(\x0b\x32\x15.cif.manager.TimePair\x12\x12\n\nclock_name\x18\x05 \x01(\t\"O\n\x14\x43lockConversionArray\x12\x37\n\x11\x63lock_conversions\x18\x01 \x03(\x0b\x32\x1c.cif.manager.ClockConversion\"Q\n\x0cSystemStatus\x12\x41\n\x16\x63lock_conversion_array\x18\x01 \x01(\x0b\x32!.cif.manager.ClockConversionArray\"r\n\x0b\x43lockUpdate\x12\x10\n\x08\x63lock_id\x18\x01 \x01(\r\x12-\n\x0etimestamp_pair\x18\x02 \x01(\x0b\x32\x15.cif.manager.TimePair\x12\x0e\n\x06reinit\x18\x03 \x01(\x08\x12\x12\n\nclock_name\x18\x04 \x01(\t\"\xa4\x01\n\nOrchConfig\x12\x17\n\x0fstart_timestamp\x18\x01 \x01(\x04\x12\x13\n\x0b\x63reate_file\x18\x02 \x01(\x08\x12\x42\n\x16orchestration_language\x18\x03 \x01(\x0e\x32\".cif.manager.OrchestrationLanguage\x12\x10\n\x08\x66ilename\x18\x04 \x01(\t\x12\x12\n\ndefault_ip\x18\x05 \x01(\t\"N\n\nOrchReturn\x12\x1c\n\x14orchestration_script\x18\x01 \x01(\t\x12\"\n\x06status\x18\x02 \x01(\x0b\x32\x12.cif.common.Status*-\n\x15OrchestrationLanguage\x12\x08\n\x04NULL\x10\x00\x12\n\n\x06PYTHON\x10\x01\x32\xd8\t\n\x07Manager\x12=\n\nLoadPlugin\x12\x19.cif.manager.PluginConfig\x1a\x12.cif.common.Status\"\x00\x12@\n\x0eRegisterPlugin\x12\x19.cif.manager.RegisterData\x1a\x11.cif.common.Empty\"\x00\x12\x44\n\x10UnregisterPlugin\x12\x1b.cif.manager.UnregisterData\x1a\x11.cif.common.Empty\"\x00\x12\x45\n\x10QueryPluginTypes\x12\x11.cif.common.Empty\x1a\x1c.cif.manager.PluginTypeReply\"\x00\x12<\n\x0b\x41\x62ortPlugin\x12\x17.cif.manager.PluginName\x1a\x12.cif.common.Status\"\x00\x12;\n\x10UnloadAllPlugins\x12\x11.cif.common.Empty\x1a\x12.cif.common.Status\"\x00\x12\x31\n\x07\x44\x65stroy\x12\x11.cif.common.Empty\x1a\x11.cif.common.Empty\"\x00\x12/\n\x04Ping\x12\x11.cif.common.Empty\x1a\x12.cif.common.Status\"\x00\x12G\n\x0bQueryErrors\x12\x1a.cif.manager.QuerySettings\x1a\x1a.cif.manager.ErrorInfoList\"\x00\x12\x42\n\x0bQueryConfig\x12\x1a.cif.manager.QuerySettings\x1a\x15.cif.manager.FileData\"\x00\x12@\n\tQueryInfo\x12\x1a.cif.manager.QuerySettings\x1a\x15.cif.manager.FileData\"\x00\x12:\n\x0fResetErrorIndex\x12\x11.cif.common.Empty\x1a\x12.cif.common.Status\"\x00\x12;\n\x10ResetConfigIndex\x12\x11.cif.common.Empty\x1a\x12.cif.common.Status\"\x00\x12\x39\n\x0eResetInfoIndex\x12\x11.cif.common.Empty\x1a\x12.cif.common.Status\"\x00\x12\x44\n\x0fQueryPluginInfo\x12\x11.cif.common.Empty\x1a\x1c.cif.manager.PluginInfoArray\"\x00\x12I\n\x0bQueryPlugin\x12\x17.cif.manager.PluginName\x1a\x1f.cif.manager.PluginInfoResponse\"\x00\x12K\n\x11QuerySystemStatus\x12\x19.cif.manager.PluginStatus\x1a\x19.cif.manager.SystemStatus\"\x00\x12=\n\x0bUpdateClock\x12\x18.cif.manager.ClockUpdate\x1a\x12.cif.common.Status\"\x00\x12@\n\nCreateOrch\x12\x17.cif.manager.OrchConfig\x1a\x17.cif.manager.OrchReturn\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'cif_manager_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_ORCHESTRATIONLANGUAGE']._serialized_start=1968
-  _globals['_ORCHESTRATIONLANGUAGE']._serialized_end=2013
-  _globals['_PLUGINCONFIG']._serialized_start=57
-  _globals['_PLUGINCONFIG']._serialized_end=130
-  _globals['_REGISTERDATA']._serialized_start=132
-  _globals['_REGISTERDATA']._serialized_end=238
-  _globals['_ERROR']._serialized_start=240
-  _globals['_ERROR']._serialized_end=278
-  _globals['_PLUGINTYPEREPLY']._serialized_start=280
-  _globals['_PLUGINTYPEREPLY']._serialized_end=344
-  _globals['_PLUGINTYPE']._serialized_start=346
-  _globals['_PLUGINTYPE']._serialized_end=431
-  _globals['_PLUGINNAME']._serialized_start=433
-  _globals['_PLUGINNAME']._serialized_end=466
-  _globals['_ERRORINFOLIST']._serialized_start=468
-  _globals['_ERRORINFOLIST']._serialized_end=527
-  _globals['_ERRORINFO']._serialized_start=529
-  _globals['_ERRORINFO']._serialized_end=647
-  _globals['_QUERYSETTINGS']._serialized_start=649
-  _globals['_QUERYSETTINGS']._serialized_end=683
-  _globals['_FILEDATA']._serialized_start=685
-  _globals['_FILEDATA']._serialized_end=709
-  _globals['_PLUGINVERSION']._serialized_start=711
-  _globals['_PLUGINVERSION']._serialized_end=793
-  _globals['_PLUGININFO']._serialized_start=796
-  _globals['_PLUGININFO']._serialized_end=965
-  _globals['_PLUGININFORESPONSE']._serialized_start=967
-  _globals['_PLUGININFORESPONSE']._serialized_end=1068
-  _globals['_PLUGININFOARRAY']._serialized_start=1070
-  _globals['_PLUGININFOARRAY']._serialized_end=1133
-  _globals['_PLUGINSTATUS']._serialized_start=1135
-  _globals['_PLUGINSTATUS']._serialized_end=1238
-  _globals['_TIMEPAIR']._serialized_start=1240
-  _globals['_TIMEPAIR']._serialized_end=1294
-  _globals['_CLOCKCONVERSION']._serialized_start=1297
-  _globals['_CLOCKCONVERSION']._serialized_end=1431
-  _globals['_CLOCKCONVERSIONARRAY']._serialized_start=1433
-  _globals['_CLOCKCONVERSIONARRAY']._serialized_end=1512
-  _globals['_SYSTEMSTATUS']._serialized_start=1514
-  _globals['_SYSTEMSTATUS']._serialized_end=1595
-  _globals['_CLOCKUPDATE']._serialized_start=1597
-  _globals['_CLOCKUPDATE']._serialized_end=1711
-  _globals['_ORCHCONFIG']._serialized_start=1714
-  _globals['_ORCHCONFIG']._serialized_end=1878
-  _globals['_ORCHRETURN']._serialized_start=1880
-  _globals['_ORCHRETURN']._serialized_end=1957
-  _globals['_EMPTY']._serialized_start=1959
-  _globals['_EMPTY']._serialized_end=1966
-  _globals['_MANAGER']._serialized_start=2016
-  _globals['_MANAGER']._serialized_end=3263
+  _globals['_ORCHESTRATIONLANGUAGE']._serialized_start=1917
+  _globals['_ORCHESTRATIONLANGUAGE']._serialized_end=1962
+  _globals['_PLUGINCONFIG']._serialized_start=75
+  _globals['_PLUGINCONFIG']._serialized_end=148
+  _globals['_REGISTERDATA']._serialized_start=150
+  _globals['_REGISTERDATA']._serialized_end=254
+  _globals['_UNREGISTERDATA']._serialized_start=256
+  _globals['_UNREGISTERDATA']._serialized_end=322
+  _globals['_PLUGINTYPEREPLY']._serialized_start=324
+  _globals['_PLUGINTYPEREPLY']._serialized_end=388
+  _globals['_PLUGINTYPE']._serialized_start=390
+  _globals['_PLUGINTYPE']._serialized_end=473
+  _globals['_PLUGINNAME']._serialized_start=475
+  _globals['_PLUGINNAME']._serialized_end=508
+  _globals['_ERRORINFOLIST']._serialized_start=510
+  _globals['_ERRORINFOLIST']._serialized_end=569
+  _globals['_ERRORINFO']._serialized_start=571
+  _globals['_ERRORINFO']._serialized_end=689
+  _globals['_QUERYSETTINGS']._serialized_start=691
+  _globals['_QUERYSETTINGS']._serialized_end=725
+  _globals['_FILEDATA']._serialized_start=727
+  _globals['_FILEDATA']._serialized_end=751
+  _globals['_PLUGININFO']._serialized_start=754
+  _globals['_PLUGININFO']._serialized_end=921
+  _globals['_PLUGININFORESPONSE']._serialized_start=923
+  _globals['_PLUGININFORESPONSE']._serialized_end=1025
+  _globals['_PLUGININFOARRAY']._serialized_start=1027
+  _globals['_PLUGININFOARRAY']._serialized_end=1090
+  _globals['_PLUGINSTATUS']._serialized_start=1092
+  _globals['_PLUGINSTATUS']._serialized_end=1195
+  _globals['_TIMEPAIR']._serialized_start=1197
+  _globals['_TIMEPAIR']._serialized_end=1251
+  _globals['_CLOCKCONVERSION']._serialized_start=1254
+  _globals['_CLOCKCONVERSION']._serialized_end=1388
+  _globals['_CLOCKCONVERSIONARRAY']._serialized_start=1390
+  _globals['_CLOCKCONVERSIONARRAY']._serialized_end=1469
+  _globals['_SYSTEMSTATUS']._serialized_start=1471
+  _globals['_SYSTEMSTATUS']._serialized_end=1552
+  _globals['_CLOCKUPDATE']._serialized_start=1554
+  _globals['_CLOCKUPDATE']._serialized_end=1668
+  _globals['_ORCHCONFIG']._serialized_start=1671
+  _globals['_ORCHCONFIG']._serialized_end=1835
+  _globals['_ORCHRETURN']._serialized_start=1837
+  _globals['_ORCHRETURN']._serialized_end=1915
+  _globals['_MANAGER']._serialized_start=1965
+  _globals['_MANAGER']._serialized_end=3205
 # @@protoc_insertion_point(module_scope)

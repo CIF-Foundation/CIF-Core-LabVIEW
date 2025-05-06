@@ -1,3 +1,4 @@
+import cif_common_pb2 as _cif_common_pb2
 import cif_plugin_core_pb2 as _cif_plugin_core_pb2
 from google.protobuf.internal import containers as _containers
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
@@ -31,16 +32,16 @@ class RegisterData(_message.Message):
     PLUGIN_VERSION_FIELD_NUMBER: _ClassVar[int]
     plugin_name: str
     grpc_port: int
-    plugin_version: PluginVersion
-    def __init__(self, plugin_name: _Optional[str] = ..., grpc_port: _Optional[int] = ..., plugin_version: _Optional[_Union[PluginVersion, _Mapping]] = ...) -> None: ...
+    plugin_version: _cif_common_pb2.ShortVersion
+    def __init__(self, plugin_name: _Optional[str] = ..., grpc_port: _Optional[int] = ..., plugin_version: _Optional[_Union[_cif_common_pb2.ShortVersion, _Mapping]] = ...) -> None: ...
 
-class Error(_message.Message):
-    __slots__ = ("message", "code")
-    MESSAGE_FIELD_NUMBER: _ClassVar[int]
-    CODE_FIELD_NUMBER: _ClassVar[int]
-    message: str
-    code: int
-    def __init__(self, message: _Optional[str] = ..., code: _Optional[int] = ...) -> None: ...
+class UnregisterData(_message.Message):
+    __slots__ = ("plugin_name", "unregister_channels")
+    PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
+    UNREGISTER_CHANNELS_FIELD_NUMBER: _ClassVar[int]
+    plugin_name: str
+    unregister_channels: _containers.RepeatedScalarFieldContainer[str]
+    def __init__(self, plugin_name: _Optional[str] = ..., unregister_channels: _Optional[_Iterable[str]] = ...) -> None: ...
 
 class PluginTypeReply(_message.Message):
     __slots__ = ("plugin_types",)
@@ -53,8 +54,8 @@ class PluginType(_message.Message):
     PLUGIN_TYPE_FIELD_NUMBER: _ClassVar[int]
     PLUGIN_VERSION_FIELD_NUMBER: _ClassVar[int]
     plugin_type: str
-    plugin_version: PluginVersion
-    def __init__(self, plugin_type: _Optional[str] = ..., plugin_version: _Optional[_Union[PluginVersion, _Mapping]] = ...) -> None: ...
+    plugin_version: _cif_common_pb2.ShortVersion
+    def __init__(self, plugin_type: _Optional[str] = ..., plugin_version: _Optional[_Union[_cif_common_pb2.ShortVersion, _Mapping]] = ...) -> None: ...
 
 class PluginName(_message.Message):
     __slots__ = ("plugin_name",)
@@ -96,16 +97,6 @@ class FileData(_message.Message):
     data: str
     def __init__(self, data: _Optional[str] = ...) -> None: ...
 
-class PluginVersion(_message.Message):
-    __slots__ = ("major_version", "minor_version", "fix_version")
-    MAJOR_VERSION_FIELD_NUMBER: _ClassVar[int]
-    MINOR_VERSION_FIELD_NUMBER: _ClassVar[int]
-    FIX_VERSION_FIELD_NUMBER: _ClassVar[int]
-    major_version: int
-    minor_version: int
-    fix_version: int
-    def __init__(self, major_version: _Optional[int] = ..., minor_version: _Optional[int] = ..., fix_version: _Optional[int] = ...) -> None: ...
-
 class PluginInfo(_message.Message):
     __slots__ = ("plugin_name", "plugin_type", "grpc_port", "plugin_version", "status")
     PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
@@ -116,17 +107,17 @@ class PluginInfo(_message.Message):
     plugin_name: str
     plugin_type: str
     grpc_port: int
-    plugin_version: PluginVersion
+    plugin_version: _cif_common_pb2.ShortVersion
     status: _cif_plugin_core_pb2.StatusData
-    def __init__(self, plugin_name: _Optional[str] = ..., plugin_type: _Optional[str] = ..., grpc_port: _Optional[int] = ..., plugin_version: _Optional[_Union[PluginVersion, _Mapping]] = ..., status: _Optional[_Union[_cif_plugin_core_pb2.StatusData, _Mapping]] = ...) -> None: ...
+    def __init__(self, plugin_name: _Optional[str] = ..., plugin_type: _Optional[str] = ..., grpc_port: _Optional[int] = ..., plugin_version: _Optional[_Union[_cif_common_pb2.ShortVersion, _Mapping]] = ..., status: _Optional[_Union[_cif_plugin_core_pb2.StatusData, _Mapping]] = ...) -> None: ...
 
 class PluginInfoResponse(_message.Message):
-    __slots__ = ("plugin_info", "error")
+    __slots__ = ("plugin_info", "status")
     PLUGIN_INFO_FIELD_NUMBER: _ClassVar[int]
-    ERROR_FIELD_NUMBER: _ClassVar[int]
+    STATUS_FIELD_NUMBER: _ClassVar[int]
     plugin_info: PluginInfo
-    error: Error
-    def __init__(self, plugin_info: _Optional[_Union[PluginInfo, _Mapping]] = ..., error: _Optional[_Union[Error, _Mapping]] = ...) -> None: ...
+    status: _cif_common_pb2.Status
+    def __init__(self, plugin_info: _Optional[_Union[PluginInfo, _Mapping]] = ..., status: _Optional[_Union[_cif_common_pb2.Status, _Mapping]] = ...) -> None: ...
 
 class PluginInfoArray(_message.Message):
     __slots__ = ("plugin_info",)
@@ -203,13 +194,9 @@ class OrchConfig(_message.Message):
     def __init__(self, start_timestamp: _Optional[int] = ..., create_file: bool = ..., orchestration_language: _Optional[_Union[OrchestrationLanguage, str]] = ..., filename: _Optional[str] = ..., default_ip: _Optional[str] = ...) -> None: ...
 
 class OrchReturn(_message.Message):
-    __slots__ = ("orchestration_script", "error")
+    __slots__ = ("orchestration_script", "status")
     ORCHESTRATION_SCRIPT_FIELD_NUMBER: _ClassVar[int]
-    ERROR_FIELD_NUMBER: _ClassVar[int]
+    STATUS_FIELD_NUMBER: _ClassVar[int]
     orchestration_script: str
-    error: Error
-    def __init__(self, orchestration_script: _Optional[str] = ..., error: _Optional[_Union[Error, _Mapping]] = ...) -> None: ...
-
-class Empty(_message.Message):
-    __slots__ = ()
-    def __init__(self) -> None: ...
+    status: _cif_common_pb2.Status
+    def __init__(self, orchestration_script: _Optional[str] = ..., status: _Optional[_Union[_cif_common_pb2.Status, _Mapping]] = ...) -> None: ...

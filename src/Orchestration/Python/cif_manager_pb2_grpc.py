@@ -3,6 +3,7 @@
 import grpc
 import warnings
 
+import cif_common_pb2 as cif__common__pb2
 import cif_manager_pb2 as cif__manager__pb2
 
 GRPC_GENERATED_VERSION = '1.67.0'
@@ -37,42 +38,42 @@ class ManagerStub(object):
         self.LoadPlugin = channel.unary_unary(
                 '/cif.manager.Manager/LoadPlugin',
                 request_serializer=cif__manager__pb2.PluginConfig.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.RegisterPlugin = channel.unary_unary(
                 '/cif.manager.Manager/RegisterPlugin',
                 request_serializer=cif__manager__pb2.RegisterData.SerializeToString,
-                response_deserializer=cif__manager__pb2.Empty.FromString,
+                response_deserializer=cif__common__pb2.Empty.FromString,
                 _registered_method=True)
         self.UnregisterPlugin = channel.unary_unary(
                 '/cif.manager.Manager/UnregisterPlugin',
-                request_serializer=cif__manager__pb2.PluginName.SerializeToString,
-                response_deserializer=cif__manager__pb2.Empty.FromString,
+                request_serializer=cif__manager__pb2.UnregisterData.SerializeToString,
+                response_deserializer=cif__common__pb2.Empty.FromString,
                 _registered_method=True)
         self.QueryPluginTypes = channel.unary_unary(
                 '/cif.manager.Manager/QueryPluginTypes',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
                 response_deserializer=cif__manager__pb2.PluginTypeReply.FromString,
                 _registered_method=True)
         self.AbortPlugin = channel.unary_unary(
                 '/cif.manager.Manager/AbortPlugin',
                 request_serializer=cif__manager__pb2.PluginName.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.UnloadAllPlugins = channel.unary_unary(
                 '/cif.manager.Manager/UnloadAllPlugins',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.Destroy = channel.unary_unary(
                 '/cif.manager.Manager/Destroy',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
-                response_deserializer=cif__manager__pb2.Empty.FromString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                response_deserializer=cif__common__pb2.Empty.FromString,
                 _registered_method=True)
         self.Ping = channel.unary_unary(
                 '/cif.manager.Manager/Ping',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.QueryErrors = channel.unary_unary(
                 '/cif.manager.Manager/QueryErrors',
@@ -91,22 +92,22 @@ class ManagerStub(object):
                 _registered_method=True)
         self.ResetErrorIndex = channel.unary_unary(
                 '/cif.manager.Manager/ResetErrorIndex',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.ResetConfigIndex = channel.unary_unary(
                 '/cif.manager.Manager/ResetConfigIndex',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.ResetInfoIndex = channel.unary_unary(
                 '/cif.manager.Manager/ResetInfoIndex',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.QueryPluginInfo = channel.unary_unary(
                 '/cif.manager.Manager/QueryPluginInfo',
-                request_serializer=cif__manager__pb2.Empty.SerializeToString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
                 response_deserializer=cif__manager__pb2.PluginInfoArray.FromString,
                 _registered_method=True)
         self.QueryPlugin = channel.unary_unary(
@@ -122,7 +123,7 @@ class ManagerStub(object):
         self.UpdateClock = channel.unary_unary(
                 '/cif.manager.Manager/UpdateClock',
                 request_serializer=cif__manager__pb2.ClockUpdate.SerializeToString,
-                response_deserializer=cif__manager__pb2.Error.FromString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.CreateOrch = channel.unary_unary(
                 '/cif.manager.Manager/CreateOrch',
@@ -273,42 +274,42 @@ def add_ManagerServicer_to_server(servicer, server):
             'LoadPlugin': grpc.unary_unary_rpc_method_handler(
                     servicer.LoadPlugin,
                     request_deserializer=cif__manager__pb2.PluginConfig.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'RegisterPlugin': grpc.unary_unary_rpc_method_handler(
                     servicer.RegisterPlugin,
                     request_deserializer=cif__manager__pb2.RegisterData.FromString,
-                    response_serializer=cif__manager__pb2.Empty.SerializeToString,
+                    response_serializer=cif__common__pb2.Empty.SerializeToString,
             ),
             'UnregisterPlugin': grpc.unary_unary_rpc_method_handler(
                     servicer.UnregisterPlugin,
-                    request_deserializer=cif__manager__pb2.PluginName.FromString,
-                    response_serializer=cif__manager__pb2.Empty.SerializeToString,
+                    request_deserializer=cif__manager__pb2.UnregisterData.FromString,
+                    response_serializer=cif__common__pb2.Empty.SerializeToString,
             ),
             'QueryPluginTypes': grpc.unary_unary_rpc_method_handler(
                     servicer.QueryPluginTypes,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
                     response_serializer=cif__manager__pb2.PluginTypeReply.SerializeToString,
             ),
             'AbortPlugin': grpc.unary_unary_rpc_method_handler(
                     servicer.AbortPlugin,
                     request_deserializer=cif__manager__pb2.PluginName.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'UnloadAllPlugins': grpc.unary_unary_rpc_method_handler(
                     servicer.UnloadAllPlugins,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'Destroy': grpc.unary_unary_rpc_method_handler(
                     servicer.Destroy,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
-                    response_serializer=cif__manager__pb2.Empty.SerializeToString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    response_serializer=cif__common__pb2.Empty.SerializeToString,
             ),
             'Ping': grpc.unary_unary_rpc_method_handler(
                     servicer.Ping,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'QueryErrors': grpc.unary_unary_rpc_method_handler(
                     servicer.QueryErrors,
@@ -327,22 +328,22 @@ def add_ManagerServicer_to_server(servicer, server):
             ),
             'ResetErrorIndex': grpc.unary_unary_rpc_method_handler(
                     servicer.ResetErrorIndex,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'ResetConfigIndex': grpc.unary_unary_rpc_method_handler(
                     servicer.ResetConfigIndex,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'ResetInfoIndex': grpc.unary_unary_rpc_method_handler(
                     servicer.ResetInfoIndex,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'QueryPluginInfo': grpc.unary_unary_rpc_method_handler(
                     servicer.QueryPluginInfo,
-                    request_deserializer=cif__manager__pb2.Empty.FromString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
                     response_serializer=cif__manager__pb2.PluginInfoArray.SerializeToString,
             ),
             'QueryPlugin': grpc.unary_unary_rpc_method_handler(
@@ -358,7 +359,7 @@ def add_ManagerServicer_to_server(servicer, server):
             'UpdateClock': grpc.unary_unary_rpc_method_handler(
                     servicer.UpdateClock,
                     request_deserializer=cif__manager__pb2.ClockUpdate.FromString,
-                    response_serializer=cif__manager__pb2.Error.SerializeToString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'CreateOrch': grpc.unary_unary_rpc_method_handler(
                     servicer.CreateOrch,
@@ -392,7 +393,7 @@ class Manager(object):
             target,
             '/cif.manager.Manager/LoadPlugin',
             cif__manager__pb2.PluginConfig.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -419,7 +420,7 @@ class Manager(object):
             target,
             '/cif.manager.Manager/RegisterPlugin',
             cif__manager__pb2.RegisterData.SerializeToString,
-            cif__manager__pb2.Empty.FromString,
+            cif__common__pb2.Empty.FromString,
             options,
             channel_credentials,
             insecure,
@@ -445,8 +446,8 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/UnregisterPlugin',
-            cif__manager__pb2.PluginName.SerializeToString,
-            cif__manager__pb2.Empty.FromString,
+            cif__manager__pb2.UnregisterData.SerializeToString,
+            cif__common__pb2.Empty.FromString,
             options,
             channel_credentials,
             insecure,
@@ -472,7 +473,7 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/QueryPluginTypes',
-            cif__manager__pb2.Empty.SerializeToString,
+            cif__common__pb2.Empty.SerializeToString,
             cif__manager__pb2.PluginTypeReply.FromString,
             options,
             channel_credentials,
@@ -500,7 +501,7 @@ class Manager(object):
             target,
             '/cif.manager.Manager/AbortPlugin',
             cif__manager__pb2.PluginName.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -526,8 +527,8 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/UnloadAllPlugins',
-            cif__manager__pb2.Empty.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Empty.SerializeToString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -553,8 +554,8 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/Destroy',
-            cif__manager__pb2.Empty.SerializeToString,
-            cif__manager__pb2.Empty.FromString,
+            cif__common__pb2.Empty.SerializeToString,
+            cif__common__pb2.Empty.FromString,
             options,
             channel_credentials,
             insecure,
@@ -580,8 +581,8 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/Ping',
-            cif__manager__pb2.Empty.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Empty.SerializeToString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -688,8 +689,8 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/ResetErrorIndex',
-            cif__manager__pb2.Empty.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Empty.SerializeToString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -715,8 +716,8 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/ResetConfigIndex',
-            cif__manager__pb2.Empty.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Empty.SerializeToString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -742,8 +743,8 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/ResetInfoIndex',
-            cif__manager__pb2.Empty.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Empty.SerializeToString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -769,7 +770,7 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/QueryPluginInfo',
-            cif__manager__pb2.Empty.SerializeToString,
+            cif__common__pb2.Empty.SerializeToString,
             cif__manager__pb2.PluginInfoArray.FromString,
             options,
             channel_credentials,
@@ -851,7 +852,7 @@ class Manager(object):
             target,
             '/cif.manager.Manager/UpdateClock',
             cif__manager__pb2.ClockUpdate.SerializeToString,
-            cif__manager__pb2.Error.FromString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
