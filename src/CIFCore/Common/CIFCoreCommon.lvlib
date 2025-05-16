@@ -26,6 +26,10 @@
 		<Item Name="gRPC Reported Plugin Status.ctl" Type="VI" URL="../Typedef/gRPC Reported Plugin Status.ctl"/>
 		<Item Name="TimeStamps.ctl" Type="VI" URL="../Typedef/TimeStamps.ctl"/>
 		<Item Name="Timing Statistics Full.ctl" Type="VI" URL="../Typedef/Timing Statistics Full.ctl"/>
+		<Item Name="gRPC to Main Data.ctl" Type="VI" URL="../Typedef/gRPC to Main Data.ctl"/>
+		<Item Name="Channel Connection Data.ctl" Type="VI" URL="../Typedef/Channel Connection Data.ctl"/>
+		<Item Name="Channel Force Data.ctl" Type="VI" URL="../Typedef/Channel Force Data.ctl"/>
+		<Item Name="FIFO Publisher.ctl" Type="VI" URL="../Typedef/FIFO Publisher.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Add Error.vi" Type="VI" URL="../Utilities/Add Error.vi"/>
