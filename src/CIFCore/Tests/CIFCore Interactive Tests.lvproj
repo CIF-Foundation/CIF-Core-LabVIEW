@@ -13,6 +13,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="CIFCore gRPC Test Client.vi" Type="VI" URL="../CIFCore gRPC Test Client.vi"/>
 		<Item Name="CIFCorePlugin.lvlib" Type="Library" URL="../../Callable Library/CIFCorePlugin.lvlib"/>
+		<Item Name="gRPC to Main Command Payload.ctl" Type="VI" URL="../../Class/Typedef/gRPC to Main Command Payload.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
