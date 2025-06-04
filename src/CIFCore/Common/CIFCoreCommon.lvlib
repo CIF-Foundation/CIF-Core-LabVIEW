@@ -35,5 +35,8 @@
 		<Item Name="Add Error.vi" Type="VI" URL="../Utilities/Add Error.vi"/>
 		<Item Name="Get Version.vi" Type="VI" URL="../Utilities/Get Version.vi"/>
 		<Item Name="Get IP Address.vi" Type="VI" URL="../Utilities/Get IP Address.vi"/>
+		<Item Name="ns timing to us timing.vi" Type="VI" URL="../Utilities/ns timing to us timing.vi"/>
+		<Item Name="Split Channel Name.vi" Type="VI" URL="../Utilities/Split Channel Name.vi"/>
+		<Item Name="Merge Channel Name.vi" Type="VI" URL="../Utilities/Merge Channel Name.vi"/>
 	</Item>
 </Library>

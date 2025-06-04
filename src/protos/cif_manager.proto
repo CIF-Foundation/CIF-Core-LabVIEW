@@ -126,7 +126,7 @@ message TimePair {
 
 message ClockConversion {
   uint32 clock_id = 1;
-  uint64 last_reset = 2;
+  int64 last_reset = 2;
   double slope = 3;
   TimePair offset_pair = 4; 
   string clock_name = 5;
