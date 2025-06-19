@@ -1,63 +1,41 @@
-// Copyright 2015 gRPC authors.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 syntax = "proto3";
+
+import "cif_common.proto";
 
 package cif.plugincore;
 
 service PluginCore {
-  rpc Start (Empty) returns (Status) {}
-  rpc Pause (Empty) returns (Status) {}
-  rpc Stop (Empty) returns (Status) {}
-  rpc RefreshStatistics (Empty) returns (Status) {}
-  rpc UpdateConfig (Configuration) returns (Status) {}
-  rpc GetStatusData (Empty) returns (StatusData) {}
-  rpc GetVersion (Empty) returns (Version) {}
-  rpc GetConfig (Empty) returns (Configuration) {}
-  rpc GetOverrides (Empty) returns (PluginOverrides) {}
-  rpc GetNames (Empty) returns (PluginNames) {}
-}
-
-message Error {
-  bool status = 1;
-  int32 code = 2;
+  rpc Start (cif.common.Empty) returns (cif.common.Status) {}
+  rpc Pause (cif.common.Empty) returns (cif.common.Status) {}
+  rpc Stop (cif.common.Empty) returns (cif.common.Status) {}
+  rpc RefreshStatistics (cif.common.Empty) returns (cif.common.Status) {}
+  rpc UpdateConfig (Configuration) returns (cif.common.Status) {}
+  rpc GetStatusData (cif.common.Empty) returns (StatusData) {}
+  rpc GetVersion (cif.common.Empty) returns (cif.common.Version) {}
+  rpc GetConfig (cif.common.Empty) returns (Configuration) {}
+  rpc GetOverrides (cif.common.Empty) returns (PluginOverrides) {}
+  rpc GetNames (cif.common.Empty) returns (cif.common.PluginNames) {}
 }
 
 message Configuration {
   string json_config = 1;
 }
 
-message TimingStatsBasic {
-  int64 max = 1;
-  int64 min = 2;
-  double avg = 3;
-}
-
 message TimingStatistics {
-  TimingStatsBasic period = 1;
-  TimingStatsBasic wake_error = 2;
-  TimingStatsBasic execute = 3;
-  TimingStatsBasic housekeep = 4;
-  TimingStatsBasic idle = 5;
-  TimingStatsBasic cleanup = 6;
-  TimingStatsBasic custom_1 = 7;
-  TimingStatsBasic custom_2 = 8;
+  cif.common.TimingStats period = 1;
+  cif.common.TimingStats wake_error = 2;
+  cif.common.TimingStats execute = 3;
+  cif.common.TimingStats housekeep = 4;
+  cif.common.TimingStats idle = 5;
+  cif.common.TimingStats cleanup = 6;
+  cif.common.TimingStats custom_1 = 7;
+  cif.common.TimingStats custom_2 = 8;
 }
 
 message FifoStatistics {
-  TimingStatsBasic from_t0 = 1;
-  TimingStatsBasic from_previous_plugin = 2;
-  TimingStatsBasic output_error = 3;
+  cif.common.TimingStats from_t0 = 1;
+  cif.common.TimingStats from_previous_plugin = 2;
+  cif.common.TimingStats output_error = 3;
 }
 
 message MonitorDoubles {
@@ -99,11 +77,9 @@ message StatusData {
   MonitorI64 monitor_i64s = 7;
 }
 
-message Version {
-  uint32 major = 1;
-  uint32 minor = 2;
-  uint32 fix = 3;
-  uint32 build = 4;
+message Error {
+  bool status = 1;
+  int32 code = 2;
 }
 
 message TimingOverrides {
@@ -115,15 +91,3 @@ message TimingOverrides {
 message PluginOverrides {
    TimingOverrides timing_overrides = 1;
 }
-
-message PluginNames {
-  string plugin_name = 1; //Assigned name for the plugin instance.  Unique in the system. 
-  string plugin_type = 2; //Name of the plugin type
-}
-
-message Status {
-   int32 code = 1;
-   string message = 2;
-}
-
-message Empty {}

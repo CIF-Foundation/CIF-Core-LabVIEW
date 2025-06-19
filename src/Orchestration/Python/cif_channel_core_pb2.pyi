@@ -1,3 +1,4 @@
+import cif_common_pb2 as _cif_common_pb2
 from google.protobuf.internal import containers as _containers
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
@@ -10,11 +11,22 @@ class Direction(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     __slots__ = ()
     PUBLISHER: _ClassVar[Direction]
     SUBSCRIBER: _ClassVar[Direction]
+
+class PATTERN(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    UNKNOWN: _ClassVar[PATTERN]
+    TAG: _ClassVar[PATTERN]
+    FIFO: _ClassVar[PATTERN]
+    MULTIFIFO: _ClassVar[PATTERN]
 PUBLISHER: Direction
 SUBSCRIBER: Direction
+UNKNOWN: PATTERN
+TAG: PATTERN
+FIFO: PATTERN
+MULTIFIFO: PATTERN
 
 class Channel(_message.Message):
-    __slots__ = ("name", "direction", "type", "custom_config", "connected", "connected_name", "forced")
+    __slots__ = ("name", "direction", "type", "custom_config", "connected", "connected_name", "forced", "channel_pattern")
     NAME_FIELD_NUMBER: _ClassVar[int]
     DIRECTION_FIELD_NUMBER: _ClassVar[int]
     TYPE_FIELD_NUMBER: _ClassVar[int]
@@ -22,6 +34,7 @@ class Channel(_message.Message):
     CONNECTED_FIELD_NUMBER: _ClassVar[int]
     CONNECTED_NAME_FIELD_NUMBER: _ClassVar[int]
     FORCED_FIELD_NUMBER: _ClassVar[int]
+    CHANNEL_PATTERN_FIELD_NUMBER: _ClassVar[int]
     name: str
     direction: Direction
     type: str
@@ -29,7 +42,8 @@ class Channel(_message.Message):
     connected: bool
     connected_name: str
     forced: bool
-    def __init__(self, name: _Optional[str] = ..., direction: _Optional[_Union[Direction, str]] = ..., type: _Optional[str] = ..., custom_config: _Optional[bytes] = ..., connected: bool = ..., connected_name: _Optional[str] = ..., forced: bool = ...) -> None: ...
+    channel_pattern: PATTERN
+    def __init__(self, name: _Optional[str] = ..., direction: _Optional[_Union[Direction, str]] = ..., type: _Optional[str] = ..., custom_config: _Optional[bytes] = ..., connected: bool = ..., connected_name: _Optional[str] = ..., forced: bool = ..., channel_pattern: _Optional[_Union[PATTERN, str]] = ...) -> None: ...
 
 class Channels(_message.Message):
     __slots__ = ("channels",)
@@ -47,6 +61,32 @@ class ConnectSubscriber(_message.Message):
     custom_connect: bytes
     def __init__(self, subscriber_name: _Optional[str] = ..., publisher_name: _Optional[str] = ..., custom_connect: _Optional[bytes] = ...) -> None: ...
 
+class FIFOInstance(_message.Message):
+    __slots__ = ("publisher_name", "retry_on_timeout", "primary_subscriber", "message_per_fifo_override")
+    PUBLISHER_NAME_FIELD_NUMBER: _ClassVar[int]
+    RETRY_ON_TIMEOUT_FIELD_NUMBER: _ClassVar[int]
+    PRIMARY_SUBSCRIBER_FIELD_NUMBER: _ClassVar[int]
+    MESSAGE_PER_FIFO_OVERRIDE_FIELD_NUMBER: _ClassVar[int]
+    publisher_name: str
+    retry_on_timeout: bool
+    primary_subscriber: bool
+    message_per_fifo_override: int
+    def __init__(self, publisher_name: _Optional[str] = ..., retry_on_timeout: bool = ..., primary_subscriber: bool = ..., message_per_fifo_override: _Optional[int] = ...) -> None: ...
+
+class FIFOReference(_message.Message):
+    __slots__ = ("publisher_instance_name", "status")
+    PUBLISHER_INSTANCE_NAME_FIELD_NUMBER: _ClassVar[int]
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    publisher_instance_name: str
+    status: _cif_common_pb2.Status
+    def __init__(self, publisher_instance_name: _Optional[str] = ..., status: _Optional[_Union[_cif_common_pb2.Status, _Mapping]] = ...) -> None: ...
+
+class FIFOInstanceName(_message.Message):
+    __slots__ = ("publisher_instance_name",)
+    PUBLISHER_INSTANCE_NAME_FIELD_NUMBER: _ClassVar[int]
+    publisher_instance_name: str
+    def __init__(self, publisher_instance_name: _Optional[str] = ...) -> None: ...
+
 class ForceChannel(_message.Message):
     __slots__ = ("channel_name", "force", "force_data")
     CHANNEL_NAME_FIELD_NUMBER: _ClassVar[int]
@@ -56,15 +96,3 @@ class ForceChannel(_message.Message):
     force: bool
     force_data: bytes
     def __init__(self, channel_name: _Optional[str] = ..., force: bool = ..., force_data: _Optional[bytes] = ...) -> None: ...
-
-class Status(_message.Message):
-    __slots__ = ("code", "message")
-    CODE_FIELD_NUMBER: _ClassVar[int]
-    MESSAGE_FIELD_NUMBER: _ClassVar[int]
-    code: int
-    message: str
-    def __init__(self, code: _Optional[int] = ..., message: _Optional[str] = ...) -> None: ...
-
-class Empty(_message.Message):
-    __slots__ = ()
-    def __init__(self) -> None: ...

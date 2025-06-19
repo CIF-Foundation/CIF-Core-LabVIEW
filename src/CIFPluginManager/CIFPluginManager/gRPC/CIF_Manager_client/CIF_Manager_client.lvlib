@@ -19,10 +19,10 @@
 			<Item Name="FlatToRichcif_manager_RegisterData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_RegisterData.vi"/>
 			<Item Name="RichToFlatcif_manager_RegisterData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_RegisterData.vi"/>
 		</Item>
-		<Item Name="cif_manager_Error" Type="Folder">
-			<Item Name="cif_manager_Error.ctl" Type="VI" URL="../RPC Messages/cif_manager_Error.ctl"/>
-			<Item Name="FlatToRichcif_manager_Error.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_Error.vi"/>
-			<Item Name="RichToFlatcif_manager_Error.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_Error.vi"/>
+		<Item Name="cif_manager_UnregisterData" Type="Folder">
+			<Item Name="cif_manager_UnregisterData.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterData.ctl"/>
+			<Item Name="FlatToRichcif_manager_UnregisterData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_UnregisterData.vi"/>
+			<Item Name="RichToFlatcif_manager_UnregisterData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_UnregisterData.vi"/>
 		</Item>
 		<Item Name="cif_manager_PluginTypeReply" Type="Folder">
 			<Item Name="cif_manager_PluginTypeReply.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginTypeReply.ctl"/>
@@ -58,11 +58,6 @@
 			<Item Name="cif_manager_FileData.ctl" Type="VI" URL="../RPC Messages/cif_manager_FileData.ctl"/>
 			<Item Name="FlatToRichcif_manager_FileData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_FileData.vi"/>
 			<Item Name="RichToFlatcif_manager_FileData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_FileData.vi"/>
-		</Item>
-		<Item Name="cif_manager_PluginVersion" Type="Folder">
-			<Item Name="cif_manager_PluginVersion.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginVersion.ctl"/>
-			<Item Name="FlatToRichcif_manager_PluginVersion.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginVersion.vi"/>
-			<Item Name="RichToFlatcif_manager_PluginVersion.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_PluginVersion.vi"/>
 		</Item>
 		<Item Name="cif_manager_PluginInfo" Type="Folder">
 			<Item Name="cif_manager_PluginInfo.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfo.ctl"/>
@@ -119,25 +114,40 @@
 			<Item Name="FlatToRichcif_manager_OrchReturn.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_OrchReturn.vi"/>
 			<Item Name="RichToFlatcif_manager_OrchReturn.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_OrchReturn.vi"/>
 		</Item>
-		<Item Name="cif_manager_Empty" Type="Folder">
-			<Item Name="cif_manager_Empty.ctl" Type="VI" URL="../RPC Messages/cif_manager_Empty.ctl"/>
-			<Item Name="FlatToRichcif_manager_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_Empty.vi"/>
-			<Item Name="RichToFlatcif_manager_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_Empty.vi"/>
+		<Item Name="cif_common_TimingStats" Type="Folder">
+			<Item Name="cif_common_TimingStats.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats.ctl"/>
+			<Item Name="FlatToRichcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_TimingStats.vi"/>
+			<Item Name="RichToFlatcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_TimingStats.vi"/>
 		</Item>
-		<Item Name="cif_plugincore_Error" Type="Folder">
-			<Item Name="cif_plugincore_Error.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Error.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Error.vi"/>
+		<Item Name="cif_common_Version" Type="Folder">
+			<Item Name="cif_common_Version.ctl" Type="VI" URL="../RPC Messages/cif_common_Version.ctl"/>
+			<Item Name="FlatToRichcif_common_Version.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Version.vi"/>
+			<Item Name="RichToFlatcif_common_Version.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Version.vi"/>
+		</Item>
+		<Item Name="cif_common_ShortVersion" Type="Folder">
+			<Item Name="cif_common_ShortVersion.ctl" Type="VI" URL="../RPC Messages/cif_common_ShortVersion.ctl"/>
+			<Item Name="FlatToRichcif_common_ShortVersion.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_ShortVersion.vi"/>
+			<Item Name="RichToFlatcif_common_ShortVersion.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_ShortVersion.vi"/>
+		</Item>
+		<Item Name="cif_common_PluginNames" Type="Folder">
+			<Item Name="cif_common_PluginNames.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames.ctl"/>
+			<Item Name="FlatToRichcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_PluginNames.vi"/>
+			<Item Name="RichToFlatcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_PluginNames.vi"/>
+		</Item>
+		<Item Name="cif_common_Status" Type="Folder">
+			<Item Name="cif_common_Status.ctl" Type="VI" URL="../RPC Messages/cif_common_Status.ctl"/>
+			<Item Name="FlatToRichcif_common_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Status.vi"/>
+			<Item Name="RichToFlatcif_common_Status.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Status.vi"/>
+		</Item>
+		<Item Name="cif_common_Empty" Type="Folder">
+			<Item Name="cif_common_Empty.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty.ctl"/>
+			<Item Name="FlatToRichcif_common_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Empty.vi"/>
+			<Item Name="RichToFlatcif_common_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Empty.vi"/>
 		</Item>
 		<Item Name="cif_plugincore_Configuration" Type="Folder">
 			<Item Name="cif_plugincore_Configuration.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration.ctl"/>
 			<Item Name="FlatToRichcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Configuration.vi"/>
 			<Item Name="RichToFlatcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Configuration.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingStatsBasic" Type="Folder">
-			<Item Name="cif_plugincore_TimingStatsBasic.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatsBasic.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_TimingStatsBasic.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingStatsBasic.vi"/>
-			<Item Name="RichToFlatcif_plugincore_TimingStatsBasic.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingStatsBasic.vi"/>
 		</Item>
 		<Item Name="cif_plugincore_TimingStatistics" Type="Folder">
 			<Item Name="cif_plugincore_TimingStatistics.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics.ctl"/>
@@ -169,10 +179,10 @@
 			<Item Name="FlatToRichcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StatusData.vi"/>
 			<Item Name="RichToFlatcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StatusData.vi"/>
 		</Item>
-		<Item Name="cif_plugincore_Version" Type="Folder">
-			<Item Name="cif_plugincore_Version.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Version.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Version.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Version.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Version.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Version.vi"/>
+		<Item Name="cif_plugincore_Error" Type="Folder">
+			<Item Name="cif_plugincore_Error.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Error.vi"/>
+			<Item Name="RichToFlatcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Error.vi"/>
 		</Item>
 		<Item Name="cif_plugincore_TimingOverrides" Type="Folder">
 			<Item Name="cif_plugincore_TimingOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides.ctl"/>
@@ -183,21 +193,6 @@
 			<Item Name="cif_plugincore_PluginOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides.ctl"/>
 			<Item Name="FlatToRichcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginOverrides.vi"/>
 			<Item Name="RichToFlatcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginOverrides.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_PluginNames" Type="Folder">
-			<Item Name="cif_plugincore_PluginNames.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginNames.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_PluginNames.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginNames.vi"/>
-			<Item Name="RichToFlatcif_plugincore_PluginNames.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginNames.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_Status" Type="Folder">
-			<Item Name="cif_plugincore_Status.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Status.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Status.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Status.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Status.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_Empty" Type="Folder">
-			<Item Name="cif_plugincore_Empty.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Empty.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Empty.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Empty.vi"/>
 		</Item>
 		<Item Name="cif_plugincore_StatusData_State" Type="Folder">
 			<Item Name="cif_plugincore_StatusData_State.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State.ctl"/>
@@ -215,8 +210,8 @@
 		<Item Name="cif_manager_RegisterData_Flat" Type="Folder">
 			<Item Name="cif_manager_RegisterData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_RegisterData_Flat.ctl"/>
 		</Item>
-		<Item Name="cif_manager_Error_Flat" Type="Folder">
-			<Item Name="cif_manager_Error_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_Error_Flat.ctl"/>
+		<Item Name="cif_manager_UnregisterData_Flat" Type="Folder">
+			<Item Name="cif_manager_UnregisterData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterData_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_manager_PluginTypeReply_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginTypeReply_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginTypeReply_Flat.ctl"/>
@@ -238,9 +233,6 @@
 		</Item>
 		<Item Name="cif_manager_FileData_Flat" Type="Folder">
 			<Item Name="cif_manager_FileData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_FileData_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_manager_PluginVersion_Flat" Type="Folder">
-			<Item Name="cif_manager_PluginVersion_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginVersion_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_manager_PluginInfo_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginInfo_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfo_Flat.ctl"/>
@@ -275,17 +267,26 @@
 		<Item Name="cif_manager_OrchReturn_Flat" Type="Folder">
 			<Item Name="cif_manager_OrchReturn_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchReturn_Flat.ctl"/>
 		</Item>
-		<Item Name="cif_manager_Empty_Flat" Type="Folder">
-			<Item Name="cif_manager_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_Empty_Flat.ctl"/>
+		<Item Name="cif_common_TimingStats_Flat" Type="Folder">
+			<Item Name="cif_common_TimingStats_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats_Flat.ctl"/>
 		</Item>
-		<Item Name="cif_plugincore_Error_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Error_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error_Flat.ctl"/>
+		<Item Name="cif_common_Version_Flat" Type="Folder">
+			<Item Name="cif_common_Version_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Version_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_ShortVersion_Flat" Type="Folder">
+			<Item Name="cif_common_ShortVersion_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_ShortVersion_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_PluginNames_Flat" Type="Folder">
+			<Item Name="cif_common_PluginNames_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_Status_Flat" Type="Folder">
+			<Item Name="cif_common_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Status_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_Empty_Flat" Type="Folder">
+			<Item Name="cif_common_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_plugincore_Configuration_Flat" Type="Folder">
 			<Item Name="cif_plugincore_Configuration_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingStatsBasic_Flat" Type="Folder">
-			<Item Name="cif_plugincore_TimingStatsBasic_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatsBasic_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_plugincore_TimingStatistics_Flat" Type="Folder">
 			<Item Name="cif_plugincore_TimingStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics_Flat.ctl"/>
@@ -305,23 +306,14 @@
 		<Item Name="cif_plugincore_StatusData_Flat" Type="Folder">
 			<Item Name="cif_plugincore_StatusData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_Flat.ctl"/>
 		</Item>
-		<Item Name="cif_plugincore_Version_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Version_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Version_Flat.ctl"/>
+		<Item Name="cif_plugincore_Error_Flat" Type="Folder">
+			<Item Name="cif_plugincore_Error_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_plugincore_TimingOverrides_Flat" Type="Folder">
 			<Item Name="cif_plugincore_TimingOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_plugincore_PluginOverrides_Flat" Type="Folder">
 			<Item Name="cif_plugincore_PluginOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_PluginNames_Flat" Type="Folder">
-			<Item Name="cif_plugincore_PluginNames_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginNames_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_Status_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Status_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_Empty_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Empty_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_plugincore_StatusData_State_Flat" Type="Folder">
 			<Item Name="cif_plugincore_StatusData_State_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State_Flat.ctl"/>

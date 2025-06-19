@@ -9,6 +9,36 @@
 
 </Property>
 	<Item Name="RPC Messages" Type="Folder">
+		<Item Name="cif_common_TimingStats" Type="Folder">
+			<Item Name="cif_common_TimingStats.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats.ctl"/>
+			<Item Name="FlatToRichcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_TimingStats.vi"/>
+			<Item Name="RichToFlatcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_TimingStats.vi"/>
+		</Item>
+		<Item Name="cif_common_Version" Type="Folder">
+			<Item Name="cif_common_Version.ctl" Type="VI" URL="../RPC Messages/cif_common_Version.ctl"/>
+			<Item Name="FlatToRichcif_common_Version.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Version.vi"/>
+			<Item Name="RichToFlatcif_common_Version.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Version.vi"/>
+		</Item>
+		<Item Name="cif_common_ShortVersion" Type="Folder">
+			<Item Name="cif_common_ShortVersion.ctl" Type="VI" URL="../RPC Messages/cif_common_ShortVersion.ctl"/>
+			<Item Name="FlatToRichcif_common_ShortVersion.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_ShortVersion.vi"/>
+			<Item Name="RichToFlatcif_common_ShortVersion.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_ShortVersion.vi"/>
+		</Item>
+		<Item Name="cif_common_PluginNames" Type="Folder">
+			<Item Name="cif_common_PluginNames.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames.ctl"/>
+			<Item Name="FlatToRichcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_PluginNames.vi"/>
+			<Item Name="RichToFlatcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_PluginNames.vi"/>
+		</Item>
+		<Item Name="cif_common_Status" Type="Folder">
+			<Item Name="cif_common_Status.ctl" Type="VI" URL="../RPC Messages/cif_common_Status.ctl"/>
+			<Item Name="FlatToRichcif_common_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Status.vi"/>
+			<Item Name="RichToFlatcif_common_Status.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Status.vi"/>
+		</Item>
+		<Item Name="cif_common_Empty" Type="Folder">
+			<Item Name="cif_common_Empty.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty.ctl"/>
+			<Item Name="FlatToRichcif_common_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Empty.vi"/>
+			<Item Name="RichToFlatcif_common_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Empty.vi"/>
+		</Item>
 		<Item Name="cif_channelcore_Channel" Type="Folder">
 			<Item Name="cif_channelcore_Channel.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Channel.ctl"/>
 			<Item Name="FlatToRichcif_channelcore_Channel.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_Channel.vi"/>
@@ -24,25 +54,53 @@
 			<Item Name="FlatToRichcif_channelcore_ConnectSubscriber.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_ConnectSubscriber.vi"/>
 			<Item Name="RichToFlatcif_channelcore_ConnectSubscriber.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_ConnectSubscriber.vi"/>
 		</Item>
+		<Item Name="cif_channelcore_FIFOInstance" Type="Folder">
+			<Item Name="cif_channelcore_FIFOInstance.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_FIFOInstance.ctl"/>
+			<Item Name="FlatToRichcif_channelcore_FIFOInstance.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_FIFOInstance.vi"/>
+			<Item Name="RichToFlatcif_channelcore_FIFOInstance.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_FIFOInstance.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_FIFOReference" Type="Folder">
+			<Item Name="cif_channelcore_FIFOReference.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_FIFOReference.ctl"/>
+			<Item Name="FlatToRichcif_channelcore_FIFOReference.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_FIFOReference.vi"/>
+			<Item Name="RichToFlatcif_channelcore_FIFOReference.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_FIFOReference.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_FIFOInstanceName" Type="Folder">
+			<Item Name="cif_channelcore_FIFOInstanceName.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_FIFOInstanceName.ctl"/>
+			<Item Name="FlatToRichcif_channelcore_FIFOInstanceName.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_FIFOInstanceName.vi"/>
+			<Item Name="RichToFlatcif_channelcore_FIFOInstanceName.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_FIFOInstanceName.vi"/>
+		</Item>
 		<Item Name="cif_channelcore_ForceChannel" Type="Folder">
 			<Item Name="cif_channelcore_ForceChannel.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ForceChannel.ctl"/>
 			<Item Name="FlatToRichcif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_ForceChannel.vi"/>
 			<Item Name="RichToFlatcif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_ForceChannel.vi"/>
 		</Item>
-		<Item Name="cif_channelcore_Status" Type="Folder">
-			<Item Name="cif_channelcore_Status.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Status.ctl"/>
-			<Item Name="FlatToRichcif_channelcore_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_Status.vi"/>
-			<Item Name="RichToFlatcif_channelcore_Status.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_Status.vi"/>
-		</Item>
-		<Item Name="cif_channelcore_Empty" Type="Folder">
-			<Item Name="cif_channelcore_Empty.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Empty.ctl"/>
-			<Item Name="FlatToRichcif_channelcore_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_Empty.vi"/>
-			<Item Name="RichToFlatcif_channelcore_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_Empty.vi"/>
-		</Item>
 		<Item Name="cif_channelcore_Direction" Type="Folder">
 			<Item Name="cif_channelcore_Direction.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Direction.ctl"/>
 			<Item Name="Get Value for cif_channelcore_Direction.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_Direction.vi"/>
 			<Item Name="Get cif_channelcore_Direction for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction for Value.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_PATTERN" Type="Folder">
+			<Item Name="cif_channelcore_PATTERN.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_PATTERN.ctl"/>
+			<Item Name="Get Value for cif_channelcore_PATTERN.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_PATTERN.vi"/>
+			<Item Name="Get cif_channelcore_PATTERN for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN for Value.vi"/>
+		</Item>
+		<Item Name="cif_common_TimingStats_Flat" Type="Folder">
+			<Item Name="cif_common_TimingStats_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_Version_Flat" Type="Folder">
+			<Item Name="cif_common_Version_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Version_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_ShortVersion_Flat" Type="Folder">
+			<Item Name="cif_common_ShortVersion_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_ShortVersion_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_PluginNames_Flat" Type="Folder">
+			<Item Name="cif_common_PluginNames_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_Status_Flat" Type="Folder">
+			<Item Name="cif_common_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Status_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_common_Empty_Flat" Type="Folder">
+			<Item Name="cif_common_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_channelcore_Channel_Flat" Type="Folder">
 			<Item Name="cif_channelcore_Channel_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Channel_Flat.ctl"/>
@@ -53,19 +111,27 @@
 		<Item Name="cif_channelcore_ConnectSubscriber_Flat" Type="Folder">
 			<Item Name="cif_channelcore_ConnectSubscriber_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ConnectSubscriber_Flat.ctl"/>
 		</Item>
+		<Item Name="cif_channelcore_FIFOInstance_Flat" Type="Folder">
+			<Item Name="cif_channelcore_FIFOInstance_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_FIFOInstance_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_channelcore_FIFOReference_Flat" Type="Folder">
+			<Item Name="cif_channelcore_FIFOReference_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_FIFOReference_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_channelcore_FIFOInstanceName_Flat" Type="Folder">
+			<Item Name="cif_channelcore_FIFOInstanceName_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_FIFOInstanceName_Flat.ctl"/>
+		</Item>
 		<Item Name="cif_channelcore_ForceChannel_Flat" Type="Folder">
 			<Item Name="cif_channelcore_ForceChannel_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ForceChannel_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_channelcore_Status_Flat" Type="Folder">
-			<Item Name="cif_channelcore_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Status_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_channelcore_Empty_Flat" Type="Folder">
-			<Item Name="cif_channelcore_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Empty_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_channelcore_Direction_Flat" Type="Folder">
 			<Item Name="cif_channelcore_Direction_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Direction_Flat.ctl"/>
 			<Item Name="Get Value for cif_channelcore_Direction_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_Direction_Flat.vi"/>
 			<Item Name="Get cif_channelcore_Direction_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction_Flat for Value.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_PATTERN_Flat" Type="Folder">
+			<Item Name="cif_channelcore_PATTERN_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_PATTERN_Flat.ctl"/>
+			<Item Name="Get Value for cif_channelcore_PATTERN_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_PATTERN_Flat.vi"/>
+			<Item Name="Get cif_channelcore_PATTERN_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN_Flat for Value.vi"/>
 		</Item>
 		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi"/>
 	</Item>
@@ -79,6 +145,12 @@
 			</Item>
 			<Item Name="ChannelCore SetForce" Type="Folder">
 				<Item Name="ChannelCore SetForce.vi" Type="VI" URL="../RPC Service/ChannelCore/ChannelCore SetForce.vi"/>
+			</Item>
+			<Item Name="ChannelCore CreateFIFOInstance" Type="Folder">
+				<Item Name="ChannelCore CreateFIFOInstance.vi" Type="VI" URL="../RPC Service/ChannelCore/ChannelCore CreateFIFOInstance.vi"/>
+			</Item>
+			<Item Name="ChannelCore DestroyFIFOInstance" Type="Folder">
+				<Item Name="ChannelCore DestroyFIFOInstance.vi" Type="VI" URL="../RPC Service/ChannelCore/ChannelCore DestroyFIFOInstance.vi"/>
 			</Item>
 		</Item>
 	</Item>

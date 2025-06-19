@@ -1,24 +1,17 @@
-// Copyright 2015 gRPC authors.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 syntax = "proto3";
+
+import "cif_common.proto";
 
 package cif.channelcore;
 
 service ChannelCore {
-  rpc GetChannels (Empty) returns (Channels) {}
-  rpc SetConnection (ConnectSubscriber) returns (Status) {}
-  rpc SetForce (ForceChannel) returns (Status) {}
+  rpc GetChannels (cif.common.Empty) returns (Channels) {}
+  rpc SetConnection (ConnectSubscriber) returns (cif.common.Status) {}
+  rpc SetForce (ForceChannel) returns (cif.common.Status) {} //This is only supported on tags.
+  rpc CreateFIFOInstance (FIFOInstance) returns (FIFOReference) {}  //This is needed when the publisher needs to provide information
+    // to support a subscriber.  For instance if a new publisher needs to be created for a 1-1 FIFO or if backpressure is used and the publisher needs
+    // to provide the handels.
+  rpc DestroyFIFOInstance (FIFOInstanceName) returns (cif.common.Status) {} //This is used to destroy or disconnect a subscriber after the CreateFIFOInstance was used.  
 }
 
 enum Direction {
@@ -33,7 +26,16 @@ message Channel {
   bytes custom_config = 4;  //This field allows passing free form custom data needed to describe the channel and to support operations such as creating connections.  It's implementation will be type specific. 
   bool connected = 5;
   string connected_name = 6;  //This is only valid for subscribers.  Publishers typically have no knowledge of connections.  
-  bool forced = 7; //This is only valid for subscribers.  Indicates if the value is being "forced" to always return a specific ovverride value instead of the reading from the publisher.  
+  bool forced = 7; //Indicates if the value is being "forced" to always return a specific override value.  This only applies to tags
+  PATTERN channel_pattern = 8; //Indicates the pattern of the channel and is used for channel management and linking.
+}
+
+enum PATTERN {
+  UNKNOWN = 0;
+  TAG = 1;
+  FIFO = 2;
+  MULTIFIFO = 3;
+  BACKPRESSUREFIFO = 4;
 }
 
 message Channels {
@@ -46,15 +48,27 @@ message ConnectSubscriber {
   bytes custom_connect = 3;  //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific.  
 }
 
+message FIFOInstance {
+  string publisher_name = 1; //The name of the existing FIFO to create a new instance for the subscriber
+  bool retry_on_timeout = 2; //Is the subscriber applying backpressure to control the rate of the publisher.  On FIFO full (timeout) the publisher will retry until space is available.
+  //This is normally only used for file read publishers.  This value is applied as an AND with the publisher configuration (will only apply backpressure if publisher is configured for backpressure support).
+  uint32 bytes_per_message_override = 3;  //A value of 0 indicates don't override.  This is the number of bytes in a single payload added to the FIFO buffer.  
+  uint32 message_per_fifo_override = 4;  //A value of 0 indicates don't override.  This is the number of "messages" in the FIFO buffer.  
+  bytes custom_data = 5;  //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific. 
+}
+
+message FIFOReference {
+  string publisher_instance_name = 1; //Unique instance name of the multi-writer FIFO publisher.
+  bytes custom_connect = 2; //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific. 
+  cif.common.Status status =3;
+}
+
+message FIFOInstanceName {
+  string publisher_instance_name = 1; //Unique instance name of the multi-writer FIFO publisher.
+}
+
 message ForceChannel {
   string channel_name = 1;
   bool force = 2;
   bytes force_data = 3;  //Flattened data for the forced value.  Values are big endian.  
 }
-
-message Status {
-   int32 code = 1;
-   string message = 2;
-}
-
-message Empty {}

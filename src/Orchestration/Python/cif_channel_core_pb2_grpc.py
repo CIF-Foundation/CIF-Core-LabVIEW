@@ -4,6 +4,7 @@ import grpc
 import warnings
 
 import cif_channel_core_pb2 as cif__channel__core__pb2
+import cif_common_pb2 as cif__common__pb2
 
 GRPC_GENERATED_VERSION = '1.67.0'
 GRPC_VERSION = grpc.__version__
@@ -36,18 +37,28 @@ class ChannelCoreStub(object):
         """
         self.GetChannels = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/GetChannels',
-                request_serializer=cif__channel__core__pb2.Empty.SerializeToString,
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
                 response_deserializer=cif__channel__core__pb2.Channels.FromString,
                 _registered_method=True)
         self.SetConnection = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/SetConnection',
                 request_serializer=cif__channel__core__pb2.ConnectSubscriber.SerializeToString,
-                response_deserializer=cif__channel__core__pb2.Status.FromString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
         self.SetForce = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/SetForce',
                 request_serializer=cif__channel__core__pb2.ForceChannel.SerializeToString,
-                response_deserializer=cif__channel__core__pb2.Status.FromString,
+                response_deserializer=cif__common__pb2.Status.FromString,
+                _registered_method=True)
+        self.CreateFIFOInstance = channel.unary_unary(
+                '/cif.channelcore.ChannelCore/CreateFIFOInstance',
+                request_serializer=cif__channel__core__pb2.FIFOInstance.SerializeToString,
+                response_deserializer=cif__channel__core__pb2.FIFOReference.FromString,
+                _registered_method=True)
+        self.DestroyFIFOInstance = channel.unary_unary(
+                '/cif.channelcore.ChannelCore/DestroyFIFOInstance',
+                request_serializer=cif__channel__core__pb2.FIFOInstanceName.SerializeToString,
+                response_deserializer=cif__common__pb2.Status.FromString,
                 _registered_method=True)
 
 
@@ -72,23 +83,46 @@ class ChannelCoreServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def CreateFIFOInstance(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def DestroyFIFOInstance(self, request, context):
+        """To support multiple subscribers when conncting to a FIFO you must first request the publisher create a specific instance for this connection.
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_ChannelCoreServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GetChannels': grpc.unary_unary_rpc_method_handler(
                     servicer.GetChannels,
-                    request_deserializer=cif__channel__core__pb2.Empty.FromString,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
                     response_serializer=cif__channel__core__pb2.Channels.SerializeToString,
             ),
             'SetConnection': grpc.unary_unary_rpc_method_handler(
                     servicer.SetConnection,
                     request_deserializer=cif__channel__core__pb2.ConnectSubscriber.FromString,
-                    response_serializer=cif__channel__core__pb2.Status.SerializeToString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
             'SetForce': grpc.unary_unary_rpc_method_handler(
                     servicer.SetForce,
                     request_deserializer=cif__channel__core__pb2.ForceChannel.FromString,
-                    response_serializer=cif__channel__core__pb2.Status.SerializeToString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
+            ),
+            'CreateFIFOInstance': grpc.unary_unary_rpc_method_handler(
+                    servicer.CreateFIFOInstance,
+                    request_deserializer=cif__channel__core__pb2.FIFOInstance.FromString,
+                    response_serializer=cif__channel__core__pb2.FIFOReference.SerializeToString,
+            ),
+            'DestroyFIFOInstance': grpc.unary_unary_rpc_method_handler(
+                    servicer.DestroyFIFOInstance,
+                    request_deserializer=cif__channel__core__pb2.FIFOInstanceName.FromString,
+                    response_serializer=cif__common__pb2.Status.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -116,7 +150,7 @@ class ChannelCore(object):
             request,
             target,
             '/cif.channelcore.ChannelCore/GetChannels',
-            cif__channel__core__pb2.Empty.SerializeToString,
+            cif__common__pb2.Empty.SerializeToString,
             cif__channel__core__pb2.Channels.FromString,
             options,
             channel_credentials,
@@ -144,7 +178,7 @@ class ChannelCore(object):
             target,
             '/cif.channelcore.ChannelCore/SetConnection',
             cif__channel__core__pb2.ConnectSubscriber.SerializeToString,
-            cif__channel__core__pb2.Status.FromString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,
@@ -171,7 +205,61 @@ class ChannelCore(object):
             target,
             '/cif.channelcore.ChannelCore/SetForce',
             cif__channel__core__pb2.ForceChannel.SerializeToString,
-            cif__channel__core__pb2.Status.FromString,
+            cif__common__pb2.Status.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def CreateFIFOInstance(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/cif.channelcore.ChannelCore/CreateFIFOInstance',
+            cif__channel__core__pb2.FIFOInstance.SerializeToString,
+            cif__channel__core__pb2.FIFOReference.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def DestroyFIFOInstance(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/cif.channelcore.ChannelCore/DestroyFIFOInstance',
+            cif__channel__core__pb2.FIFOInstanceName.SerializeToString,
+            cif__common__pb2.Status.FromString,
             options,
             channel_credentials,
             insecure,

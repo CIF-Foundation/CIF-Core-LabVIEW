@@ -1,3 +1,4 @@
+import cif_common_pb2 as _cif_common_pb2
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
@@ -5,51 +6,41 @@ from typing import ClassVar as _ClassVar, Mapping as _Mapping, Optional as _Opti
 
 DESCRIPTOR: _descriptor.FileDescriptor
 
-class Error(_message.Message):
-    __slots__ = ("status", "code")
-    STATUS_FIELD_NUMBER: _ClassVar[int]
-    CODE_FIELD_NUMBER: _ClassVar[int]
-    status: bool
-    code: int
-    def __init__(self, status: bool = ..., code: _Optional[int] = ...) -> None: ...
-
 class Configuration(_message.Message):
     __slots__ = ("json_config",)
     JSON_CONFIG_FIELD_NUMBER: _ClassVar[int]
     json_config: str
     def __init__(self, json_config: _Optional[str] = ...) -> None: ...
 
-class TimingStatsBasic(_message.Message):
-    __slots__ = ("max", "min")
-    MAX_FIELD_NUMBER: _ClassVar[int]
-    MIN_FIELD_NUMBER: _ClassVar[int]
-    max: int
-    min: int
-    def __init__(self, max: _Optional[int] = ..., min: _Optional[int] = ...) -> None: ...
-
 class TimingStatistics(_message.Message):
-    __slots__ = ("period", "wake_error", "execute", "housekeep", "idle")
+    __slots__ = ("period", "wake_error", "execute", "housekeep", "idle", "cleanup", "custom_1", "custom_2")
     PERIOD_FIELD_NUMBER: _ClassVar[int]
     WAKE_ERROR_FIELD_NUMBER: _ClassVar[int]
     EXECUTE_FIELD_NUMBER: _ClassVar[int]
     HOUSEKEEP_FIELD_NUMBER: _ClassVar[int]
     IDLE_FIELD_NUMBER: _ClassVar[int]
-    period: TimingStatsBasic
-    wake_error: TimingStatsBasic
-    execute: TimingStatsBasic
-    housekeep: TimingStatsBasic
-    idle: TimingStatsBasic
-    def __init__(self, period: _Optional[_Union[TimingStatsBasic, _Mapping]] = ..., wake_error: _Optional[_Union[TimingStatsBasic, _Mapping]] = ..., execute: _Optional[_Union[TimingStatsBasic, _Mapping]] = ..., housekeep: _Optional[_Union[TimingStatsBasic, _Mapping]] = ..., idle: _Optional[_Union[TimingStatsBasic, _Mapping]] = ...) -> None: ...
+    CLEANUP_FIELD_NUMBER: _ClassVar[int]
+    CUSTOM_1_FIELD_NUMBER: _ClassVar[int]
+    CUSTOM_2_FIELD_NUMBER: _ClassVar[int]
+    period: _cif_common_pb2.TimingStats
+    wake_error: _cif_common_pb2.TimingStats
+    execute: _cif_common_pb2.TimingStats
+    housekeep: _cif_common_pb2.TimingStats
+    idle: _cif_common_pb2.TimingStats
+    cleanup: _cif_common_pb2.TimingStats
+    custom_1: _cif_common_pb2.TimingStats
+    custom_2: _cif_common_pb2.TimingStats
+    def __init__(self, period: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., wake_error: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., execute: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., housekeep: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., idle: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., cleanup: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., custom_1: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., custom_2: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ...) -> None: ...
 
 class FifoStatistics(_message.Message):
     __slots__ = ("from_t0", "from_previous_plugin", "output_error")
     FROM_T0_FIELD_NUMBER: _ClassVar[int]
     FROM_PREVIOUS_PLUGIN_FIELD_NUMBER: _ClassVar[int]
     OUTPUT_ERROR_FIELD_NUMBER: _ClassVar[int]
-    from_t0: TimingStatsBasic
-    from_previous_plugin: TimingStatsBasic
-    output_error: TimingStatsBasic
-    def __init__(self, from_t0: _Optional[_Union[TimingStatsBasic, _Mapping]] = ..., from_previous_plugin: _Optional[_Union[TimingStatsBasic, _Mapping]] = ..., output_error: _Optional[_Union[TimingStatsBasic, _Mapping]] = ...) -> None: ...
+    from_t0: _cif_common_pb2.TimingStats
+    from_previous_plugin: _cif_common_pb2.TimingStats
+    output_error: _cif_common_pb2.TimingStats
+    def __init__(self, from_t0: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., from_previous_plugin: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ..., output_error: _Optional[_Union[_cif_common_pb2.TimingStats, _Mapping]] = ...) -> None: ...
 
 class MonitorDoubles(_message.Message):
     __slots__ = ("double_1", "double_2", "double_3", "double_4")
@@ -119,17 +110,13 @@ class StatusData(_message.Message):
     monitor_i64s: MonitorI64
     def __init__(self, state: _Optional[_Union[StatusData.State, str]] = ..., timing_statistics: _Optional[_Union[TimingStatistics, _Mapping]] = ..., fifo_statistics: _Optional[_Union[FifoStatistics, _Mapping]] = ..., error: _Optional[_Union[Error, _Mapping]] = ..., monitor_doubles: _Optional[_Union[MonitorDoubles, _Mapping]] = ..., monitor_u64s: _Optional[_Union[MonitorU64, _Mapping]] = ..., monitor_i64s: _Optional[_Union[MonitorI64, _Mapping]] = ...) -> None: ...
 
-class Version(_message.Message):
-    __slots__ = ("major", "minor", "fix", "build")
-    MAJOR_FIELD_NUMBER: _ClassVar[int]
-    MINOR_FIELD_NUMBER: _ClassVar[int]
-    FIX_FIELD_NUMBER: _ClassVar[int]
-    BUILD_FIELD_NUMBER: _ClassVar[int]
-    major: int
-    minor: int
-    fix: int
-    build: int
-    def __init__(self, major: _Optional[int] = ..., minor: _Optional[int] = ..., fix: _Optional[int] = ..., build: _Optional[int] = ...) -> None: ...
+class Error(_message.Message):
+    __slots__ = ("status", "code")
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    CODE_FIELD_NUMBER: _ClassVar[int]
+    status: bool
+    code: int
+    def __init__(self, status: bool = ..., code: _Optional[int] = ...) -> None: ...
 
 class TimingOverrides(_message.Message):
     __slots__ = ("override_timing", "skip_sleep", "period")
@@ -146,23 +133,3 @@ class PluginOverrides(_message.Message):
     TIMING_OVERRIDES_FIELD_NUMBER: _ClassVar[int]
     timing_overrides: TimingOverrides
     def __init__(self, timing_overrides: _Optional[_Union[TimingOverrides, _Mapping]] = ...) -> None: ...
-
-class PluginNames(_message.Message):
-    __slots__ = ("plugin_name", "plugin_type")
-    PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
-    PLUGIN_TYPE_FIELD_NUMBER: _ClassVar[int]
-    plugin_name: str
-    plugin_type: str
-    def __init__(self, plugin_name: _Optional[str] = ..., plugin_type: _Optional[str] = ...) -> None: ...
-
-class Status(_message.Message):
-    __slots__ = ("code", "message")
-    CODE_FIELD_NUMBER: _ClassVar[int]
-    MESSAGE_FIELD_NUMBER: _ClassVar[int]
-    code: int
-    message: str
-    def __init__(self, code: _Optional[int] = ..., message: _Optional[str] = ...) -> None: ...
-
-class Empty(_message.Message):
-    __slots__ = ()
-    def __init__(self) -> None: ...

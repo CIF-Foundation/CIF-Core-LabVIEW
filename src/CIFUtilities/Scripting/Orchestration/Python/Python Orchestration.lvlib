@@ -18,5 +18,6 @@
 	<Item Name="Typedef" Type="Folder">
 		<Item Name="Scripted Line.ctl" Type="VI" URL="../Typedef/Scripted Line.ctl"/>
 	</Item>
+	<Item Name="Create FIFO Instance.vi" Type="VI" URL="../SubVIs/Create FIFO Instance.vi"/>
 	<Item Name="Create Python Orchestration Script.vi" Type="VI" URL="../Create Python Orchestration Script.vi"/>
 </Library>
