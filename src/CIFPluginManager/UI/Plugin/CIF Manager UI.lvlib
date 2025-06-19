@@ -13,5 +13,8 @@ Version 0.6.0 Update to support CIPC FIFO channels.</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">0.6.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="Channel Subpanel.vi" Type="VI" URL="../Channel Subpanel.vi"/>
+	<Item Name="CIF Manager U_BUI.vi" Type="VI" URL="../CIF Manager U_BUI.vi"/>
 	<Item Name="CIF Manager UI.vi" Type="VI" URL="../CIF Manager UI.vi"/>
+	<Item Name="System Subpanel.vi" Type="VI" URL="../System Subpanel.vi"/>
 </Library>
