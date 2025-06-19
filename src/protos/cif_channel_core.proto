@@ -8,9 +8,10 @@ service ChannelCore {
   rpc GetChannels (cif.common.Empty) returns (Channels) {}
   rpc SetConnection (ConnectSubscriber) returns (cif.common.Status) {}
   rpc SetForce (ForceChannel) returns (cif.common.Status) {} //This is only supported on tags.
-  rpc CreateFIFOInstance (FIFOInstance) returns (FIFOReference) {}  //This is only supported on channels where multi_writer is true.  FIFOs can are 1-1 connections.  
-    //To support multiple subscribers when conncting to a FIFO you must first request the publisher create a specific instance for this connection.
-  rpc DestroyFIFOInstance (FIFOInstanceName) returns (cif.common.Status) {} //Destroy the specific FIFO instance for a subsciber.  
+  rpc CreateFIFOInstance (FIFOInstance) returns (FIFOReference) {}  //This is needed when the publisher needs to provide information
+    // to support a subscriber.  For instance if a new publisher needs to be created for a 1-1 FIFO or if backpressure is used and the publisher needs
+    // to provide the handels.
+  rpc DestroyFIFOInstance (FIFOInstanceName) returns (cif.common.Status) {} //This is used to destroy or disconnect a subscriber after the CreateFIFOInstance was used.  
 }
 
 enum Direction {
@@ -34,6 +35,7 @@ enum PATTERN {
   TAG = 1;
   FIFO = 2;
   MULTIFIFO = 3;
+  BACKPRESSUREFIFO = 4;
 }
 
 message Channels {
@@ -49,16 +51,16 @@ message ConnectSubscriber {
 message FIFOInstance {
   string publisher_name = 1; //The name of the existing FIFO to create a new instance for the subscriber
   bool retry_on_timeout = 2; //Is the subscriber applying backpressure to control the rate of the publisher.  On FIFO full (timeout) the publisher will retry until space is available.
-    //This is normally only used for file read publishers.  This value is applied as an AND with the publisher configuration (will only apply backpressure if publisher is configured for backpressure support).
-  bool primary_subscriber = 3;  //Only the primary subsciber will support timeout.  There can only be a single primary subscriber.  
-    //By default the first subscriber will be the primary unless another subscriber sets this flag true.  Then the new subscriber will be the primary.
-  uint32 message_per_fifo_override = 4;  //A value of 0 indicates don't override.  This is the number of "elements" in the FIFO buffer.  
-    //"Element" definition is implementation specific.  Typically this is bytes to support variable length payloads but when payload size is fixed it may be a full payload messages.
+  //This is normally only used for file read publishers.  This value is applied as an AND with the publisher configuration (will only apply backpressure if publisher is configured for backpressure support).
+  uint32 bytes_per_message_override = 3;  //A value of 0 indicates don't override.  This is the number of bytes in a single payload added to the FIFO buffer.  
+  uint32 message_per_fifo_override = 4;  //A value of 0 indicates don't override.  This is the number of "messages" in the FIFO buffer.  
+  bytes custom_data = 5;  //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific. 
 }
 
 message FIFOReference {
   string publisher_instance_name = 1; //Unique instance name of the multi-writer FIFO publisher.
-  cif.common.Status status =2;
+  bytes custom_connect = 2; //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific. 
+  cif.common.Status status =3;
 }
 
 message FIFOInstanceName {
