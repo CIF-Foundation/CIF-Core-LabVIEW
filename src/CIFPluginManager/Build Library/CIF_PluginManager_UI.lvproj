@@ -13,7 +13,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="CIF Manager UI.lvlib" Type="Library" URL="../../UI/Plugin/CIF Manager UI.lvlib"/>
 		<Item Name="CIF Build Actions.lvlib" Type="Library" URL="../../../CIFUtilities/Build Actions/CIF Build Actions.lvlib"/>
-		<Item Name="CIF_Manager_UI_Tab.ctl" Type="VI" URL="../../../CIFUI/Typedef/CIF_Manager_UI_Tab.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
