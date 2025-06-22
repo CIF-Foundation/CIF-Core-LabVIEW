@@ -17,5 +17,6 @@ Version 0.6.0 Update to support CIPC FIFO channels.</Property>
 	<Item Name="CIF Manager U_BUI.vi" Type="VI" URL="../CIF Manager U_BUI.vi"/>
 	<Item Name="CIF Manager UI.vi" Type="VI" URL="../CIF Manager UI.vi"/>
 	<Item Name="Error Monitor Subpanel.vi" Type="VI" URL="../Error Monitor Subpanel.vi"/>
+	<Item Name="Plugin Wrapper Subpanel.vi" Type="VI" URL="../Plugin Wrapper Subpanel.vi"/>
 	<Item Name="System Subpanel.vi" Type="VI" URL="../System Subpanel.vi"/>
 </Library>
