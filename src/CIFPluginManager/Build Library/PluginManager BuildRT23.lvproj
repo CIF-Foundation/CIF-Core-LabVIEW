@@ -670,6 +670,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Python Orchestration.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
 			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="../../CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
+			<Item Name="cif_plugincore_TimingStatsBasic.ctl" Type="VI" URL="../../CIFPluginManager/gRPC/CIF_Manager_server/RPC Messages/cif_plugincore_TimingStatsBasic.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="PluginManagerPluginRT" Type="Packed Library">
