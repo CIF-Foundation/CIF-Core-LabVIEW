@@ -38,5 +38,6 @@
 		<Item Name="ns timing to us timing.vi" Type="VI" URL="../Utilities/ns timing to us timing.vi"/>
 		<Item Name="Split Channel Name.vi" Type="VI" URL="../Utilities/Split Channel Name.vi"/>
 		<Item Name="Merge Channel Name.vi" Type="VI" URL="../Utilities/Merge Channel Name.vi"/>
+		<Item Name="Validate Python Name.vi" Type="VI" URL="../Utilities/Validate Python Name.vi"/>
 	</Item>
 </Library>
