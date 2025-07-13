@@ -25,31 +25,31 @@ _sym_db = _symbol_database.Default()
 import cif_common_pb2 as cif__common__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16\x63if_channel_core.proto\x12\x0f\x63if.channelcore\x1a\x10\x63if_common.proto\"\xd9\x01\n\x07\x43hannel\x12\x0c\n\x04name\x18\x01 \x01(\t\x12-\n\tdirection\x18\x02 \x01(\x0e\x32\x1a.cif.channelcore.Direction\x12\x0c\n\x04type\x18\x03 \x01(\t\x12\x15\n\rcustom_config\x18\x04 \x01(\x0c\x12\x11\n\tconnected\x18\x05 \x01(\x08\x12\x16\n\x0e\x63onnected_name\x18\x06 \x01(\t\x12\x0e\n\x06\x66orced\x18\x07 \x01(\x08\x12\x31\n\x0f\x63hannel_pattern\x18\x08 \x01(\x0e\x32\x18.cif.channelcore.PATTERN\"6\n\x08\x43hannels\x12*\n\x08\x63hannels\x18\x01 \x03(\x0b\x32\x18.cif.channelcore.Channel\"\\\n\x11\x43onnectSubscriber\x12\x17\n\x0fsubscriber_name\x18\x01 \x01(\t\x12\x16\n\x0epublisher_name\x18\x02 \x01(\t\x12\x16\n\x0e\x63ustom_connect\x18\x03 \x01(\x0c\"\x7f\n\x0c\x46IFOInstance\x12\x16\n\x0epublisher_name\x18\x01 \x01(\t\x12\x18\n\x10retry_on_timeout\x18\x02 \x01(\x08\x12\x1a\n\x12primary_subscriber\x18\x03 \x01(\x08\x12!\n\x19message_per_fifo_override\x18\x04 \x01(\r\"T\n\rFIFOReference\x12\x1f\n\x17publisher_instance_name\x18\x01 \x01(\t\x12\"\n\x06status\x18\x02 \x01(\x0b\x32\x12.cif.common.Status\"3\n\x10\x46IFOInstanceName\x12\x1f\n\x17publisher_instance_name\x18\x01 \x01(\t\"G\n\x0c\x46orceChannel\x12\x14\n\x0c\x63hannel_name\x18\x01 \x01(\t\x12\r\n\x05\x66orce\x18\x02 \x01(\x08\x12\x12\n\nforce_data\x18\x03 \x01(\x0c**\n\tDirection\x12\r\n\tPUBLISHER\x10\x00\x12\x0e\n\nSUBSCRIBER\x10\x01*8\n\x07PATTERN\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x07\n\x03TAG\x10\x01\x12\x08\n\x04\x46IFO\x10\x02\x12\r\n\tMULTIFIFO\x10\x03\x32\xff\x02\n\x0b\x43hannelCore\x12=\n\x0bGetChannels\x12\x11.cif.common.Empty\x1a\x19.cif.channelcore.Channels\"\x00\x12I\n\rSetConnection\x12\".cif.channelcore.ConnectSubscriber\x1a\x12.cif.common.Status\"\x00\x12?\n\x08SetForce\x12\x1d.cif.channelcore.ForceChannel\x1a\x12.cif.common.Status\"\x00\x12U\n\x12\x43reateFIFOInstance\x12\x1d.cif.channelcore.FIFOInstance\x1a\x1e.cif.channelcore.FIFOReference\"\x00\x12N\n\x13\x44\x65stroyFIFOInstance\x12!.cif.channelcore.FIFOInstanceName\x1a\x12.cif.common.Status\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16\x63if_channel_core.proto\x12\x0f\x63if.channelcore\x1a\x10\x63if_common.proto\"\xd9\x01\n\x07\x43hannel\x12\x0c\n\x04name\x18\x01 \x01(\t\x12-\n\tdirection\x18\x02 \x01(\x0e\x32\x1a.cif.channelcore.Direction\x12\x0c\n\x04type\x18\x03 \x01(\t\x12\x15\n\rcustom_config\x18\x04 \x01(\x0c\x12\x11\n\tconnected\x18\x05 \x01(\x08\x12\x16\n\x0e\x63onnected_name\x18\x06 \x01(\t\x12\x0e\n\x06\x66orced\x18\x07 \x01(\x08\x12\x31\n\x0f\x63hannel_pattern\x18\x08 \x01(\x0e\x32\x18.cif.channelcore.PATTERN\"6\n\x08\x43hannels\x12*\n\x08\x63hannels\x18\x01 \x03(\x0b\x32\x18.cif.channelcore.Channel\"\\\n\x11\x43onnectSubscriber\x12\x17\n\x0fsubscriber_name\x18\x01 \x01(\t\x12\x16\n\x0epublisher_name\x18\x02 \x01(\t\x12\x16\n\x0e\x63ustom_connect\x18\x03 \x01(\x0c\"\x9c\x01\n\x0c\x46IFOInstance\x12\x16\n\x0epublisher_name\x18\x01 \x01(\t\x12\x18\n\x10retry_on_timeout\x18\x02 \x01(\x08\x12\"\n\x1a\x62ytes_per_message_override\x18\x03 \x01(\r\x12!\n\x19message_per_fifo_override\x18\x04 \x01(\r\x12\x13\n\x0b\x63ustom_data\x18\x05 \x01(\x0c\"l\n\rFIFOReference\x12\x1f\n\x17publisher_instance_name\x18\x01 \x01(\t\x12\x16\n\x0e\x63ustom_connect\x18\x02 \x01(\x0c\x12\"\n\x06status\x18\x03 \x01(\x0b\x32\x12.cif.common.Status\"3\n\x10\x46IFOInstanceName\x12\x1f\n\x17publisher_instance_name\x18\x01 \x01(\t\"G\n\x0c\x46orceChannel\x12\x14\n\x0c\x63hannel_name\x18\x01 \x01(\t\x12\r\n\x05\x66orce\x18\x02 \x01(\x08\x12\x12\n\nforce_data\x18\x03 \x01(\x0c**\n\tDirection\x12\r\n\tPUBLISHER\x10\x00\x12\x0e\n\nSUBSCRIBER\x10\x01*N\n\x07PATTERN\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x07\n\x03TAG\x10\x01\x12\x08\n\x04\x46IFO\x10\x02\x12\r\n\tMULTIFIFO\x10\x03\x12\x14\n\x10\x42\x41\x43KPRESSUREFIFO\x10\x04\x32\xff\x02\n\x0b\x43hannelCore\x12=\n\x0bGetChannels\x12\x11.cif.common.Empty\x1a\x19.cif.channelcore.Channels\"\x00\x12I\n\rSetConnection\x12\".cif.channelcore.ConnectSubscriber\x1a\x12.cif.common.Status\"\x00\x12?\n\x08SetForce\x12\x1d.cif.channelcore.ForceChannel\x1a\x12.cif.common.Status\"\x00\x12U\n\x12\x43reateFIFOInstance\x12\x1d.cif.channelcore.FIFOInstance\x1a\x1e.cif.channelcore.FIFOReference\"\x00\x12N\n\x13\x44\x65stroyFIFOInstance\x12!.cif.channelcore.FIFOInstanceName\x1a\x12.cif.common.Status\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'cif_channel_core_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_DIRECTION']._serialized_start=772
-  _globals['_DIRECTION']._serialized_end=814
-  _globals['_PATTERN']._serialized_start=816
-  _globals['_PATTERN']._serialized_end=872
+  _globals['_DIRECTION']._serialized_start=826
+  _globals['_DIRECTION']._serialized_end=868
+  _globals['_PATTERN']._serialized_start=870
+  _globals['_PATTERN']._serialized_end=948
   _globals['_CHANNEL']._serialized_start=62
   _globals['_CHANNEL']._serialized_end=279
   _globals['_CHANNELS']._serialized_start=281
   _globals['_CHANNELS']._serialized_end=335
   _globals['_CONNECTSUBSCRIBER']._serialized_start=337
   _globals['_CONNECTSUBSCRIBER']._serialized_end=429
-  _globals['_FIFOINSTANCE']._serialized_start=431
-  _globals['_FIFOINSTANCE']._serialized_end=558
-  _globals['_FIFOREFERENCE']._serialized_start=560
-  _globals['_FIFOREFERENCE']._serialized_end=644
-  _globals['_FIFOINSTANCENAME']._serialized_start=646
-  _globals['_FIFOINSTANCENAME']._serialized_end=697
-  _globals['_FORCECHANNEL']._serialized_start=699
-  _globals['_FORCECHANNEL']._serialized_end=770
-  _globals['_CHANNELCORE']._serialized_start=875
-  _globals['_CHANNELCORE']._serialized_end=1258
+  _globals['_FIFOINSTANCE']._serialized_start=432
+  _globals['_FIFOINSTANCE']._serialized_end=588
+  _globals['_FIFOREFERENCE']._serialized_start=590
+  _globals['_FIFOREFERENCE']._serialized_end=698
+  _globals['_FIFOINSTANCENAME']._serialized_start=700
+  _globals['_FIFOINSTANCENAME']._serialized_end=751
+  _globals['_FORCECHANNEL']._serialized_start=753
+  _globals['_FORCECHANNEL']._serialized_end=824
+  _globals['_CHANNELCORE']._serialized_start=951
+  _globals['_CHANNELCORE']._serialized_end=1334
 # @@protoc_insertion_point(module_scope)

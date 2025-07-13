@@ -98,8 +98,9 @@ class plugin():
     def create_fifo_instance(self, fifo_instance):
         self = self.check_loaded()
         test_value = 0
-        # result_info = self.stub_channel.CreateFIFOInstance(cif_channel_core_pb2.FIFOInstance(publisher_name=fifo_instance.channel, retry_on_timeout=fifo_instance.backpressure, primary_subscriber=fifo_instance.primary, message_per_fifo_override=fifo_instance.depth))
-        result_info = self.stub_channel.CreateFIFOInstance(cif_channel_core_pb2.FIFOInstance(publisher_name=fifo_instance.channel, retry_on_timeout=True, primary_subscriber=True, message_per_fifo_override=test_value))
+        result_info = self.stub_channel.CreateFIFOInstance(cif_channel_core_pb2.FIFOInstance(
+            publisher_name=fifo_instance.channel, retry_on_timeout=fifo_instance.backpressure,
+            message_per_fifo_override=fifo_instance.msg_per_fifo, custom_data=fifo_instance.custom_data))
         check_error(result_info.status)
         return self
     
@@ -132,16 +133,16 @@ class channel_link():
     def __init__(self, publisher, subscriber, custom_data):
         self.subscriber = subscriber
         self.publisher = publisher
-        # self.custom_data = bytes()
         self.custom_data = bytes.fromhex(custom_data)
 
 class fifo_instance():
-    def __init__(self, direction, channel, primary, backpressure, depth):
+    def __init__(self, direction, channel, backpressure, bytes_per_msg, msg_per_fifo, custom_data):
         self.direction = direction
         self.channel = channel
-        self.primary = primary
-        self.backpressure = backpressure
-        self.depth = depth
+        self.backpressure = int(backpressure)
+        self.bytes_per_msg = int(bytes_per_msg)
+        self.msg_per_fifo = int(msg_per_fifo)
+        self.custom_data = bytes.fromhex(custom_data)
 
 class bcolors:
     HEADER = '\033[95m'

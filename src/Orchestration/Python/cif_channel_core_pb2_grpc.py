@@ -90,7 +90,8 @@ class ChannelCoreServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def DestroyFIFOInstance(self, request, context):
-        """To support multiple subscribers when conncting to a FIFO you must first request the publisher create a specific instance for this connection.
+        """to support a subscriber.  For instance if a new publisher needs to be created for a 1-1 FIFO or if backpressure is used and the publisher needs
+        to provide the handels.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
