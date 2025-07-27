@@ -11,6 +11,7 @@
 		<Item Name="Create Registered Channel Types.vi" Type="VI" URL="../SubVIs/Create Registered Channel Types.vi"/>
 	</Item>
 	<Item Name="typedef" Type="Folder">
+		<Item Name="Channel Definition for Scripting.ctl" Type="VI" URL="../typedef/Channel Definition for Scripting.ctl"/>
 		<Item Name="Channel Definition.ctl" Type="VI" URL="../typedef/Channel Definition.ctl"/>
 		<Item Name="Registered Channel Types.ctl" Type="VI" URL="../typedef/Registered Channel Types.ctl"/>
 	</Item>
