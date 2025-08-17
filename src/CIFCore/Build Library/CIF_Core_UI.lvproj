@@ -563,8 +563,6 @@
 			<Item Name="provcom_IsDesktopTargetBehavior.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_IsDesktopTargetBehavior.vi"/>
 			<Item Name="provcom_GetObjectItemFromProjectItem.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_GetObjectItemFromProjectItem.vi"/>
 			<Item Name="provcom_CheckChannelControlConPane.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_CheckChannelControlConPane.vi"/>
-			<Item Name="Template_client.lvlib" Type="Library" URL="../../../../../Plugins/Template/Grpc/Template_client/Template_client.lvlib"/>
-			<Item Name="TemplateWrapper.lvlib" Type="Library" URL="../../../../../Plugins/Template/Grpc/Template_wrapper/TemplateWrapper.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="UI Plugin" Type="Packed Library">
