@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-08-18 19:05:23" Creator="toddw" Comments="" ID="fc8b05a4c199dadfce7d0f8c8dca0aee">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-08-18 13:29:57" Creator="toddw" Comments="" ID="2545514efcb965b547331c0ac7dac200">
   <Library_General_Settings>
     <Package_File_Name>CIF_Foundation_lib_CIF_Core</Package_File_Name>
     <Library_Version>1.0.0.4</Library_Version>
@@ -25,7 +25,7 @@
       <Pre-Uninstall_VI/>
       <Post-Uninstall_VI/>
     </Custom_Action_VIs>
-    <VI_Package_Configuration_File>CIF Core.vipc</VI_Package_Configuration_File>
+    <VI_Package_Configuration_File>CIF Core - Copy.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary/>
       <Description>Core code for for CIF plugin and plugin manager</Description>
@@ -111,9 +111,39 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Compile_Exclusions>
+      <Exclusions>
         <Path>CIFUtilities/Scripting/Build Libraries</Path>
-      </Compile_Exclusions>
+      </Exclusions>
+      <Exclusions>
+        <Path>Channels</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>CIFCore</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>CIFPluginManager</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>CIFUI</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Instrument Studio</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>protos</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Orchestration</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>CIFUtilities/Build Actions</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>CIFUtilities/CIFConfigurationFile</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>CIFUtilities/CIFLogs</Path>
+      </Exclusions>
       <Place_Folder_Contents>
         <Path/>
       </Place_Folder_Contents>
@@ -287,7 +317,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A12E01B44D107740F231DB169FC392AA</GUID>
+      <GUID>37277E2618BDDAC57A009F6A54A8A874</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -462,7 +492,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>219B5195236DAFC65892EE1D484310B6</GUID>
+      <GUID>43FFBFF8B39D9A4E307005974C84C494</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -553,7 +583,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Read Clock Conversion.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C3394FF35A50739756ED06927B478AE8</GUID>
+      <GUID>6C7A888D0687E0CD7B1E047F438DB3F1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -784,7 +814,7 @@
         <Path>..\src\CIFCore\Class\Channel RW\Write CAN FIFO.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5EB3D5A7927791BB35A90525516F51FB</GUID>
+      <GUID>72D0D6C5DD116163BF33AD3108AB680A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -973,7 +1003,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor\Write U64 4.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>02C9C92E3D96AADA3C68EFCA42CF3AD8</GUID>
+      <GUID>43CAD0D582C181FADB3DED49E064E99A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1064,7 +1094,7 @@
         <Path>..\src\CIFCore\Class\Utilities\Channels\Destroy Channel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3ADD3143A14FC57316DE291C3CF399DE</GUID>
+      <GUID>154A4AA2D3681B629F308EFAD5180F20</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1141,7 +1171,7 @@
         <Path>..\src\CIFUI\Subpanel to Parent\Write Local Error.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>154BF9920D967DECC7AC3019729FE32C</GUID>
+      <GUID>493B2BEBE6F78268FAD5D2295EE696C5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1400,7 +1430,7 @@
         <Path>..\src\CIFCore\Grpc\CIFCoreWrapper\Commands\Destroy FIFO Instance.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0C09D5E90FCD8626BB20DA5DA7595B2F</GUID>
+      <GUID>A667363F10E7B2317112533A60DB7E76</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1659,7 +1689,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands\Create Orchestration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C6E649A5CF95313E10AC7E0A9A83B32F</GUID>
+      <GUID>D2BBC2300C08357E1CC18B51E07D44C0</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
