@@ -19,4 +19,7 @@
 		<Item Name="Launch.vi" Type="VI" URL="../Core/Launch.vi"/>
 		<Item Name="Energize.vi" Type="VI" URL="../Core/Energize.vi"/>
 	</Item>
+	<Item Name="Documentation" Type="Folder">
+		<Item Name="Documentation.vi" Type="VI" URL="../Documentation/Documentation.vi"/>
+	</Item>
 </Library>
