@@ -565,8 +565,9 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/UI Post-Build Action.vi</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/UI Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{05547330-7608-4C70-A459-D72560977C4B}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CIF_PluginManager_UI.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/UI/NI_AB_PROJECTNAME.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -577,7 +578,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{417488DD-885E-4F9B-89EE-C7FE7EFB8BCB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3503F06E-6EA6-4404-8FC3-F9B2AC3147D2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIF Manager UI.lvlib</Property>
@@ -613,7 +614,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/dev/builds/PluginManager/UI</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{14255522-B0E9-46ED-AF6C-F307D7819624}</Property>
-				<Property Name="Bld_version.build" Type="Int">11</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CIF Manager.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/UI/CIF Manager.exe</Property>
@@ -671,10 +672,11 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Plugin Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6CCD3B9C-8D1B-44FD-AF57-D794C05BB4FD}</Property>
-				<Property Name="Bld_version.build" Type="Int">15</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">CIF Manager UI.1.0.0.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/UI/CIF Manager UI.1.0.0.lvlibp</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">CIF Manager UI.1.0.1.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/UI/CIF Manager UI.1.0.1.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -683,7 +685,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FF68C93B-9DFA-462D-BE3A-9A186AEA97EE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3503F06E-6EA6-4404-8FC3-F9B2AC3147D2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIF Manager UI.lvlib</Property>
@@ -701,7 +703,7 @@
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 National Instruments</Property>
 				<Property Name="TgtF_productName" Type="Str">Plugin Manager UI</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{56F3B932-BF2D-4EB9-BBC5-A57E377CD51D}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">CIF Manager UI.1.0.0.lvlibp</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">CIF Manager UI.1.0.1.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
