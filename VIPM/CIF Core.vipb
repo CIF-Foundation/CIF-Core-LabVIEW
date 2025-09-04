@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-09-01 15:55:02" Creator="toddw" Comments="" ID="00bd710397ba7ede5511cd2402e7eeb7">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-09-04 18:19:36" Creator="toddw" Comments="" ID="ed28e05a4692fdce646c8bc83d5a6701">
   <Library_General_Settings>
     <Package_File_Name>CIF_Foundation_lib_CIF_Core</Package_File_Name>
-    <Library_Version>1.0.0.14</Library_Version>
+    <Library_Version>1.0.0.15</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\..\builds\VIPM</Library_Output_Folder>
@@ -32,7 +32,7 @@
       <Copyright/>
       <Packager>DOME Automation</Packager>
       <URL/>
-      <Release_Notes>Added Bool and Accessors for Configuration Change</Release_Notes>
+      <Release_Notes>Update to Manager UI plugin name filter.  </Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -287,7 +287,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B35681E55EECEC0034E924DE734C91DA</GUID>
+      <GUID>B73E1D08140F04D3E9D91338732AA22F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -462,7 +462,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F95DF7AE5FBD230B65A2061096869703</GUID>
+      <GUID>6AA10845BA658F3A28BC72F90406A0A0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -553,7 +553,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Read Clock Conversion.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B3E8742159944E8DD5142A011CD646FB</GUID>
+      <GUID>42CDC6193F2CB6B8FA713E57EF5D381A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -784,7 +784,7 @@
         <Path>..\src\CIFCore\Class\Channel RW\Write CAN FIFO.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5D1749A313F61E8CBDAEF76C2C7CA22F</GUID>
+      <GUID>2018B3713EFEA05ECF99EA0474B099B7</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -973,7 +973,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor\Write U64 4.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E86742C14C152DC7EAE4A092D4345F15</GUID>
+      <GUID>D8C9C21686DE6765BE0FD68706373C58</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1064,7 +1064,7 @@
         <Path>..\src\CIFCore\Class\Utilities\Channels\Destroy Channel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>66046473F680EA43F69D6E425E42093F</GUID>
+      <GUID>289E8C928E8B55C3813A73143CC62F35</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1141,7 +1141,7 @@
         <Path>..\src\CIFUI\Subpanel to Parent\Write Local Error.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DEF4600A0AE18666DB42EC6E6AB9DE8C</GUID>
+      <GUID>950483F1B7890DF3F75E34264BDD7799</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1400,7 +1400,7 @@
         <Path>..\src\CIFCore\Grpc\CIFCoreWrapper\Commands\Destroy FIFO Instance.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E921747C77311A5D8AC47D04BEED4EB9</GUID>
+      <GUID>09069B5FE8CCEB5D05D050C968E97EEF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1659,7 +1659,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands\Create Orchestration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9904C9039ED9CF79C361870A99857550</GUID>
+      <GUID>484313EACC8CC46A5C7C2A88CC0B65A7</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
