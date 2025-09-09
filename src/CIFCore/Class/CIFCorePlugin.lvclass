@@ -1884,6 +1884,15 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">44040208</Property>
 			</Item>
+			<Item Name="Increase Channel Buffer.vi" Type="VI" URL="../Utilities/Channels/Increase Channel Buffer.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;Q!!!!$!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$*!=!!?!!!8&amp;5.*2E.P=G61&lt;(6H;7YO&lt;(:D&lt;'&amp;T=Q!21UF'1W^S:6"M&gt;7&gt;J&lt;C"P&gt;81!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!.1!5!"UZV&lt;76S;7-!)E"!!!(`````!!=62GRB&gt;(2F&lt;G6E)%:*2E]A1W^O:GFH!".!!Q!.1WBB&lt;GZF&lt;#"*&lt;G2F?!!S1(!!(A!!&amp;R6$35:$&lt;X*F5'RV:WFO,GRW9WRB=X-!%%.*2E.P=G61&lt;(6H;7YA;7Y!!'%!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!A!#1!+!Q!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!%!!!!"!!!!!1!!!.!!!!$!!!!!!!!!!!!!!"!!M!!!!!</Property>
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">1094713344</Property>
+				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">8650768</Property>
+			</Item>
 		</Item>
 	</Item>
 </LVClass>
