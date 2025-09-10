@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-09-08 19:04:32" Creator="toddw" Comments="" ID="7aa2266f900d34aae24d7ecc83f090c0">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-09-10 18:54:58" Creator="toddw" Comments="" ID="00c02ca331368587a7034e667d6fd199">
   <Library_General_Settings>
     <Package_File_Name>CIF_Foundation_lib_CIF_Core</Package_File_Name>
-    <Library_Version>1.0.0.16</Library_Version>
+    <Library_Version>1.0.0.17</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\..\builds\VIPM</Library_Output_Folder>
@@ -32,7 +32,7 @@
       <Copyright/>
       <Packager>DOME Automation</Packager>
       <URL/>
-      <Release_Notes>Function added for changing FIFO buffer size</Release_Notes>
+      <Release_Notes>Update to function for changing FIFO buffer size</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -287,7 +287,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FE21CF87C3615A37B29E5FB99A2D433F</GUID>
+      <GUID>965F9D1E269977118B8989F75D5AE27C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -462,7 +462,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BA98CBE3160C734310E314D4E891B0BB</GUID>
+      <GUID>178D3916A033646D19FF605B8F559B02</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -553,7 +553,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Read Clock Conversion.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>64A5EEE103D1C040A2FC87DB2B54C77A</GUID>
+      <GUID>4321B197C7CF9A109475D9BC6A5BCF43</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -784,7 +784,7 @@
         <Path>..\src\CIFCore\Class\Channel RW\Write CAN FIFO.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>52E6AD8E789AB5B4977B88827F05B1A4</GUID>
+      <GUID>00D214CAC152D769A96BB358E7DD4597</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -973,7 +973,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor\Write U64 4.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7C6BE2601BCD5D326739CFCEA24C4550</GUID>
+      <GUID>E4F7448F782BA815847D72B34C25FB6D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1078,7 +1078,7 @@
         <Path>..\src\CIFCore\Class\Utilities\Channels\Increase Channel Buffer.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0B35D0245E7EE04D369D2B607547E0D8</GUID>
+      <GUID>50CE223180943B7B074D9871E3D2A09A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1155,7 +1155,7 @@
         <Path>..\src\CIFUI\Subpanel to Parent\Write Local Error.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F8FA3624BF1175DB83A44548765B4190</GUID>
+      <GUID>03B370BC665C793F7B9770ACB4FBDAA2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1414,7 +1414,7 @@
         <Path>..\src\CIFCore\Grpc\CIFCoreWrapper\Commands\Destroy FIFO Instance.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>67ABA262E766C93C96B32A8CC9AC59D5</GUID>
+      <GUID>7ED34C3BDAA4F55F593379B7753B61AF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1673,7 +1673,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands\Create Orchestration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BBB3C51D82ACE03C650602D1CE0A1716</GUID>
+      <GUID>C4CD619938892E359C1B43B55FC6888C</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
