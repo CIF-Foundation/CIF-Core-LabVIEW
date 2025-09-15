@@ -12,6 +12,7 @@
 	<Item Name="Core" Type="Folder">
 		<Item Name="UI Pre-Build Action.vi" Type="VI" URL="../Core/UI Pre-Build Action.vi"/>
 		<Item Name="UI Post-Build Action.vi" Type="VI" URL="../Core/UI Post-Build Action.vi"/>
+		<Item Name="Versioned UI Post-Build Action.vi" Type="VI" URL="../Core/Versioned UI Post-Build Action.vi"/>
 		<Item Name="Plugin Pre-Build Action.vi" Type="VI" URL="../Core/Plugin Pre-Build Action.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
