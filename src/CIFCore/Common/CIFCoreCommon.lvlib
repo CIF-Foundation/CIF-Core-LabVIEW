@@ -30,6 +30,8 @@
 		<Item Name="Channel Connection Data.ctl" Type="VI" URL="../Typedef/Channel Connection Data.ctl"/>
 		<Item Name="Channel Force Data.ctl" Type="VI" URL="../Typedef/Channel Force Data.ctl"/>
 		<Item Name="FIFO Publisher.ctl" Type="VI" URL="../Typedef/FIFO Publisher.ctl"/>
+		<Item Name="External Clock Config.ctl" Type="VI" URL="../Typedef/External Clock Config.ctl"/>
+		<Item Name="External Time Source.ctl" Type="VI" URL="../Typedef/External Time Source.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Add Error.vi" Type="VI" URL="../Utilities/Add Error.vi"/>
