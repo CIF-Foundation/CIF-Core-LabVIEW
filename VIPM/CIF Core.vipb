@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-09-20 15:26:43" Creator="toddw" Comments="" ID="78932577a80e160e7b80eb485642dd70">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2025-09-21 10:34:27" Creator="toddw" Comments="" ID="c16e0651bf4c72f983b26ebdc20313af">
   <Library_General_Settings>
     <Package_File_Name>CIF_Foundation_lib_CIF_Core</Package_File_Name>
-    <Library_Version>1.2.0.2</Library_Version>
+    <Library_Version>1.2.1.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\..\builds\VIPM</Library_Output_Folder>
@@ -22,7 +22,7 @@
       <Additional_External_Dependencies>cif_foundation_lib_lv_scripting &gt;=1.3.0.7</Additional_External_Dependencies>
       <Additional_External_Dependencies>cif_foundation_lib_ni_cipc &gt;=1.7.1.3</Additional_External_Dependencies>
       <Additional_External_Dependencies>cif_foundation_lib_pcap_parse_build &gt;=1.4.2.3</Additional_External_Dependencies>
-      <Additional_External_Dependencies>ni_lib_labview_grpc_library &gt;=1.6.0.1</Additional_External_Dependencies>
+      <Additional_External_Dependencies>ni_lib_labview_grpc_library &gt;=1.2.5.1</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -39,7 +39,7 @@
       <Copyright/>
       <Packager>DOME Automation</Packager>
       <URL/>
-      <Release_Notes>Added benchmarking utilities for sleep/loop in logic and for FIFO statistics.</Release_Notes>
+      <Release_Notes>Updated benchmarking utility added build script for RT.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -308,7 +308,7 @@
         <Path>..\src\UI</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>043FC0B037D98267D8644DDD633EF2D0</GUID>
+      <GUID>6C339F4E5975E4C7CB68F4146BB4312B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -469,7 +469,7 @@
         <Path>..\src\CIFCore\Class\Logs\Log Custom Info.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B5A01A7EFED515D924EBBF1D459ABDD7</GUID>
+      <GUID>7A4C5A5AA6027B600FAA3AF542E9AD92</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -616,7 +616,7 @@
         <Path>..\src\CIFCore\Class\Utilities\Clocks\System Clock to External Clock.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D9DA5372D3D3D642A04925886F8ACA1E</GUID>
+      <GUID>F148EBF3B721CDF6EDFFB15A3E6381A0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -847,7 +847,7 @@
         <Path>..\src\CIFCore\Class\Channel RW\Write CAN FIFO.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>47071AABC7965DF877931F8B9A1DF03C</GUID>
+      <GUID>F2F39CD0C76DACD6DB99AF122419A734</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1036,7 +1036,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor\Write U64 4.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>490DE9E1C7A852F606F974CA3A6DF603</GUID>
+      <GUID>C327849AFA104D3E0451C088576758CE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1141,7 +1141,7 @@
         <Path>..\src\CIFCore\Class\Utilities\Channels\Increase Channel Buffer.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A4343E39A25861C39504959B58E02305</GUID>
+      <GUID>0A81FF6709C6B1E529E01E292376FB51</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1218,7 +1218,7 @@
         <Path>..\src\CIFUI\Subpanel to Parent\Write Local Error.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3796AB565F9C997C8BC7AC8D900D9902</GUID>
+      <GUID>C04CE42D3E4677C70498EECB0DBF3F2C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1477,7 +1477,7 @@
         <Path>..\src\CIFCore\Grpc\CIFCoreWrapper\Commands\Destroy FIFO Instance.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E6EDBA2B0666209BA2D6AD1849836EA6</GUID>
+      <GUID>245A7F0B67003B0DCA8C3E79E34388A2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1736,7 +1736,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands\Create Orchestration.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0E2B4DE50F910739CECA71B12B7A9B2E</GUID>
+      <GUID>B20F83466A51F3425EE2CBAD27BDDBC5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1841,7 +1841,7 @@
         <Path>..\src\CIFCore\Class\Benchmarking\Benchmark FIFO Read.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>011EFDD2F880601B42F3EF2A16D5253C</GUID>
+      <GUID>17887CE0E324276A3F42E29CBCCB39CB</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

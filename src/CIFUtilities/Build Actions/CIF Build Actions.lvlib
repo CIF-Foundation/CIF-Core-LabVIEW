@@ -14,6 +14,7 @@
 		<Item Name="UI Post-Build Action.vi" Type="VI" URL="../Core/UI Post-Build Action.vi"/>
 		<Item Name="Versioned UI Post-Build Action.vi" Type="VI" URL="../Core/Versioned UI Post-Build Action.vi"/>
 		<Item Name="Plugin Pre-Build Action.vi" Type="VI" URL="../Core/Plugin Pre-Build Action.vi"/>
+		<Item Name="Versioned RT Post-Build Action.vi" Type="VI" URL="../Core/Versioned RT Post-Build Action.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Update Version.vi" Type="VI" URL="../SubVIs/Update Version.vi"/>
