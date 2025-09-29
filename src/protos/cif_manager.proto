@@ -44,6 +44,8 @@ service Manager {
   rpc UpdateClock (ClockUpdate) returns (cif.common.Status) {}
   // Create orchestration file from logged configuration.
   rpc CreateOrch (OrchConfig) returns (OrchReturn) {}
+  // Query the errors occurred.
+  rpc QueryClockStatus (cif.common.Empty) returns (ClockStatusArray) {}
 }
 
 message PluginConfig {
@@ -70,6 +72,7 @@ message	PluginTypeReply {
 message	PluginType {
   string plugin_type = 1;
   cif.common.ShortVersion plugin_version = 2;
+  PluginMetadata plugin_metadata = 3;
 }
 
 message	PluginName {
@@ -147,6 +150,16 @@ message ClockUpdate {
   string clock_name = 4;
 }
 
+message ClockStatusArray {
+  repeated ClockStatus clocks_status = 1;
+}
+
+message ClockStatus {
+  ClockConversion clock_conversion = 1;
+  int64 error_mean = 2;
+  int64 error_std_dev = 3;
+}
+
 enum OrchestrationLanguage {
   NULL = 0;
   PYTHON = 1;
@@ -163,4 +176,10 @@ message OrchConfig {
 message OrchReturn {
   string orchestration_script = 1;
   cif.common.Status status = 2;
+}
+
+message PluginMetadata {
+  string description = 1;
+  string history = 2;
+  string author = 3;
 }

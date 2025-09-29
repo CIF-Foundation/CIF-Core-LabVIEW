@@ -15,6 +15,7 @@
 		<Item Name="Ping.vi" Type="VI" URL="../Commands/Ping.vi"/>
 		<Item Name="Query All Plugins.vi" Type="VI" URL="../Commands/Query All Plugins.vi"/>
 		<Item Name="Query All Types.vi" Type="VI" URL="../Commands/Query All Types.vi"/>
+		<Item Name="Query Clock Status.vi" Type="VI" URL="../Commands/Query Clock Status.vi"/>
 		<Item Name="Query Config Log.vi" Type="VI" URL="../Commands/Query Config Log.vi"/>
 		<Item Name="Query Error Log.vi" Type="VI" URL="../Commands/Query Error Log.vi"/>
 		<Item Name="Query Info Log.vi" Type="VI" URL="../Commands/Query Info Log.vi"/>
