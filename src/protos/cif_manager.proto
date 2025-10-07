@@ -13,7 +13,7 @@ service Manager {
   // Plugin calls this to unregister itself with the manager.
   rpc UnregisterPlugin (UnregisterData) returns (cif.common.Empty) {}
   // Gets the names of all Plugin Types on the system.
-  rpc QueryPluginTypes (cif.common.Empty) returns (PluginTypeReply) {}
+  rpc QueryPluginTypes (QueryTypeSettings) returns (PluginTypeReply) {}
    // Aborts a plugin.  This should only be used if a plug-in is not responding to normal commands.
   rpc AbortPlugin (PluginName) returns (cif.common.Status) {}
   // Unload all the instantiated plugins. If the plugins are running it will attempt to stop them.
@@ -94,6 +94,10 @@ message ErrorInfo {
 
 message QuerySettings {
   bool query_all = 1;
+}
+
+message QueryTypeSettings {
+  bool reload = 1;
 }
 
 message FileData {
