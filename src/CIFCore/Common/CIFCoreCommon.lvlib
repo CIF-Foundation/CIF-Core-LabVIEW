@@ -32,6 +32,8 @@
 		<Item Name="FIFO Publisher.ctl" Type="VI" URL="../Typedef/FIFO Publisher.ctl"/>
 		<Item Name="External Clock Config.ctl" Type="VI" URL="../Typedef/External Clock Config.ctl"/>
 		<Item Name="External Time Source.ctl" Type="VI" URL="../Typedef/External Time Source.ctl"/>
+		<Item Name="External Clock Update.ctl" Type="VI" URL="../Typedef/External Clock Update.ctl"/>
+		<Item Name="Multi_Cycle Logic State Enum.ctl" Type="VI" URL="../Typedef/Multi_Cycle Logic State Enum.ctl"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Add Error.vi" Type="VI" URL="../Utilities/Add Error.vi"/>

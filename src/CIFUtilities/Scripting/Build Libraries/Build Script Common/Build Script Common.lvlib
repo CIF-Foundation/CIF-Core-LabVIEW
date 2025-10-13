@@ -17,6 +17,7 @@
 	<Item Name="Utilities" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="Create UI Display.vi" Type="VI" URL="../Utilities/Create UI Display.vi"/>
+		<Item Name="Delete Project Temporary Files.vi" Type="VI" URL="../Utilities/Delete Project Temporary Files.vi"/>
 		<Item Name="Update UI Display.vi" Type="VI" URL="../Utilities/Update UI Display.vi"/>
 		<Item Name="Destroy UI Display.vi" Type="VI" URL="../Utilities/Destroy UI Display.vi"/>
 	</Item>
