@@ -32,6 +32,7 @@
 		<Item Name="FIFO Publisher.ctl" Type="VI" URL="../Typedef/FIFO Publisher.ctl"/>
 		<Item Name="External Clock Config.ctl" Type="VI" URL="../Typedef/External Clock Config.ctl"/>
 		<Item Name="External Time Source.ctl" Type="VI" URL="../Typedef/External Time Source.ctl"/>
+		<Item Name="FIFO Drop Internal Data.ctl" Type="VI" URL="../Typedef/FIFO Drop Internal Data.ctl"/>
 		<Item Name="External Clock Update.ctl" Type="VI" URL="../Typedef/External Clock Update.ctl"/>
 		<Item Name="Multi_Cycle Logic State Enum.ctl" Type="VI" URL="../Typedef/Multi_Cycle Logic State Enum.ctl"/>
 	</Item>
@@ -43,5 +44,6 @@
 		<Item Name="Split Channel Name.vi" Type="VI" URL="../Utilities/Split Channel Name.vi"/>
 		<Item Name="Merge Channel Name.vi" Type="VI" URL="../Utilities/Merge Channel Name.vi"/>
 		<Item Name="Validate Python Name.vi" Type="VI" URL="../Utilities/Validate Python Name.vi"/>
+		<Item Name="Update FIFO Drop Statistics.vi" Type="VI" URL="../Utilities/Update FIFO Drop Statistics.vi"/>
 	</Item>
 </Library>
