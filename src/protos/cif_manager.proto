@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "cif_common.proto";
 import "cif_plugin_core.proto";
+import "cif_channel_core.proto";
 
 package cif.manager;
 
@@ -46,6 +47,8 @@ service Manager {
   rpc CreateOrch (OrchConfig) returns (OrchReturn) {}
   // Query the errors occurred.
   rpc QueryClockStatus (cif.common.Empty) returns (ClockStatusArray) {}
+  // Query all channels on the system matching the filter.  Filter parameters are AND to pass.  
+  rpc QueryAllChannels (cif.channelcore.ChannelFilter) returns (cif.channelcore.Channels) {}
 }
 
 message PluginConfig {

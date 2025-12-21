@@ -21,13 +21,23 @@ enum Direction {
 
 message Channel {
   string name = 1;
-  Direction direction = 2;
+  Direction direction = 2;  
   string type = 3;  //This field describes the channel type.  From LabVIEW it is typically the name of the channel class.
   bytes custom_config = 4;  //This field allows passing free form custom data needed to describe the channel and to support operations such as creating connections.  It's implementation will be type specific. 
   bool connected = 5;
   string connected_name = 6;  //This is only valid for subscribers.  Publishers typically have no knowledge of connections.  
   bool forced = 7; //Indicates if the value is being "forced" to always return a specific override value.  This only applies to tags
   PATTERN channel_pattern = 8; //Indicates the pattern of the channel and is used for channel management and linking.
+}
+
+//All filter settings are AND so channel must pass all to return.
+message ChannelFilter {
+  string name_regex = 1;  //Regular expression to filter the name
+  Direction direction = 2; //Filter for direction
+  bool direction_filter = 3; //Sets if the direction filter is active
+  string type_regex = 4;  //Regular expression to filter the type
+  bool forced = 5; //Filter for forced
+  bool forced_filter = 6; //Sets if the force filter is active
 }
 
 enum PATTERN {

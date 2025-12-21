@@ -13,6 +13,7 @@
 		<Item Name="Destroy Manager.vi" Type="VI" URL="../Commands/Destroy Manager.vi"/>
 		<Item Name="Load Plugin.vi" Type="VI" URL="../Commands/Load Plugin.vi"/>
 		<Item Name="Ping.vi" Type="VI" URL="../Commands/Ping.vi"/>
+		<Item Name="Query All Channels.vi" Type="VI" URL="../Commands/Query All Channels.vi"/>
 		<Item Name="Query All Plugins.vi" Type="VI" URL="../Commands/Query All Plugins.vi"/>
 		<Item Name="Query All Types.vi" Type="VI" URL="../Commands/Query All Types.vi"/>
 		<Item Name="Query Clock Status.vi" Type="VI" URL="../Commands/Query Clock Status.vi"/>
