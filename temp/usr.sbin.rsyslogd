@@ -1,0 +1,2 @@
+/var/local/natinst/log/ r,
+/var/local/natinst/log/** rw,

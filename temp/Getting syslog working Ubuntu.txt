@@ -1,0 +1,5 @@
+TO get syslog to work:
+Add file 40-ci.conf to 
+Edit /usr/sbin/rsyslogd
+systemctl reload apparmor
+systemctl reload rsyslog
