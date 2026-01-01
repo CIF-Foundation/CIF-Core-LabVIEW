@@ -1,6 +1,6 @@
 #!/bin/sh
 
- cd ./cif_ni_cipc_deb
+ cd ./cif_lvcore_deb
 
 # Extract the version number from the control file
 # This assumes the file is at ./DEBIAN/control
@@ -13,6 +13,6 @@ if [ -z "$PKG_VERSION" ]; then
 fi
 
 # Create the deb using the variable in the filename
-dpkg-deb --build --root-owner-group ./ cif-ni-cipc.${PKG_VERSION}.deb
+dpkg-deb --build --root-owner-group ./ cif-lvcore.${PKG_VERSION}.deb
 
-echo "Successfully created ../cif-ni-cipc.${PKG_VERSION}.deb"
+echo "Successfully created ../cif-lvcore.${PKG_VERSION}.deb"
