@@ -1,7 +1,5 @@
-# Set permissions for the startup executables and gRPC library
+# Set permissions for the startup executable
 chmod 777 /usr/local/cif/manager/cif_startup_21.rtexe
-chmod 777 /usr/local/natinst/lib/liblabview_grpc_server.so
-chmod 777 /usr/local/natinst/lib/feature_config.ini
 # Set permissions for all files and folders in CIF
 chmod -R 777 /usr/local/cif
 # Set permissions for log file

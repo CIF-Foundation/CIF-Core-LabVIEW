@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
  cd ./cif_lvcore_deb
 
@@ -13,6 +13,6 @@ if [ -z "$PKG_VERSION" ]; then
 fi
 
 # Create the deb using the variable in the filename
-dpkg-deb --build --root-owner-group ./ cif-lvcore.${PKG_VERSION}.deb
+dpkg-deb --build --root-owner-group ./ ../cif-lvcore.${PKG_VERSION}.deb
 
 echo "Successfully created ../cif-lvcore.${PKG_VERSION}.deb"
