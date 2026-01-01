@@ -1,0 +1,52 @@
+# Set permissions for the startup executables and gRPC library
+chmod 777 /usr/local/cif/manager/cif_startup_21.rtexe
+chmod 777 /usr/local/natinst/lib/liblabview_grpc_server.so
+chmod 777 /usr/local/natinst/lib/feature_config.ini
+# Set permissions for all files and folders in CIF
+chmod -R 777 /usr/local/cif
+# Set permissions for log file
+chmod -R 777 /var/local/cif/logs
+# Set permissions for python launcher file
+chmod 777 /usr/local/bin/launch_rt.py
+
+# Get the loaded version of labview realtime
+lv_version="$(opkg list-installed | grep labview-realtime)"
+# Create a regular expression to search for the version number (the first number in the message)
+re="([0-9]+)"
+# Check for the version number and create a link to the appropriate startup executable.
+if [[ $lv_version =~ $re ]]
+    then
+        lv_version="${BASH_REMATCH[1]}"
+    if [ $lv_version == 21 ] 
+        then
+        ln -s /usr/local/cif/manager/cif_startup_21.rtexe /usr/local/cif/manager/cif_startup.rtexe 
+        echo "Setting cif_startup version 21"
+    elif [ $lv_version == 23 ] 
+        then
+        echo "Setting cif_startup version 23"
+    elif [ $lv_version == 24 ] 
+        then
+        echo "Setting cif_startup version 24"
+    else    
+        echo "Detected version LabVIEW ${lv_version} is unsupported.  Versions 21, 23, and 24 supported."
+    fi
+else
+    echo "LabVIEW Version could not be parsed.  Check the version parsing, the script may need to be updated"
+fi
+
+# Set the lvrt config file to allow socket reuse.  This helps when plugins are expecting to always use the same port so the OS releases and rebinds without faults.
+lvrtconf="/etc/natinst/share/lvrt.conf"
+SocketToken=`grep "SocketSetReuseAddr" $lvrtconf`
+if [ "$SocketToken" = "SocketSetReuseAddr=False" ]
+then
+    sed -i 's/SocketSetReuseAddr=False/SocketSetReuseAddr=True/' $lvrtconf
+    echo "Updated lvrt.conf SocketSetReuseAddr token"
+else
+    if [ "$SocketToken" != "SocketSetReuseAddr=True" ]
+    then
+        sed -i '$a\'$'\n''SocketSetReuseAddr=True' $lvrtconf
+        echo "Added lvrt.conf SocketSetReuseAddr token"
+    fi
+fi
+
+ldconfig

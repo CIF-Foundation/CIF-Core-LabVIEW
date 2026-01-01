@@ -25,6 +25,7 @@
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Compare Timestamp Index.vi" Type="VI" URL="../Utilities/Compare Timestamp Index.vi"/>
 		<Item Name="Create Connect String.vi" Type="VI" URL="../Utilities/Create Connect String.vi"/>
+		<Item Name="Create FIFO Instance String.vi" Type="VI" URL="../Utilities/Create FIFO Instance String.vi"/>
 		<Item Name="Create Force String.vi" Type="VI" URL="../Utilities/Create Force String.vi"/>
 		<Item Name="Create JSON Config String.vi" Type="VI" URL="../Utilities/Create JSON Config String.vi"/>
 		<Item Name="Create Version String.vi" Type="VI" URL="../Utilities/Create Version String.vi"/>
@@ -32,5 +33,4 @@
 		<Item Name="Parse Error Log.vi" Type="VI" URL="../Utilities/Parse Error Log.vi"/>
 		<Item Name="Parse Log.vi" Type="VI" URL="../Utilities/Parse Log.vi"/>
 	</Item>
-	<Item Name="Create FIFO Instance String.vi" Type="VI" URL="../Utilities/Create FIFO Instance String.vi"/>
 </Library>

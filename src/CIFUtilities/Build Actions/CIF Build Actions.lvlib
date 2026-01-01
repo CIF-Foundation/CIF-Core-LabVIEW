@@ -12,8 +12,12 @@
 	<Item Name="Core" Type="Folder">
 		<Item Name="UI Pre-Build Action.vi" Type="VI" URL="../Core/UI Pre-Build Action.vi"/>
 		<Item Name="UI Post-Build Action.vi" Type="VI" URL="../Core/UI Post-Build Action.vi"/>
-		<Item Name="Versioned UI Post-Build Action.vi" Type="VI" URL="../Core/Versioned UI Post-Build Action.vi"/>
 		<Item Name="Plugin Pre-Build Action.vi" Type="VI" URL="../Core/Plugin Pre-Build Action.vi"/>
+		<Item Name="Versioned UI Post-Build Action.vi" Type="VI" URL="../Core/Versioned UI Post-Build Action.vi"/>
+		<Item Name="Manager Post-Build Action.vi" Type="VI" URL="../Core/Manager Post-Build Action.vi"/>
+		<Item Name="Manager RT Post-Build Action.vi" Type="VI" URL="../Core/Manager RT Post-Build Action.vi"/>
+		<Item Name="Manager Executable Post-Build Action.vi" Type="VI" URL="../Core/Manager Executable Post-Build Action.vi"/>
+		<Item Name="Manager RT Executable Post-Build Action.vi" Type="VI" URL="../Core/Manager RT Executable Post-Build Action.vi"/>
 		<Item Name="Versioned Host Post-Build Action.vi" Type="VI" URL="../Core/Versioned Host Post-Build Action.vi"/>
 		<Item Name="Versioned RT Post-Build Action.vi" Type="VI" URL="../Core/Versioned RT Post-Build Action.vi"/>
 	</Item>
