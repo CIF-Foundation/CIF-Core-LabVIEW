@@ -45,5 +45,6 @@
 		<Item Name="Merge Channel Name.vi" Type="VI" URL="../Utilities/Merge Channel Name.vi"/>
 		<Item Name="Validate Python Name.vi" Type="VI" URL="../Utilities/Validate Python Name.vi"/>
 		<Item Name="Update FIFO Drop Statistics.vi" Type="VI" URL="../Utilities/Update FIFO Drop Statistics.vi"/>
+		<Item Name="Check Timed Loop Support.vi" Type="VI" URL="../Utilities/Check Timed Loop Support.vi"/>
 	</Item>
 </Library>
