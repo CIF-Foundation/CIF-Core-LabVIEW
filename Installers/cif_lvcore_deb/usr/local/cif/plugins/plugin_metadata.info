@@ -369,3 +369,9 @@ type = "Zenoh_Plugin"
 description = "Publish and subscribe CIPC tag data over Zenoh.  "
 history = "Version 1.1.0.0 - Update to Zenoh path on Linux.\0DVersion 1.1.1.0 - RT compile will be IP addresses on Ubuntu execution."
 author = "DOME Automation"
+
+[Zenoh_Plugin.1.2.0.lvlibp]
+type = "Zenoh_Plugin"
+description = "Publish and subscribe CIPC tag data over Zenoh.  "
+history = "Version 1.1.0.0 - Update to Zenoh path on Linux.\0AVersion 1.1.1.0 - RT compile will be IP addresses on Ubuntu execution.\0AVersion 1.2.0.0 - Added support for automatic pub/sub."
+author = "DOME Automation"
