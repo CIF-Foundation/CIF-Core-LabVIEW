@@ -1,5 +1,6 @@
 import cif_common_pb2 as _cif_common_pb2
 import cif_plugin_core_pb2 as _cif_plugin_core_pb2
+import cif_channel_core_pb2 as _cif_channel_core_pb2
 from google.protobuf.internal import containers as _containers
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
@@ -50,12 +51,14 @@ class PluginTypeReply(_message.Message):
     def __init__(self, plugin_types: _Optional[_Iterable[_Union[PluginType, _Mapping]]] = ...) -> None: ...
 
 class PluginType(_message.Message):
-    __slots__ = ("plugin_type", "plugin_version")
+    __slots__ = ("plugin_type", "plugin_version", "plugin_metadata")
     PLUGIN_TYPE_FIELD_NUMBER: _ClassVar[int]
     PLUGIN_VERSION_FIELD_NUMBER: _ClassVar[int]
+    PLUGIN_METADATA_FIELD_NUMBER: _ClassVar[int]
     plugin_type: str
     plugin_version: _cif_common_pb2.ShortVersion
-    def __init__(self, plugin_type: _Optional[str] = ..., plugin_version: _Optional[_Union[_cif_common_pb2.ShortVersion, _Mapping]] = ...) -> None: ...
+    plugin_metadata: PluginMetadata
+    def __init__(self, plugin_type: _Optional[str] = ..., plugin_version: _Optional[_Union[_cif_common_pb2.ShortVersion, _Mapping]] = ..., plugin_metadata: _Optional[_Union[PluginMetadata, _Mapping]] = ...) -> None: ...
 
 class PluginName(_message.Message):
     __slots__ = ("plugin_name",)
@@ -90,6 +93,12 @@ class QuerySettings(_message.Message):
     QUERY_ALL_FIELD_NUMBER: _ClassVar[int]
     query_all: bool
     def __init__(self, query_all: bool = ...) -> None: ...
+
+class QueryTypeSettings(_message.Message):
+    __slots__ = ("reload",)
+    RELOAD_FIELD_NUMBER: _ClassVar[int]
+    reload: bool
+    def __init__(self, reload: bool = ...) -> None: ...
 
 class FileData(_message.Message):
     __slots__ = ("data",)
@@ -179,6 +188,22 @@ class ClockUpdate(_message.Message):
     clock_name: str
     def __init__(self, clock_id: _Optional[int] = ..., timestamp_pair: _Optional[_Union[TimePair, _Mapping]] = ..., reinit: bool = ..., clock_name: _Optional[str] = ...) -> None: ...
 
+class ClockStatusArray(_message.Message):
+    __slots__ = ("clocks_status",)
+    CLOCKS_STATUS_FIELD_NUMBER: _ClassVar[int]
+    clocks_status: _containers.RepeatedCompositeFieldContainer[ClockStatus]
+    def __init__(self, clocks_status: _Optional[_Iterable[_Union[ClockStatus, _Mapping]]] = ...) -> None: ...
+
+class ClockStatus(_message.Message):
+    __slots__ = ("clock_conversion", "error_mean", "error_std_dev")
+    CLOCK_CONVERSION_FIELD_NUMBER: _ClassVar[int]
+    ERROR_MEAN_FIELD_NUMBER: _ClassVar[int]
+    ERROR_STD_DEV_FIELD_NUMBER: _ClassVar[int]
+    clock_conversion: ClockConversion
+    error_mean: int
+    error_std_dev: int
+    def __init__(self, clock_conversion: _Optional[_Union[ClockConversion, _Mapping]] = ..., error_mean: _Optional[int] = ..., error_std_dev: _Optional[int] = ...) -> None: ...
+
 class OrchConfig(_message.Message):
     __slots__ = ("start_timestamp", "create_file", "orchestration_language", "filename", "default_ip")
     START_TIMESTAMP_FIELD_NUMBER: _ClassVar[int]
@@ -200,3 +225,13 @@ class OrchReturn(_message.Message):
     orchestration_script: str
     status: _cif_common_pb2.Status
     def __init__(self, orchestration_script: _Optional[str] = ..., status: _Optional[_Union[_cif_common_pb2.Status, _Mapping]] = ...) -> None: ...
+
+class PluginMetadata(_message.Message):
+    __slots__ = ("description", "history", "author")
+    DESCRIPTION_FIELD_NUMBER: _ClassVar[int]
+    HISTORY_FIELD_NUMBER: _ClassVar[int]
+    AUTHOR_FIELD_NUMBER: _ClassVar[int]
+    description: str
+    history: str
+    author: str
+    def __init__(self, description: _Optional[str] = ..., history: _Optional[str] = ..., author: _Optional[str] = ...) -> None: ...
