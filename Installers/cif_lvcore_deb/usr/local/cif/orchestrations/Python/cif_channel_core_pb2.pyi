@@ -47,6 +47,22 @@ class Channel(_message.Message):
     channel_pattern: PATTERN
     def __init__(self, name: _Optional[str] = ..., direction: _Optional[_Union[Direction, str]] = ..., type: _Optional[str] = ..., custom_config: _Optional[bytes] = ..., connected: bool = ..., connected_name: _Optional[str] = ..., forced: bool = ..., channel_pattern: _Optional[_Union[PATTERN, str]] = ...) -> None: ...
 
+class ChannelFilter(_message.Message):
+    __slots__ = ("name_regex", "direction", "direction_filter", "type_regex", "forced", "forced_filter")
+    NAME_REGEX_FIELD_NUMBER: _ClassVar[int]
+    DIRECTION_FIELD_NUMBER: _ClassVar[int]
+    DIRECTION_FILTER_FIELD_NUMBER: _ClassVar[int]
+    TYPE_REGEX_FIELD_NUMBER: _ClassVar[int]
+    FORCED_FIELD_NUMBER: _ClassVar[int]
+    FORCED_FILTER_FIELD_NUMBER: _ClassVar[int]
+    name_regex: str
+    direction: Direction
+    direction_filter: bool
+    type_regex: str
+    forced: bool
+    forced_filter: bool
+    def __init__(self, name_regex: _Optional[str] = ..., direction: _Optional[_Union[Direction, str]] = ..., direction_filter: bool = ..., type_regex: _Optional[str] = ..., forced: bool = ..., forced_filter: bool = ...) -> None: ...
+
 class Channels(_message.Message):
     __slots__ = ("channels",)
     CHANNELS_FIELD_NUMBER: _ClassVar[int]

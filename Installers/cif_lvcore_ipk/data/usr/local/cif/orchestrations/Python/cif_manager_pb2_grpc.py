@@ -3,6 +3,7 @@
 import grpc
 import warnings
 
+import cif_channel_core_pb2 as cif__channel__core__pb2
 import cif_common_pb2 as cif__common__pb2
 import cif_manager_pb2 as cif__manager__pb2
 
@@ -52,7 +53,7 @@ class ManagerStub(object):
                 _registered_method=True)
         self.QueryPluginTypes = channel.unary_unary(
                 '/cif.manager.Manager/QueryPluginTypes',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                request_serializer=cif__manager__pb2.QueryTypeSettings.SerializeToString,
                 response_deserializer=cif__manager__pb2.PluginTypeReply.FromString,
                 _registered_method=True)
         self.AbortPlugin = channel.unary_unary(
@@ -129,6 +130,16 @@ class ManagerStub(object):
                 '/cif.manager.Manager/CreateOrch',
                 request_serializer=cif__manager__pb2.OrchConfig.SerializeToString,
                 response_deserializer=cif__manager__pb2.OrchReturn.FromString,
+                _registered_method=True)
+        self.QueryClockStatus = channel.unary_unary(
+                '/cif.manager.Manager/QueryClockStatus',
+                request_serializer=cif__common__pb2.Empty.SerializeToString,
+                response_deserializer=cif__manager__pb2.ClockStatusArray.FromString,
+                _registered_method=True)
+        self.QueryAllChannels = channel.unary_unary(
+                '/cif.manager.Manager/QueryAllChannels',
+                request_serializer=cif__channel__core__pb2.ChannelFilter.SerializeToString,
+                response_deserializer=cif__channel__core__pb2.Channels.FromString,
                 _registered_method=True)
 
 
@@ -268,6 +279,20 @@ class ManagerServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def QueryClockStatus(self, request, context):
+        """Query the errors occurred.
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def QueryAllChannels(self, request, context):
+        """Query all channels on the system matching the filter.  Filter parameters are AND to pass.  
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_ManagerServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -288,7 +313,7 @@ def add_ManagerServicer_to_server(servicer, server):
             ),
             'QueryPluginTypes': grpc.unary_unary_rpc_method_handler(
                     servicer.QueryPluginTypes,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    request_deserializer=cif__manager__pb2.QueryTypeSettings.FromString,
                     response_serializer=cif__manager__pb2.PluginTypeReply.SerializeToString,
             ),
             'AbortPlugin': grpc.unary_unary_rpc_method_handler(
@@ -365,6 +390,16 @@ def add_ManagerServicer_to_server(servicer, server):
                     servicer.CreateOrch,
                     request_deserializer=cif__manager__pb2.OrchConfig.FromString,
                     response_serializer=cif__manager__pb2.OrchReturn.SerializeToString,
+            ),
+            'QueryClockStatus': grpc.unary_unary_rpc_method_handler(
+                    servicer.QueryClockStatus,
+                    request_deserializer=cif__common__pb2.Empty.FromString,
+                    response_serializer=cif__manager__pb2.ClockStatusArray.SerializeToString,
+            ),
+            'QueryAllChannels': grpc.unary_unary_rpc_method_handler(
+                    servicer.QueryAllChannels,
+                    request_deserializer=cif__channel__core__pb2.ChannelFilter.FromString,
+                    response_serializer=cif__channel__core__pb2.Channels.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -473,7 +508,7 @@ class Manager(object):
             request,
             target,
             '/cif.manager.Manager/QueryPluginTypes',
-            cif__common__pb2.Empty.SerializeToString,
+            cif__manager__pb2.QueryTypeSettings.SerializeToString,
             cif__manager__pb2.PluginTypeReply.FromString,
             options,
             channel_credentials,
@@ -880,6 +915,60 @@ class Manager(object):
             '/cif.manager.Manager/CreateOrch',
             cif__manager__pb2.OrchConfig.SerializeToString,
             cif__manager__pb2.OrchReturn.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def QueryClockStatus(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/cif.manager.Manager/QueryClockStatus',
+            cif__common__pb2.Empty.SerializeToString,
+            cif__manager__pb2.ClockStatusArray.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def QueryAllChannels(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/cif.manager.Manager/QueryAllChannels',
+            cif__channel__core__pb2.ChannelFilter.SerializeToString,
+            cif__channel__core__pb2.Channels.FromString,
             options,
             channel_credentials,
             insecure,

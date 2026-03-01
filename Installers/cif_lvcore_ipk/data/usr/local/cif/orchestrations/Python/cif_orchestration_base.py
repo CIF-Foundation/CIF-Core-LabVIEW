@@ -10,6 +10,9 @@ import cif_channel_core_pb2
 import cif_channel_core_pb2_grpc
 import cif_common_pb2
 import cif_common_pb2_grpc
+import cif_tag_monitor_plugin_pb2
+import cif_tag_monitor_plugin_pb2_grpc
+import struct
 
 class cif_manager():
     def __init__(self, address, port):
@@ -19,13 +22,34 @@ class cif_manager():
         self.stub = cif_manager_pb2_grpc.ManagerStub(grpc.insecure_channel(self.manager_address))
 
     def load(self, plugin):
-        result_info = self.stub.LoadPlugin(cif_manager_pb2.PluginConfig(plugin_type=plugin.type, plugin_name=plugin.name, version=plugin.version))
-        res = check_error(result_info)
-        if res == 0:
+        # Check if plugin with this name is already loaded
+        exists = self.check(plugin.name)
+        if exists == False:           
+            # Not loaded.  Load the plugin on the system
+            result_info = self.stub.LoadPlugin(cif_manager_pb2.PluginConfig(plugin_type=plugin.type, plugin_name=plugin.name, version=plugin.version))
+            res = check_error(result_info)
+            if res == 0:
+                plugin.address = self.address
+                plugin.connection = plugin_connection.NOT_CONNECTED
+                plugin.cif_manager = self
+                return plugin
+        else:
+            #Loaded.  Populate the plugin connection information
+            result_info = self.stub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=plugin.name))
             plugin.address = self.address
             plugin.connection = plugin_connection.NOT_CONNECTED
             plugin.cif_manager = self
+            if result_info.plugin_info.grpc_port != -1:
+                plugin.plugin_address = plugin.address + ":" + str(result_info.plugin_info.grpc_port)
+                plugin.stub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(plugin.plugin_address))
+                plugin.stub_channel = cif_channel_core_pb2_grpc.ChannelCoreStub(grpc.insecure_channel(plugin.plugin_address))
+                plugin.connection = plugin_connection.CONNECTED
             return plugin
+
+    def check(self, plugin_name):
+        result_info = self.stub.QueryPluginInfo(cif_manager_pb2.PluginName())
+        exists = any(p.plugin_name == plugin_name for p in result_info.plugin_info)
+        return exists
 
 class plugin_connection(Enum):
     UNLOADED = 1
@@ -63,9 +87,9 @@ class plugin():
               if res != 0:
                 return self
               if result_info.plugin_info.grpc_port != -1:
-                self.pluginaddress = self.address + ":" + str(result_info.plugin_info.grpc_port)
-                self.stub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(self.pluginaddress))
-                self.stub_channel = cif_channel_core_pb2_grpc.ChannelCoreStub(grpc.insecure_channel(self.pluginaddress))
+                self.plugin_address = self.address + ":" + str(result_info.plugin_info.grpc_port)
+                self.stub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(self.plugin_address))
+                self.stub_channel = cif_channel_core_pb2_grpc.ChannelCoreStub(grpc.insecure_channel(self.plugin_address))
                 self.connection = plugin_connection.CONNECTED
                 return self
               time.sleep (0.25)
@@ -126,14 +150,43 @@ class plugin():
               if i == max_iteration:
                 print(f"{bcolors.WARNING}Plugin {plugin.name} did not change to running state before timeout. {bcolors.ENDC}")
                 return self
-        
-    
 
+    def force_channel_double(self, channel_name, force, force_data):
+        self = self.check_loaded()
+        double_bytes = struct.pack('>d', force_data)
+        # print(f"Sending bytes: {double_bytes.hex()}")
+        result_info = self.stub_channel.SetForce(cif_channel_core_pb2.ForceChannel(channel_name=channel_name, force=force, force_data=double_bytes))
+        check_error(result_info)
+        return self        
+    
+    def force_channel_i64(self, channel_name, force, force_data):
+        self = self.check_loaded()
+        i64_bytes = struct.pack('>q', force_data)
+        # print(f"Sending bytes: {i64_bytes.hex()}")
+        result_info = self.stub_channel.SetForce(cif_channel_core_pb2.ForceChannel(channel_name=channel_name, force=force, force_data=i64_bytes))
+        check_error(result_info)
+        return self  
+    
+    def force_channel_u64(self, channel_name, force, force_data):
+        self = self.check_loaded()
+        u64_bytes = struct.pack('>Q', force_data)
+        # print(f"Sending bytes: {u64_bytes.hex()}")
+        result_info = self.stub_channel.SetForce(cif_channel_core_pb2.ForceChannel(channel_name=channel_name, force=force, force_data=u64_bytes_bytes))
+        check_error(result_info)
+        return self 
+    
+    def monitor_tag(self, tag_list):
+        self = self.check_loaded()
+        self.stub_tagmon = cif_tag_monitor_plugin_pb2_grpc.TagMonitorStub(grpc.insecure_channel(self.plugin_address))
+        result_info = self.stub_tagmon.GetDoubleTagValues(cif_tag_monitor_plugin_pb2.TagValueRequest (tags=tag_list))
+        # print(result_info.tag_values[0])
+        return result_info 
+    
 class channel_link():
     def __init__(self, publisher, subscriber, custom_data):
         self.subscriber = subscriber
         self.publisher = publisher
-        self.custom_data = bytes.fromhex(custom_data)
+        self.custom_data = bytes.fromhex(custom_data)  
 
 class fifo_instance():
     def __init__(self, direction, channel, backpressure, bytes_per_msg, msg_per_fifo, custom_data):

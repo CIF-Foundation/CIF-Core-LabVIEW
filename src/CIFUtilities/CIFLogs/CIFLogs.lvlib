@@ -17,6 +17,7 @@
 	</Item>
 	<Item Name="typedef" Type="Folder">
 		<Item Name="Error Message.ctl" Type="VI" URL="../Typedef/Error Message.ctl"/>
+		<Item Name="Log Info.ctl" Type="VI" URL="../Typedef/Log Info.ctl"/>
 		<Item Name="Message Type.ctl" Type="VI" URL="../Typedef/Message Type.ctl"/>
 		<Item Name="Plugin State Commands.ctl" Type="VI" URL="../Typedef/Plugin State Commands.ctl"/>
 		<Item Name="syslog facility.ctl" Type="VI" URL="../Typedef/syslog facility.ctl"/>
@@ -29,6 +30,7 @@
 		<Item Name="Create Force String.vi" Type="VI" URL="../Utilities/Create Force String.vi"/>
 		<Item Name="Create JSON Config String.vi" Type="VI" URL="../Utilities/Create JSON Config String.vi"/>
 		<Item Name="Create Version String.vi" Type="VI" URL="../Utilities/Create Version String.vi"/>
+		<Item Name="Get Last Log Info.vi" Type="VI" URL="../Utilities/Get Last Log Info.vi"/>
 		<Item Name="Get Paths.vi" Type="VI" URL="../Utilities/Get Paths.vi"/>
 		<Item Name="Parse Error Log.vi" Type="VI" URL="../Utilities/Parse Error Log.vi"/>
 		<Item Name="Parse Log.vi" Type="VI" URL="../Utilities/Parse Log.vi"/>
