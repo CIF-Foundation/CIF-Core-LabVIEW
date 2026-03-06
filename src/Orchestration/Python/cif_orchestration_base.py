@@ -83,15 +83,15 @@ class plugin():
             i = 0
             while i < 20:
               result_info = self.cif_manager.stub.QueryPlugin(cif_manager_pb2.PluginName(plugin_name=self.name))
-              res = check_error(result_info.status)
-              if res != 0:
-                return self
-              if result_info.plugin_info.grpc_port != -1:
-                self.plugin_address = self.address + ":" + str(result_info.plugin_info.grpc_port)
-                self.stub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(self.plugin_address))
-                self.stub_channel = cif_channel_core_pb2_grpc.ChannelCoreStub(grpc.insecure_channel(self.plugin_address))
-                self.connection = plugin_connection.CONNECTED
-                return self
+              if result_info.status.code != -9014:
+                # Plugin is not loaded.  Wait
+                res = check_error(result_info.status)
+                if result_info.plugin_info.grpc_port != -1:
+                    self.plugin_address = self.address + ":" + str(result_info.plugin_info.grpc_port)
+                    self.stub = cif_plugin_core_pb2_grpc.PluginCoreStub(grpc.insecure_channel(self.plugin_address))
+                    self.stub_channel = cif_channel_core_pb2_grpc.ChannelCoreStub(grpc.insecure_channel(self.plugin_address))
+                    self.connection = plugin_connection.CONNECTED
+                    return self
               time.sleep (0.25)
               i += 1
               if i == 20:
