@@ -9,6 +9,76 @@
 
 </Property>
 	<Item Name="RPC Messages" Type="Folder">
+		<Item Name="cif_plugincore_Configuration" Type="Folder">
+			<Item Name="cif_plugincore_Configuration.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Configuration.vi"/>
+			<Item Name="RichToFlatcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Configuration.vi"/>
+			<Item Name="Set cif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_Configuration.vi"/>
+			<Item Name="Get cif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_Configuration.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_TimingStatistics" Type="Folder">
+			<Item Name="cif_plugincore_TimingStatistics.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingStatistics.vi"/>
+			<Item Name="RichToFlatcif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingStatistics.vi"/>
+			<Item Name="Set cif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_TimingStatistics.vi"/>
+			<Item Name="Get cif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_TimingStatistics.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_FifoStatistics" Type="Folder">
+			<Item Name="cif_plugincore_FifoStatistics.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_FifoStatistics.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_FifoStatistics.vi"/>
+			<Item Name="RichToFlatcif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_FifoStatistics.vi"/>
+			<Item Name="Set cif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_FifoStatistics.vi"/>
+			<Item Name="Get cif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_FifoStatistics.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_MonitorDoubles" Type="Folder">
+			<Item Name="cif_plugincore_MonitorDoubles.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorDoubles.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorDoubles.vi"/>
+			<Item Name="RichToFlatcif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorDoubles.vi"/>
+			<Item Name="Get cif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_MonitorDoubles.vi"/>
+			<Item Name="Set cif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_MonitorDoubles.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_MonitorU64" Type="Folder">
+			<Item Name="cif_plugincore_MonitorU64.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorU64.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorU64.vi"/>
+			<Item Name="RichToFlatcif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorU64.vi"/>
+			<Item Name="Set cif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_MonitorU64.vi"/>
+			<Item Name="Get cif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_MonitorU64.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_MonitorI64" Type="Folder">
+			<Item Name="cif_plugincore_MonitorI64.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorI64.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorI64.vi"/>
+			<Item Name="RichToFlatcif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorI64.vi"/>
+			<Item Name="Set cif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_MonitorI64.vi"/>
+			<Item Name="Get cif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_MonitorI64.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_StatusData" Type="Folder">
+			<Item Name="cif_plugincore_StatusData.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StatusData.vi"/>
+			<Item Name="RichToFlatcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StatusData.vi"/>
+			<Item Name="Set cif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_StatusData.vi"/>
+			<Item Name="Get cif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_Error" Type="Folder">
+			<Item Name="cif_plugincore_Error.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Error.vi"/>
+			<Item Name="RichToFlatcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Error.vi"/>
+			<Item Name="Set cif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_Error.vi"/>
+			<Item Name="Get cif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_Error.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_TimingOverrides" Type="Folder">
+			<Item Name="cif_plugincore_TimingOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingOverrides.vi"/>
+			<Item Name="RichToFlatcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingOverrides.vi"/>
+			<Item Name="Set cif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_TimingOverrides.vi"/>
+			<Item Name="Get cif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_TimingOverrides.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_PluginOverrides" Type="Folder">
+			<Item Name="cif_plugincore_PluginOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginOverrides.vi"/>
+			<Item Name="RichToFlatcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginOverrides.vi"/>
+			<Item Name="Set cif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_PluginOverrides.vi"/>
+			<Item Name="Get cif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_PluginOverrides.vi"/>
+		</Item>
 		<Item Name="cif_common_TimingStats" Type="Folder">
 			<Item Name="cif_common_TimingStats.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats.ctl"/>
 			<Item Name="FlatToRichcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_TimingStats.vi"/>
@@ -107,76 +177,6 @@
 			<Item Name="Set cif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ForceChannel.vi"/>
 			<Item Name="Get cif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ForceChannel.vi"/>
 		</Item>
-		<Item Name="cif_plugincore_Configuration" Type="Folder">
-			<Item Name="cif_plugincore_Configuration.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Configuration.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Configuration.vi"/>
-			<Item Name="Set cif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_Configuration.vi"/>
-			<Item Name="Get cif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_Configuration.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingStatistics" Type="Folder">
-			<Item Name="cif_plugincore_TimingStatistics.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingStatistics.vi"/>
-			<Item Name="RichToFlatcif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingStatistics.vi"/>
-			<Item Name="Set cif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_TimingStatistics.vi"/>
-			<Item Name="Get cif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_TimingStatistics.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_FifoStatistics" Type="Folder">
-			<Item Name="cif_plugincore_FifoStatistics.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_FifoStatistics.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_FifoStatistics.vi"/>
-			<Item Name="RichToFlatcif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_FifoStatistics.vi"/>
-			<Item Name="Set cif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_FifoStatistics.vi"/>
-			<Item Name="Get cif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_FifoStatistics.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorDoubles" Type="Folder">
-			<Item Name="cif_plugincore_MonitorDoubles.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorDoubles.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorDoubles.vi"/>
-			<Item Name="RichToFlatcif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorDoubles.vi"/>
-			<Item Name="Set cif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_MonitorDoubles.vi"/>
-			<Item Name="Get cif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_MonitorDoubles.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorU64" Type="Folder">
-			<Item Name="cif_plugincore_MonitorU64.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorU64.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorU64.vi"/>
-			<Item Name="RichToFlatcif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorU64.vi"/>
-			<Item Name="Set cif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_MonitorU64.vi"/>
-			<Item Name="Get cif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_MonitorU64.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorI64" Type="Folder">
-			<Item Name="cif_plugincore_MonitorI64.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorI64.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorI64.vi"/>
-			<Item Name="RichToFlatcif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorI64.vi"/>
-			<Item Name="Set cif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_MonitorI64.vi"/>
-			<Item Name="Get cif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_MonitorI64.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_StatusData" Type="Folder">
-			<Item Name="cif_plugincore_StatusData.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StatusData.vi"/>
-			<Item Name="RichToFlatcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StatusData.vi"/>
-			<Item Name="Set cif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_StatusData.vi"/>
-			<Item Name="Get cif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_Error" Type="Folder">
-			<Item Name="cif_plugincore_Error.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Error.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Error.vi"/>
-			<Item Name="Set cif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_Error.vi"/>
-			<Item Name="Get cif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_Error.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingOverrides" Type="Folder">
-			<Item Name="cif_plugincore_TimingOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingOverrides.vi"/>
-			<Item Name="RichToFlatcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingOverrides.vi"/>
-			<Item Name="Get cif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_TimingOverrides.vi"/>
-			<Item Name="Set cif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_TimingOverrides.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_PluginOverrides" Type="Folder">
-			<Item Name="cif_plugincore_PluginOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginOverrides.vi"/>
-			<Item Name="RichToFlatcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginOverrides.vi"/>
-			<Item Name="Set cif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_PluginOverrides.vi"/>
-			<Item Name="Get cif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_PluginOverrides.vi"/>
-		</Item>
 		<Item Name="cif_manager_PluginConfig" Type="Folder">
 			<Item Name="cif_manager_PluginConfig.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginConfig.ctl"/>
 			<Item Name="FlatToRichcif_manager_PluginConfig.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginConfig.vi"/>
@@ -188,8 +188,8 @@
 			<Item Name="cif_manager_RegisterData.ctl" Type="VI" URL="../RPC Messages/cif_manager_RegisterData.ctl"/>
 			<Item Name="FlatToRichcif_manager_RegisterData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_RegisterData.vi"/>
 			<Item Name="RichToFlatcif_manager_RegisterData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_RegisterData.vi"/>
-			<Item Name="Set cif_manager_RegisterData.vi" Type="VI" URL="../RPC Messages/Set cif_manager_RegisterData.vi"/>
 			<Item Name="Get cif_manager_RegisterData.vi" Type="VI" URL="../RPC Messages/Get cif_manager_RegisterData.vi"/>
+			<Item Name="Set cif_manager_RegisterData.vi" Type="VI" URL="../RPC Messages/Set cif_manager_RegisterData.vi"/>
 		</Item>
 		<Item Name="cif_manager_UnregisterData" Type="Folder">
 			<Item Name="cif_manager_UnregisterData.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterData.ctl"/>
@@ -258,8 +258,8 @@
 			<Item Name="cif_manager_PluginInfo.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfo.ctl"/>
 			<Item Name="FlatToRichcif_manager_PluginInfo.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_PluginInfo.vi"/>
 			<Item Name="RichToFlatcif_manager_PluginInfo.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_PluginInfo.vi"/>
-			<Item Name="Get cif_manager_PluginInfo.vi" Type="VI" URL="../RPC Messages/Get cif_manager_PluginInfo.vi"/>
 			<Item Name="Set cif_manager_PluginInfo.vi" Type="VI" URL="../RPC Messages/Set cif_manager_PluginInfo.vi"/>
+			<Item Name="Get cif_manager_PluginInfo.vi" Type="VI" URL="../RPC Messages/Get cif_manager_PluginInfo.vi"/>
 		</Item>
 		<Item Name="cif_manager_PluginInfoResponse" Type="Folder">
 			<Item Name="cif_manager_PluginInfoResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginInfoResponse.ctl"/>
@@ -293,8 +293,8 @@
 			<Item Name="cif_manager_ClockConversion.ctl" Type="VI" URL="../RPC Messages/cif_manager_ClockConversion.ctl"/>
 			<Item Name="FlatToRichcif_manager_ClockConversion.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_ClockConversion.vi"/>
 			<Item Name="RichToFlatcif_manager_ClockConversion.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_ClockConversion.vi"/>
-			<Item Name="Set cif_manager_ClockConversion.vi" Type="VI" URL="../RPC Messages/Set cif_manager_ClockConversion.vi"/>
 			<Item Name="Get cif_manager_ClockConversion.vi" Type="VI" URL="../RPC Messages/Get cif_manager_ClockConversion.vi"/>
+			<Item Name="Set cif_manager_ClockConversion.vi" Type="VI" URL="../RPC Messages/Set cif_manager_ClockConversion.vi"/>
 		</Item>
 		<Item Name="cif_manager_ClockConversionArray" Type="Folder">
 			<Item Name="cif_manager_ClockConversionArray.ctl" Type="VI" URL="../RPC Messages/cif_manager_ClockConversionArray.ctl"/>
@@ -352,12 +352,54 @@
 			<Item Name="Set cif_manager_PluginMetadata.vi" Type="VI" URL="../RPC Messages/Set cif_manager_PluginMetadata.vi"/>
 			<Item Name="Get cif_manager_PluginMetadata.vi" Type="VI" URL="../RPC Messages/Get cif_manager_PluginMetadata.vi"/>
 		</Item>
-		<Item Name="cif_plugincore_StatusData_State" Type="Folder">
-			<Item Name="cif_plugincore_StatusData_State.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State.ctl"/>
-			<Item Name="Get Value for cif_plugincore_StatusData_State.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_State.vi"/>
-			<Item Name="Get cif_plugincore_StatusData_State for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_State for Value.vi"/>
-			<Item Name="Set cif_plugincore_StatusData_State.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_StatusData_State.vi"/>
-			<Item Name="Get cif_plugincore_StatusData_State.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_State.vi"/>
+		<Item Name="cif_manager_LauncherStatus" Type="Folder">
+			<Item Name="cif_manager_LauncherStatus.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherStatus.ctl"/>
+			<Item Name="FlatToRichcif_manager_LauncherStatus.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LauncherStatus.vi"/>
+			<Item Name="RichToFlatcif_manager_LauncherStatus.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_LauncherStatus.vi"/>
+			<Item Name="Set cif_manager_LauncherStatus.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LauncherStatus.vi"/>
+			<Item Name="Get cif_manager_LauncherStatus.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LauncherStatus.vi"/>
+		</Item>
+		<Item Name="cif_manager_LauncherInfo" Type="Folder">
+			<Item Name="cif_manager_LauncherInfo.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherInfo.ctl"/>
+			<Item Name="FlatToRichcif_manager_LauncherInfo.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LauncherInfo.vi"/>
+			<Item Name="RichToFlatcif_manager_LauncherInfo.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_LauncherInfo.vi"/>
+			<Item Name="Set cif_manager_LauncherInfo.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LauncherInfo.vi"/>
+			<Item Name="Get cif_manager_LauncherInfo.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LauncherInfo.vi"/>
+		</Item>
+		<Item Name="cif_manager_LauncherDestroy" Type="Folder">
+			<Item Name="cif_manager_LauncherDestroy.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherDestroy.ctl"/>
+			<Item Name="FlatToRichcif_manager_LauncherDestroy.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LauncherDestroy.vi"/>
+			<Item Name="RichToFlatcif_manager_LauncherDestroy.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_LauncherDestroy.vi"/>
+			<Item Name="Set cif_manager_LauncherDestroy.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LauncherDestroy.vi"/>
+			<Item Name="Get cif_manager_LauncherDestroy.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LauncherDestroy.vi"/>
+		</Item>
+		<Item Name="cif_manager_LauncherInfoResponse" Type="Folder">
+			<Item Name="cif_manager_LauncherInfoResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherInfoResponse.ctl"/>
+			<Item Name="FlatToRichcif_manager_LauncherInfoResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LauncherInfoResponse.vi"/>
+			<Item Name="RichToFlatcif_manager_LauncherInfoResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_LauncherInfoResponse.vi"/>
+			<Item Name="Set cif_manager_LauncherInfoResponse.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LauncherInfoResponse.vi"/>
+			<Item Name="Get cif_manager_LauncherInfoResponse.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LauncherInfoResponse.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_StatusData_PluginState" Type="Folder">
+			<Item Name="cif_plugincore_StatusData_PluginState.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_PluginState.ctl"/>
+			<Item Name="Get Value for cif_plugincore_StatusData_PluginState.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_PluginState.vi"/>
+			<Item Name="Get cif_plugincore_StatusData_PluginState for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_PluginState for Value.vi"/>
+			<Item Name="Set cif_plugincore_StatusData_PluginState.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_StatusData_PluginState.vi"/>
+			<Item Name="Get cif_plugincore_StatusData_PluginState.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_PluginState.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_ChannelDirection" Type="Folder">
+			<Item Name="cif_channelcore_ChannelDirection.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelDirection.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelDirection.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelDirection.vi"/>
+			<Item Name="Get cif_channelcore_ChannelDirection for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelDirection for Value.vi"/>
+			<Item Name="Set cif_channelcore_ChannelDirection.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ChannelDirection.vi"/>
+			<Item Name="Get cif_channelcore_ChannelDirection.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelDirection.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_ChannelPattern" Type="Folder">
+			<Item Name="cif_channelcore_ChannelPattern.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelPattern.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelPattern.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelPattern.vi"/>
+			<Item Name="Get cif_channelcore_ChannelPattern for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelPattern for Value.vi"/>
+			<Item Name="Set cif_channelcore_ChannelPattern.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ChannelPattern.vi"/>
+			<Item Name="Get cif_channelcore_ChannelPattern.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelPattern.vi"/>
 		</Item>
 		<Item Name="cif_manager_OrchestrationLanguage" Type="Folder">
 			<Item Name="cif_manager_OrchestrationLanguage.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchestrationLanguage.ctl"/>
@@ -366,19 +408,42 @@
 			<Item Name="Set cif_manager_OrchestrationLanguage.vi" Type="VI" URL="../RPC Messages/Set cif_manager_OrchestrationLanguage.vi"/>
 			<Item Name="Get cif_manager_OrchestrationLanguage.vi" Type="VI" URL="../RPC Messages/Get cif_manager_OrchestrationLanguage.vi"/>
 		</Item>
-		<Item Name="cif_channelcore_Direction" Type="Folder">
-			<Item Name="cif_channelcore_Direction.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Direction.ctl"/>
-			<Item Name="Get Value for cif_channelcore_Direction.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_Direction.vi"/>
-			<Item Name="Get cif_channelcore_Direction for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction for Value.vi"/>
-			<Item Name="Set cif_channelcore_Direction.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_Direction.vi"/>
-			<Item Name="Get cif_channelcore_Direction.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction.vi"/>
+		<Item Name="cif_manager_LauncherType" Type="Folder">
+			<Item Name="cif_manager_LauncherType.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherType.ctl"/>
+			<Item Name="Get Value for cif_manager_LauncherType.vi" Type="VI" URL="../RPC Messages/Get Value for cif_manager_LauncherType.vi"/>
+			<Item Name="Get cif_manager_LauncherType for Value.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LauncherType for Value.vi"/>
+			<Item Name="Set cif_manager_LauncherType.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LauncherType.vi"/>
+			<Item Name="Get cif_manager_LauncherType.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LauncherType.vi"/>
 		</Item>
-		<Item Name="cif_channelcore_PATTERN" Type="Folder">
-			<Item Name="cif_channelcore_PATTERN.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_PATTERN.ctl"/>
-			<Item Name="Get Value for cif_channelcore_PATTERN.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_PATTERN.vi"/>
-			<Item Name="Get cif_channelcore_PATTERN for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN for Value.vi"/>
-			<Item Name="Set cif_channelcore_PATTERN.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_PATTERN.vi"/>
-			<Item Name="Get cif_channelcore_PATTERN.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN.vi"/>
+		<Item Name="cif_plugincore_Configuration_Flat" Type="Folder">
+			<Item Name="cif_plugincore_Configuration_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_TimingStatistics_Flat" Type="Folder">
+			<Item Name="cif_plugincore_TimingStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_FifoStatistics_Flat" Type="Folder">
+			<Item Name="cif_plugincore_FifoStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_FifoStatistics_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_MonitorDoubles_Flat" Type="Folder">
+			<Item Name="cif_plugincore_MonitorDoubles_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorDoubles_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_MonitorU64_Flat" Type="Folder">
+			<Item Name="cif_plugincore_MonitorU64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorU64_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_MonitorI64_Flat" Type="Folder">
+			<Item Name="cif_plugincore_MonitorI64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorI64_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_StatusData_Flat" Type="Folder">
+			<Item Name="cif_plugincore_StatusData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_Error_Flat" Type="Folder">
+			<Item Name="cif_plugincore_Error_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_TimingOverrides_Flat" Type="Folder">
+			<Item Name="cif_plugincore_TimingOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_PluginOverrides_Flat" Type="Folder">
+			<Item Name="cif_plugincore_PluginOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_common_TimingStats_Flat" Type="Folder">
 			<Item Name="cif_common_TimingStats_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats_Flat.ctl"/>
@@ -421,36 +486,6 @@
 		</Item>
 		<Item Name="cif_channelcore_ForceChannel_Flat" Type="Folder">
 			<Item Name="cif_channelcore_ForceChannel_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ForceChannel_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_Configuration_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Configuration_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingStatistics_Flat" Type="Folder">
-			<Item Name="cif_plugincore_TimingStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_FifoStatistics_Flat" Type="Folder">
-			<Item Name="cif_plugincore_FifoStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_FifoStatistics_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorDoubles_Flat" Type="Folder">
-			<Item Name="cif_plugincore_MonitorDoubles_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorDoubles_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorU64_Flat" Type="Folder">
-			<Item Name="cif_plugincore_MonitorU64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorU64_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorI64_Flat" Type="Folder">
-			<Item Name="cif_plugincore_MonitorI64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorI64_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_StatusData_Flat" Type="Folder">
-			<Item Name="cif_plugincore_StatusData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_Error_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Error_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingOverrides_Flat" Type="Folder">
-			<Item Name="cif_plugincore_TimingOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_PluginOverrides_Flat" Type="Folder">
-			<Item Name="cif_plugincore_PluginOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides_Flat.ctl"/>
 		</Item>
 		<Item Name="cif_manager_PluginConfig_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginConfig_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginConfig_Flat.ctl"/>
@@ -527,25 +562,42 @@
 		<Item Name="cif_manager_PluginMetadata_Flat" Type="Folder">
 			<Item Name="cif_manager_PluginMetadata_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_PluginMetadata_Flat.ctl"/>
 		</Item>
-		<Item Name="cif_plugincore_StatusData_State_Flat" Type="Folder">
-			<Item Name="cif_plugincore_StatusData_State_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State_Flat.ctl"/>
-			<Item Name="Get Value for cif_plugincore_StatusData_State_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_State_Flat.vi"/>
-			<Item Name="Get cif_plugincore_StatusData_State_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_State_Flat for Value.vi"/>
+		<Item Name="cif_manager_LauncherStatus_Flat" Type="Folder">
+			<Item Name="cif_manager_LauncherStatus_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherStatus_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_manager_LauncherInfo_Flat" Type="Folder">
+			<Item Name="cif_manager_LauncherInfo_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherInfo_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_manager_LauncherDestroy_Flat" Type="Folder">
+			<Item Name="cif_manager_LauncherDestroy_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherDestroy_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_manager_LauncherInfoResponse_Flat" Type="Folder">
+			<Item Name="cif_manager_LauncherInfoResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherInfoResponse_Flat.ctl"/>
+		</Item>
+		<Item Name="cif_plugincore_StatusData_PluginState_Flat" Type="Folder">
+			<Item Name="cif_plugincore_StatusData_PluginState_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_PluginState_Flat.ctl"/>
+			<Item Name="Get Value for cif_plugincore_StatusData_PluginState_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_PluginState_Flat.vi"/>
+			<Item Name="Get cif_plugincore_StatusData_PluginState_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_PluginState_Flat for Value.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_ChannelDirection_Flat" Type="Folder">
+			<Item Name="cif_channelcore_ChannelDirection_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelDirection_Flat.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelDirection_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelDirection_Flat.vi"/>
+			<Item Name="Get cif_channelcore_ChannelDirection_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelDirection_Flat for Value.vi"/>
+		</Item>
+		<Item Name="cif_channelcore_ChannelPattern_Flat" Type="Folder">
+			<Item Name="cif_channelcore_ChannelPattern_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelPattern_Flat.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelPattern_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelPattern_Flat.vi"/>
+			<Item Name="Get cif_channelcore_ChannelPattern_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelPattern_Flat for Value.vi"/>
 		</Item>
 		<Item Name="cif_manager_OrchestrationLanguage_Flat" Type="Folder">
 			<Item Name="cif_manager_OrchestrationLanguage_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_OrchestrationLanguage_Flat.ctl"/>
 			<Item Name="Get Value for cif_manager_OrchestrationLanguage_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_manager_OrchestrationLanguage_Flat.vi"/>
 			<Item Name="Get cif_manager_OrchestrationLanguage_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_manager_OrchestrationLanguage_Flat for Value.vi"/>
 		</Item>
-		<Item Name="cif_channelcore_Direction_Flat" Type="Folder">
-			<Item Name="cif_channelcore_Direction_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Direction_Flat.ctl"/>
-			<Item Name="Get Value for cif_channelcore_Direction_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_Direction_Flat.vi"/>
-			<Item Name="Get cif_channelcore_Direction_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction_Flat for Value.vi"/>
-		</Item>
-		<Item Name="cif_channelcore_PATTERN_Flat" Type="Folder">
-			<Item Name="cif_channelcore_PATTERN_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_PATTERN_Flat.ctl"/>
-			<Item Name="Get Value for cif_channelcore_PATTERN_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_PATTERN_Flat.vi"/>
-			<Item Name="Get cif_channelcore_PATTERN_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN_Flat for Value.vi"/>
+		<Item Name="cif_manager_LauncherType_Flat" Type="Folder">
+			<Item Name="cif_manager_LauncherType_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LauncherType_Flat.ctl"/>
+			<Item Name="Get Value for cif_manager_LauncherType_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_manager_LauncherType_Flat.vi"/>
+			<Item Name="Get cif_manager_LauncherType_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LauncherType_Flat for Value.vi"/>
 		</Item>
 		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi"/>
 	</Item>

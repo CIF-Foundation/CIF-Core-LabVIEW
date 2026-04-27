@@ -60,15 +60,15 @@ message MonitorI64 {
 }
 
 message StatusData {
-  enum State {
-    NULL = 0;
-    CREATING = 1;
-    LISTENING = 2;
-    RUNNING = 3;
-    CLEANINGUP = 4;
-    DESTROYING = 5;
+  enum PluginState {
+    PLUGINSTATE_UNKNOWN = 0;
+    PLUGINSTATE_CREATING = 1;
+    PLUGINSTATE_LISTENING = 2;
+    PLUGINSTATE_RUNNING = 3;
+    PLUGINSTATE_CLEANINGUP = 4;
+    PLUGINSTATE_DESTROYING = 5;
   }
-  State state = 1;
+  PluginState state = 1;
   TimingStatistics timing_statistics = 2;
   FifoStatistics fifo_statistics = 3;
   Error error = 4;

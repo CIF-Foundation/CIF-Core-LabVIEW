@@ -9,7 +9,9 @@
 </Property>
 	<Item Name="Commands" Type="Folder">
 		<Item Name="Abort Plugin.vi" Type="VI" URL="../Commands/Abort Plugin.vi"/>
+		<Item Name="Create Launcher.vi" Type="VI" URL="../Commands/Create Launcher.vi"/>
 		<Item Name="Create Orchestration.vi" Type="VI" URL="../Commands/Create Orchestration.vi"/>
+		<Item Name="Destroy Launcher.vi" Type="VI" URL="../Commands/Destroy Launcher.vi"/>
 		<Item Name="Destroy Manager.vi" Type="VI" URL="../Commands/Destroy Manager.vi"/>
 		<Item Name="Load Plugin.vi" Type="VI" URL="../Commands/Load Plugin.vi"/>
 		<Item Name="Ping.vi" Type="VI" URL="../Commands/Ping.vi"/>
@@ -32,11 +34,13 @@
 	</Item>
 	<Item Name="Internal" Type="Folder">
 		<Item Name="Query System Status.vi" Type="VI" URL="../Internal/Query System Status.vi"/>
+		<Item Name="Register Launcher.vi" Type="VI" URL="../Internal/Register Launcher.vi"/>
 		<Item Name="Register Plugin.vi" Type="VI" URL="../Internal/Register Plugin.vi"/>
 		<Item Name="Unregister Plugin.vi" Type="VI" URL="../Internal/Unregister Plugin.vi"/>
 		<Item Name="Update Clock.vi" Type="VI" URL="../Internal/Update Clock.vi"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
+		<Item Name="Filter and Log Error.vi" Type="VI" URL="../Utilities/Filter and Log Error.vi"/>
 		<Item Name="Merge gRPC Error.vi" Type="VI" URL="../Utilities/Merge gRPC Error.vi"/>
 	</Item>
 </Library>

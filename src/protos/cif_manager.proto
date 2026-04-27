@@ -49,12 +49,19 @@ service Manager {
   rpc QueryClockStatus (cif.common.Empty) returns (ClockStatusArray) {}
   // Query all channels on the system matching the filter.  Filter parameters are AND to pass.  
   rpc QueryAllChannels (cif.channelcore.ChannelFilter) returns (cif.channelcore.Channels) {}
+  // The launcher calls this to register itself with the manager.
+  rpc RegisterLauncher (LauncherStatus) returns (LauncherInfoResponse) {}
+  // Manually create a new launcher.
+  rpc CreateLauncher (LauncherInfo) returns (cif.common.Status) {}
+  // Manually destroy an existing launcher.
+  rpc DestroyLauncher (LauncherDestroy) returns (cif.common.Status) {}
 }
 
 message PluginConfig {
   string plugin_type = 1; //Name of the plugin type
   string plugin_name = 2; //Assigned name for the plugin instance.  Must be unique in the system.  
   string version = 3; //Optional string for version.  Format should be x.x.x (major, minor, fix).  Any missing entries will default to latest available on target.  For example 1.2 would default to the latest fix on the target of major 1, minor 2.
+  string launcher_process = 4; //Options string to specify what process to use to load the plugin, supported by some launchers.
 }
 
 message	RegisterData {
@@ -127,6 +134,7 @@ message PluginInfoArray {
 message PluginStatus {
   PluginName pluginname = 1;
   cif.plugincore.StatusData status = 2;
+  cif.channelcore.Channels channels = 3;
 }
 
 message TimePair {
@@ -168,8 +176,8 @@ message ClockStatus {
 }
 
 enum OrchestrationLanguage {
-  NULL = 0;
-  PYTHON = 1;
+  ORCHESTRATIONLANGUAGE_UNKNOWN = 0;
+  ORCHESTRATIONLANGUAGE_PYTHON = 1;
   }
 
 message OrchConfig {
@@ -189,4 +197,30 @@ message PluginMetadata {
   string description = 1;
   string history = 2;
   string author = 3;
+}
+
+enum LauncherType {
+  LAUNCHERTYPE_UNKNOWN = 0;
+  LAUNCHERTYPE_LABVIEW = 1;
+  }
+
+message LauncherStatus {
+  LauncherInfo launcher_info = 1;
+  int32 grpc_port = 2;
+  uint32 pid = 3;
+  cif.common.Status status = 4;
+}
+
+message LauncherInfo {
+  LauncherType launcher_type = 1;
+  string launcher_name = 2;
+}
+
+message LauncherDestroy {
+  string launcher_name = 1;
+}
+
+message LauncherInfoResponse {
+  string updated_launcher_name = 1;
+  cif.common.Status status = 2;
 }

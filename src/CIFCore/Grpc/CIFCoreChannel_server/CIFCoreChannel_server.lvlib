@@ -58,6 +58,13 @@
 			<Item Name="Set cif_channelcore_Channel.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_Channel.vi"/>
 			<Item Name="Get cif_channelcore_Channel.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Channel.vi"/>
 		</Item>
+		<Item Name="cif_channelcore_ChannelFilter" Type="Folder">
+			<Item Name="cif_channelcore_ChannelFilter.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelFilter.ctl"/>
+			<Item Name="FlatToRichcif_channelcore_ChannelFilter.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_ChannelFilter.vi"/>
+			<Item Name="RichToFlatcif_channelcore_ChannelFilter.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_channelcore_ChannelFilter.vi"/>
+			<Item Name="Set cif_channelcore_ChannelFilter.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ChannelFilter.vi"/>
+			<Item Name="Get cif_channelcore_ChannelFilter.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelFilter.vi"/>
+		</Item>
 		<Item Name="cif_channelcore_Channels" Type="Folder">
 			<Item Name="cif_channelcore_Channels.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Channels.ctl"/>
 			<Item Name="FlatToRichcif_channelcore_Channels.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_channelcore_Channels.vi"/>
@@ -100,19 +107,19 @@
 			<Item Name="Set cif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ForceChannel.vi"/>
 			<Item Name="Get cif_channelcore_ForceChannel.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ForceChannel.vi"/>
 		</Item>
-		<Item Name="cif_channelcore_Direction" Type="Folder">
-			<Item Name="cif_channelcore_Direction.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Direction.ctl"/>
-			<Item Name="Get Value for cif_channelcore_Direction.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_Direction.vi"/>
-			<Item Name="Get cif_channelcore_Direction for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction for Value.vi"/>
-			<Item Name="Set cif_channelcore_Direction.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_Direction.vi"/>
-			<Item Name="Get cif_channelcore_Direction.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction.vi"/>
+		<Item Name="cif_channelcore_ChannelDirection" Type="Folder">
+			<Item Name="cif_channelcore_ChannelDirection.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelDirection.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelDirection.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelDirection.vi"/>
+			<Item Name="Get cif_channelcore_ChannelDirection for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelDirection for Value.vi"/>
+			<Item Name="Set cif_channelcore_ChannelDirection.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ChannelDirection.vi"/>
+			<Item Name="Get cif_channelcore_ChannelDirection.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelDirection.vi"/>
 		</Item>
-		<Item Name="cif_channelcore_PATTERN" Type="Folder">
-			<Item Name="cif_channelcore_PATTERN.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_PATTERN.ctl"/>
-			<Item Name="Get Value for cif_channelcore_PATTERN.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_PATTERN.vi"/>
-			<Item Name="Get cif_channelcore_PATTERN for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN for Value.vi"/>
-			<Item Name="Set cif_channelcore_PATTERN.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_PATTERN.vi"/>
-			<Item Name="Get cif_channelcore_PATTERN.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN.vi"/>
+		<Item Name="cif_channelcore_ChannelPattern" Type="Folder">
+			<Item Name="cif_channelcore_ChannelPattern.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelPattern.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelPattern.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelPattern.vi"/>
+			<Item Name="Get cif_channelcore_ChannelPattern for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelPattern for Value.vi"/>
+			<Item Name="Set cif_channelcore_ChannelPattern.vi" Type="VI" URL="../RPC Messages/Set cif_channelcore_ChannelPattern.vi"/>
+			<Item Name="Get cif_channelcore_ChannelPattern.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelPattern.vi"/>
 		</Item>
 		<Item Name="cif_common_TimingStats_Flat" Type="Folder">
 			<Item Name="cif_common_TimingStats_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats_Flat.ctl"/>
@@ -135,6 +142,9 @@
 		<Item Name="cif_channelcore_Channel_Flat" Type="Folder">
 			<Item Name="cif_channelcore_Channel_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Channel_Flat.ctl"/>
 		</Item>
+		<Item Name="cif_channelcore_ChannelFilter_Flat" Type="Folder">
+			<Item Name="cif_channelcore_ChannelFilter_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelFilter_Flat.ctl"/>
+		</Item>
 		<Item Name="cif_channelcore_Channels_Flat" Type="Folder">
 			<Item Name="cif_channelcore_Channels_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Channels_Flat.ctl"/>
 		</Item>
@@ -153,15 +163,15 @@
 		<Item Name="cif_channelcore_ForceChannel_Flat" Type="Folder">
 			<Item Name="cif_channelcore_ForceChannel_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ForceChannel_Flat.ctl"/>
 		</Item>
-		<Item Name="cif_channelcore_Direction_Flat" Type="Folder">
-			<Item Name="cif_channelcore_Direction_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_Direction_Flat.ctl"/>
-			<Item Name="Get Value for cif_channelcore_Direction_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_Direction_Flat.vi"/>
-			<Item Name="Get cif_channelcore_Direction_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_Direction_Flat for Value.vi"/>
+		<Item Name="cif_channelcore_ChannelDirection_Flat" Type="Folder">
+			<Item Name="cif_channelcore_ChannelDirection_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelDirection_Flat.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelDirection_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelDirection_Flat.vi"/>
+			<Item Name="Get cif_channelcore_ChannelDirection_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelDirection_Flat for Value.vi"/>
 		</Item>
-		<Item Name="cif_channelcore_PATTERN_Flat" Type="Folder">
-			<Item Name="cif_channelcore_PATTERN_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_PATTERN_Flat.ctl"/>
-			<Item Name="Get Value for cif_channelcore_PATTERN_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_PATTERN_Flat.vi"/>
-			<Item Name="Get cif_channelcore_PATTERN_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_PATTERN_Flat for Value.vi"/>
+		<Item Name="cif_channelcore_ChannelPattern_Flat" Type="Folder">
+			<Item Name="cif_channelcore_ChannelPattern_Flat.ctl" Type="VI" URL="../RPC Messages/cif_channelcore_ChannelPattern_Flat.ctl"/>
+			<Item Name="Get Value for cif_channelcore_ChannelPattern_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_channelcore_ChannelPattern_Flat.vi"/>
+			<Item Name="Get cif_channelcore_ChannelPattern_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_channelcore_ChannelPattern_Flat for Value.vi"/>
 		</Item>
 		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi"/>
 	</Item>

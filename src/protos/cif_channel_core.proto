@@ -14,38 +14,39 @@ service ChannelCore {
   rpc DestroyFIFOInstance (FIFOInstanceName) returns (cif.common.Status) {} //This is used to destroy or disconnect a subscriber after the CreateFIFOInstance was used.  
 }
 
-enum Direction {
-  PUBLISHER = 0;
-  SUBSCRIBER = 1;
+enum ChannelDirection {
+  CHANNELDIRECTION_UNKNOWN = 0;
+  CHANNELDIRECTION_PUBLISHER = 1;
+  CHANNELDIRECTION_SUBSCRIBER = 2;
 }
 
 message Channel {
   string name = 1;
-  Direction direction = 2;  
+  ChannelDirection direction = 2;  
   string type = 3;  //This field describes the channel type.  From LabVIEW it is typically the name of the channel class.
   bytes custom_config = 4;  //This field allows passing free form custom data needed to describe the channel and to support operations such as creating connections.  It's implementation will be type specific. 
   bool connected = 5;
   string connected_name = 6;  //This is only valid for subscribers.  Publishers typically have no knowledge of connections.  
   bool forced = 7; //Indicates if the value is being "forced" to always return a specific override value.  This only applies to tags
-  PATTERN channel_pattern = 8; //Indicates the pattern of the channel and is used for channel management and linking.
+  ChannelPattern channel_pattern = 8; //Indicates the pattern of the channel and is used for channel management and linking.
 }
 
 //All filter settings are AND so channel must pass all to return.
 message ChannelFilter {
   string name_regex = 1;  //Regular expression to filter the name
-  Direction direction = 2; //Filter for direction
+  ChannelDirection direction = 2; //Filter for direction
   bool direction_filter = 3; //Sets if the direction filter is active
   string type_regex = 4;  //Regular expression to filter the type
   bool forced = 5; //Filter for forced
   bool forced_filter = 6; //Sets if the force filter is active
 }
 
-enum PATTERN {
-  UNKNOWN = 0;
-  TAG = 1;
-  FIFO = 2;
-  MULTIFIFO = 3;
-  BACKPRESSUREFIFO = 4;
+enum ChannelPattern {
+  CHANNELPATTERN_UNKNOWN = 0;
+  CHANNELPATTERN_TAG = 1;
+  CHANNELPATTERN_FIFO = 2;
+  CHANNELPATTERN_MULTIFIFO = 3;
+  CHANNELPATTERN_BACKPRESSUREFIFO = 4;
 }
 
 message Channels {
