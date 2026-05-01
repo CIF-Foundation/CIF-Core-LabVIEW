@@ -50,11 +50,11 @@ service Manager {
   // Query all channels on the system matching the filter.  Filter parameters are AND to pass.  
   rpc QueryAllChannels (cif.channelcore.ChannelFilter) returns (cif.channelcore.Channels) {}
   // The launcher calls this to register itself with the manager.
-  rpc RegisterLauncher (LauncherStatus) returns (LauncherInfoResponse) {}
+  rpc RegisterPluginLoader (LoaderStatus) returns (cif.common.Empty) {}
   // Manually create a new launcher.
-  rpc CreateLauncher (LauncherInfo) returns (cif.common.Status) {}
+  rpc CreatePluginLoader (LoaderInfo) returns (cif.common.Status) {}
   // Manually destroy an existing launcher.
-  rpc DestroyLauncher (LauncherDestroy) returns (cif.common.Status) {}
+  rpc DestroyPluginLoader (LoaderDestroy) returns (cif.common.Status) {}
 }
 
 message PluginConfig {
@@ -199,28 +199,22 @@ message PluginMetadata {
   string author = 3;
 }
 
-enum LauncherType {
-  LAUNCHERTYPE_UNKNOWN = 0;
-  LAUNCHERTYPE_LABVIEW = 1;
+enum LoaderType {
+  LOADERTYPE_UNKNOWN = 0;
+  LOADERTYPE_LABVIEW = 1;
   }
 
-message LauncherStatus {
-  LauncherInfo launcher_info = 1;
+message LoaderStatus {
+  LoaderInfo loader_info = 1;
   int32 grpc_port = 2;
   uint32 pid = 3;
-  cif.common.Status status = 4;
 }
 
-message LauncherInfo {
-  LauncherType launcher_type = 1;
-  string launcher_name = 2;
+message LoaderInfo {
+  LoaderType loader_type = 1;
+  string loader_name = 2;
 }
 
-message LauncherDestroy {
-  string launcher_name = 1;
-}
-
-message LauncherInfoResponse {
-  string updated_launcher_name = 1;
-  cif.common.Status status = 2;
+message LoaderDestroy {
+  string loader_name = 1;
 }

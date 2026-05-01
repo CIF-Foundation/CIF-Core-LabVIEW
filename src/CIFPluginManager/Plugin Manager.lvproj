@@ -11,9 +11,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="CIF Engine Launch.lvlib" Type="Library" URL="../Engine Launch/CIF Engine Launch.lvlib"/>
 		<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../CIFUI/CIF_UI.lvclass"/>
-		<Item Name="CIFLauncher.lvclass" Type="LVClass" URL="../CIFLauncher/CIFLauncher.lvclass"/>
 		<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
+		<Item Name="CIFPluginLoader.lvclass" Type="LVClass" URL="../CIFPluginLoader/CIFPluginLoader.lvclass"/>
 		<Item Name="CIFPluginManager.lvclass" Type="LVClass" URL="../CIFPluginManager/CIFPluginManager.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -67,24 +68,25 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
-			<Item Name="CIF Engine Launch.lvlib" Type="Library" URL="../Engine Launch/CIF Engine Launch.lvlib"/>
 			<Item Name="CIF_InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../Instrument Studio/PluginSDK/CIF_InstrumentStudio Plugin SDK.lvlib"/>
-			<Item Name="CIF_Launcher_server.lvlib" Type="Library" URL="../CIFLauncher/gRPC/CIF_Launcher_server/CIF_Launcher_server.lvlib"/>
 			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
 			<Item Name="CIF_Manager_server.lvlib" Type="Library" URL="../CIFPluginManager/gRPC/CIF_Manager_server/CIF_Manager_server.lvlib"/>
+			<Item Name="CIF_PluginLoader_client.lvlib" Type="Library" URL="../CIFPluginLoader/gRPC/CIF_PluginLoader_client/CIF_PluginLoader_client.lvlib"/>
+			<Item Name="CIF_PluginLoader_server.lvlib" Type="Library" URL="../CIFPluginLoader/gRPC/CIF_PluginLoader_server/CIF_PluginLoader_server.lvlib"/>
 			<Item Name="CIFChannelMng.lvclass" Type="LVClass" URL="../../Channels/CIFChannelMng/CIFChannelMng.lvclass"/>
 			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
 			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="../../CIFCore/Common/CIFCoreCommon.lvlib"/>
 			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
 			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="../../CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
+			<Item Name="CIFPluginLoaderClientWrapper.lvlib" Type="Library" URL="../CIFPluginLoader/gRPC/CIF_Plugin_Loader_Client_Wrapper/CIFPluginLoaderClientWrapper.lvlib"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Python Orchestration.lvlib" Type="Library" URL="../../CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
-			<Item Name="trash_Discovered Plugin.ctl" Type="VI" URL="../CIFLauncher/typedef/trash_Discovered Plugin.ctl"/>
-			<Item Name="trash_Plugin Metadata.ctl" Type="VI" URL="../CIFLauncher/typedef/trash_Plugin Metadata.ctl"/>
+			<Item Name="trash_Discovered Plugin.ctl" Type="VI" URL="../CIFPluginLoader/typedef/trash_Discovered Plugin.ctl"/>
+			<Item Name="trash_Plugin Metadata.ctl" Type="VI" URL="../CIFPluginLoader/typedef/trash_Plugin Metadata.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
