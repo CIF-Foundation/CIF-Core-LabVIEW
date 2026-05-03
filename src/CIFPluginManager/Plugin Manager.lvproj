@@ -65,6 +65,8 @@
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Time_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Time/Time_CIF_U.lvlib"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Wait On Occurence.vi" Type="VI" URL="/&lt;vilib&gt;/Grpc/LabVIEW gRPC Library/Shared/Wait On Occurence.vi"/>
+				<Item Name="Wait On Occurrence Wrapper.vi" Type="VI" URL="/&lt;vilib&gt;/Grpc/LabVIEW gRPC Library/Shared/Wait On Occurrence Wrapper.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>

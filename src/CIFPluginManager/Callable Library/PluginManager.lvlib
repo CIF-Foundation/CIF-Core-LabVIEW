@@ -33,6 +33,6 @@ Version 1.4.7 Bug fix where some functions had not migrated to DVR for plugin ma
 
 </Property>
 	<Item Name="Core" Type="Folder">
-		<Item Name="Manager.vi" Type="VI" URL="../Core/Manager.vi"/>
+		<Item Name="Manager.vi" Type="VI" URL="../Manager Core/Manager.vi"/>
 	</Item>
 </Library>
