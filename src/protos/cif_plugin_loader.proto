@@ -9,23 +9,45 @@ package cif.pluginloader;
 
 service PluginLoader {
   // Load a specific plugin instance.
-  rpc LoadPlugin (LoadConfig) returns (cif.common.Status) {}
+  rpc LoadPlugin (LoadPluginRequest) returns (LoadPluginResponse) {}
     // Aborts a plugin and removes it from the system.
-  rpc AbortPlugin (cif.manager.PluginName) returns (cif.common.Status) {}
+  rpc AbortPlugin (AbortPluginRequest) returns (AbortPluginResponse) {}
   // Destroy the launcher.  If plugins are running it will attempt to stop them.  
-  rpc Destroy (cif.common.Empty) returns (cif.common.Empty) {}
+  rpc Destroy (DestroyRequest) returns (DestroyResponse) {}
   // Ping the launcher.  
-  rpc Ping (cif.common.Empty) returns (cif.manager.LoaderStatus) {}
+  rpc Ping (PingRequest) returns (PingResponse) {}
   // Discover plugins on the system that can be handled by this launcher.  
-  rpc Discover (DiscoverCommand) returns (DiscoveredPlugins) {}
+  rpc Discover (DiscoverRequest) returns (DiscoverResponse) {}
 }
 
-message LoadConfig {
+message LoadPluginRequest {
   cif.manager.PluginName plugin_name = 1; //Assigned name for the plugin instance.  Must be unique in the system.  
   string path = 2; //Path to the plugin location on the system.
 }
 
-message	DiscoverCommand {
+message LoadPluginResponse {
+  cif.common.Status status = 1;
+}
+
+message AbortPluginRequest {
+  cif.manager.PluginName plugin_name = 1;
+}
+
+message AbortPluginResponse {
+  cif.common.Status status = 1;
+}
+
+message DestroyRequest {}
+
+message DestroyResponse {}
+
+message PingRequest {}
+
+message PingResponse {
+  cif.manager.LoaderInfoFull loader_info = 1;
+}
+
+message	DiscoverRequest {
   bool update_metadata = 1; //Updating the metadata can be time consuming.  
 }
 
@@ -35,9 +57,10 @@ message	DiscoveredPlugin {
   string plugin_type = 3; //Type of plugin
   cif.common.Version plugin_version = 4;
   cif.manager.PluginMetadata plugin_metadata = 5;
+  repeated string relative_path = 6; //Array of the relative path of the plugin in the plugin folder
 }
 
-message	DiscoveredPlugins {
+message	DiscoverResponse {
   repeated DiscoveredPlugin discovered_plugins = 1;
   cif.common.Status status = 2;
 }

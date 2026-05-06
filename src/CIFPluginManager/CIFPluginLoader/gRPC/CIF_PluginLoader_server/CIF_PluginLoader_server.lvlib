@@ -342,6 +342,70 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
+		<Item Name="cif_manager_CreatePluginLoaderRequest" Type="Folder">
+			<Item Name="cif_manager_CreatePluginLoaderRequest.ctl" Type="VI" URL="../RPC Messages/cif_manager_CreatePluginLoaderRequest.ctl"/>
+			<Item Name="FlatToRichcif_manager_CreatePluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_CreatePluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_CreatePluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Get cif_manager_CreatePluginLoaderRequest.vi"/>
+			<Item Name="RichToFlatcif_manager_CreatePluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_CreatePluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_CreatePluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Set cif_manager_CreatePluginLoaderRequest.vi"/>
+		</Item>
+		<Item Name="cif_manager_CreatePluginLoaderRequest_Flat" Type="Folder">
+			<Item Name="cif_manager_CreatePluginLoaderRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_CreatePluginLoaderRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_manager_CreatePluginLoaderResponse" Type="Folder">
+			<Item Name="cif_manager_CreatePluginLoaderResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_CreatePluginLoaderResponse.ctl"/>
+			<Item Name="FlatToRichcif_manager_CreatePluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_CreatePluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_CreatePluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Get cif_manager_CreatePluginLoaderResponse.vi"/>
+			<Item Name="RichToFlatcif_manager_CreatePluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_CreatePluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_CreatePluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Set cif_manager_CreatePluginLoaderResponse.vi"/>
+		</Item>
+		<Item Name="cif_manager_CreatePluginLoaderResponse_Flat" Type="Folder">
+			<Item Name="cif_manager_CreatePluginLoaderResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_CreatePluginLoaderResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_manager_DestroyPluginLoaderRequest" Type="Folder">
+			<Item Name="cif_manager_DestroyPluginLoaderRequest.ctl" Type="VI" URL="../RPC Messages/cif_manager_DestroyPluginLoaderRequest.ctl"/>
+			<Item Name="FlatToRichcif_manager_DestroyPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_DestroyPluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_DestroyPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Get cif_manager_DestroyPluginLoaderRequest.vi"/>
+			<Item Name="RichToFlatcif_manager_DestroyPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_DestroyPluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_DestroyPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Set cif_manager_DestroyPluginLoaderRequest.vi"/>
+		</Item>
+		<Item Name="cif_manager_DestroyPluginLoaderRequest_Flat" Type="Folder">
+			<Item Name="cif_manager_DestroyPluginLoaderRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_DestroyPluginLoaderRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_manager_DestroyPluginLoaderResponse" Type="Folder">
+			<Item Name="cif_manager_DestroyPluginLoaderResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_DestroyPluginLoaderResponse.ctl"/>
+			<Item Name="FlatToRichcif_manager_DestroyPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_DestroyPluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_DestroyPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Get cif_manager_DestroyPluginLoaderResponse.vi"/>
+			<Item Name="RichToFlatcif_manager_DestroyPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_DestroyPluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_DestroyPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Set cif_manager_DestroyPluginLoaderResponse.vi"/>
+		</Item>
+		<Item Name="cif_manager_DestroyPluginLoaderResponse_Flat" Type="Folder">
+			<Item Name="cif_manager_DestroyPluginLoaderResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_DestroyPluginLoaderResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
 		<Item Name="cif_manager_ErrorInfo" Type="Folder">
 			<Item Name="cif_manager_ErrorInfo.ctl" Type="VI" URL="../RPC Messages/cif_manager_ErrorInfo.ctl"/>
 			<Item Name="FlatToRichcif_manager_ErrorInfo.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_ErrorInfo.vi">
@@ -390,22 +454,6 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
-		<Item Name="cif_manager_LoaderDestroy" Type="Folder">
-			<Item Name="cif_manager_LoaderDestroy.ctl" Type="VI" URL="../RPC Messages/cif_manager_LoaderDestroy.ctl"/>
-			<Item Name="FlatToRichcif_manager_LoaderDestroy.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LoaderDestroy.vi">
-				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-			</Item>
-			<Item Name="Get cif_manager_LoaderDestroy.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LoaderDestroy.vi"/>
-			<Item Name="RichToFlatcif_manager_LoaderDestroy.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_LoaderDestroy.vi">
-				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-			</Item>
-			<Item Name="Set cif_manager_LoaderDestroy.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LoaderDestroy.vi"/>
-		</Item>
-		<Item Name="cif_manager_LoaderDestroy_Flat" Type="Folder">
-			<Item Name="cif_manager_LoaderDestroy_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LoaderDestroy_Flat.ctl">
-				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-			</Item>
-		</Item>
 		<Item Name="cif_manager_LoaderInfo" Type="Folder">
 			<Item Name="cif_manager_LoaderInfo.ctl" Type="VI" URL="../RPC Messages/cif_manager_LoaderInfo.ctl"/>
 			<Item Name="FlatToRichcif_manager_LoaderInfo.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LoaderInfo.vi">
@@ -422,19 +470,19 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
-		<Item Name="cif_manager_LoaderStatus" Type="Folder">
-			<Item Name="cif_manager_LoaderStatus.ctl" Type="VI" URL="../RPC Messages/cif_manager_LoaderStatus.ctl"/>
-			<Item Name="FlatToRichcif_manager_LoaderStatus.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LoaderStatus.vi">
+		<Item Name="cif_manager_LoaderInfoFull" Type="Folder">
+			<Item Name="cif_manager_LoaderInfoFull.ctl" Type="VI" URL="../RPC Messages/cif_manager_LoaderInfoFull.ctl"/>
+			<Item Name="FlatToRichcif_manager_LoaderInfoFull.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_LoaderInfoFull.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Get cif_manager_LoaderStatus.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LoaderStatus.vi"/>
-			<Item Name="RichToFlatcif_manager_LoaderStatus.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_LoaderStatus.vi">
+			<Item Name="Get cif_manager_LoaderInfoFull.vi" Type="VI" URL="../RPC Messages/Get cif_manager_LoaderInfoFull.vi"/>
+			<Item Name="RichToFlatcif_manager_LoaderInfoFull.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_LoaderInfoFull.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Set cif_manager_LoaderStatus.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LoaderStatus.vi"/>
+			<Item Name="Set cif_manager_LoaderInfoFull.vi" Type="VI" URL="../RPC Messages/Set cif_manager_LoaderInfoFull.vi"/>
 		</Item>
-		<Item Name="cif_manager_LoaderStatus_Flat" Type="Folder">
-			<Item Name="cif_manager_LoaderStatus_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LoaderStatus_Flat.ctl">
+		<Item Name="cif_manager_LoaderInfoFull_Flat" Type="Folder">
+			<Item Name="cif_manager_LoaderInfoFull_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_LoaderInfoFull_Flat.ctl">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
@@ -638,6 +686,38 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
+		<Item Name="cif_manager_QueryPluginLoadersRequest" Type="Folder">
+			<Item Name="cif_manager_QueryPluginLoadersRequest.ctl" Type="VI" URL="../RPC Messages/cif_manager_QueryPluginLoadersRequest.ctl"/>
+			<Item Name="FlatToRichcif_manager_QueryPluginLoadersRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_QueryPluginLoadersRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_QueryPluginLoadersRequest.vi" Type="VI" URL="../RPC Messages/Get cif_manager_QueryPluginLoadersRequest.vi"/>
+			<Item Name="RichToFlatcif_manager_QueryPluginLoadersRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_QueryPluginLoadersRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_QueryPluginLoadersRequest.vi" Type="VI" URL="../RPC Messages/Set cif_manager_QueryPluginLoadersRequest.vi"/>
+		</Item>
+		<Item Name="cif_manager_QueryPluginLoadersRequest_Flat" Type="Folder">
+			<Item Name="cif_manager_QueryPluginLoadersRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_QueryPluginLoadersRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_manager_QueryPluginLoadersResponse" Type="Folder">
+			<Item Name="cif_manager_QueryPluginLoadersResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_QueryPluginLoadersResponse.ctl"/>
+			<Item Name="FlatToRichcif_manager_QueryPluginLoadersResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_QueryPluginLoadersResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_QueryPluginLoadersResponse.vi" Type="VI" URL="../RPC Messages/Get cif_manager_QueryPluginLoadersResponse.vi"/>
+			<Item Name="RichToFlatcif_manager_QueryPluginLoadersResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_QueryPluginLoadersResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_QueryPluginLoadersResponse.vi" Type="VI" URL="../RPC Messages/Set cif_manager_QueryPluginLoadersResponse.vi"/>
+		</Item>
+		<Item Name="cif_manager_QueryPluginLoadersResponse_Flat" Type="Folder">
+			<Item Name="cif_manager_QueryPluginLoadersResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_QueryPluginLoadersResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
 		<Item Name="cif_manager_QuerySettings" Type="Folder">
 			<Item Name="cif_manager_QuerySettings.ctl" Type="VI" URL="../RPC Messages/cif_manager_QuerySettings.ctl"/>
 			<Item Name="FlatToRichcif_manager_QuerySettings.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_QuerySettings.vi">
@@ -686,6 +766,38 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
+		<Item Name="cif_manager_RegisterPluginLoaderRequest" Type="Folder">
+			<Item Name="cif_manager_RegisterPluginLoaderRequest.ctl" Type="VI" URL="../RPC Messages/cif_manager_RegisterPluginLoaderRequest.ctl"/>
+			<Item Name="FlatToRichcif_manager_RegisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_RegisterPluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_RegisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Get cif_manager_RegisterPluginLoaderRequest.vi"/>
+			<Item Name="RichToFlatcif_manager_RegisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_RegisterPluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_RegisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Set cif_manager_RegisterPluginLoaderRequest.vi"/>
+		</Item>
+		<Item Name="cif_manager_RegisterPluginLoaderRequest_Flat" Type="Folder">
+			<Item Name="cif_manager_RegisterPluginLoaderRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_RegisterPluginLoaderRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_manager_RegisterPluginLoaderResponse" Type="Folder">
+			<Item Name="cif_manager_RegisterPluginLoaderResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_RegisterPluginLoaderResponse.ctl"/>
+			<Item Name="FlatToRichcif_manager_RegisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_RegisterPluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_RegisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Get cif_manager_RegisterPluginLoaderResponse.vi"/>
+			<Item Name="RichToFlatcif_manager_RegisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_RegisterPluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_RegisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Set cif_manager_RegisterPluginLoaderResponse.vi"/>
+		</Item>
+		<Item Name="cif_manager_RegisterPluginLoaderResponse_Flat" Type="Folder">
+			<Item Name="cif_manager_RegisterPluginLoaderResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_RegisterPluginLoaderResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
 		<Item Name="cif_manager_SystemStatus" Type="Folder">
 			<Item Name="cif_manager_SystemStatus.ctl" Type="VI" URL="../RPC Messages/cif_manager_SystemStatus.ctl"/>
 			<Item Name="FlatToRichcif_manager_SystemStatus.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_SystemStatus.vi">
@@ -731,6 +843,38 @@
 		</Item>
 		<Item Name="cif_manager_UnregisterData_Flat" Type="Folder">
 			<Item Name="cif_manager_UnregisterData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterData_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_manager_UnregisterPluginLoaderRequest" Type="Folder">
+			<Item Name="cif_manager_UnregisterPluginLoaderRequest.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterPluginLoaderRequest.ctl"/>
+			<Item Name="FlatToRichcif_manager_UnregisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_UnregisterPluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_UnregisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Get cif_manager_UnregisterPluginLoaderRequest.vi"/>
+			<Item Name="RichToFlatcif_manager_UnregisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_UnregisterPluginLoaderRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_UnregisterPluginLoaderRequest.vi" Type="VI" URL="../RPC Messages/Set cif_manager_UnregisterPluginLoaderRequest.vi"/>
+		</Item>
+		<Item Name="cif_manager_UnregisterPluginLoaderRequest_Flat" Type="Folder">
+			<Item Name="cif_manager_UnregisterPluginLoaderRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterPluginLoaderRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_manager_UnregisterPluginLoaderResponse" Type="Folder">
+			<Item Name="cif_manager_UnregisterPluginLoaderResponse.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterPluginLoaderResponse.ctl"/>
+			<Item Name="FlatToRichcif_manager_UnregisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_manager_UnregisterPluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_manager_UnregisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Get cif_manager_UnregisterPluginLoaderResponse.vi"/>
+			<Item Name="RichToFlatcif_manager_UnregisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_manager_UnregisterPluginLoaderResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_manager_UnregisterPluginLoaderResponse.vi" Type="VI" URL="../RPC Messages/Set cif_manager_UnregisterPluginLoaderResponse.vi"/>
+		</Item>
+		<Item Name="cif_manager_UnregisterPluginLoaderResponse_Flat" Type="Folder">
+			<Item Name="cif_manager_UnregisterPluginLoaderResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_manager_UnregisterPluginLoaderResponse_Flat.ctl">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
@@ -906,19 +1050,67 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
-		<Item Name="cif_pluginloader_DiscoverCommand" Type="Folder">
-			<Item Name="cif_pluginloader_DiscoverCommand.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoverCommand.ctl"/>
-			<Item Name="FlatToRichcif_pluginloader_DiscoverCommand.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_DiscoverCommand.vi">
+		<Item Name="cif_pluginloader_AbortPluginRequest" Type="Folder">
+			<Item Name="cif_pluginloader_AbortPluginRequest.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_AbortPluginRequest.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_AbortPluginRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_AbortPluginRequest.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Get cif_pluginloader_DiscoverCommand.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_DiscoverCommand.vi"/>
-			<Item Name="RichToFlatcif_pluginloader_DiscoverCommand.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_DiscoverCommand.vi">
+			<Item Name="Get cif_pluginloader_AbortPluginRequest.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_AbortPluginRequest.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_AbortPluginRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_AbortPluginRequest.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Set cif_pluginloader_DiscoverCommand.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_DiscoverCommand.vi"/>
+			<Item Name="Set cif_pluginloader_AbortPluginRequest.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_AbortPluginRequest.vi"/>
 		</Item>
-		<Item Name="cif_pluginloader_DiscoverCommand_Flat" Type="Folder">
-			<Item Name="cif_pluginloader_DiscoverCommand_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoverCommand_Flat.ctl">
+		<Item Name="cif_pluginloader_AbortPluginRequest_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_AbortPluginRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_AbortPluginRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_pluginloader_AbortPluginResponse" Type="Folder">
+			<Item Name="cif_pluginloader_AbortPluginResponse.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_AbortPluginResponse.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_AbortPluginResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_AbortPluginResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_pluginloader_AbortPluginResponse.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_AbortPluginResponse.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_AbortPluginResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_AbortPluginResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_pluginloader_AbortPluginResponse.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_AbortPluginResponse.vi"/>
+		</Item>
+		<Item Name="cif_pluginloader_AbortPluginResponse_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_AbortPluginResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_AbortPluginResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_pluginloader_DestroyRequest" Type="Folder">
+			<Item Name="cif_pluginloader_DestroyRequest.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DestroyRequest.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_DestroyRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_DestroyRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_pluginloader_DestroyRequest.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_DestroyRequest.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_DestroyRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_DestroyRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_pluginloader_DestroyRequest.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_DestroyRequest.vi"/>
+		</Item>
+		<Item Name="cif_pluginloader_DestroyRequest_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_DestroyRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DestroyRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_pluginloader_DestroyResponse" Type="Folder">
+			<Item Name="cif_pluginloader_DestroyResponse.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DestroyResponse.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_DestroyResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_DestroyResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_pluginloader_DestroyResponse.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_DestroyResponse.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_DestroyResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_DestroyResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_pluginloader_DestroyResponse.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_DestroyResponse.vi"/>
+		</Item>
+		<Item Name="cif_pluginloader_DestroyResponse_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_DestroyResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DestroyResponse_Flat.ctl">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
@@ -938,35 +1130,99 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
-		<Item Name="cif_pluginloader_DiscoveredPlugins" Type="Folder">
-			<Item Name="cif_pluginloader_DiscoveredPlugins.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoveredPlugins.ctl"/>
-			<Item Name="FlatToRichcif_pluginloader_DiscoveredPlugins.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_DiscoveredPlugins.vi">
+		<Item Name="cif_pluginloader_DiscoverRequest" Type="Folder">
+			<Item Name="cif_pluginloader_DiscoverRequest.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoverRequest.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_DiscoverRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_DiscoverRequest.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Get cif_pluginloader_DiscoveredPlugins.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_DiscoveredPlugins.vi"/>
-			<Item Name="RichToFlatcif_pluginloader_DiscoveredPlugins.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_DiscoveredPlugins.vi">
+			<Item Name="Get cif_pluginloader_DiscoverRequest.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_DiscoverRequest.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_DiscoverRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_DiscoverRequest.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Set cif_pluginloader_DiscoveredPlugins.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_DiscoveredPlugins.vi"/>
+			<Item Name="Set cif_pluginloader_DiscoverRequest.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_DiscoverRequest.vi"/>
 		</Item>
-		<Item Name="cif_pluginloader_DiscoveredPlugins_Flat" Type="Folder">
-			<Item Name="cif_pluginloader_DiscoveredPlugins_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoveredPlugins_Flat.ctl">
+		<Item Name="cif_pluginloader_DiscoverRequest_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_DiscoverRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoverRequest_Flat.ctl">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
-		<Item Name="cif_pluginloader_LoadConfig" Type="Folder">
-			<Item Name="cif_pluginloader_LoadConfig.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_LoadConfig.ctl"/>
-			<Item Name="FlatToRichcif_pluginloader_LoadConfig.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_LoadConfig.vi">
+		<Item Name="cif_pluginloader_DiscoverResponse" Type="Folder">
+			<Item Name="cif_pluginloader_DiscoverResponse.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoverResponse.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_DiscoverResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_DiscoverResponse.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Get cif_pluginloader_LoadConfig.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_LoadConfig.vi"/>
-			<Item Name="RichToFlatcif_pluginloader_LoadConfig.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_LoadConfig.vi">
+			<Item Name="Get cif_pluginloader_DiscoverResponse.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_DiscoverResponse.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_DiscoverResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_DiscoverResponse.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
-			<Item Name="Set cif_pluginloader_LoadConfig.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_LoadConfig.vi"/>
+			<Item Name="Set cif_pluginloader_DiscoverResponse.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_DiscoverResponse.vi"/>
 		</Item>
-		<Item Name="cif_pluginloader_LoadConfig_Flat" Type="Folder">
-			<Item Name="cif_pluginloader_LoadConfig_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_LoadConfig_Flat.ctl">
+		<Item Name="cif_pluginloader_DiscoverResponse_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_DiscoverResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_DiscoverResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_pluginloader_LoadPluginRequest" Type="Folder">
+			<Item Name="cif_pluginloader_LoadPluginRequest.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_LoadPluginRequest.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_LoadPluginRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_LoadPluginRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_pluginloader_LoadPluginRequest.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_LoadPluginRequest.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_LoadPluginRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_LoadPluginRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_pluginloader_LoadPluginRequest.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_LoadPluginRequest.vi"/>
+		</Item>
+		<Item Name="cif_pluginloader_LoadPluginRequest_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_LoadPluginRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_LoadPluginRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_pluginloader_LoadPluginResponse" Type="Folder">
+			<Item Name="cif_pluginloader_LoadPluginResponse.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_LoadPluginResponse.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_LoadPluginResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_LoadPluginResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_pluginloader_LoadPluginResponse.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_LoadPluginResponse.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_LoadPluginResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_LoadPluginResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_pluginloader_LoadPluginResponse.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_LoadPluginResponse.vi"/>
+		</Item>
+		<Item Name="cif_pluginloader_LoadPluginResponse_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_LoadPluginResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_LoadPluginResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_pluginloader_PingRequest" Type="Folder">
+			<Item Name="cif_pluginloader_PingRequest.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_PingRequest.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_PingRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_PingRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_pluginloader_PingRequest.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_PingRequest.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_PingRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_PingRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_pluginloader_PingRequest.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_PingRequest.vi"/>
+		</Item>
+		<Item Name="cif_pluginloader_PingRequest_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_PingRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_PingRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_pluginloader_PingResponse" Type="Folder">
+			<Item Name="cif_pluginloader_PingResponse.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_PingResponse.ctl"/>
+			<Item Name="FlatToRichcif_pluginloader_PingResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_pluginloader_PingResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_pluginloader_PingResponse.vi" Type="VI" URL="../RPC Messages/Get cif_pluginloader_PingResponse.vi"/>
+			<Item Name="RichToFlatcif_pluginloader_PingResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_pluginloader_PingResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_pluginloader_PingResponse.vi" Type="VI" URL="../RPC Messages/Set cif_pluginloader_PingResponse.vi"/>
+		</Item>
+		<Item Name="cif_pluginloader_PingResponse_Flat" Type="Folder">
+			<Item Name="cif_pluginloader_PingResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_pluginloader_PingResponse_Flat.ctl">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>

@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2026-03-31 11:04:00" Creator="toddw" Comments="" ID="f72feddf5f836a3340eaf9c705247ee8">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2026-05-03 15:59:44" Creator="toddw" Comments="" ID="fe29d16efe1f34c504dd936a37828b83">
   <Library_General_Settings>
     <Package_File_Name>CIF_Foundation_lib_CIF_Core</Package_File_Name>
-    <Library_Version>1.14.1.9</Library_Version>
+    <Library_Version>2.0.0.10</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\..\builds\VIPM</Library_Output_Folder>
@@ -40,7 +40,7 @@
       <Copyright/>
       <Packager>DOME Automation</Packager>
       <URL/>
-      <Release_Notes>Update to CIF manager to fix bug where some functions were using MAP instead of DVR MAP.  </Release_Notes>
+      <Release_Notes>Update to new NI gRPC library and first version of multi-process LV plugin execution refactor.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -309,7 +309,7 @@
         <Path>..\src\UI</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E0314D0AC0DD9461F94EEAEB9C124FDD</GUID>
+      <GUID>CFC1473B0A5994C20D802450D1451357</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -470,7 +470,7 @@
         <Path>..\src\CIFCore\Class\Logs\Log Custom Info.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DD2A8C50747CACCB895582DD7AEEB0CB</GUID>
+      <GUID>8869FEA77A3CF30277CD8954A08069B2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -617,7 +617,7 @@
         <Path>..\src\CIFCore\Class\Utilities\Clocks\System Clock to External Clock.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7CDFF00EC281B07B8C251DC4D345554B</GUID>
+      <GUID>CE3BD2DB86EBDCFC86285A35DC6F0F85</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -848,7 +848,7 @@
         <Path>..\src\CIFCore\Class\Channel RW\Write CAN FIFO.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>69CEB7D40B438D473BCA41E676791F20</GUID>
+      <GUID>1B06453D3AC3C2501D9857E53F846B72</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1037,7 +1037,7 @@
         <Path>..\src\CIFCore\Class\Accessors\Monitor\Write U64 4.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>769BD781B17311161C171A070776F8D5</GUID>
+      <GUID>EFA3F4D396E1DA222B3C639131807D45</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1156,7 +1156,7 @@
         <Path>..\src\CIFCore\Class\Utilities\Channels\Destroy Channel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9A01C0448EA3A6AF5C4DC3D9FB82C3A0</GUID>
+      <GUID>7ED2C4953EF3F4FEECAA658C172ADB6D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1233,7 +1233,7 @@
         <Path>..\src\CIFUI\Subpanel to Parent\Write Local Error.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>88EEE71412AEC9829222464BC4CAD937</GUID>
+      <GUID>389157CB45808F6556463F2E0AE7C66F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1492,7 +1492,7 @@
         <Path>..\src\CIFCore\Grpc\CIFCoreWrapper\Commands\Destroy FIFO Instance.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>371359CA080EEF74320C7847A048C0FB</GUID>
+      <GUID>C3C28375BB31CD4D73081458090C6144</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1779,7 +1779,7 @@
         <Path>..\src\CIFPluginManager\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Commands\Query All Channels.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>25376F85D3E2A93512B9DF3A584BE8C9</GUID>
+      <GUID>36913BB9DA7381509ABEDCA8984F415F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1898,7 +1898,7 @@
         <Path>..\src\CIFCore\Common\Utilities\Update FIFO Drop Statistics.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6F8AEC64B97AB40D1AB2AE7E6EEC6E2C</GUID>
+      <GUID>5F67466AE2883EE1FF49E852183C7C14</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

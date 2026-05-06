@@ -25,9 +25,9 @@ service Manager {
   rpc Ping (cif.common.Empty) returns (cif.common.Status) {}
   // Query the errors occurred.
   rpc QueryErrors (QuerySettings) returns (ErrorInfoList) {}
-  // Query the errors occurred.
+  // Query the config from the log.
   rpc QueryConfig (QuerySettings) returns (FileData) {}
-  // Query the errors occurred.
+  // Query the info from the log.
   rpc QueryInfo (QuerySettings) returns (FileData) {}
   // Reset the filter time for returned errors. 
   rpc ResetErrorIndex (cif.common.Empty) returns (cif.common.Status) {}
@@ -49,12 +49,16 @@ service Manager {
   rpc QueryClockStatus (cif.common.Empty) returns (ClockStatusArray) {}
   // Query all channels on the system matching the filter.  Filter parameters are AND to pass.  
   rpc QueryAllChannels (cif.channelcore.ChannelFilter) returns (cif.channelcore.Channels) {}
-  // The launcher calls this to register itself with the manager.
-  rpc RegisterPluginLoader (LoaderStatus) returns (cif.common.Empty) {}
-  // Manually create a new launcher.
-  rpc CreatePluginLoader (LoaderInfo) returns (cif.common.Status) {}
-  // Manually destroy an existing launcher.
-  rpc DestroyPluginLoader (LoaderDestroy) returns (cif.common.Status) {}
+  // The loader calls this to register itself with the manager.
+  rpc RegisterPluginLoader (RegisterPluginLoaderRequest) returns (RegisterPluginLoaderResponse) {}
+  // The loader calls this to unregister itself with the manager.
+  rpc UnregisterPluginLoader (UnregisterPluginLoaderRequest) returns (UnregisterPluginLoaderResponse) {}
+  // Manually create a new plugin loader.
+  rpc CreatePluginLoader (CreatePluginLoaderRequest) returns (CreatePluginLoaderResponse) {}
+  // Manually destroy an existing plugin loader.
+  rpc DestroyPluginLoader (DestroyPluginLoaderRequest) returns (DestroyPluginLoaderResponse) {}
+  // Gets the name, type, PID, and gRPC port of all registered plugin loaders.
+  rpc QueryPluginLoaders (QueryPluginLoadersRequest) returns (QueryPluginLoadersResponse) {}
 }
 
 message PluginConfig {
@@ -83,6 +87,7 @@ message	PluginType {
   string plugin_type = 1;
   cif.common.ShortVersion plugin_version = 2;
   PluginMetadata plugin_metadata = 3;
+  repeated string relative_path = 4; //Array of the relative path of the plugin in the plugin folder
 }
 
 message	PluginName {
@@ -120,6 +125,7 @@ message PluginInfo {
   int32 grpc_port = 3;
   cif.common.ShortVersion plugin_version = 4;
   cif.plugincore.StatusData status = 5;
+  LoaderInfo loader_info = 6;
 }
 
 message PluginInfoResponse {
@@ -204,17 +210,51 @@ enum LoaderType {
   LOADERTYPE_LABVIEW = 1;
   }
 
-message LoaderStatus {
-  LoaderInfo loader_info = 1;
-  int32 grpc_port = 2;
-  uint32 pid = 3;
-}
-
 message LoaderInfo {
   LoaderType loader_type = 1;
   string loader_name = 2;
 }
 
-message LoaderDestroy {
+message LoaderInfoFull {
+  LoaderType loader_type = 1;
+  string loader_name = 2;
+  int32 grpc_port = 3;
+  uint32 pid = 4;
+}
+
+message RegisterPluginLoaderRequest {
+  LoaderInfoFull loader_info = 1;
+}
+
+message RegisterPluginLoaderResponse {
+}
+
+message CreatePluginLoaderRequest {
+  LoaderInfo loader_info = 1;
+}
+
+message CreatePluginLoaderResponse {
+  cif.common.Status status = 1;
+}
+
+message DestroyPluginLoaderRequest {
   string loader_name = 1;
+}
+
+message DestroyPluginLoaderResponse {
+  cif.common.Status status = 1;
+}
+
+message UnregisterPluginLoaderRequest {
+  string loader_name = 1;
+}
+
+message UnregisterPluginLoaderResponse {
+}
+
+message QueryPluginLoadersRequest {
+}
+
+message QueryPluginLoadersResponse {
+  repeated LoaderInfoFull plugin_loaders_info = 1;
 }
