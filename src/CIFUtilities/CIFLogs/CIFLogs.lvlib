@@ -35,4 +35,5 @@
 		<Item Name="Parse Error Log.vi" Type="VI" URL="../Utilities/Parse Error Log.vi"/>
 		<Item Name="Parse Log.vi" Type="VI" URL="../Utilities/Parse Log.vi"/>
 	</Item>
+	<Item Name="Create Loader String.vi" Type="VI" URL="../Utilities/Create Loader String.vi"/>
 </Library>

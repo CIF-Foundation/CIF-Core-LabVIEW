@@ -161,15 +161,11 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFLogs.lvlib" Type="Library" URL="../../../CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
 			<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 			<Item Name="CIFPluginLoaderClientWrapper.lvlib" Type="Library" URL="../../CIFPluginLoader/gRPC/CIF_Plugin_Loader_Client_Wrapper/CIFPluginLoaderClientWrapper.lvlib"/>
-			<Item Name="Create Error Message.vi" Type="VI" URL="../gRPC/SubVIs/Create Error Message.vi"/>
-			<Item Name="Filter Plugin by Version.vi" Type="VI" URL="../gRPC/SubVIs/Filter Plugin by Version.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Parse Version String.vi" Type="VI" URL="../gRPC/SubVIs/Parse Version String.vi"/>
 			<Item Name="Python Orchestration.lvlib" Type="Library" URL="../../../CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
-			<Item Name="Select Plugin.vi" Type="VI" URL="../gRPC/SubVIs/Select Plugin.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="grrr" Type="Packed Library">

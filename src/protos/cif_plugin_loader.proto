@@ -1,16 +1,14 @@
 syntax = "proto3";
 
 import "cif_common.proto";
-import "cif_plugin_core.proto";
-import "cif_channel_core.proto";
-import "cif_manager.proto";
+import "cif_management_common.proto";
 
 package cif.pluginloader;
 
 service PluginLoader {
   // Load a specific plugin instance.
   rpc LoadPlugin (LoadPluginRequest) returns (LoadPluginResponse) {}
-    // Aborts a plugin and removes it from the system.
+  // Aborts a plugin and removes it from the system.
   rpc AbortPlugin (AbortPluginRequest) returns (AbortPluginResponse) {}
   // Destroy the launcher.  If plugins are running it will attempt to stop them.  
   rpc Destroy (DestroyRequest) returns (DestroyResponse) {}
@@ -21,7 +19,7 @@ service PluginLoader {
 }
 
 message LoadPluginRequest {
-  cif.manager.PluginName plugin_name = 1; //Assigned name for the plugin instance.  Must be unique in the system.  
+  string plugin_name = 1; //Assigned name for the plugin instance.  Must be unique in the system.  
   string path = 2; //Path to the plugin location on the system.
 }
 
@@ -30,7 +28,7 @@ message LoadPluginResponse {
 }
 
 message AbortPluginRequest {
-  cif.manager.PluginName plugin_name = 1;
+  string plugin_name = 1;
 }
 
 message AbortPluginResponse {
@@ -44,7 +42,7 @@ message DestroyResponse {}
 message PingRequest {}
 
 message PingResponse {
-  cif.manager.LoaderInfoFull loader_info = 1;
+  cif.management_common.LoaderInfoFull loader_info = 1;
 }
 
 message	DiscoverRequest {
@@ -56,7 +54,7 @@ message	DiscoveredPlugin {
   string file_name = 2; //Name of the file on disk
   string plugin_type = 3; //Type of plugin
   cif.common.Version plugin_version = 4;
-  cif.manager.PluginMetadata plugin_metadata = 5;
+  cif.management_common.PluginMetadata plugin_metadata = 5;
   repeated string relative_path = 6; //Array of the relative path of the plugin in the plugin folder
 }
 

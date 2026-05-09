@@ -1,85 +1,87 @@
 syntax = "proto3";
 
 import "cif_common.proto";
+import "cif_management_common.proto";
 
 package cif.plugincore;
 
 service PluginCore {
-  rpc Start (cif.common.Empty) returns (cif.common.Status) {}
-  rpc Pause (cif.common.Empty) returns (cif.common.Status) {}
-  rpc Stop (cif.common.Empty) returns (cif.common.Status) {}
-  rpc RefreshStatistics (cif.common.Empty) returns (cif.common.Status) {}
-  rpc UpdateConfig (Configuration) returns (cif.common.Status) {}
-  rpc GetStatusData (cif.common.Empty) returns (StatusData) {}
-  rpc GetVersion (cif.common.Empty) returns (cif.common.Version) {}
-  rpc GetConfig (cif.common.Empty) returns (Configuration) {}
-  rpc GetOverrides (cif.common.Empty) returns (PluginOverrides) {}
-  rpc GetNames (cif.common.Empty) returns (cif.common.PluginNames) {}
+  rpc Start (StartRequest) returns (StartResponse) {}
+  rpc Pause (PauseRequest) returns (PauseResponse) {}
+  rpc Stop (StopRequest) returns (StopResponse) {}
+  rpc RefreshStatistics (RefreshStatisticsRequest) returns (RefreshStatisticsResponse) {}
+  rpc UpdateConfig (UpdateConfigRequest) returns (UpdateConfigResponse) {}
+  rpc GetStatusData (GetStatusDataRequest) returns (GetStatusDataResponse) {}
+  rpc GetVersion (GetVersionRequest) returns (GetVersionResponse) {}
+  rpc GetConfig (GetConfigRequest) returns (GetConfigResponse) {}
+  rpc GetOverrides (GetOverridesRequest) returns (GetOverridesResponse) {}
+  rpc GetNames (GetNamesRequest) returns (GetNamesResponse) {}
+}
+
+message StartRequest {}
+
+message StartResponse {
+  cif.common.Status status = 1;
+}
+
+message PauseRequest {}
+
+message PauseResponse {
+  cif.common.Status status = 1;
+}
+
+message StopRequest {}
+
+message StopResponse {
+  cif.common.Status status = 1;
+}
+
+message RefreshStatisticsRequest {}
+
+message RefreshStatisticsResponse {
+  cif.common.Status status = 1;
+}
+
+message GetStatusDataRequest {}
+
+message GetStatusDataResponse {
+  cif.management_common.PluginStatusData status_data = 1;
+}
+
+message UpdateConfigRequest {
+  Configuration configuration = 1;
+}
+
+message UpdateConfigResponse {
+  cif.common.Status status = 1;
+}
+
+message GetVersionRequest {}
+
+message GetVersionResponse {
+  cif.common.Version version = 1;
+}
+
+message GetConfigRequest {}
+
+message GetConfigResponse {
+  Configuration configuration = 1;
+}
+
+message GetOverridesRequest {}
+
+message GetOverridesResponse {
+  PluginOverrides plugin_overrides = 1;
+}
+
+message GetNamesRequest {}
+
+message GetNamesResponse {
+  cif.common.PluginNames plugin_names = 1;
 }
 
 message Configuration {
   string json_config = 1;
-}
-
-message TimingStatistics {
-  cif.common.TimingStats period = 1;
-  cif.common.TimingStats wake_error = 2;
-  cif.common.TimingStats execute = 3;
-  cif.common.TimingStats housekeep = 4;
-  cif.common.TimingStats idle = 5;
-  cif.common.TimingStats cleanup = 6;
-  cif.common.TimingStats custom_1 = 7;
-  cif.common.TimingStats custom_2 = 8;
-}
-
-message FifoStatistics {
-  cif.common.TimingStats from_t0 = 1;
-  cif.common.TimingStats from_previous_plugin = 2;
-  cif.common.TimingStats output_error = 3;
-}
-
-message MonitorDoubles {
-  double double_1 = 1;
-  double double_2 = 2;
-  double double_3 = 3;
-  double double_4 = 4;
-}
-
-message MonitorU64 {
-  uint64 u64_1 = 1;
-  uint64 u64_2 = 2;
-  uint64 u64_3 = 3;
-  uint64 u64_4 = 4;
-}
-
-message MonitorI64 {
-  int64 i64_1 = 1;
-  int64 i64_2 = 2;
-  int64 i64_3 = 3;
-  int64 i64_4 = 4;
-}
-
-message StatusData {
-  enum PluginState {
-    PLUGINSTATE_UNKNOWN = 0;
-    PLUGINSTATE_CREATING = 1;
-    PLUGINSTATE_LISTENING = 2;
-    PLUGINSTATE_RUNNING = 3;
-    PLUGINSTATE_CLEANINGUP = 4;
-    PLUGINSTATE_DESTROYING = 5;
-  }
-  PluginState state = 1;
-  TimingStatistics timing_statistics = 2;
-  FifoStatistics fifo_statistics = 3;
-  Error error = 4;
-  MonitorDoubles monitor_doubles = 5;
-  MonitorU64 monitor_u64s = 6;
-  MonitorI64 monitor_i64s = 7;
-}
-
-message Error {
-  bool status = 1;
-  int32 code = 2;
 }
 
 message TimingOverrides {

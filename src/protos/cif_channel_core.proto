@@ -1,65 +1,39 @@
 syntax = "proto3";
 
 import "cif_common.proto";
+import "cif_management_common.proto";
 
 package cif.channelcore;
 
 service ChannelCore {
-  rpc GetChannels (cif.common.Empty) returns (Channels) {}
-  rpc SetConnection (ConnectSubscriber) returns (cif.common.Status) {}
-  rpc SetForce (ForceChannel) returns (cif.common.Status) {} //This is only supported on tags.
-  rpc CreateFIFOInstance (FIFOInstance) returns (FIFOReference) {}  //This is needed when the publisher needs to provide information
-    // to support a subscriber.  For instance if a new publisher needs to be created for a 1-1 FIFO or if backpressure is used and the publisher needs
-    // to provide the handels.
-  rpc DestroyFIFOInstance (FIFOInstanceName) returns (cif.common.Status) {} //This is used to destroy or disconnect a subscriber after the CreateFIFOInstance was used.  
+  rpc GetChannels (GetChannelsRequest) returns (GetChannelsResponse) {}
+  rpc SetConnection (SetConnectionRequest) returns (SetConnectionResponse) {}
+  //This is only supported on tags.
+  rpc SetForce (SetForceRequest) returns (SetForceResponse) {}
+  //This is needed when the publisher needs to provide information to support a subscriber.  For instance if a new publisher needs to be
+  // created for a 1-1 FIFO or if backpressure is used and the publisher needs to provide the handles.
+  rpc CreateFIFOInstance (CreateFIFOInstanceRequest) returns (CreateFIFOInstanceResponse) {}  
+  //This is used to destroy or disconnect a subscriber after the CreateFIFOInstance was used.  
+  rpc DestroyFIFOInstance (DestroyFIFOInstanceRequest) returns (DestroyFIFOInstanceResponse) {} 
 }
 
-enum ChannelDirection {
-  CHANNELDIRECTION_UNKNOWN = 0;
-  CHANNELDIRECTION_PUBLISHER = 1;
-  CHANNELDIRECTION_SUBSCRIBER = 2;
+message GetChannelsRequest {}
+
+message GetChannelsResponse {
+  cif.management_common.Channels channels = 1;
 }
 
-message Channel {
-  string name = 1;
-  ChannelDirection direction = 2;  
-  string type = 3;  //This field describes the channel type.  From LabVIEW it is typically the name of the channel class.
-  bytes custom_config = 4;  //This field allows passing free form custom data needed to describe the channel and to support operations such as creating connections.  It's implementation will be type specific. 
-  bool connected = 5;
-  string connected_name = 6;  //This is only valid for subscribers.  Publishers typically have no knowledge of connections.  
-  bool forced = 7; //Indicates if the value is being "forced" to always return a specific override value.  This only applies to tags
-  ChannelPattern channel_pattern = 8; //Indicates the pattern of the channel and is used for channel management and linking.
-}
-
-//All filter settings are AND so channel must pass all to return.
-message ChannelFilter {
-  string name_regex = 1;  //Regular expression to filter the name
-  ChannelDirection direction = 2; //Filter for direction
-  bool direction_filter = 3; //Sets if the direction filter is active
-  string type_regex = 4;  //Regular expression to filter the type
-  bool forced = 5; //Filter for forced
-  bool forced_filter = 6; //Sets if the force filter is active
-}
-
-enum ChannelPattern {
-  CHANNELPATTERN_UNKNOWN = 0;
-  CHANNELPATTERN_TAG = 1;
-  CHANNELPATTERN_FIFO = 2;
-  CHANNELPATTERN_MULTIFIFO = 3;
-  CHANNELPATTERN_BACKPRESSUREFIFO = 4;
-}
-
-message Channels {
-  repeated Channel channels = 1;
-}
-
-message ConnectSubscriber {
+message SetConnectionRequest {
   string subscriber_name = 1;
   string publisher_name = 2;
   bytes custom_connect = 3;  //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific.  
 }
 
-message FIFOInstance {
+message SetConnectionResponse {
+  cif.common.Status status = 1;
+}
+
+message CreateFIFOInstanceRequest {
   string publisher_name = 1; //The name of the existing FIFO to create a new instance for the subscriber
   bool retry_on_timeout = 2; //Is the subscriber applying backpressure to control the rate of the publisher.  On FIFO full (timeout) the publisher will retry until space is available.
   //This is normally only used for file read publishers.  This value is applied as an AND with the publisher configuration (will only apply backpressure if publisher is configured for backpressure support).
@@ -68,18 +42,30 @@ message FIFOInstance {
   bytes custom_data = 5;  //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific. 
 }
 
+message CreateFIFOInstanceResponse {
+  FIFOReference fifo_reference = 1;
+  cif.common.Status status =2;
+}
+
 message FIFOReference {
   string publisher_instance_name = 1; //Unique instance name of the multi-writer FIFO publisher.
   bytes custom_connect = 2; //This field allows passing free form custom data needed to perform specific connection operations.  It's implementation will be type specific. 
-  cif.common.Status status =3;
 }
 
-message FIFOInstanceName {
+message DestroyFIFOInstanceRequest {
   string publisher_instance_name = 1; //Unique instance name of the multi-writer FIFO publisher.
 }
 
-message ForceChannel {
+message DestroyFIFOInstanceResponse {
+  cif.common.Status status = 1;
+}
+
+message SetForceRequest {
   string channel_name = 1;
   bool force = 2;
   bytes force_data = 3;  //Flattened data for the forced value.  Values are big endian.  
+}
+
+message SetForceResponse {
+  cif.common.Status status = 1;
 }
