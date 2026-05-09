@@ -419,7 +419,6 @@
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Search Unsorted 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Search Unsorted 1D Array Core.vim"/>
 				<Item Name="Search Unsorted 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Search Unsorted 1D Array.vim"/>
-				<Item Name="Service Template.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/gRPC Server and Client Template [2]/Server Template/Service Template.lvlib"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Set VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Set VI Library File Info.vi"/>
@@ -595,6 +594,7 @@
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{08DB118E-2FBE-47C8-8129-D14B794340D6}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">This is deprecated and not used on Windows</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">CIF_LV_Plugin_Loader</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -603,7 +603,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Loader Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{16D67462-E816-4BAB-9225-A2FCC63D201F}</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">11</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CIF_LV_Plugin_Loader.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/Win/CIF_LV_Plugin_Loader.exe</Property>
@@ -614,7 +614,7 @@
 				<Property Name="Destination[1].path" Type="Path">/D/dev/builds/PluginManager/Win/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F3DC81C4-A117-41EE-A76A-A88309BA1B1B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0B0F227B-1832-4E69-915F-B7B87BDA839F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIF Engine Launch.lvlib/Plugin Loader Launcher.vi</Property>
@@ -637,15 +637,16 @@
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{E6A80A7A-9B88-4BC7-B535-B84BD9146FC6}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">This creates an executable to launch the plugin manager on Windows by calling the lvlibp.</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">CIF_StartupWindows</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/D/dev/builds/PluginManager/Win</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Manager Executable Post-Build Action.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Manager Executable Single Instance Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8C29E038-40B0-4DC3-8615-A2CAEB935C3C}</Property>
-				<Property Name="Bld_version.build" Type="Int">17</Property>
+				<Property Name="Bld_version.build" Type="Int">20</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">cif_startup_win.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/Win/cif_startup_win.exe</Property>
@@ -657,7 +658,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/test_icon.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E2CE448C-DD14-4ADC-8F9C-878194358EE9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0B0F227B-1832-4E69-915F-B7B87BDA839F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIF Engine Launch.lvlib/Manager Launcher.vi</Property>
@@ -680,6 +681,7 @@
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{E7F16BAB-17F9-4A8B-901D-B82D89857743}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">This creates a dll for the Plugin Loader.  This allows the CIF Manager to dynamically spawn new loader processes.</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">LV_PluginLoader DLL</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -688,7 +690,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Loader Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C323A0B9-AA47-4C36-9375-10B7289FFC34}</Property>
-				<Property Name="Bld_version.build" Type="Int">7</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LV_PluginLoader.dll</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/win/pluginloader/LV_PluginLoader DLL.dll</Property>
@@ -704,15 +706,13 @@
 				<Property Name="Dll_headerGUID" Type="Str">{AB579910-0FD0-43E7-AF89-B7813312BB0D}</Property>
 				<Property Name="Dll_libGUID" Type="Str">{1E8F0130-470A-43EE-B3E8-C33DE4325002}</Property>
 				<Property Name="Dll_privateExecSys" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F3DC81C4-A117-41EE-A76A-A88309BA1B1B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0B0F227B-1832-4E69-915F-B7B87BDA839F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PluginLoader.lvlib/Loader.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">LV_PluginLoader DLL</Property>
 				<Property Name="TgtF_internalName" Type="Str">LV_PluginLoader DLL</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 </Property>
@@ -724,7 +724,7 @@
 			<Item Name="PluginLoaderWindows" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{6B6832B7-1659-432B-9597-620B577580C6}</Property>
-				<Property Name="Bld_buildSpecDescription" Type="Str">Plugin Loader for Windows</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">This is deprecated and not used on Windows</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">PluginLoaderWindows</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -733,7 +733,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Loader Post-Build Action.vi</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Plugin Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{421F1E03-7CAF-486C-98DD-883E19D3D037}</Property>
-				<Property Name="Bld_version.build" Type="Int">28</Property>
+				<Property Name="Bld_version.build" Type="Int">33</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PluginLoader.1.0.0.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/D/dev/builds/PluginManager/win/PluginLoader.1.0.0.lvlibp</Property>
@@ -745,7 +745,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F3DC81C4-A117-41EE-A76A-A88309BA1B1B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0B0F227B-1832-4E69-915F-B7B87BDA839F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PluginManager.lvlib</Property>
@@ -771,7 +771,7 @@
 			<Item Name="PluginManagerWindows" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{0D910973-16DE-4780-B240-48C7DB3A8DD5}</Property>
-				<Property Name="Bld_buildSpecDescription" Type="Str">Plugin Manager for Windows</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Plugin Manager for Windows.  This lvlibp is dynaically called by the CIF_StartupWindows to launch the manager.  </Property>
 				<Property Name="Bld_buildSpecName" Type="Str">PluginManagerWindows</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -780,7 +780,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Manager Post-Build Action.vi</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Plugin Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{81DA2108-F8D8-4AD3-AA96-42235B4762B8}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">47</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">4</Property>
 				<Property Name="Bld_version.patch" Type="Int">7</Property>
@@ -794,7 +794,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{009C6988-DCF6-4838-B216-A68FB4B55605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0B0F227B-1832-4E69-915F-B7B87BDA839F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PluginManager.lvlib</Property>

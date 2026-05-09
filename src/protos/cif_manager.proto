@@ -65,7 +65,7 @@ message PluginConfig {
   string plugin_type = 1; //Name of the plugin type
   string plugin_name = 2; //Assigned name for the plugin instance.  Must be unique in the system.  
   string version = 3; //Optional string for version.  Format should be x.x.x (major, minor, fix).  Any missing entries will default to latest available on target.  For example 1.2 would default to the latest fix on the target of major 1, minor 2.
-  string launcher_process = 4; //Options string to specify what process to use to load the plugin, supported by some launchers.
+  string loader_process = 4; //Options string to specify what process to use to load the plugin, supported by some loaders.
 }
 
 message	RegisterData {

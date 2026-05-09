@@ -19,8 +19,11 @@
 		<Item Name="Manager Executable Post-Build Action.vi" Type="VI" URL="../Core/Manager Executable Post-Build Action.vi"/>
 		<Item Name="Manager RT Executable Post-Build Action.vi" Type="VI" URL="../Core/Manager RT Executable Post-Build Action.vi"/>
 		<Item Name="Loader Post-Build Action.vi" Type="VI" URL="../Core/Loader Post-Build Action.vi"/>
+		<Item Name="Loader RT Post-Build Action.vi" Type="VI" URL="../Core/Loader RT Post-Build Action.vi"/>
+		<Item Name="Loader RT Executable Post-Build Action.vi" Type="VI" URL="../Core/Loader RT Executable Post-Build Action.vi"/>
 		<Item Name="Versioned Host Post-Build Action.vi" Type="VI" URL="../Core/Versioned Host Post-Build Action.vi"/>
 		<Item Name="Versioned RT Post-Build Action.vi" Type="VI" URL="../Core/Versioned RT Post-Build Action.vi"/>
+		<Item Name="Manager Executable Single Instance Post-Build Action.vi" Type="VI" URL="../Core/Manager Executable Single Instance Post-Build Action.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Update Version.vi" Type="VI" URL="../SubVIs/Update Version.vi"/>

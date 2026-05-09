@@ -669,6 +669,10 @@ AddOutputFilter chunkFilter
 				<Item Name="Get Command Line Arguments.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/Get Command Line Arguments.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
+				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
+				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
+				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 			</Item>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_server.lvlib" Type="Library" URL="../../CIFPluginManager/gRPC/CIF_Manager_server/CIF_Manager_server.lvlib"/>
@@ -693,8 +697,6 @@ AddOutputFilter chunkFilter
 			<Item Name="CIF Engine Launch.lvlib" Type="Library" URL="../../Engine Launch/CIF Engine Launch.lvlib"/>
 			<Item Name="CIFPluginLoader.lvclass" Type="LVClass" URL="../../CIFPluginLoader/CIFPluginLoader.lvclass"/>
 			<Item Name="CIF_PluginLoader_server.lvlib" Type="Library" URL="../../CIFPluginLoader/gRPC/CIF_PluginLoader_server/CIF_PluginLoader_server.lvlib"/>
-			<Item Name="trash_Discovered Plugin.ctl" Type="VI" URL="../../CIFPluginLoader/typedef/trash_Discovered Plugin.ctl"/>
-			<Item Name="trash_Plugin Metadata.ctl" Type="VI" URL="../../CIFPluginLoader/typedef/trash_Plugin Metadata.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="PluginManagerPluginRT" Type="Packed Library">

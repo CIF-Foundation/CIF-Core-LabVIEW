@@ -563,22 +563,24 @@
 		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
 		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
 		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
-		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/cif_startup.rtexe</Property>
+		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.access" Type="Str">+*</Property>
-		<Property Name="target.server.tcp.enabled" Type="Bool">false</Property>
+		<Property Name="target.server.tcp.enabled" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.paranoid" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.port" Type="Int">3363</Property>
-		<Property Name="target.server.tcp.serviceName" Type="Str">Main Application Instance/VI Server</Property>
+		<Property Name="target.server.tcp.serviceName" Type="Str"></Property>
 		<Property Name="target.server.tcp.serviceName.default" Type="Str">Main Application Instance/VI Server</Property>
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
+		<Property Name="target.server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
 
 NI.ServerName default
@@ -618,7 +620,62 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="PluginManager.lvlib" Type="Library" URL="../../Callable Library/PluginManager.lvlib"/>
-		<Item Name="CIF Engine Launch.lvlib" Type="Library" URL="../CIF Engine Launch.lvlib"/>
+		<Item Name="CIF Engine Launch.lvlib" Type="Library" URL="../../Engine Launch/CIF Engine Launch.lvlib"/>
+		<Item Name="PluginLoader.lvlib" Type="Library" URL="../../Callable Library/PluginLoader.lvlib"/>
+		<Item Name="PluginManager.1.4.7.lvlibp" Type="LVLibp" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp">
+			<Item Name="Core" Type="Folder">
+				<Item Name="Manager.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/Callable Library/Manager Core/Manager.vi"/>
+			</Item>
+			<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/AdvancedString/1D String Array to Delimited String.vi"/>
+			<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+			<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+			<Item Name="Check Special Tags.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
+			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
+			<Item Name="CIF Engine Launch.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/Engine Launch/CIF Engine Launch.lvlib"/>
+			<Item Name="CIF_Manager_client.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_client/CIF_Manager_client.lvlib"/>
+			<Item Name="CIF_Manager_server.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_server/CIF_Manager_server.lvlib"/>
+			<Item Name="CIF_PluginLoader_client.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginLoader/gRPC/CIF_PluginLoader_client/CIF_PluginLoader_client.lvlib"/>
+			<Item Name="CIFCoreChannel_client.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFCore/Grpc/CIFCoreChannel_client/CIFCoreChannel_client.lvlib"/>
+			<Item Name="CIFCoreCommon.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFCore/Common/CIFCoreCommon.lvlib"/>
+			<Item Name="CIFCorePlugin_client.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFCore/Grpc/CIFCorePlugin_client/CIFCorePlugin_client.lvlib"/>
+			<Item Name="CIFCoreWrapper.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFCore/Grpc/CIFCoreWrapper/CIFCoreWrapper.lvlib"/>
+			<Item Name="CIFLogs.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFUtilities/CIFLogs/CIFLogs.lvlib"/>
+			<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
+			<Item Name="CIFPluginLoaderClientWrapper.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginLoader/gRPC/CIF_Plugin_Loader_Client_Wrapper/CIFPluginLoaderClientWrapper.lvlib"/>
+			<Item Name="CIFPluginManager.lvclass" Type="LVClass" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/CIFPluginManager.lvclass"/>
+			<Item Name="Clear Errors.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+			<Item Name="Create Error Message.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/gRPC/SubVIs/Create Error Message.vi"/>
+			<Item Name="Create NI GUID.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/string/Create NI GUID.vi"/>
+			<Item Name="DataTypes_CIF_U.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/CIF Foundation/CIF Utilities/DataTypes/DataTypes_CIF_U.lvlib"/>
+			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+			<Item Name="Error Code Database.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
+			<Item Name="Errors_CIF_U.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/CIF Foundation/CIF Utilities/Errors/Errors_CIF_U.lvlib"/>
+			<Item Name="Filter Plugin by Version.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/gRPC/SubVIs/Filter Plugin by Version.vi"/>
+			<Item Name="Get Command Line Arguments.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/Get Command Line Arguments.vi"/>
+			<Item Name="Get LV Class Name.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Name.vi"/>
+			<Item Name="grpc-lvsupport-release.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/gRPC/LabVIEW gRPC Library/grpc-lvsupport-release.lvlib"/>
+			<Item Name="gRPC-servicer-release.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/gRPC/LabVIEW gRPC Servicer/gRPC-servicer-release.lvlib"/>
+			<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
+			<Item Name="Less Functor.lvclass" Type="LVClass" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Comparison/Less/Less Functor/Less Functor.lvclass"/>
+			<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
+			<Item Name="Networking_CIF_U.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/CIF Foundation/CIF Utilities/Networking/Networking_CIF_U.lvlib"/>
+			<Item Name="NI_AALBase.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Analysis/NI_AALBase.lvlib"/>
+			<Item Name="NI_AALPro.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Analysis/NI_AALPro.lvlib"/>
+			<Item Name="NI_FileType.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/NI_FileType.lvlib"/>
+			<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/config.llb/NI_LVConfig.lvlib"/>
+			<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+			<Item Name="Normalize End Of Line.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/AdvancedString/Normalize End Of Line.vi"/>
+			<Item Name="Parse Version String.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/gRPC/SubVIs/Parse Version String.vi"/>
+			<Item Name="Python Orchestration.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFUtilities/Scripting/Orchestration/Python/Python Orchestration.lvlib"/>
+			<Item Name="Select Plugin.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/CIFPluginManager/CIFPluginManager/gRPC/SubVIs/Select Plugin.vi"/>
+			<Item Name="Space Constant.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/Space Constant.vi"/>
+			<Item Name="System Exec.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Platform/system.llb/System Exec.vi"/>
+			<Item Name="TagReturnType.ctl" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
+			<Item Name="Time_CIF_U.lvlib" Type="Library" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/CIF Foundation/CIF Utilities/Time/Time_CIF_U.lvlib"/>
+			<Item Name="Trim Whitespace.vi" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+			<Item Name="usereventprio.ctl" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/event_ctls.llb/usereventprio.ctl"/>
+			<Item Name="whitespace.ctl" Type="VI" URL="/C/Users/Public/Documents/CIF/manager/rt/PluginManager.1.4.7.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
@@ -669,6 +726,10 @@ AddOutputFilter chunkFilter
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Get Command Line Arguments.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/Get Command Line Arguments.vi"/>
+				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
+				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
+				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
+				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 			</Item>
 			<Item Name="CIF Configuration File.lvlib" Type="Library" URL="../../../CIFUtilities/CIFConfigurationFile/CIF Configuration File.lvlib"/>
 			<Item Name="CIF_Manager_server.lvlib" Type="Library" URL="../../CIFPluginManager/gRPC/CIF_Manager_server/CIF_Manager_server.lvlib"/>
@@ -690,11 +751,8 @@ AddOutputFilter chunkFilter
 			<Item Name="CIFManagerClientWrapper.lvlib" Type="Library" URL="../../CIFPluginManager/gRPC/CIF_Manager_Client_Wrapper/CIFManagerClientWrapper.lvlib"/>
 			<Item Name="CIF_UI.lvclass" Type="LVClass" URL="../../../CIFUI/CIF_UI.lvclass"/>
 			<Item Name="CIF_InstrumentStudio Plugin SDK.lvlib" Type="Library" URL="../../../Instrument Studio/PluginSDK/CIF_InstrumentStudio Plugin SDK.lvlib"/>
-			<Item Name="CIF Engine Launch.lvlib" Type="Library" URL="../../Engine Launch/CIF Engine Launch.lvlib"/>
-			<Item Name="CIFPluginLoader.lvclass" Type="LVClass" URL="../../CIFPluginLoader/CIFPluginLoader.lvclass"/>
 			<Item Name="CIF_PluginLoader_server.lvlib" Type="Library" URL="../../CIFPluginLoader/gRPC/CIF_PluginLoader_server/CIF_PluginLoader_server.lvlib"/>
-			<Item Name="trash_Discovered Plugin.ctl" Type="VI" URL="../../CIFPluginLoader/typedef/trash_Discovered Plugin.ctl"/>
-			<Item Name="trash_Plugin Metadata.ctl" Type="VI" URL="../../CIFPluginLoader/typedef/trash_Plugin Metadata.ctl"/>
+			<Item Name="CIFPluginLoader.lvclass" Type="LVClass" URL="../../CIFPluginLoader/CIFPluginLoader.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="PluginManagerRT" Type="Packed Library">
@@ -710,7 +768,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Plugin Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E1B1FFA6-FD1A-43A9-B4CA-878D53F65E7D}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/rt</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">4</Property>
 				<Property Name="Bld_version.patch" Type="Int">7</Property>
@@ -723,7 +781,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/rt</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B1AA5712-ECEC-4701-8890-C0B3EB21880D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B2C4B8D4-C870-4801-A33E-D32D332DCD48}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/PluginManager.lvlib</Property>
@@ -734,6 +792,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">PluginManagerRT</Property>
 				<Property Name="TgtF_internalName" Type="Str">PluginManagerRT</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 </Property>
@@ -742,7 +801,7 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_targetfileName" Type="Str">PluginManager.1.4.7.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="CIF_Startup" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
+			<Item Name="CIF_Manager_Startup" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{0A8F2FA1-F929-43BB-8C6E-52DFB13E29FE}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{7208DD4F-C8EB-4F67-98AC-4DF4D8B7C122}</Property>
@@ -750,7 +809,7 @@ AddOutputFilter chunkFilter
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{29E54570-C47E-4A6D-8A99-73505BB48870}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">CIF_Startup</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">CIF_Manager_Startup</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -759,10 +818,10 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Manager RT Executable Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B5AB07FE-BEE3-43F0-9648-AC06E09A2B33}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/rt</Property>
-				<Property Name="Bld_version.build" Type="Int">13</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">cif_startup.rtexe</Property>
-				<Property Name="Destination[0].path" Type="Path">/rt/cif_startup.rtexe</Property>
+				<Property Name="Destination[0].destName" Type="Str">cif_manager_startup.rtexe</Property>
+				<Property Name="Destination[0].path" Type="Path">/rt/cif_manager_startup.rtexe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -770,19 +829,112 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/rt/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{26F93964-7F6A-494E-8F54-E823332580E0}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B2C4B8D4-C870-4801-A33E-D32D332DCD48}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/CIF Engine Launch.lvlib/Launcher.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/CIF Engine Launch.lvlib/Manager Launcher.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">CIF_Manager_Startup</Property>
+				<Property Name="TgtF_internalName" Type="Str">CIF_Manager_Startup</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 </Property>
+				<Property Name="TgtF_productName" Type="Str">CIF_Manager_Startup</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{D69A3657-6596-44EB-9E81-7FE4596BE6CB}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">cif_manager_startup.rtexe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="PluginLoaderRT" Type="Packed Library">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{2239B9B4-F6E1-440A-9695-D612823D72C2}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Plugin Loader for RT</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">PluginLoaderRT</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/dev/builds/PluginManager</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Loader RT Post-Build Action.vi</Property>
+				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Plugin Pre-Build Action.vi</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{BB0828DB-FA0E-483A-ACE5-4D6157746A9D}</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/rt</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">PluginLoader.1.0.0.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/rt/PluginLoader.1.0.0.lvlibp</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/rt</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B2C4B8D4-C870-4801-A33E-D32D332DCD48}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/PluginManager.lvlib</Property>
+				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT PXI Target/PluginLoader.lvlib</Property>
+				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[2].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[2].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[2].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">PluginManagerRT</Property>
+				<Property Name="TgtF_internalName" Type="Str">PluginManagerRT</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 </Property>
+				<Property Name="TgtF_productName" Type="Str">PluginManagerRT</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{D65F8411-0062-46D9-A966-1EC8239721E0}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">PluginLoader.1.0.0.lvlibp</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="CIF_Plugin_Loader_Startup" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{79704B4A-E05F-46A1-8D74-70CB7650847E}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{F6CAD1C2-7335-4BD1-A123-D454D6627038}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{1C9D44DE-95E0-46FB-93DE-D11A6E04FA5E}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">CIF_Plugin_Loader_Startup</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/D/dev/builds/PluginManager</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CIF Build Actions.lvlib/Core/Loader RT Executable Post-Build Action.vi</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{6289FBC8-21F8-4CBA-A070-FB5256BAC1C3}</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/rt</Property>
+				<Property Name="Bld_version.build" Type="Int">23</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">cif_plugin_loader_startup.rtexe</Property>
+				<Property Name="Destination[0].path" Type="Path">/rt/CIF_Plugin_Loader_Startup.rtexe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/rt/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B2C4B8D4-C870-4801-A33E-D32D332DCD48}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/CIF Engine Launch.lvlib/Manager Launcher.vi</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT PXI Target/CIF Engine Launch.lvlib/Plugin Loader Launcher.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">CIF_Startup</Property>
 				<Property Name="TgtF_internalName" Type="Str">CIF_Startup</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 </Property>
 				<Property Name="TgtF_productName" Type="Str">CIF_Startup</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{D69A3657-6596-44EB-9E81-7FE4596BE6CB}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">cif_startup.rtexe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">cif_plugin_loader_startup.rtexe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
