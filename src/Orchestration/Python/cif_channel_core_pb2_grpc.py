@@ -4,9 +4,8 @@ import grpc
 import warnings
 
 import cif_channel_core_pb2 as cif__channel__core__pb2
-import cif_common_pb2 as cif__common__pb2
 
-GRPC_GENERATED_VERSION = '1.67.0'
+GRPC_GENERATED_VERSION = '1.78.1'
 GRPC_VERSION = grpc.__version__
 _version_not_supported = False
 
@@ -19,7 +18,7 @@ except ImportError:
 if _version_not_supported:
     raise RuntimeError(
         f'The grpc package installed is at version {GRPC_VERSION},'
-        + f' but the generated code in cif_channel_core_pb2_grpc.py depends on'
+        + ' but the generated code in cif_channel_core_pb2_grpc.py depends on'
         + f' grpcio>={GRPC_GENERATED_VERSION}.'
         + f' Please upgrade your grpc module to grpcio>={GRPC_GENERATED_VERSION}'
         + f' or downgrade your generated code using grpcio-tools<={GRPC_VERSION}.'
@@ -37,28 +36,28 @@ class ChannelCoreStub(object):
         """
         self.GetChannels = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/GetChannels',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__channel__core__pb2.Channels.FromString,
+                request_serializer=cif__channel__core__pb2.GetChannelsRequest.SerializeToString,
+                response_deserializer=cif__channel__core__pb2.GetChannelsResponse.FromString,
                 _registered_method=True)
         self.SetConnection = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/SetConnection',
-                request_serializer=cif__channel__core__pb2.ConnectSubscriber.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__channel__core__pb2.SetConnectionRequest.SerializeToString,
+                response_deserializer=cif__channel__core__pb2.SetConnectionResponse.FromString,
                 _registered_method=True)
         self.SetForce = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/SetForce',
-                request_serializer=cif__channel__core__pb2.ForceChannel.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__channel__core__pb2.SetForceRequest.SerializeToString,
+                response_deserializer=cif__channel__core__pb2.SetForceResponse.FromString,
                 _registered_method=True)
         self.CreateFIFOInstance = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/CreateFIFOInstance',
-                request_serializer=cif__channel__core__pb2.FIFOInstance.SerializeToString,
-                response_deserializer=cif__channel__core__pb2.FIFOReference.FromString,
+                request_serializer=cif__channel__core__pb2.CreateFIFOInstanceRequest.SerializeToString,
+                response_deserializer=cif__channel__core__pb2.CreateFIFOInstanceResponse.FromString,
                 _registered_method=True)
         self.DestroyFIFOInstance = channel.unary_unary(
                 '/cif.channelcore.ChannelCore/DestroyFIFOInstance',
-                request_serializer=cif__channel__core__pb2.FIFOInstanceName.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__channel__core__pb2.DestroyFIFOInstanceRequest.SerializeToString,
+                response_deserializer=cif__channel__core__pb2.DestroyFIFOInstanceResponse.FromString,
                 _registered_method=True)
 
 
@@ -78,20 +77,22 @@ class ChannelCoreServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def SetForce(self, request, context):
-        """Missing associated documentation comment in .proto file."""
+        """This is only supported on tags.
+        """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
     def CreateFIFOInstance(self, request, context):
-        """Missing associated documentation comment in .proto file."""
+        """This is needed when the publisher needs to provide information to support a subscriber.  For instance if a new publisher needs to be
+        created for a 1-1 FIFO or if backpressure is used and the publisher needs to provide the handles.
+        """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
     def DestroyFIFOInstance(self, request, context):
-        """to support a subscriber.  For instance if a new publisher needs to be created for a 1-1 FIFO or if backpressure is used and the publisher needs
-        to provide the handels.
+        """This is used to destroy or disconnect a subscriber after the CreateFIFOInstance was used.  
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -102,28 +103,28 @@ def add_ChannelCoreServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GetChannels': grpc.unary_unary_rpc_method_handler(
                     servicer.GetChannels,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__channel__core__pb2.Channels.SerializeToString,
+                    request_deserializer=cif__channel__core__pb2.GetChannelsRequest.FromString,
+                    response_serializer=cif__channel__core__pb2.GetChannelsResponse.SerializeToString,
             ),
             'SetConnection': grpc.unary_unary_rpc_method_handler(
                     servicer.SetConnection,
-                    request_deserializer=cif__channel__core__pb2.ConnectSubscriber.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__channel__core__pb2.SetConnectionRequest.FromString,
+                    response_serializer=cif__channel__core__pb2.SetConnectionResponse.SerializeToString,
             ),
             'SetForce': grpc.unary_unary_rpc_method_handler(
                     servicer.SetForce,
-                    request_deserializer=cif__channel__core__pb2.ForceChannel.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__channel__core__pb2.SetForceRequest.FromString,
+                    response_serializer=cif__channel__core__pb2.SetForceResponse.SerializeToString,
             ),
             'CreateFIFOInstance': grpc.unary_unary_rpc_method_handler(
                     servicer.CreateFIFOInstance,
-                    request_deserializer=cif__channel__core__pb2.FIFOInstance.FromString,
-                    response_serializer=cif__channel__core__pb2.FIFOReference.SerializeToString,
+                    request_deserializer=cif__channel__core__pb2.CreateFIFOInstanceRequest.FromString,
+                    response_serializer=cif__channel__core__pb2.CreateFIFOInstanceResponse.SerializeToString,
             ),
             'DestroyFIFOInstance': grpc.unary_unary_rpc_method_handler(
                     servicer.DestroyFIFOInstance,
-                    request_deserializer=cif__channel__core__pb2.FIFOInstanceName.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__channel__core__pb2.DestroyFIFOInstanceRequest.FromString,
+                    response_serializer=cif__channel__core__pb2.DestroyFIFOInstanceResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -151,8 +152,8 @@ class ChannelCore(object):
             request,
             target,
             '/cif.channelcore.ChannelCore/GetChannels',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__channel__core__pb2.Channels.FromString,
+            cif__channel__core__pb2.GetChannelsRequest.SerializeToString,
+            cif__channel__core__pb2.GetChannelsResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -178,8 +179,8 @@ class ChannelCore(object):
             request,
             target,
             '/cif.channelcore.ChannelCore/SetConnection',
-            cif__channel__core__pb2.ConnectSubscriber.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__channel__core__pb2.SetConnectionRequest.SerializeToString,
+            cif__channel__core__pb2.SetConnectionResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -205,8 +206,8 @@ class ChannelCore(object):
             request,
             target,
             '/cif.channelcore.ChannelCore/SetForce',
-            cif__channel__core__pb2.ForceChannel.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__channel__core__pb2.SetForceRequest.SerializeToString,
+            cif__channel__core__pb2.SetForceResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -232,8 +233,8 @@ class ChannelCore(object):
             request,
             target,
             '/cif.channelcore.ChannelCore/CreateFIFOInstance',
-            cif__channel__core__pb2.FIFOInstance.SerializeToString,
-            cif__channel__core__pb2.FIFOReference.FromString,
+            cif__channel__core__pb2.CreateFIFOInstanceRequest.SerializeToString,
+            cif__channel__core__pb2.CreateFIFOInstanceResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -259,8 +260,8 @@ class ChannelCore(object):
             request,
             target,
             '/cif.channelcore.ChannelCore/DestroyFIFOInstance',
-            cif__channel__core__pb2.FIFOInstanceName.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__channel__core__pb2.DestroyFIFOInstanceRequest.SerializeToString,
+            cif__channel__core__pb2.DestroyFIFOInstanceResponse.FromString,
             options,
             channel_credentials,
             insecure,

@@ -8,9 +8,9 @@ server_ip = "192.168.1.160"
 manager_port = "15882"
 
 #Configuration for plugins including channel links  
-tagmon = cif_orchestration_base.plugin("tagmon", "Tag_Monitor_Plugin", "")
-tagrw = cif_orchestration_base.plugin("tagrw", "TagRW_Example_Plugin", "")
-tagrw2 = cif_orchestration_base.plugin("tagrw2", "TagRW_Example_Plugin", "")
+tagmon = cif_orchestration_base.plugin("tagmon", "Tag_Monitor_Plugin", "", "")
+tagrw = cif_orchestration_base.plugin("tagrw", "TagRW_Example_Plugin", "", "")
+tagrw2 = cif_orchestration_base.plugin("tagrw2", "TagRW_Example_Plugin", "", "")
 fifo1 = cif_orchestration_base.fifo_instance("add", "tagrw2.u8array_out", "0", "0", "0", "01234506")
 link1 = cif_orchestration_base.channel_link("tagrw2.u8array_out", "tagrw.u8array_in", "")
 tagrw_config1 = '{"Common":{"Period (s)":0.001,"Offset (us)":0,"ClockID":0,"Priority":100,"Processor":-2},"Step":100}'
