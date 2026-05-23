@@ -9,135 +9,633 @@
 
 </Property>
 	<Item Name="RPC Messages" Type="Folder">
-		<Item Name="cif_common_TimingStats" Type="Folder">
-			<Item Name="cif_common_TimingStats.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats.ctl"/>
-			<Item Name="FlatToRichcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_TimingStats.vi"/>
-			<Item Name="RichToFlatcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_TimingStats.vi"/>
+		<Item Name="cif_plugincore_StartRequest" Type="Folder">
+			<Item Name="cif_plugincore_StartRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StartRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_StartRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StartRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_StartRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StartRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_Version" Type="Folder">
-			<Item Name="cif_common_Version.ctl" Type="VI" URL="../RPC Messages/cif_common_Version.ctl"/>
-			<Item Name="FlatToRichcif_common_Version.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Version.vi"/>
-			<Item Name="RichToFlatcif_common_Version.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Version.vi"/>
+		<Item Name="cif_plugincore_StartResponse" Type="Folder">
+			<Item Name="cif_plugincore_StartResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StartResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_StartResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StartResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_StartResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StartResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_PluginNames" Type="Folder">
-			<Item Name="cif_common_PluginNames.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames.ctl"/>
-			<Item Name="FlatToRichcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_PluginNames.vi"/>
-			<Item Name="RichToFlatcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_PluginNames.vi"/>
+		<Item Name="cif_plugincore_PauseRequest" Type="Folder">
+			<Item Name="cif_plugincore_PauseRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PauseRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_PauseRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PauseRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_PauseRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PauseRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_Status" Type="Folder">
-			<Item Name="cif_common_Status.ctl" Type="VI" URL="../RPC Messages/cif_common_Status.ctl"/>
-			<Item Name="FlatToRichcif_common_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Status.vi"/>
-			<Item Name="RichToFlatcif_common_Status.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Status.vi"/>
+		<Item Name="cif_plugincore_PauseResponse" Type="Folder">
+			<Item Name="cif_plugincore_PauseResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PauseResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_PauseResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PauseResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_PauseResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PauseResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_Empty" Type="Folder">
-			<Item Name="cif_common_Empty.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty.ctl"/>
-			<Item Name="FlatToRichcif_common_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Empty.vi"/>
-			<Item Name="RichToFlatcif_common_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Empty.vi"/>
+		<Item Name="cif_plugincore_StopRequest" Type="Folder">
+			<Item Name="cif_plugincore_StopRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StopRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_StopRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StopRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_StopRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StopRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_StopResponse" Type="Folder">
+			<Item Name="cif_plugincore_StopResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StopResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_StopResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StopResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_StopResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StopResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_RefreshStatisticsRequest" Type="Folder">
+			<Item Name="cif_plugincore_RefreshStatisticsRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_RefreshStatisticsRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_RefreshStatisticsRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_RefreshStatisticsRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_RefreshStatisticsRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_RefreshStatisticsRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_RefreshStatisticsResponse" Type="Folder">
+			<Item Name="cif_plugincore_RefreshStatisticsResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_RefreshStatisticsResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_RefreshStatisticsResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_RefreshStatisticsResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_RefreshStatisticsResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_RefreshStatisticsResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetStatusDataRequest" Type="Folder">
+			<Item Name="cif_plugincore_GetStatusDataRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetStatusDataRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetStatusDataRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetStatusDataRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetStatusDataRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetStatusDataRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetStatusDataResponse" Type="Folder">
+			<Item Name="cif_plugincore_GetStatusDataResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetStatusDataResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetStatusDataResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetStatusDataResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetStatusDataResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetStatusDataResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_UpdateConfigRequest" Type="Folder">
+			<Item Name="cif_plugincore_UpdateConfigRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_UpdateConfigRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_UpdateConfigRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_UpdateConfigRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_UpdateConfigRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_UpdateConfigRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_UpdateConfigResponse" Type="Folder">
+			<Item Name="cif_plugincore_UpdateConfigResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_UpdateConfigResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_UpdateConfigResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_UpdateConfigResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_UpdateConfigResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_UpdateConfigResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetVersionRequest" Type="Folder">
+			<Item Name="cif_plugincore_GetVersionRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetVersionRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetVersionRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetVersionRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetVersionRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetVersionRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetVersionResponse" Type="Folder">
+			<Item Name="cif_plugincore_GetVersionResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetVersionResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetVersionResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetVersionResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetVersionResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetVersionResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetConfigRequest" Type="Folder">
+			<Item Name="cif_plugincore_GetConfigRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetConfigRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetConfigRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetConfigRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetConfigRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetConfigRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetConfigResponse" Type="Folder">
+			<Item Name="cif_plugincore_GetConfigResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetConfigResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetConfigResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetConfigResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetConfigResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetConfigResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetOverridesRequest" Type="Folder">
+			<Item Name="cif_plugincore_GetOverridesRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetOverridesRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetOverridesRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetOverridesRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetOverridesRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetOverridesRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetOverridesResponse" Type="Folder">
+			<Item Name="cif_plugincore_GetOverridesResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetOverridesResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetOverridesResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetOverridesResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetOverridesResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetOverridesResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetNamesRequest" Type="Folder">
+			<Item Name="cif_plugincore_GetNamesRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetNamesRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetNamesRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetNamesRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetNamesRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetNamesRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetNamesResponse" Type="Folder">
+			<Item Name="cif_plugincore_GetNamesResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetNamesResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_GetNamesResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_GetNamesResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_GetNamesResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_GetNamesResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="cif_plugincore_Configuration" Type="Folder">
 			<Item Name="cif_plugincore_Configuration.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Configuration.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Configuration.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingStatistics" Type="Folder">
-			<Item Name="cif_plugincore_TimingStatistics.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingStatistics.vi"/>
-			<Item Name="RichToFlatcif_plugincore_TimingStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingStatistics.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_FifoStatistics" Type="Folder">
-			<Item Name="cif_plugincore_FifoStatistics.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_FifoStatistics.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_FifoStatistics.vi"/>
-			<Item Name="RichToFlatcif_plugincore_FifoStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_FifoStatistics.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorDoubles" Type="Folder">
-			<Item Name="cif_plugincore_MonitorDoubles.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorDoubles.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorDoubles.vi"/>
-			<Item Name="RichToFlatcif_plugincore_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorDoubles.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorU64" Type="Folder">
-			<Item Name="cif_plugincore_MonitorU64.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorU64.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorU64.vi"/>
-			<Item Name="RichToFlatcif_plugincore_MonitorU64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorU64.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorI64" Type="Folder">
-			<Item Name="cif_plugincore_MonitorI64.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorI64.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_MonitorI64.vi"/>
-			<Item Name="RichToFlatcif_plugincore_MonitorI64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_MonitorI64.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_StatusData" Type="Folder">
-			<Item Name="cif_plugincore_StatusData.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_StatusData.vi"/>
-			<Item Name="RichToFlatcif_plugincore_StatusData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_StatusData.vi"/>
-		</Item>
-		<Item Name="cif_plugincore_Error" Type="Folder">
-			<Item Name="cif_plugincore_Error.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Error.vi"/>
-			<Item Name="RichToFlatcif_plugincore_Error.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Error.vi"/>
+			<Item Name="FlatToRichcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_Configuration.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_Configuration.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_Configuration.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="cif_plugincore_TimingOverrides" Type="Folder">
 			<Item Name="cif_plugincore_TimingOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingOverrides.vi"/>
-			<Item Name="RichToFlatcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingOverrides.vi"/>
+			<Item Name="FlatToRichcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_TimingOverrides.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_TimingOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_TimingOverrides.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="cif_plugincore_PluginOverrides" Type="Folder">
 			<Item Name="cif_plugincore_PluginOverrides.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides.ctl"/>
-			<Item Name="FlatToRichcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginOverrides.vi"/>
-			<Item Name="RichToFlatcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginOverrides.vi"/>
+			<Item Name="FlatToRichcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PluginOverrides.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_plugincore_PluginOverrides.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PluginOverrides.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_plugincore_StatusData_State" Type="Folder">
-			<Item Name="cif_plugincore_StatusData_State.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State.ctl"/>
-			<Item Name="Get Value for cif_plugincore_StatusData_State.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_State.vi"/>
-			<Item Name="Get cif_plugincore_StatusData_State for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_State for Value.vi"/>
+		<Item Name="cif_management_common_PluginMetadata" Type="Folder">
+			<Item Name="cif_management_common_PluginMetadata.ctl" Type="VI" URL="../RPC Messages/cif_management_common_PluginMetadata.ctl"/>
+			<Item Name="FlatToRichcif_management_common_PluginMetadata.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_PluginMetadata.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_PluginMetadata.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_PluginMetadata.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_TimingStats_Flat" Type="Folder">
-			<Item Name="cif_common_TimingStats_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats_Flat.ctl"/>
+		<Item Name="cif_management_common_Channels" Type="Folder">
+			<Item Name="cif_management_common_Channels.ctl" Type="VI" URL="../RPC Messages/cif_management_common_Channels.ctl"/>
+			<Item Name="FlatToRichcif_management_common_Channels.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_Channels.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_Channels.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_Channels.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_Version_Flat" Type="Folder">
-			<Item Name="cif_common_Version_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Version_Flat.ctl"/>
+		<Item Name="cif_management_common_Channel" Type="Folder">
+			<Item Name="cif_management_common_Channel.ctl" Type="VI" URL="../RPC Messages/cif_management_common_Channel.ctl"/>
+			<Item Name="FlatToRichcif_management_common_Channel.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_Channel.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_Channel.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_Channel.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_PluginNames_Flat" Type="Folder">
-			<Item Name="cif_common_PluginNames_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames_Flat.ctl"/>
+		<Item Name="cif_management_common_ChannelFilter" Type="Folder">
+			<Item Name="cif_management_common_ChannelFilter.ctl" Type="VI" URL="../RPC Messages/cif_management_common_ChannelFilter.ctl"/>
+			<Item Name="FlatToRichcif_management_common_ChannelFilter.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_ChannelFilter.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_ChannelFilter.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_ChannelFilter.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_Status_Flat" Type="Folder">
-			<Item Name="cif_common_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Status_Flat.ctl"/>
+		<Item Name="cif_management_common_PluginStatusData" Type="Folder">
+			<Item Name="cif_management_common_PluginStatusData.ctl" Type="VI" URL="../RPC Messages/cif_management_common_PluginStatusData.ctl"/>
+			<Item Name="FlatToRichcif_management_common_PluginStatusData.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_PluginStatusData.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_PluginStatusData.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_PluginStatusData.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_common_Empty_Flat" Type="Folder">
-			<Item Name="cif_common_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty_Flat.ctl"/>
+		<Item Name="cif_management_common_TimingStatistics" Type="Folder">
+			<Item Name="cif_management_common_TimingStatistics.ctl" Type="VI" URL="../RPC Messages/cif_management_common_TimingStatistics.ctl"/>
+			<Item Name="FlatToRichcif_management_common_TimingStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_TimingStatistics.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_TimingStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_TimingStatistics.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_FifoStatistics" Type="Folder">
+			<Item Name="cif_management_common_FifoStatistics.ctl" Type="VI" URL="../RPC Messages/cif_management_common_FifoStatistics.ctl"/>
+			<Item Name="FlatToRichcif_management_common_FifoStatistics.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_FifoStatistics.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_FifoStatistics.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_FifoStatistics.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_MonitorDoubles" Type="Folder">
+			<Item Name="cif_management_common_MonitorDoubles.ctl" Type="VI" URL="../RPC Messages/cif_management_common_MonitorDoubles.ctl"/>
+			<Item Name="FlatToRichcif_management_common_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_MonitorDoubles.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_MonitorDoubles.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_MonitorDoubles.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_MonitorU64" Type="Folder">
+			<Item Name="cif_management_common_MonitorU64.ctl" Type="VI" URL="../RPC Messages/cif_management_common_MonitorU64.ctl"/>
+			<Item Name="FlatToRichcif_management_common_MonitorU64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_MonitorU64.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_MonitorU64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_MonitorU64.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_MonitorI64" Type="Folder">
+			<Item Name="cif_management_common_MonitorI64.ctl" Type="VI" URL="../RPC Messages/cif_management_common_MonitorI64.ctl"/>
+			<Item Name="FlatToRichcif_management_common_MonitorI64.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_MonitorI64.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_MonitorI64.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_MonitorI64.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_Error" Type="Folder">
+			<Item Name="cif_management_common_Error.ctl" Type="VI" URL="../RPC Messages/cif_management_common_Error.ctl"/>
+			<Item Name="FlatToRichcif_management_common_Error.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_Error.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_Error.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_Error.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_LoaderInfo" Type="Folder">
+			<Item Name="cif_management_common_LoaderInfo.ctl" Type="VI" URL="../RPC Messages/cif_management_common_LoaderInfo.ctl"/>
+			<Item Name="FlatToRichcif_management_common_LoaderInfo.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_LoaderInfo.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_LoaderInfo.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_LoaderInfo.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_LoaderInfoFull" Type="Folder">
+			<Item Name="cif_management_common_LoaderInfoFull.ctl" Type="VI" URL="../RPC Messages/cif_management_common_LoaderInfoFull.ctl"/>
+			<Item Name="FlatToRichcif_management_common_LoaderInfoFull.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_management_common_LoaderInfoFull.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_management_common_LoaderInfoFull.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_management_common_LoaderInfoFull.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_TimingStats" Type="Folder">
+			<Item Name="cif_common_TimingStats.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats.ctl"/>
+			<Item Name="FlatToRichcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_TimingStats.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_common_TimingStats.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_TimingStats.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_Version" Type="Folder">
+			<Item Name="cif_common_Version.ctl" Type="VI" URL="../RPC Messages/cif_common_Version.ctl"/>
+			<Item Name="FlatToRichcif_common_Version.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Version.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_common_Version.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Version.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_ShortVersion" Type="Folder">
+			<Item Name="cif_common_ShortVersion.ctl" Type="VI" URL="../RPC Messages/cif_common_ShortVersion.ctl"/>
+			<Item Name="FlatToRichcif_common_ShortVersion.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_ShortVersion.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_common_ShortVersion.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_ShortVersion.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_PluginNames" Type="Folder">
+			<Item Name="cif_common_PluginNames.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames.ctl"/>
+			<Item Name="FlatToRichcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_PluginNames.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_common_PluginNames.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_PluginNames.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_Status" Type="Folder">
+			<Item Name="cif_common_Status.ctl" Type="VI" URL="../RPC Messages/cif_common_Status.ctl"/>
+			<Item Name="FlatToRichcif_common_Status.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Status.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_common_Status.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Status.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_Empty" Type="Folder">
+			<Item Name="cif_common_Empty.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty.ctl"/>
+			<Item Name="FlatToRichcif_common_Empty.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_common_Empty.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatcif_common_Empty.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_common_Empty.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_PluginStatusData_PluginState" Type="Folder">
+			<Item Name="cif_management_common_PluginStatusData_PluginState.ctl" Type="VI" URL="../RPC Messages/cif_management_common_PluginStatusData_PluginState.ctl"/>
+			<Item Name="Get Value for cif_management_common_PluginStatusData_PluginState.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_PluginStatusData_PluginState.vi"/>
+			<Item Name="Get cif_management_common_PluginStatusData_PluginState for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_PluginStatusData_PluginState for Value.vi"/>
+		</Item>
+		<Item Name="cif_management_common_ChannelDirection" Type="Folder">
+			<Item Name="cif_management_common_ChannelDirection.ctl" Type="VI" URL="../RPC Messages/cif_management_common_ChannelDirection.ctl"/>
+			<Item Name="Get Value for cif_management_common_ChannelDirection.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_ChannelDirection.vi"/>
+			<Item Name="Get cif_management_common_ChannelDirection for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_ChannelDirection for Value.vi"/>
+		</Item>
+		<Item Name="cif_management_common_ChannelPattern" Type="Folder">
+			<Item Name="cif_management_common_ChannelPattern.ctl" Type="VI" URL="../RPC Messages/cif_management_common_ChannelPattern.ctl"/>
+			<Item Name="Get Value for cif_management_common_ChannelPattern.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_ChannelPattern.vi"/>
+			<Item Name="Get cif_management_common_ChannelPattern for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_ChannelPattern for Value.vi"/>
+		</Item>
+		<Item Name="cif_management_common_LoaderType" Type="Folder">
+			<Item Name="cif_management_common_LoaderType.ctl" Type="VI" URL="../RPC Messages/cif_management_common_LoaderType.ctl"/>
+			<Item Name="Get Value for cif_management_common_LoaderType.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_LoaderType.vi"/>
+			<Item Name="Get cif_management_common_LoaderType for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_LoaderType for Value.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_StartRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_StartRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StartRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_StartResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_StartResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StartResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_PauseRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_PauseRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PauseRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_PauseResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_PauseResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PauseResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_StopRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_StopRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StopRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_StopResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_StopResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StopResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_RefreshStatisticsRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_RefreshStatisticsRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_RefreshStatisticsRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_RefreshStatisticsResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_RefreshStatisticsResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_RefreshStatisticsResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetStatusDataRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetStatusDataRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetStatusDataRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetStatusDataResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetStatusDataResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetStatusDataResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_UpdateConfigRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_UpdateConfigRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_UpdateConfigRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_UpdateConfigResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_UpdateConfigResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_UpdateConfigResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetVersionRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetVersionRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetVersionRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetVersionResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetVersionResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetVersionResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetConfigRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetConfigRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetConfigRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetConfigResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetConfigResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetConfigResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetOverridesRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetOverridesRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetOverridesRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetOverridesResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetOverridesResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetOverridesResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetNamesRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetNamesRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetNamesRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_GetNamesResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_GetNamesResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_GetNamesResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="cif_plugincore_Configuration_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Configuration_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_TimingStatistics_Flat" Type="Folder">
-			<Item Name="cif_plugincore_TimingStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingStatistics_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_FifoStatistics_Flat" Type="Folder">
-			<Item Name="cif_plugincore_FifoStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_FifoStatistics_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorDoubles_Flat" Type="Folder">
-			<Item Name="cif_plugincore_MonitorDoubles_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorDoubles_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorU64_Flat" Type="Folder">
-			<Item Name="cif_plugincore_MonitorU64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorU64_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_MonitorI64_Flat" Type="Folder">
-			<Item Name="cif_plugincore_MonitorI64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_MonitorI64_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_StatusData_Flat" Type="Folder">
-			<Item Name="cif_plugincore_StatusData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_Flat.ctl"/>
-		</Item>
-		<Item Name="cif_plugincore_Error_Flat" Type="Folder">
-			<Item Name="cif_plugincore_Error_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Error_Flat.ctl"/>
+			<Item Name="cif_plugincore_Configuration_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_Configuration_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="cif_plugincore_TimingOverrides_Flat" Type="Folder">
-			<Item Name="cif_plugincore_TimingOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides_Flat.ctl"/>
+			<Item Name="cif_plugincore_TimingOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_TimingOverrides_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="cif_plugincore_PluginOverrides_Flat" Type="Folder">
-			<Item Name="cif_plugincore_PluginOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides_Flat.ctl"/>
+			<Item Name="cif_plugincore_PluginOverrides_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PluginOverrides_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
-		<Item Name="cif_plugincore_StatusData_State_Flat" Type="Folder">
-			<Item Name="cif_plugincore_StatusData_State_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_StatusData_State_Flat.ctl"/>
-			<Item Name="Get Value for cif_plugincore_StatusData_State_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_plugincore_StatusData_State_Flat.vi"/>
-			<Item Name="Get cif_plugincore_StatusData_State_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_StatusData_State_Flat for Value.vi"/>
+		<Item Name="cif_management_common_PluginMetadata_Flat" Type="Folder">
+			<Item Name="cif_management_common_PluginMetadata_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_PluginMetadata_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_Channels_Flat" Type="Folder">
+			<Item Name="cif_management_common_Channels_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_Channels_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_Channel_Flat" Type="Folder">
+			<Item Name="cif_management_common_Channel_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_Channel_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_ChannelFilter_Flat" Type="Folder">
+			<Item Name="cif_management_common_ChannelFilter_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_ChannelFilter_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_PluginStatusData_Flat" Type="Folder">
+			<Item Name="cif_management_common_PluginStatusData_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_PluginStatusData_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_TimingStatistics_Flat" Type="Folder">
+			<Item Name="cif_management_common_TimingStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_TimingStatistics_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_FifoStatistics_Flat" Type="Folder">
+			<Item Name="cif_management_common_FifoStatistics_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_FifoStatistics_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_MonitorDoubles_Flat" Type="Folder">
+			<Item Name="cif_management_common_MonitorDoubles_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_MonitorDoubles_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_MonitorU64_Flat" Type="Folder">
+			<Item Name="cif_management_common_MonitorU64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_MonitorU64_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_MonitorI64_Flat" Type="Folder">
+			<Item Name="cif_management_common_MonitorI64_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_MonitorI64_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_Error_Flat" Type="Folder">
+			<Item Name="cif_management_common_Error_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_Error_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_LoaderInfo_Flat" Type="Folder">
+			<Item Name="cif_management_common_LoaderInfo_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_LoaderInfo_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_LoaderInfoFull_Flat" Type="Folder">
+			<Item Name="cif_management_common_LoaderInfoFull_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_LoaderInfoFull_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_TimingStats_Flat" Type="Folder">
+			<Item Name="cif_common_TimingStats_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_TimingStats_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_Version_Flat" Type="Folder">
+			<Item Name="cif_common_Version_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Version_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_ShortVersion_Flat" Type="Folder">
+			<Item Name="cif_common_ShortVersion_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_ShortVersion_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_PluginNames_Flat" Type="Folder">
+			<Item Name="cif_common_PluginNames_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_PluginNames_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_Status_Flat" Type="Folder">
+			<Item Name="cif_common_Status_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Status_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_common_Empty_Flat" Type="Folder">
+			<Item Name="cif_common_Empty_Flat.ctl" Type="VI" URL="../RPC Messages/cif_common_Empty_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_management_common_PluginStatusData_PluginState_Flat" Type="Folder">
+			<Item Name="cif_management_common_PluginStatusData_PluginState_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_PluginStatusData_PluginState_Flat.ctl"/>
+			<Item Name="Get Value for cif_management_common_PluginStatusData_PluginState_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_PluginStatusData_PluginState_Flat.vi"/>
+			<Item Name="Get cif_management_common_PluginStatusData_PluginState_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_PluginStatusData_PluginState_Flat for Value.vi"/>
+		</Item>
+		<Item Name="cif_management_common_ChannelDirection_Flat" Type="Folder">
+			<Item Name="cif_management_common_ChannelDirection_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_ChannelDirection_Flat.ctl"/>
+			<Item Name="Get Value for cif_management_common_ChannelDirection_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_ChannelDirection_Flat.vi"/>
+			<Item Name="Get cif_management_common_ChannelDirection_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_ChannelDirection_Flat for Value.vi"/>
+		</Item>
+		<Item Name="cif_management_common_ChannelPattern_Flat" Type="Folder">
+			<Item Name="cif_management_common_ChannelPattern_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_ChannelPattern_Flat.ctl"/>
+			<Item Name="Get Value for cif_management_common_ChannelPattern_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_ChannelPattern_Flat.vi"/>
+			<Item Name="Get cif_management_common_ChannelPattern_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_ChannelPattern_Flat for Value.vi"/>
+		</Item>
+		<Item Name="cif_management_common_LoaderType_Flat" Type="Folder">
+			<Item Name="cif_management_common_LoaderType_Flat.ctl" Type="VI" URL="../RPC Messages/cif_management_common_LoaderType_Flat.ctl"/>
+			<Item Name="Get Value for cif_management_common_LoaderType_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for cif_management_common_LoaderType_Flat.vi"/>
+			<Item Name="Get cif_management_common_LoaderType_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get cif_management_common_LoaderType_Flat for Value.vi"/>
 		</Item>
 		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi"/>
 	</Item>
@@ -179,5 +677,4 @@
 		<Item Name="Create Client.vi" Type="VI" URL="../Client API/Create Client.vi"/>
 		<Item Name="Destroy Client.vi" Type="VI" URL="../Client API/Destroy Client.vi"/>
 	</Item>
-	<Item Name="gRPC Client Test.vi" Type="VI" URL="../gRPC Client Test.vi"/>
 </Library>

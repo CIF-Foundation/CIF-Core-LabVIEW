@@ -1,11 +1,20 @@
 # Set permissions for the startup executable
-chmod 777 /usr/local/cif/manager/cif_startup_21.rtexe
+chmod 777 /usr/local/cif/manager/cif_manager_startup_21.rtexe
+chmod 777 /usr/local/cif/manager/cif_manager_startup_23.rtexe
+chmod 777 /usr/local/cif/manager/loaders/cif_plugin_loader_startup_21.rtexe
+chmod 777 /usr/local/cif/manager/loaders/cif_plugin_loader_startup_23.rtexe
+chmod 777 /usr/local/cif/manager/loaders/launch_lvrt_cif.sh
 # Set permissions for all files and folders in CIF
 chmod -R 777 /usr/local/cif
-# Set permissions for log file
-chmod -R 777 /var/local/cif/logs
 # Set permissions for python launcher file
 chmod 777 /usr/local/bin/launch_rt.py
+
+# create the log files if they don't exist
+touch /var/local/cif/logs/cif_info.log
+touch /var/local/cif/logs/cif_error.log
+touch /var/local/cif/logs/cif_config.log
+# Set permissions for log file
+chmod -R 777 /var/local/cif/logs
 
 # Get the loaded version of labview realtime
 lv_version="$(opkg list-installed | grep labview-realtime)"
@@ -17,34 +26,22 @@ if [[ $lv_version =~ $re ]]
         lv_version="${BASH_REMATCH[1]}"
     if [ $lv_version == 21 ] 
         then
-        ln -s /usr/local/cif/manager/cif_startup_21.rtexe /usr/local/cif/manager/cif_startup.rtexe 
+        ln -s /usr/local/cif/manager/cif_manager_startup_21.rtexe /usr/local/cif/manager/cif_manager_startup.rtexe
+        ln -s /usr/local/cif/manager/loaders/cif_plugin_loader_startup_21.rtexe /usr/local/cif/manager/loaders/cif_plugin_loader_startup.rtexe  
         echo "Setting cif_startup version 21"
     elif [ $lv_version == 23 ] 
         then
+        ln -s /usr/local/cif/manager/cif_manager_startup_23.rtexe /usr/local/cif/manager/cif_manager_startup.rtexe
+        ln -s /usr/local/cif/manager/loaders/cif_plugin_loader_startup_23.rtexe /usr/local/cif/manager/loaders/cif_plugin_loader_startup.rtexe  
         echo "Setting cif_startup version 23"
-    elif [ $lv_version == 24 ] 
-        then
-        echo "Setting cif_startup version 24"
     else    
-        echo "Detected version LabVIEW ${lv_version} is unsupported.  Versions 21, 23, and 24 supported."
+        echo "Detected version LabVIEW ${lv_version} is unsupported.  Versions 21, and 23 supported."
     fi
 else
     echo "LabVIEW Version could not be parsed.  Check the version parsing, the script may need to be updated"
 fi
 
-# Set the lvrt config file to allow socket reuse.  This helps when plugins are expecting to always use the same port so the OS releases and rebinds without faults.
-lvrtconf="/etc/natinst/share/lvrt.conf"
-SocketToken=`grep "SocketSetReuseAddr" $lvrtconf`
-if [ "$SocketToken" = "SocketSetReuseAddr=False" ]
-then
-    sed -i 's/SocketSetReuseAddr=False/SocketSetReuseAddr=True/' $lvrtconf
-    echo "Updated lvrt.conf SocketSetReuseAddr token"
-else
-    if [ "$SocketToken" != "SocketSetReuseAddr=True" ]
-    then
-        sed -i '$a\'$'\n''SocketSetReuseAddr=True' $lvrtconf
-        echo "Added lvrt.conf SocketSetReuseAddr token"
-    fi
-fi
-
 ldconfig
+
+#Restart syslog
+/etc/init.d/syslog restart

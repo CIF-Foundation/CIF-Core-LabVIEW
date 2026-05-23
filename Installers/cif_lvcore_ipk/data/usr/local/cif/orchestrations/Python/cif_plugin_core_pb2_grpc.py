@@ -3,10 +3,9 @@
 import grpc
 import warnings
 
-import cif_common_pb2 as cif__common__pb2
 import cif_plugin_core_pb2 as cif__plugin__core__pb2
 
-GRPC_GENERATED_VERSION = '1.67.0'
+GRPC_GENERATED_VERSION = '1.78.1'
 GRPC_VERSION = grpc.__version__
 _version_not_supported = False
 
@@ -19,7 +18,7 @@ except ImportError:
 if _version_not_supported:
     raise RuntimeError(
         f'The grpc package installed is at version {GRPC_VERSION},'
-        + f' but the generated code in cif_plugin_core_pb2_grpc.py depends on'
+        + ' but the generated code in cif_plugin_core_pb2_grpc.py depends on'
         + f' grpcio>={GRPC_GENERATED_VERSION}.'
         + f' Please upgrade your grpc module to grpcio>={GRPC_GENERATED_VERSION}'
         + f' or downgrade your generated code using grpcio-tools<={GRPC_VERSION}.'
@@ -37,53 +36,53 @@ class PluginCoreStub(object):
         """
         self.Start = channel.unary_unary(
                 '/cif.plugincore.PluginCore/Start',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__plugin__core__pb2.StartRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.StartResponse.FromString,
                 _registered_method=True)
         self.Pause = channel.unary_unary(
                 '/cif.plugincore.PluginCore/Pause',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__plugin__core__pb2.PauseRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.PauseResponse.FromString,
                 _registered_method=True)
         self.Stop = channel.unary_unary(
                 '/cif.plugincore.PluginCore/Stop',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__plugin__core__pb2.StopRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.StopResponse.FromString,
                 _registered_method=True)
         self.RefreshStatistics = channel.unary_unary(
                 '/cif.plugincore.PluginCore/RefreshStatistics',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__plugin__core__pb2.RefreshStatisticsRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.RefreshStatisticsResponse.FromString,
                 _registered_method=True)
         self.UpdateConfig = channel.unary_unary(
                 '/cif.plugincore.PluginCore/UpdateConfig',
-                request_serializer=cif__plugin__core__pb2.Configuration.SerializeToString,
-                response_deserializer=cif__common__pb2.Status.FromString,
+                request_serializer=cif__plugin__core__pb2.UpdateConfigRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.UpdateConfigResponse.FromString,
                 _registered_method=True)
         self.GetStatusData = channel.unary_unary(
                 '/cif.plugincore.PluginCore/GetStatusData',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__plugin__core__pb2.StatusData.FromString,
+                request_serializer=cif__plugin__core__pb2.GetStatusDataRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.GetStatusDataResponse.FromString,
                 _registered_method=True)
         self.GetVersion = channel.unary_unary(
                 '/cif.plugincore.PluginCore/GetVersion',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__common__pb2.Version.FromString,
+                request_serializer=cif__plugin__core__pb2.GetVersionRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.GetVersionResponse.FromString,
                 _registered_method=True)
         self.GetConfig = channel.unary_unary(
                 '/cif.plugincore.PluginCore/GetConfig',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__plugin__core__pb2.Configuration.FromString,
+                request_serializer=cif__plugin__core__pb2.GetConfigRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.GetConfigResponse.FromString,
                 _registered_method=True)
         self.GetOverrides = channel.unary_unary(
                 '/cif.plugincore.PluginCore/GetOverrides',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__plugin__core__pb2.PluginOverrides.FromString,
+                request_serializer=cif__plugin__core__pb2.GetOverridesRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.GetOverridesResponse.FromString,
                 _registered_method=True)
         self.GetNames = channel.unary_unary(
                 '/cif.plugincore.PluginCore/GetNames',
-                request_serializer=cif__common__pb2.Empty.SerializeToString,
-                response_deserializer=cif__common__pb2.PluginNames.FromString,
+                request_serializer=cif__plugin__core__pb2.GetNamesRequest.SerializeToString,
+                response_deserializer=cif__plugin__core__pb2.GetNamesResponse.FromString,
                 _registered_method=True)
 
 
@@ -155,53 +154,53 @@ def add_PluginCoreServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'Start': grpc.unary_unary_rpc_method_handler(
                     servicer.Start,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.StartRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.StartResponse.SerializeToString,
             ),
             'Pause': grpc.unary_unary_rpc_method_handler(
                     servicer.Pause,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.PauseRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.PauseResponse.SerializeToString,
             ),
             'Stop': grpc.unary_unary_rpc_method_handler(
                     servicer.Stop,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.StopRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.StopResponse.SerializeToString,
             ),
             'RefreshStatistics': grpc.unary_unary_rpc_method_handler(
                     servicer.RefreshStatistics,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.RefreshStatisticsRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.RefreshStatisticsResponse.SerializeToString,
             ),
             'UpdateConfig': grpc.unary_unary_rpc_method_handler(
                     servicer.UpdateConfig,
-                    request_deserializer=cif__plugin__core__pb2.Configuration.FromString,
-                    response_serializer=cif__common__pb2.Status.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.UpdateConfigRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.UpdateConfigResponse.SerializeToString,
             ),
             'GetStatusData': grpc.unary_unary_rpc_method_handler(
                     servicer.GetStatusData,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__plugin__core__pb2.StatusData.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.GetStatusDataRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.GetStatusDataResponse.SerializeToString,
             ),
             'GetVersion': grpc.unary_unary_rpc_method_handler(
                     servicer.GetVersion,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__common__pb2.Version.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.GetVersionRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.GetVersionResponse.SerializeToString,
             ),
             'GetConfig': grpc.unary_unary_rpc_method_handler(
                     servicer.GetConfig,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__plugin__core__pb2.Configuration.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.GetConfigRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.GetConfigResponse.SerializeToString,
             ),
             'GetOverrides': grpc.unary_unary_rpc_method_handler(
                     servicer.GetOverrides,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__plugin__core__pb2.PluginOverrides.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.GetOverridesRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.GetOverridesResponse.SerializeToString,
             ),
             'GetNames': grpc.unary_unary_rpc_method_handler(
                     servicer.GetNames,
-                    request_deserializer=cif__common__pb2.Empty.FromString,
-                    response_serializer=cif__common__pb2.PluginNames.SerializeToString,
+                    request_deserializer=cif__plugin__core__pb2.GetNamesRequest.FromString,
+                    response_serializer=cif__plugin__core__pb2.GetNamesResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -229,8 +228,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/Start',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__plugin__core__pb2.StartRequest.SerializeToString,
+            cif__plugin__core__pb2.StartResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -256,8 +255,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/Pause',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__plugin__core__pb2.PauseRequest.SerializeToString,
+            cif__plugin__core__pb2.PauseResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -283,8 +282,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/Stop',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__plugin__core__pb2.StopRequest.SerializeToString,
+            cif__plugin__core__pb2.StopResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -310,8 +309,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/RefreshStatistics',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__plugin__core__pb2.RefreshStatisticsRequest.SerializeToString,
+            cif__plugin__core__pb2.RefreshStatisticsResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -337,8 +336,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/UpdateConfig',
-            cif__plugin__core__pb2.Configuration.SerializeToString,
-            cif__common__pb2.Status.FromString,
+            cif__plugin__core__pb2.UpdateConfigRequest.SerializeToString,
+            cif__plugin__core__pb2.UpdateConfigResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -364,8 +363,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/GetStatusData',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__plugin__core__pb2.StatusData.FromString,
+            cif__plugin__core__pb2.GetStatusDataRequest.SerializeToString,
+            cif__plugin__core__pb2.GetStatusDataResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -391,8 +390,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/GetVersion',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__common__pb2.Version.FromString,
+            cif__plugin__core__pb2.GetVersionRequest.SerializeToString,
+            cif__plugin__core__pb2.GetVersionResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -418,8 +417,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/GetConfig',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__plugin__core__pb2.Configuration.FromString,
+            cif__plugin__core__pb2.GetConfigRequest.SerializeToString,
+            cif__plugin__core__pb2.GetConfigResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -445,8 +444,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/GetOverrides',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__plugin__core__pb2.PluginOverrides.FromString,
+            cif__plugin__core__pb2.GetOverridesRequest.SerializeToString,
+            cif__plugin__core__pb2.GetOverridesResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -472,8 +471,8 @@ class PluginCore(object):
             request,
             target,
             '/cif.plugincore.PluginCore/GetNames',
-            cif__common__pb2.Empty.SerializeToString,
-            cif__common__pb2.PluginNames.FromString,
+            cif__plugin__core__pb2.GetNamesRequest.SerializeToString,
+            cif__plugin__core__pb2.GetNamesResponse.FromString,
             options,
             channel_credentials,
             insecure,

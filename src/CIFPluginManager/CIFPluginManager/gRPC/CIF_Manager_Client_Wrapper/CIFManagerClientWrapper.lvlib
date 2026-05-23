@@ -9,7 +9,9 @@
 </Property>
 	<Item Name="Commands" Type="Folder">
 		<Item Name="Abort Plugin.vi" Type="VI" URL="../Commands/Abort Plugin.vi"/>
+		<Item Name="Create Loader.vi" Type="VI" URL="../Commands/Create Loader.vi"/>
 		<Item Name="Create Orchestration.vi" Type="VI" URL="../Commands/Create Orchestration.vi"/>
+		<Item Name="Destroy Loader.vi" Type="VI" URL="../Commands/Destroy Loader.vi"/>
 		<Item Name="Destroy Manager.vi" Type="VI" URL="../Commands/Destroy Manager.vi"/>
 		<Item Name="Load Plugin.vi" Type="VI" URL="../Commands/Load Plugin.vi"/>
 		<Item Name="Ping.vi" Type="VI" URL="../Commands/Ping.vi"/>
@@ -20,6 +22,7 @@
 		<Item Name="Query Config Log.vi" Type="VI" URL="../Commands/Query Config Log.vi"/>
 		<Item Name="Query Error Log.vi" Type="VI" URL="../Commands/Query Error Log.vi"/>
 		<Item Name="Query Info Log.vi" Type="VI" URL="../Commands/Query Info Log.vi"/>
+		<Item Name="Query Plugin Loaders.vi" Type="VI" URL="../Commands/Query Plugin Loaders.vi"/>
 		<Item Name="Query Plugin.vi" Type="VI" URL="../Commands/Query Plugin.vi"/>
 		<Item Name="Reset Config File Index.vi" Type="VI" URL="../Commands/Reset Config File Index.vi"/>
 		<Item Name="Reset Error File Index.vi" Type="VI" URL="../Commands/Reset Error File Index.vi"/>
@@ -32,11 +35,14 @@
 	</Item>
 	<Item Name="Internal" Type="Folder">
 		<Item Name="Query System Status.vi" Type="VI" URL="../Internal/Query System Status.vi"/>
+		<Item Name="Register Loader.vi" Type="VI" URL="../Internal/Register Loader.vi"/>
 		<Item Name="Register Plugin.vi" Type="VI" URL="../Internal/Register Plugin.vi"/>
+		<Item Name="Unregister Loader.vi" Type="VI" URL="../Internal/Unregister Loader.vi"/>
 		<Item Name="Unregister Plugin.vi" Type="VI" URL="../Internal/Unregister Plugin.vi"/>
 		<Item Name="Update Clock.vi" Type="VI" URL="../Internal/Update Clock.vi"/>
 	</Item>
 	<Item Name="Utilities" Type="Folder">
+		<Item Name="Filter and Log Error.vi" Type="VI" URL="../Utilities/Filter and Log Error.vi"/>
 		<Item Name="Merge gRPC Error.vi" Type="VI" URL="../Utilities/Merge gRPC Error.vi"/>
 	</Item>
 </Library>

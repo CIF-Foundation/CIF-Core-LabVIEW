@@ -1,0 +1,9 @@
+Installers/**/*.exe filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.rtexe filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.lvlibp filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.llb filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.dll filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.so filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.dylib filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.lib filter=lfs diff=lfs merge=lfs -text
+Installers/**/*.so.* filter=lfs diff=lfs merge=lfs -text

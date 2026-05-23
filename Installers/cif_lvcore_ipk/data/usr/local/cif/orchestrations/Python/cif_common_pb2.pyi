@@ -37,12 +37,14 @@ class ShortVersion(_message.Message):
     def __init__(self, major: _Optional[int] = ..., minor: _Optional[int] = ..., fix: _Optional[int] = ...) -> None: ...
 
 class PluginNames(_message.Message):
-    __slots__ = ("plugin_name", "plugin_type")
+    __slots__ = ("plugin_name", "plugin_type", "loader_name")
     PLUGIN_NAME_FIELD_NUMBER: _ClassVar[int]
     PLUGIN_TYPE_FIELD_NUMBER: _ClassVar[int]
+    LOADER_NAME_FIELD_NUMBER: _ClassVar[int]
     plugin_name: str
     plugin_type: str
-    def __init__(self, plugin_name: _Optional[str] = ..., plugin_type: _Optional[str] = ...) -> None: ...
+    loader_name: str
+    def __init__(self, plugin_name: _Optional[str] = ..., plugin_type: _Optional[str] = ..., loader_name: _Optional[str] = ...) -> None: ...
 
 class Status(_message.Message):
     __slots__ = ("code", "message")
