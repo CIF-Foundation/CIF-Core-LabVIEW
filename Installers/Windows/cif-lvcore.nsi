@@ -9,7 +9,7 @@
 !define PRODUCT_VERSION "2.0.1.0"
 !define PRODUCT_PUBLISHER "Dome Automation"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\CIF-LVCORE"
-!define INSTALL_DIR "$$PUBLIC\Documents"
+!define INSTALL_DIR "C:\Users\Public\Documents"
 !define UNINSTALL_DIR "$PROGRAMFILES64\CIF-LVCore"
 !define UNINSTALLER_NAME "cif-lvcore-Uninstall.exe"
 
