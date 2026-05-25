@@ -1,0 +1,17 @@
+Third-Party License Notice — National Instruments
+
+The files in this directory and its subdirectories are provided by National
+Instruments Corporation and are NOT licensed under the Apache License 2.0 that
+applies to the rest of the CIF-Core-LabVIEW repository.
+
+These files are licensed under National Instruments' General Purpose Software
+License Agreement (GPSLA).
+
+Official license terms:
+https://www.ni.com/en/about-ni/legal/software-license-agreement.html
+
+Copyright National Instruments Corporation. All rights reserved.
+
+Use, modification, and redistribution of these files is governed solely by the
+NI GPSLA and your applicable NI software license. Do not assume Apache 2.0
+permissions apply to this directory.

@@ -20,9 +20,11 @@
 		<Item Name="Timing Stats Base.ctl" Type="VI" URL="../Typedef/Timing Stats Base.ctl"/>
 		<Item Name="Monitor I64.ctl" Type="VI" URL="../Typedef/Monitor I64.ctl"/>
 		<Item Name="Plugin Status.ctl" Type="VI" URL="../Typedef/Plugin Status.ctl"/>
+		<Item Name="PluginInfo.ctl" Type="VI" URL="../Typedef/PluginInfo.ctl"/>
 		<Item Name="Simple Error.ctl" Type="VI" URL="../Typedef/Simple Error.ctl"/>
 		<Item Name="Common Plugin Configuration.ctl" Type="VI" URL="../Typedef/Common Plugin Configuration.ctl"/>
 		<Item Name="Version.ctl" Type="VI" URL="../Typedef/Version.ctl"/>
+		<Item Name="Version Simple.ctl" Type="VI" URL="../Typedef/Version Simple.ctl"/>
 		<Item Name="gRPC Reported Plugin Status.ctl" Type="VI" URL="../Typedef/gRPC Reported Plugin Status.ctl"/>
 		<Item Name="TimeStamps.ctl" Type="VI" URL="../Typedef/TimeStamps.ctl"/>
 		<Item Name="Timing Statistics Full.ctl" Type="VI" URL="../Typedef/Timing Statistics Full.ctl"/>
@@ -46,6 +48,8 @@
 		<Item Name="Validate Python Name.vi" Type="VI" URL="../Utilities/Validate Python Name.vi"/>
 		<Item Name="Update FIFO Drop Statistics.vi" Type="VI" URL="../Utilities/Update FIFO Drop Statistics.vi"/>
 		<Item Name="Check Timed Loop Support.vi" Type="VI" URL="../Utilities/Check Timed Loop Support.vi"/>
+		<Item Name="Benchmark to String.vi" Type="VI" URL="../Utilities/Benchmark to String.vi"/>
+		<Item Name="Version to String.vi" Type="VI" URL="../Utilities/Version to String.vi"/>
 		<Item Name="Sys Exec Error Wrapper.vi" Type="VI" URL="../Utilities/Sys Exec Error Wrapper.vi"/>
 	</Item>
 </Library>
