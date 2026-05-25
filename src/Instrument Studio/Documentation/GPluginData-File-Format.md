@@ -1,5 +1,11 @@
 # LabVIEW Plugins In InstrumentStudio
 
+> **License:** This document is part of `src/Instrument Studio/` and is covered
+> by National Instruments' [General Purpose Software License
+> Agreement](https://www.ni.com/en/about-ni/legal/software-license-agreement.html),
+> not the Apache 2.0 license that applies elsewhere in this repository.
+> See [../LICENSE](../LICENSE).
+
 ## Registering a Plugin
 In order to register a plugin, put a .gplugindata into the Addons directory under the InstrumentStudio installation directory. The .gplugindata file is an XML file that tells InstrumentStudio the properties of the plugin and how to find the code that implements it.
 

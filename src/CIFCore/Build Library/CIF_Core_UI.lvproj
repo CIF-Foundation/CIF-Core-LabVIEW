@@ -612,11 +612,11 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
+				<Property Name="TgtF_companyName" Type="Str">CIF Foundation</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">UI Plugin</Property>
 				<Property Name="TgtF_internalName" Type="Str">UI Plugin</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 National Instruments</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024-2026 CIF Foundation</Property>
 				<Property Name="TgtF_productName" Type="Str">UI Plugin</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{F7659C57-F4CE-491C-8E27-3332458AFB6A}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">CIF_Core_UI.lvlibp</Property>
@@ -655,11 +655,11 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
+				<Property Name="TgtF_companyName" Type="Str">CIF Foundation</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">UI Plugin</Property>
 				<Property Name="TgtF_internalName" Type="Str">UI Plugin</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 National Instruments</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024-2026 CIF Foundation</Property>
 				<Property Name="TgtF_productName" Type="Str">UI Plugin</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{F13A3C51-2C57-4F9A-9AB4-32F86EA57A8A}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">CIF Core UI.1.0.0.lvlibp</Property>

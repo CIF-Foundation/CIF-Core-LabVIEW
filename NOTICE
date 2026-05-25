@@ -1,0 +1,47 @@
+CIF-Core-LabVIEW
+Copyright 2024-2026 CIF Foundation
+
+This product includes software developed by CIF Foundation.
+
+================================================================================
+
+Third-Party Components
+
+Bundled third-party source in this repository:
+
+  - Instrument Studio Plugin SDK (src/Instrument Studio/)
+    Copyright National Instruments Corporation
+    Licensed under the NI General Purpose Software License Agreement (GPSLA)
+    https://www.ni.com/en/about-ni/legal/software-license-agreement.html
+    See src/Instrument Studio/LICENSE
+
+This software is designed to be used with the following third-party and
+companion packages. Each package is subject to its own license terms.
+
+Runtime dependencies (installed via VIPM or equivalent package manager):
+
+  - NI LabVIEW gRPC Library (ni_lib_labview_grpc_library)
+    Copyright National Instruments
+    Licensed under the Apache License, Version 2.0
+
+Companion CIF Foundation packages (required at build or runtime):
+
+  - cif_foundation_lib_cif_channels
+  - cif_foundation_lib_cif_utilities
+  - cif_foundation_lib_fix_ni_grpc_path
+  - cif_foundation_lib_lv_scripting
+  - cif_foundation_lib_ni_cipc
+  - cif_foundation_lib_pcap_parse_build
+
+Refer to each package's license and documentation for its terms.
+
+Protocol buffer definitions used by CIF gRPC services are maintained in the
+CIF Manager repository and are subject to that repository's license.
+
+================================================================================
+
+LabVIEW
+
+Portions of this project are built with National Instruments LabVIEW. LabVIEW
+is a commercial product of National Instruments (NI). Use of LabVIEW requires
+a separate license from NI.

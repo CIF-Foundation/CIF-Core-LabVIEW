@@ -726,7 +726,8 @@ AddOutputFilter chunkFilter
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">CIFCorePluginRT</Property>
 				<Property Name="TgtF_internalName" Type="Str">CIFCorePluginRT</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 </Property>
+				<Property Name="TgtF_companyName" Type="Str">CIF Foundation</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024-2026 CIF Foundation</Property>
 				<Property Name="TgtF_productName" Type="Str">CIFCorePluginRT</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{6DA0406C-9AB0-4143-8ABB-FB8A9909FCC3}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">CIFCorePlugin.0.4.0.lvlibp</Property>
