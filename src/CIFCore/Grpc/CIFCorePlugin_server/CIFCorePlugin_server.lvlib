@@ -590,6 +590,38 @@
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>
+		<Item Name="cif_plugincore_PrepareRequest" Type="Folder">
+			<Item Name="cif_plugincore_PrepareRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PrepareRequest.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_PrepareRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PrepareRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_plugincore_PrepareRequest.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_PrepareRequest.vi"/>
+			<Item Name="RichToFlatcif_plugincore_PrepareRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PrepareRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_plugincore_PrepareRequest.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_PrepareRequest.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_PrepareRequest_Flat" Type="Folder">
+			<Item Name="cif_plugincore_PrepareRequest_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PrepareRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="cif_plugincore_PrepareResponse" Type="Folder">
+			<Item Name="cif_plugincore_PrepareResponse.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PrepareResponse.ctl"/>
+			<Item Name="FlatToRichcif_plugincore_PrepareResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_PrepareResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Get cif_plugincore_PrepareResponse.vi" Type="VI" URL="../RPC Messages/Get cif_plugincore_PrepareResponse.vi"/>
+			<Item Name="RichToFlatcif_plugincore_PrepareResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatcif_plugincore_PrepareResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="Set cif_plugincore_PrepareResponse.vi" Type="VI" URL="../RPC Messages/Set cif_plugincore_PrepareResponse.vi"/>
+		</Item>
+		<Item Name="cif_plugincore_PrepareResponse_Flat" Type="Folder">
+			<Item Name="cif_plugincore_PrepareResponse_Flat.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_PrepareResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
 		<Item Name="cif_plugincore_RefreshStatisticsRequest" Type="Folder">
 			<Item Name="cif_plugincore_RefreshStatisticsRequest.ctl" Type="VI" URL="../RPC Messages/cif_plugincore_RefreshStatisticsRequest.ctl"/>
 			<Item Name="FlatToRichcif_plugincore_RefreshStatisticsRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichcif_plugincore_RefreshStatisticsRequest.vi">

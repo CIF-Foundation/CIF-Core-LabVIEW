@@ -15,6 +15,7 @@
 	<Item Name="Commands" Type="Folder">
 		<Item Name="Start.vi" Type="VI" URL="../Commands/Start.vi"/>
 		<Item Name="Pause.vi" Type="VI" URL="../Commands/Pause.vi"/>
+		<Item Name="Prepare.vi" Type="VI" URL="../Commands/Prepare.vi"/>
 		<Item Name="Stop.vi" Type="VI" URL="../Commands/Stop.vi"/>
 		<Item Name="Refresh Statistics.vi" Type="VI" URL="../Commands/Refresh Statistics.vi"/>
 		<Item Name="Update Configuration.vi" Type="VI" URL="../Commands/Update Configuration.vi"/>
