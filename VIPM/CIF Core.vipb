@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2026-06-20 19:06:11" Creator="toddw" Comments="" ID="1d641c21c657d73759c657692b39d7c8">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-02-08 07:45:01" Modified_Date="2026-06-27 18:28:49" Creator="toddw" Comments="" ID="4e9e982bbf0dbd799f46f4c910ab71e7">
   <Library_General_Settings>
     <Package_File_Name>CIF_Foundation_lib_CIF_Core</Package_File_Name>
-    <Library_Version>5.0.1.3</Library_Version>
+    <Library_Version>5.0.2.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\..\builds\VIPM</Library_Output_Folder>
@@ -46,7 +46,7 @@ An additional CIF installer is required for execution on those targets which pla
       <Copyright>Copyright 2024-2026 CIF Foundation. Licensed under the Apache License, Version 2.0.</Copyright>
       <Packager>DOME Automation</Packager>
       <URL>cif-foundation.com</URL>
-      <Release_Notes>Fix reentrancy on Listen.vi</Release_Notes>
+      <Release_Notes>Bug fix for error clear on start of listen</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -315,7 +315,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\UI</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>03E503DFBD7B58EEFD38418924BB1ACF</GUID>
+      <GUID>B4CB4EE8D285705F27679C5581FC9791</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -476,7 +476,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFCore\Class\Logs\Log Custom Info.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>48BB85FD98B405216C2C5A9F334525EB</GUID>
+      <GUID>7CA155AB245DAEA4AD5C1CDCC0CB3368</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -623,7 +623,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFCore\Class\Utilities\Clocks\System Clock to External Clock.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>312BFE3C9197E7B4CF108A796E018170</GUID>
+      <GUID>FBB8B197D82801A87F2B1D58BC1C51BE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -854,7 +854,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFCore\Class\Channel RW\Write CAN FIFO.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C8562494B8E478BB2B6B83DF2EA0E6A8</GUID>
+      <GUID>8D184CE02FF3CDBD2DB6A2841AD06C3A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1043,7 +1043,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFCore\Class\Accessors\Monitor\Write U64 4.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6ED88997D821D8D6DAA2EFA9DA2CCEE3</GUID>
+      <GUID>1BBC7EED582756D853B5420DCF82CC40</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1162,7 +1162,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFCore\Class\Utilities\Channels\Destroy Channel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E56F3B27F454C5EF6D8C272350A68514</GUID>
+      <GUID>0E71DAC3EEB39854D179724ADB69A215</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1253,7 +1253,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFUI\Subpanel Functions\Write Local Error.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EB75B969158FF3556ED68F359B56A3EF</GUID>
+      <GUID>DFCFF2F13070DBCB45B3C7C4D9470665</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1526,7 +1526,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFCore\Grpc\CIFCoreWrapper\Commands\Prepare.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B8DA33C4CCDEBD45B256161450C26EF8</GUID>
+      <GUID>4F3E52253FB42BCDE5B643278B426A4A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1855,7 +1855,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFPluginManager\gRPC\CIF_Manager_Client_Wrapper\Common\Destroy Client.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F418EB322DD09C24FF1C666EBA2EB307</GUID>
+      <GUID>EF0F5F90B75F8D0E702023DF5DD7D481</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1974,7 +1974,7 @@ An additional CIF installer is required for execution on those targets which pla
         <Path>..\src\CIFCore\Common\Utilities\Update FIFO Drop Statistics.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B8470A86012001DE8F83E08E7E12A6E1</GUID>
+      <GUID>D24B323F43486EB8200E190C14FDAF8C</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
