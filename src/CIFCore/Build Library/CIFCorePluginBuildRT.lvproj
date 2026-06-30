@@ -724,9 +724,9 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">CIF Foundation</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">CIFCorePluginRT</Property>
 				<Property Name="TgtF_internalName" Type="Str">CIFCorePluginRT</Property>
-				<Property Name="TgtF_companyName" Type="Str">CIF Foundation</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024-2026 CIF Foundation</Property>
 				<Property Name="TgtF_productName" Type="Str">CIFCorePluginRT</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{6DA0406C-9AB0-4143-8ABB-FB8A9909FCC3}</Property>
