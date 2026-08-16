@@ -40,6 +40,7 @@
 	</Item>
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Add Error.vi" Type="VI" URL="../Utilities/Add Error.vi"/>
+		<Item Name="Add Error Core.vi" Type="VI" URL="../Utilities/Add Error Core.vi"/>
 		<Item Name="Get Version.vi" Type="VI" URL="../Utilities/Get Version.vi"/>
 		<Item Name="Get IP Address.vi" Type="VI" URL="../Utilities/Get IP Address.vi"/>
 		<Item Name="ns timing to us timing.vi" Type="VI" URL="../Utilities/ns timing to us timing.vi"/>
