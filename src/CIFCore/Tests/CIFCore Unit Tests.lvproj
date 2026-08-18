@@ -65,6 +65,7 @@
 				<Item Name="CIF_CIPC_Chn_String.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/CIF Foundation/CIF Channels Core/CIPC_Channels/String/CIF_CIPC_Chn_String.lvclass"/>
 				<Item Name="Networking_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Networking/Networking_CIF_U.lvlib"/>
 				<Item Name="Service Template.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/gRPC Server and Client Template [2]/Server Template/Service Template.lvlib"/>
+				<Item Name="Boolean_CIF_U.lvlib" Type="Library" URL="/&lt;vilib&gt;/CIF Foundation/CIF Utilities/Boolean/Boolean_CIF_U.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
